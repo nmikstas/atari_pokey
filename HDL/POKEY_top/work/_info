@@ -1,0 +1,346 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/Arcade_Stuff/POKEY/HDL/poly_core
+Eaudctl_reg
+Z0 w1641925478
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/Arcade_Stuff/POKEY/HDL/POKEY_top
+Z5 8D:/Arcade_Stuff/POKEY/HDL/AUDCTL_reg/AUDCTL_reg.vhd
+Z6 FD:/Arcade_Stuff/POKEY/HDL/AUDCTL_reg/AUDCTL_reg.vhd
+l0
+L12
+VRLYz8FH69K[mEjkl^_z733
+!s100 ``aN;Z5RQAEUXH_Yl59PG1
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1643087602
+!i10b 1
+Z9 !s108 1643087602.000000
+Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Arcade_Stuff/POKEY/HDL/AUDCTL_reg/AUDCTL_reg.vhd|
+Z11 !s107 D:/Arcade_Stuff/POKEY/HDL/AUDCTL_reg/AUDCTL_reg.vhd|
+!i113 1
+Z12 o-work work -2008 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Astructural
+R1
+R2
+R3
+Z14 DEx4 work 10 audctl_reg 0 22 RLYz8FH69K[mEjkl^_z733
+l34
+L33
+VzUI>L1?35:Rfeg@Y11]N`2
+!s100 g]=IE0U;;nQ_2Y>jUf6ad2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eclock_gen_core
+Z15 w1641830589
+R1
+R2
+R3
+R4
+Z16 8D:/Arcade_Stuff/POKEY/HDL/clock_gen_core/clock_gen_core.vhd
+Z17 FD:/Arcade_Stuff/POKEY/HDL/clock_gen_core/clock_gen_core.vhd
+l0
+L12
+V0QczTPaLWeCRG1a<k6YYL0
+!s100 dT0jV;e]6d;nbVaZLhGX@2
+R7
+33
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Arcade_Stuff/POKEY/HDL/clock_gen_core/clock_gen_core.vhd|
+Z19 !s107 D:/Arcade_Stuff/POKEY/HDL/clock_gen_core/clock_gen_core.vhd|
+!i113 1
+R12
+R13
+Astructural
+R1
+R2
+R3
+Z20 DEx4 work 14 clock_gen_core 0 22 0QczTPaLWeCRG1a<k6YYL0
+l50
+L27
+Va:g1:XHcbZd75C=]lMkWI0
+!s100 _87fG^U8a4WZ5^5CUB`]V1
+R7
+33
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 1
+R12
+R13
+Edata_address_core
+Z21 w1643089879
+R1
+R2
+R3
+R4
+Z22 8D:/Arcade_Stuff/POKEY/HDL/data_address_core/data_address_core.vhd
+Z23 FD:/Arcade_Stuff/POKEY/HDL/data_address_core/data_address_core.vhd
+l0
+L12
+VdIDEKd0bN0ZPLQX8z<DP=0
+!s100 U8EV=AT[ZcQ<]l[_gdJ<D0
+R7
+33
+Z24 !s110 1643089883
+!i10b 1
+Z25 !s108 1643089883.000000
+Z26 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Arcade_Stuff/POKEY/HDL/data_address_core/data_address_core.vhd|
+Z27 !s107 D:/Arcade_Stuff/POKEY/HDL/data_address_core/data_address_core.vhd|
+!i113 1
+R12
+R13
+Astructural
+R1
+R2
+R3
+Z28 DEx4 work 17 data_address_core 0 22 dIDEKd0bN0ZPLQX8z<DP=0
+l94
+L69
+V`@O0PG_zYP0A97MoCGNE72
+!s100 FlIS=G4hjjYORn4Pfha[M0
+R7
+33
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R12
+R13
+Eirq_core
+Z29 w1642568659
+R1
+R2
+R3
+R4
+Z30 8D:/Arcade_Stuff/POKEY/HDL/IRQ_core/IRQ_core.vhd
+Z31 FD:/Arcade_Stuff/POKEY/HDL/IRQ_core/IRQ_core.vhd
+l0
+L12
+Vd_;ioME^3KbYPV@=b18f=2
+!s100 L99kUMX;on6o`9?]Enz0g1
+R7
+33
+Z32 !s110 1643087603
+!i10b 1
+Z33 !s108 1643087603.000000
+Z34 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Arcade_Stuff/POKEY/HDL/IRQ_core/IRQ_core.vhd|
+Z35 !s107 D:/Arcade_Stuff/POKEY/HDL/IRQ_core/IRQ_core.vhd|
+!i113 1
+R12
+R13
+Astructural
+R1
+R2
+R3
+Z36 DEx4 work 8 irq_core 0 22 d_;ioME^3KbYPV@=b18f=2
+l96
+L37
+V?T5I:C`<mR8J<jFbU441m1
+!s100 =Kc`0eLYo68^V1DGo2DK63
+R7
+33
+R32
+!i10b 1
+R33
+R34
+R35
+!i113 1
+R12
+R13
+Epokey_top
+Z37 w1642737975
+R1
+R2
+R3
+R4
+Z38 8D:/Arcade_Stuff/POKEY/HDL/POKEY_top/POKEY_top.vhd
+Z39 FD:/Arcade_Stuff/POKEY/HDL/POKEY_top/POKEY_top.vhd
+l0
+L12
+V]0U0<aaTZ=MBNYeAV;?=90
+!s100 2bFVfeA>mkQ?hdc`mR06h1
+R7
+33
+R8
+!i10b 1
+R9
+Z40 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Arcade_Stuff/POKEY/HDL/POKEY_top/POKEY_top.vhd|
+Z41 !s107 D:/Arcade_Stuff/POKEY/HDL/POKEY_top/POKEY_top.vhd|
+!i113 1
+R12
+R13
+Astructural
+Z42 DEx4 work 9 poly_core 0 22 G:1]1PYWEi9BfgM5?HN421
+R36
+R20
+R14
+Z43 DEx4 work 10 skctls_reg 0 22 8^C`?dVdPIZg0K4fB=IGo1
+R28
+R1
+R2
+R3
+Z44 DEx4 work 9 pokey_top 0 22 ]0U0<aaTZ=MBNYeAV;?=90
+l122
+L53
+V9EC]G9K4b_8IX?G_NPid=3
+!s100 Mz4WdGA5QKm3FmT;fN:8@2
+R7
+33
+R8
+!i10b 1
+R9
+R40
+R41
+!i113 1
+R12
+R13
+Epoly_core
+Z45 w1642569469
+R1
+R2
+R3
+R4
+Z46 8D:/Arcade_Stuff/POKEY/HDL/poly_core/poly_core.vhd
+Z47 FD:/Arcade_Stuff/POKEY/HDL/poly_core/poly_core.vhd
+l0
+L12
+VG:1]1PYWEi9BfgM5?HN421
+!s100 5Gl0ecaFg;mPI@[o<S9`P1
+R7
+33
+R32
+!i10b 1
+R33
+Z48 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Arcade_Stuff/POKEY/HDL/poly_core/poly_core.vhd|
+Z49 !s107 D:/Arcade_Stuff/POKEY/HDL/poly_core/poly_core.vhd|
+!i113 1
+R12
+R13
+Astructural
+R1
+R2
+R3
+R42
+l52
+L29
+VanBfdcGVQ6[5O<^<TYjFT0
+!s100 0dHS0g8KT8fD9:WcoFAnZ0
+R7
+33
+R32
+!i10b 1
+R33
+R48
+R49
+!i113 1
+R12
+R13
+Eskctls_reg
+Z50 w1641922668
+R1
+R2
+R3
+R4
+Z51 8D:/Arcade_Stuff/POKEY/HDL/SKCTLS_reg/SKCTLS_reg.vhd
+Z52 FD:/Arcade_Stuff/POKEY/HDL/SKCTLS_reg/SKCTLS_reg.vhd
+l0
+L12
+V8^C`?dVdPIZg0K4fB=IGo1
+!s100 cnB_M;n6MfJFH`;V9AN=g3
+R7
+33
+R8
+!i10b 1
+R9
+Z53 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Arcade_Stuff/POKEY/HDL/SKCTLS_reg/SKCTLS_reg.vhd|
+Z54 !s107 D:/Arcade_Stuff/POKEY/HDL/SKCTLS_reg/SKCTLS_reg.vhd|
+!i113 1
+R12
+R13
+Astructural
+R1
+R2
+R3
+R43
+l28
+L27
+V2Ud@UZgMLQ^hk14mf8GXT3
+!s100 O29F@C5FVfOzQ6Fj:ncZl1
+R7
+33
+R8
+!i10b 1
+R9
+R53
+R54
+!i113 1
+R12
+R13
+Etb_pokey_top
+Z55 w1643087777
+R1
+R2
+R3
+R4
+Z56 8D:/Arcade_Stuff/POKEY/HDL/POKEY_top/tb_POKEY_top.vhd
+Z57 FD:/Arcade_Stuff/POKEY/HDL/POKEY_top/tb_POKEY_top.vhd
+l0
+L8
+V]Nkc_Xn?31<Jj^V5KcYB93
+!s100 1nBScREE8T1TD4^hjF29F2
+R7
+33
+Z58 !s110 1643088180
+!i10b 1
+Z59 !s108 1643088180.000000
+Z60 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Arcade_Stuff/POKEY/HDL/POKEY_top/tb_POKEY_top.vhd|
+Z61 !s107 D:/Arcade_Stuff/POKEY/HDL/POKEY_top/tb_POKEY_top.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+R44
+R1
+R2
+R3
+DEx4 work 12 tb_pokey_top 0 22 ]Nkc_Xn?31<Jj^V5KcYB93
+l32
+L11
+VL@h;oRBZV[Cma=0DGPnE`0
+!s100 H9ObBQRlNU^=5^4mO50EA1
+R7
+33
+R58
+!i10b 1
+R59
+R60
+R61
+!i113 1
+R12
+R13

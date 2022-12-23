@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/My_Projects/Asteroids_Arcade/Asteroids_Vec_Gen_Sim
+Eclock_gen_core
+Z0 w1641830589
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/Arcade_Stuff/POKEY/HDL/clock_gen_core
+Z5 8D:\Arcade_Stuff\POKEY\HDL\clock_gen_core\clock_gen_core.vhd
+Z6 FD:\Arcade_Stuff\POKEY\HDL\clock_gen_core\clock_gen_core.vhd
+l0
+L12
+V0QczTPaLWeCRG1a<k6YYL0
+!s100 dT0jV;e]6d;nbVaZLhGX@2
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1641831937
+!i10b 1
+Z9 !s108 1641831937.000000
+Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:\Arcade_Stuff\POKEY\HDL\clock_gen_core\clock_gen_core.vhd|
+Z11 !s107 D:\Arcade_Stuff\POKEY\HDL\clock_gen_core\clock_gen_core.vhd|
+!i113 1
+Z12 o-work work -2008 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Astructural
+R1
+R2
+R3
+Z14 DEx4 work 14 clock_gen_core 0 22 0QczTPaLWeCRG1a<k6YYL0
+l50
+L27
+Va:g1:XHcbZd75C=]lMkWI0
+!s100 _87fG^U8a4WZ5^5CUB`]V1
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etb_clock_gen_core
+Z15 w1641925695
+R1
+R2
+R3
+R4
+Z16 8D:\Arcade_Stuff\POKEY\HDL\clock_gen_core\tb_clock_gen_core.vhd
+Z17 FD:\Arcade_Stuff\POKEY\HDL\clock_gen_core\tb_clock_gen_core.vhd
+l0
+L8
+Vd4;2_GQ:ao2iRT@4cM[Xe3
+!s100 M7`Dl0M_LV<EN=m>z=cnS1
+R7
+33
+Z18 !s110 1641925701
+!i10b 1
+Z19 !s108 1641925701.000000
+Z20 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:\Arcade_Stuff\POKEY\HDL\clock_gen_core\tb_clock_gen_core.vhd|
+Z21 !s107 D:\Arcade_Stuff\POKEY\HDL\clock_gen_core\tb_clock_gen_core.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+Z22 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+R14
+R1
+R2
+R3
+Z23 DEx4 work 17 tb_clock_gen_core 0 22 d4;2_GQ:ao2iRT@4cM[Xe3
+l21
+L11
+VlI45JiU82<f?Ik0CYZPhP1
+!s100 ;z2T=P?b9R]DK71?39gD`2
+R7
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R12
+R13

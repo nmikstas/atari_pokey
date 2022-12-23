@@ -1,0 +1,53 @@
+# Compile of pot_core.vhd failed with 1 errors.
+# Compile of pot_core.vhd was successful.
+# reading C:/intelFPGA/19.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project POKEY_top
+vsim -gui work.tb_pokey_top
+# vsim -gui work.tb_pokey_top 
+# Start time: 19:40:41 on Jan 25,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.tb_pokey_top(behavioral)
+# Loading work.pokey_top(structural)
+# Loading work.data_address_core(structural)
+# Loading work.skctls_reg(structural)
+# Loading work.audctl_reg(structural)
+# Loading work.clock_gen_core(structural)
+# Loading work.irq_core(structural)
+# Loading work.poly_core(structural)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_pokey_top/pokey_top_0/bclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__57 at D:/Arcade_Stuff/POKEY/HDL/POKEY_top/tb_POKEY_top.vhd line 132
+do D:/Arcade_Stuff/POKEY/HDL/POKEY_top/wave.do
+restart
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /tb_pokey_top/pokey_top_0/bclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__57 at D:/Arcade_Stuff/POKEY/HDL/POKEY_top/tb_POKEY_top.vhd line 132
+quit -sim
+# End time: 20:01:27 on Jan 25,2022, Elapsed time: 0:20:46
+# Errors: 0, Warnings: 12

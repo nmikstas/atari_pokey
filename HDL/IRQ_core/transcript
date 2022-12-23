@@ -1,0 +1,199 @@
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_irq_core
+# vsim -gui work.tb_irq_core 
+# Start time: 19:27:20 on Jan 18,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading std.env(body)
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+add wave -position insertpoint  \
+sim:/tb_irq_core/clk
+add wave -position insertpoint  \
+sim:/tb_irq_core/IRQEN
+add wave -position insertpoint  \
+sim:/tb_irq_core/Dw
+add wave -position insertpoint  \
+sim:/tb_irq_core/setBreak
+add wave -position insertpoint  \
+sim:/tb_irq_core/setKey
+add wave -position insertpoint  \
+sim:/tb_irq_core/setSdiCompl
+add wave -position insertpoint  \
+sim:/tb_irq_core/setSdoCompl
+add wave -position insertpoint  \
+sim:/tb_irq_core/sdoFinish
+add wave -position insertpoint  \
+sim:/tb_irq_core/Timer4
+add wave -position insertpoint  \
+sim:/tb_irq_core/Timer2
+add wave -position insertpoint  \
+sim:/tb_irq_core/Timer1
+add wave -position insertpoint  \
+sim:/tb_irq_core/IRQ
+add wave -position insertpoint  \
+sim:/tb_irq_core/Dr
+add wave -position insertpoint  \
+sim:/tb_irq_core/keyOvrun
+add wave -position insertpoint  \
+sim:/tb_irq_core/sdiOvrun
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Arcade_Stuff/POKEY/HDL/IRQ_core/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Arcade_Stuff/POKEY/HDL/IRQ_core/wave.do
+run
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 66
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 66
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 66
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 66
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 113
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 127
+add wave -position insertpoint  \
+sim:/tb_irq_core/irq_core_0/nirqst
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Arcade_Stuff/POKEY/HDL/IRQ_core/wave.do
+restart
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 127
+add wave -position insertpoint  \
+sim:/tb_irq_core/irq_core_0/irqOut3
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Arcade_Stuff/POKEY/HDL/IRQ_core/wave.do
+restart
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 127
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 127
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 128
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 128
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 143
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 164
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 190
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 216
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 242
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 268
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 294
+# Compile of IRQ_core.vhd was successful.
+# Compile of tb_IRQ_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_irq_core(behavioral)
+# Loading work.irq_core(structural)
+run
+# Break in Process line__56 at D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd line 322
+quit -sim
+# End time: 22:34:30 on Jan 18,2022, Elapsed time: 3:07:10
+# Errors: 0, Warnings: 0

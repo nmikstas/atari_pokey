@@ -1,0 +1,81 @@
+D:/Arcade_Stuff/POKEY/HDL/AUDCTL_reg/AUDCTL_reg.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/Arcade_Stuff/POKEY/HDL/AUDCTL_reg/AUDCTL_reg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity AUDCTL_reg
+-- Compiling architecture structural of AUDCTL_reg
+
+} {} {}} D:/Arcade_Stuff/POKEY/HDL/IRQ_core/IRQ_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/Arcade_Stuff/POKEY/HDL/IRQ_core/IRQ_core.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity irq_core
+-- Compiling architecture structural of irq_core
+
+} {} {}} D:/Arcade_Stuff/POKEY/HDL/poly_core/poly_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/Arcade_Stuff/POKEY/HDL/poly_core/poly_core.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity poly_core
+-- Compiling architecture structural of poly_core
+
+} {} {}} D:/Arcade_Stuff/POKEY/HDL/POKEY_top/POKEY_top.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/Arcade_Stuff/POKEY/HDL/POKEY_top/POKEY_top.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity pokey_top
+-- Compiling architecture structural of pokey_top
+-- Loading entity data_address_core
+-- Loading entity SKCTLS_reg
+-- Loading entity AUDCTL_reg
+-- Loading entity clock_gen_core
+-- Loading entity irq_core
+-- Loading entity poly_core
+
+} {} {}} D:/Arcade_Stuff/POKEY/HDL/POKEY_top/tb_POKEY_top.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/Arcade_Stuff/POKEY/HDL/POKEY_top/tb_POKEY_top.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_pokey_top
+-- Compiling architecture behavioral of tb_pokey_top
+-- Loading entity pokey_top
+-- Loading package ENV
+
+} {} {}} D:/Arcade_Stuff/POKEY/HDL/SKCTLS_reg/SKCTLS_reg.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/Arcade_Stuff/POKEY/HDL/SKCTLS_reg/SKCTLS_reg.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity SKCTLS_reg
+-- Compiling architecture structural of SKCTLS_reg
+
+} {} {}} D:/Arcade_Stuff/POKEY/HDL/clock_gen_core/clock_gen_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/Arcade_Stuff/POKEY/HDL/clock_gen_core/clock_gen_core.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity clock_gen_core
+-- Compiling architecture structural of clock_gen_core
+
+} {} {}} D:/Arcade_Stuff/POKEY/HDL/data_address_core/data_address_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/Arcade_Stuff/POKEY/HDL/data_address_core/data_address_core.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity data_address_core
+-- Compiling architecture structural of data_address_core
+
+} {} {}}
