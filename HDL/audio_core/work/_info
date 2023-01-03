@@ -1,0 +1,263 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/19.1
+Ecell20
+Z0 w1672718925
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/work/atari_pokey/HDL/audio_core
+Z5 8D:/work/atari_pokey/HDL/audio_core/cell20.vhd
+Z6 FD:/work/atari_pokey/HDL/audio_core/cell20.vhd
+l0
+L12
+VfePAl:`2;nQVOIz]QSoo^2
+!s100 I6Q4MWaoH62;R8KD1n]QD3
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1672718929
+!i10b 1
+Z9 !s108 1672718929.000000
+Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/audio_core/cell20.vhd|
+Z11 !s107 D:/work/atari_pokey/HDL/audio_core/cell20.vhd|
+!i113 1
+Z12 o-work work -2008 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Astructural
+R1
+R2
+R3
+Z14 DEx4 work 6 cell20 0 22 fePAl:`2;nQVOIz]QSoo^2
+l46
+L32
+VF?=D4giDhHBecKEj_<Kem3
+!s100 lLUlS^diMhHoFHT:Aja7c0
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ecell24
+Z15 w1672713133
+R1
+R2
+R3
+R4
+Z16 8D:/work/atari_pokey/HDL/audio_core/cell24.vhd
+Z17 FD:/work/atari_pokey/HDL/audio_core/cell24.vhd
+l0
+L12
+VP6aKMde5me[_]mFZT:2X;3
+!s100 HaICYf__bb@kInFeJUZlC2
+R7
+33
+Z18 !s110 1672713140
+!i10b 1
+Z19 !s108 1672713139.000000
+Z20 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/audio_core/cell24.vhd|
+Z21 !s107 D:/work/atari_pokey/HDL/audio_core/cell24.vhd|
+!i113 1
+R12
+R13
+Astructural
+R1
+R2
+R3
+Z22 DEx4 work 6 cell24 0 22 P6aKMde5me[_]mFZT:2X;3
+l41
+L32
+V>VJi0LFh:;STeF2QSGW583
+!s100 k4J=WLk<<DEalD?jZ>SDM3
+R7
+33
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R12
+R13
+Ecell24option1
+Z23 w1672707901
+R1
+R2
+R3
+R4
+Z24 8D:/work/atari_pokey/HDL/audio_core/cell24option1.vhd
+Z25 FD:/work/atari_pokey/HDL/audio_core/cell24option1.vhd
+l0
+L12
+VPN`M7YN01AI8CIV?SN<Nj0
+!s100 ENRh_T>mhiR9]Mm]dcXok0
+R7
+33
+Z26 !s110 1672710076
+!i10b 1
+Z27 !s108 1672710076.000000
+Z28 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/audio_core/cell24option1.vhd|
+Z29 !s107 D:/work/atari_pokey/HDL/audio_core/cell24option1.vhd|
+!i113 1
+R12
+R13
+Astructural
+R1
+R2
+R3
+Z30 DEx4 work 13 cell24option1 0 22 PN`M7YN01AI8CIV?SN<Nj0
+l39
+L31
+Vh1Fz5FhD=6G1if8]V=^5P2
+!s100 ol9aW5>=l5WiUFJ]mo=FE2
+R7
+33
+R26
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R12
+R13
+Efreq_cntrl_reg
+Z31 w1672709505
+R1
+R2
+R3
+R4
+Z32 8D:/work/atari_pokey/HDL/audio_core/freq_cntrl.vhd
+Z33 FD:/work/atari_pokey/HDL/audio_core/freq_cntrl.vhd
+l0
+L12
+VOHT9NB`gKS1m8O`DVkbGh2
+!s100 db0`Yki0LLGhek6a5PM_U2
+R7
+33
+R26
+!i10b 1
+R27
+Z34 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/audio_core/freq_cntrl.vhd|
+Z35 !s107 D:/work/atari_pokey/HDL/audio_core/freq_cntrl.vhd|
+!i113 1
+R12
+R13
+Astructural
+R14
+R22
+R30
+R1
+R2
+R3
+Z36 DEx4 work 14 freq_cntrl_reg 0 22 OHT9NB`gKS1m8O`DVkbGh2
+l38
+L31
+VnoWlVDfg=mMOML3DZ4WXl0
+!s100 F:6najfR`jIR?>=d^:SN;1
+R7
+33
+R26
+!i10b 1
+R27
+R34
+R35
+!i113 1
+R12
+R13
+Etb_cell20
+Z37 w1672698678
+R1
+R2
+R3
+R4
+Z38 8D:/work/atari_pokey/HDL/audio_core/tb_cell20.vhd
+Z39 FD:/work/atari_pokey/HDL/audio_core/tb_cell20.vhd
+l0
+L8
+V@KojHWQzD9aV^cDE^3D_M0
+!s100 dh^F=^a4[izGhd:0DG]8E2
+R7
+33
+Z40 !s110 1672710075
+!i10b 1
+Z41 !s108 1672710075.000000
+Z42 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/audio_core/tb_cell20.vhd|
+Z43 !s107 D:/work/atari_pokey/HDL/audio_core/tb_cell20.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+Z44 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+R14
+R1
+R2
+R3
+DEx4 work 9 tb_cell20 0 22 @KojHWQzD9aV^cDE^3D_M0
+l24
+L11
+VR8DV]Pb_7@1@6dMQbh?2F1
+!s100 zoc[GY@3MVJ3e0zJ>Nnzl3
+R7
+33
+R40
+!i10b 1
+R41
+R42
+R43
+!i113 1
+R12
+R13
+Etb_freq_cntrl_reg
+Z45 w1672718801
+R1
+R2
+R3
+R4
+Z46 8D:/work/atari_pokey/HDL/audio_core/tb_freq_cntrl_reg.vhd
+Z47 FD:/work/atari_pokey/HDL/audio_core/tb_freq_cntrl_reg.vhd
+l0
+L8
+VV_^6XfgAeNFS2JM2h?V2G3
+!s100 _;;R6l7AcH9HWhJ30=^Bb0
+R7
+33
+Z48 !s110 1672718813
+!i10b 1
+Z49 !s108 1672718813.000000
+Z50 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/audio_core/tb_freq_cntrl_reg.vhd|
+Z51 !s107 D:/work/atari_pokey/HDL/audio_core/tb_freq_cntrl_reg.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R44
+R36
+R1
+R2
+R3
+DEx4 work 17 tb_freq_cntrl_reg 0 22 V_^6XfgAeNFS2JM2h?V2G3
+l22
+L11
+VbFNNDFD:9gU]5Ni<FDHAL1
+!s100 84jY9FObSFC7SI2KMP8Bj2
+R7
+33
+R48
+!i10b 1
+R49
+R50
+R51
+!i113 1
+R12
+R13
