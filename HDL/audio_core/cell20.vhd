@@ -35,9 +35,6 @@ architecture structural of cell20 is
     signal muxOut : std_logic;
     signal bt     : std_logic;
     signal nbt    : std_logic;
-    signal LdQ    : std_logic;
-    signal nbtQ   : std_logic;
-    signal nCRQ   : std_logic;
     signal nor1   : std_logic;
     signal nor1Q  : std_logic;
     signal nor2   : std_logic;
@@ -74,13 +71,7 @@ begin
         end if;
 
         --First NOR gate.
-        if(rising_edge(clk)) then
-            LdQ <= Ld;
-            nbtQ <= nbt;
-            nCRQ <= nCR;
-        end if;
-
-        nor1 <= not(ldQ or nbtQ or nCRQ);
+        nor1 <= not(Ld or nbt or nCR);
 
         --Second NOR gate.
         if(falling_edge(clk)) then

@@ -325,3 +325,96 @@ run
 restart
 # Loading work.cell20(structural)
 run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/work/atari_pokey/HDL/audio_core/wave.do
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_freq_cntrl_reg(behavioral)
+# Loading work.freq_cntrl_reg(structural)
+# Loading work.cell24option1(structural)
+# Loading work.cell24(structural)
+# Loading work.cell20(structural)
+run
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_freq_cntrl_reg(behavioral)
+# Loading work.freq_cntrl_reg(structural)
+# Loading work.cell24option1(structural)
+# Loading work.cell24(structural)
+# Loading work.cell20(structural)
+run
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_freq_cntrl_reg(behavioral)
+# Loading work.freq_cntrl_reg(structural)
+# Loading work.cell24option1(structural)
+# Loading work.cell24(structural)
+# Loading work.cell20(structural)
+run
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_freq_cntrl_reg(behavioral)
+# Loading work.freq_cntrl_reg(structural)
+# Loading work.cell24option1(structural)
+# Loading work.cell24(structural)
+# Loading work.cell20(structural)
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/LdQ'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/nbtQ'. 
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/nCRQ'. 
+run
+restart
+run
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_freq_cntrl_reg(behavioral)
+# Loading work.freq_cntrl_reg(structural)
+# Loading work.cell24option1(structural)
+# Loading work.cell24(structural)
+# Loading work.cell20(structural)
+run
+quit -sim
+# End time: 18:13:41 on Jan 03,2023, Elapsed time: 23:32:14
+# Errors: 3, Warnings: 0

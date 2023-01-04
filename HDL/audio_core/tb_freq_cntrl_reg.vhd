@@ -13,7 +13,7 @@ architecture behavioral of tb_freq_cntrl_reg is
     constant CLK179MHZ_PERIOD : time := 558.7247666 ns;
 
     signal clk   : std_logic := '0';
-    signal D     : std_logic_vector(7 downto 0) := "00000000";
+    signal D     : std_logic_vector(7 downto 0) := "00010001";
     signal WR    : std_logic := '0';
     signal decEn : std_logic := '0';
     signal Ld    : std_logic := '0';
@@ -60,7 +60,6 @@ begin
         Ld <= '1';
         wait until falling_edge(clk);
         Ld <= '0';
-
 
         wait for 1000000 ns;
         std.env.stop; --End the simulation.
