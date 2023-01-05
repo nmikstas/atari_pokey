@@ -12,16 +12,31 @@ architecture behavioral of tb_freq_cntrl_reg is
 
     constant CLK179MHZ_PERIOD : time := 558.7247666 ns;
 
-    signal clk   : std_logic := '0';
-    signal D     : std_logic_vector(7 downto 0) := "00010001";
-    signal WR    : std_logic := '0';
-    signal decEn : std_logic := '0';
-    signal Ld    : std_logic := '0';
-    signal nBOR  : std_logic;
+    signal clk      : std_logic := '0';
+    signal D        : std_logic_vector(7 downto 0) := "00011101";
+    signal WR       : std_logic := '0';
+    signal decEn    : std_logic := '0';
+    signal Ld       : std_logic := '0';
+    signal nBOR     : std_logic;
+
+    signal init     : std_logic := '0';
+    signal sel15Khz : std_logic := '0';
+    signal audClock : std_logic;
+    signal keybClk  : std_logic;
 
 begin
 
     clk <= NOT clk after CLK179MHZ_PERIOD / 2;
+
+    clock_gen_core_0 : entity work.clock_gen_core
+    port map
+    ( 
+        clk      => clk,
+        init     => init,
+        sel15Khz => sel15Khz,
+        audClock => audClock,
+        keybClk  => keybClk
+    );
 
     freq : entity work.freq_cntrl_reg
     port map
@@ -29,8 +44,8 @@ begin
         clk   => clk,
         D     => D(7 downto 0),
         WR    => WR,
-        decEn => decEn,
-        Ld    => Ld,
+        decEn => audClock,
+        Load  => Ld,
         nBOR  => nBOR
     );
 
@@ -38,6 +53,14 @@ begin
     begin
         wait for 2000 ns;
         wait until falling_edge(clk);
+
+        wait for 5000 ns;
+        wait until falling_edge(clk);
+
+        init <= '1';
+        wait for 20000 ns;
+        wait until falling_edge(clk);
+        init <= '0';
 
         WR <= '1';
         wait until falling_edge(clk);
@@ -61,7 +84,7 @@ begin
         wait until falling_edge(clk);
         Ld <= '0';
 
-        wait for 1000000 ns;
+        wait for 10000000 ns;
         std.env.stop; --End the simulation.
     end process;
 

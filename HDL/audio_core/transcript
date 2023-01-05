@@ -418,3 +418,348 @@ run
 quit -sim
 # End time: 18:13:41 on Jan 03,2023, Elapsed time: 23:32:14
 # Errors: 3, Warnings: 0
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd failed with 20 errors.
+# Compile of tb_freq_cntrl_reg.vhd failed with 2 errors.
+# 6 compiles, 2 failed with 22 errors.
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd failed with 3 errors.
+# Compile of tb_freq_cntrl_reg.vhd failed with 2 errors.
+# 6 compiles, 2 failed with 5 errors.
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd failed with 2 errors.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.tb_freq_cntrl_reg
+# vsim -gui work.tb_freq_cntrl_reg 
+# Start time: 18:36:06 on Jan 04,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.tb_freq_cntrl_reg(behavioral)
+# Loading work.freq_cntrl_reg(structural)
+# Loading work.cell24option1(structural)
+# Loading work.cell24(structural)
+# Loading work.cell20(structural)
+do D:/work/atari_pokey/HDL/audio_core/wave.do
+# ** Error: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/LdQ'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\audio_core\wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/nbtQ'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\audio_core\wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/nCRQ'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\audio_core\wave.do line 23
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 7822136 ps.
+restart
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 7822136 ps.
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 7822136 ps.
+restart
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 7822136 ps.
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_freq_cntrl_reg(behavioral)
+# Loading work.freq_cntrl_reg(structural)
+# Loading work.cell24option1(structural)
+# Loading work.cell24(structural)
+# Loading work.cell20(structural)
+# Warning in wave window restart: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/Ld'. 
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 7822136 ps.
+restart
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 7822136 ps.
+do D:/work/atari_pokey/HDL/audio_core/wave.do
+# ** Error: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/Ld'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\audio_core\wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/LdQ'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\audio_core\wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/nbtQ'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\audio_core\wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/nCRQ'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\audio_core\wave.do line 23
+run
+# ** Error (suppressible): (vsim-3601) Iteration limit 5000 reached at time 7822136 ps.
+quit -sim
+# End time: 18:43:15 on Jan 04,2023, Elapsed time: 0:07:09
+# Errors: 29, Warnings: 0
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd failed with 2 errors.
+# 6 compiles, 1 failed with 2 errors.
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -gui work.tb_freq_cntrl_reg
+# vsim -gui work.tb_freq_cntrl_reg 
+# Start time: 18:45:12 on Jan 04,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.tb_freq_cntrl_reg(behavioral)
+# Loading work.freq_cntrl_reg(structural)
+# Loading work.cell24option1(structural)
+# Loading work.cell24(structural)
+# Loading work.cell20(structural)
+do D:/work/atari_pokey/HDL/audio_core/wave.do
+# ** Error: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/LdQ'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\audio_core\wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/nbtQ'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\audio_core\wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/nCRQ'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\audio_core\wave.do line 23
+run
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_freq_cntrl_reg(behavioral)
+# Loading work.freq_cntrl_reg(structural)
+# Loading work.cell24option1(structural)
+# Loading work.cell24(structural)
+# Loading work.cell20(structural)
+run
+quit -sim
+# End time: 18:57:18 on Jan 04,2023, Elapsed time: 0:12:06
+# Errors: 9, Warnings: 0
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+vsim -gui work.tb_freq_cntrl_reg
+# vsim -gui work.tb_freq_cntrl_reg 
+# Start time: 19:22:14 on Jan 04,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.tb_freq_cntrl_reg(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.freq_cntrl_reg(structural)
+# Loading work.cell24option1(structural)
+# Loading work.cell24(structural)
+# Loading work.cell20(structural)
+do D:/work/atari_pokey/HDL/audio_core/wave.do
+# ** Error: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/LdQ'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\audio_core\wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/nbtQ'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\audio_core\wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/tb_freq_cntrl_reg/freq/bit_0/nCRQ'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\audio_core\wave.do line 23
+add wave -position insertpoint  \
+sim:/tb_freq_cntrl_reg/keybClk
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Break in Process line__53 at D:/work/atari_pokey/HDL/audio_core/tb_freq_cntrl_reg.vhd line 88
+run
+run
+run
+# Compile of clock_gen_core.vhd was successful.
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_freq_cntrl_reg(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.freq_cntrl_reg(structural)
+# Loading work.cell24option1(structural)
+# Loading work.cell24(structural)
+# Loading work.cell20(structural)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+add wave -position insertpoint  \
+sim:/tb_freq_cntrl_reg/audClock
+restart
+run
+run
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_freq_cntrl_reg(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.freq_cntrl_reg(structural)
+# Loading work.cell24option1(structural)
+# Loading work.cell24(structural)
+# Loading work.cell20(structural)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/work/atari_pokey/HDL/audio_core/wave.do
+# Compile of clock_gen_core.vhd was successful.
+# Compile of cell20.vhd was successful.
+# Compile of tb_cell20.vhd was successful.
+# Compile of cell24.vhd was successful.
+# Compile of cell24option1.vhd was successful.
+# Compile of freq_cntrl.vhd was successful.
+# Compile of tb_freq_cntrl_reg.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_freq_cntrl_reg(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.freq_cntrl_reg(structural)
+# Loading work.cell24option1(structural)
+# Loading work.cell24(structural)
+# Loading work.cell20(structural)
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

@@ -17,7 +17,7 @@ entity freq_cntrl_reg is
         WR    : in std_logic;
 
         decEn : in std_logic;
-        Ld    : in std_logic;
+        Load  : in std_logic;
         
         nBOR  : out std_logic
     );     
@@ -34,6 +34,7 @@ architecture structural of freq_cntrl_reg is
     signal nCR_nBOR : std_logic_vector(6 downto 0);
     signal nor1     : std_logic;
     signal nor2     : std_logic;
+    signal Ld       : std_logic;
 
 begin
 
@@ -150,7 +151,10 @@ begin
 
     process(all)
     begin
-        
+        if(falling_edge(clk)) then
+            Ld   <= not(nBOR) or Load;
+        end if;
+         
         nor1 <= not(decEn or Ld);
         nor2 <= not(nor1 or Ld);
 
