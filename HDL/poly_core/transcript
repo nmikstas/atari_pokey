@@ -88,3 +88,10 @@ restart
 # Loading work.poly_core(structural)
 run
 run
+# Compile of poly_core.vhd was successful.
+# Compile of tb_poly_core.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_poly_core(behavioral)
+# Loading work.poly_core(structural)
+run

@@ -9,7 +9,7 @@ z2
 cModel Technology
 dD:/Arcade_Stuff/POKEY/HDL/AUDCTL_reg
 Epoly_core
-Z0 w1673108744
+Z0 w1673124559
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -22,9 +22,9 @@ VG:1]1PYWEi9BfgM5?HN421
 !s100 5Gl0ecaFg;mPI@[o<S9`P1
 Z7 OV;C;10.5b;63
 33
-Z8 !s110 1673109648
+Z8 !s110 1673124562
 !i10b 1
-Z9 !s108 1673109648.000000
+Z9 !s108 1673124562.000000
 Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Arcade_Stuff/POKEY/HDL/poly_core/poly_core.vhd|
 Z11 !s107 D:/Arcade_Stuff/POKEY/HDL/poly_core/poly_core.vhd|
 !i113 1
@@ -37,8 +37,8 @@ R3
 Z14 DEx4 work 9 poly_core 0 22 G:1]1PYWEi9BfgM5?HN421
 l54
 L29
-Vdn;gJK_<ngWT1CX7n?EVd2
-!s100 ?c^gP6`eVWUm?9QkPk<mI0
+VD?[mFkWK4:64h7co<j:>92
+!s100 KTo7;?3RcU[V_@lLEoE1Q2
 R7
 33
 R8
@@ -80,11 +80,11 @@ R3
 Z21 DEx4 work 12 tb_poly_core 0 22 IlY93jN__mf33ZFLd[z=N1
 l23
 L11
-V;>XWGF7RBJo7J6D4b@b?@2
-!s100 JM3I]m=oiR4CC^IU;faX<3
+Z22 V;>XWGF7RBJo7J6D4b@b?@2
+Z23 !s100 JM3I]m=oiR4CC^IU;faX<3
 R7
 33
-!s110 1673109649
+R8
 !i10b 1
 R9
 R18
