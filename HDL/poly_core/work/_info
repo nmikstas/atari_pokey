@@ -9,11 +9,11 @@ z2
 cModel Technology
 dD:/Arcade_Stuff/POKEY/HDL/AUDCTL_reg
 Epoly_core
-Z0 w1642569469
+Z0 w1673076310
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z4 dD:/Arcade_Stuff/POKEY/HDL/poly_core
+Z4 dD:/work/atari_pokey/HDL/poly_core
 Z5 8D:/Arcade_Stuff/POKEY/HDL/poly_core/poly_core.vhd
 Z6 FD:/Arcade_Stuff/POKEY/HDL/poly_core/poly_core.vhd
 l0
@@ -22,9 +22,9 @@ VG:1]1PYWEi9BfgM5?HN421
 !s100 5Gl0ecaFg;mPI@[o<S9`P1
 Z7 OV;C;10.5b;63
 33
-Z8 !s110 1642570556
+Z8 !s110 1673076314
 !i10b 1
-Z9 !s108 1642570556.000000
+Z9 !s108 1673076313.000000
 Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Arcade_Stuff/POKEY/HDL/poly_core/poly_core.vhd|
 Z11 !s107 D:/Arcade_Stuff/POKEY/HDL/poly_core/poly_core.vhd|
 !i113 1
@@ -35,10 +35,10 @@ R1
 R2
 R3
 Z14 DEx4 work 9 poly_core 0 22 G:1]1PYWEi9BfgM5?HN421
-l52
+l53
 L29
-VanBfdcGVQ6[5O<^<TYjFT0
-!s100 0dHS0g8KT8fD9:WcoFAnZ0
+VaDnJPFL;fM1:khWO6::iP3
+!s100 S2:9CNBhCEM5ES`bF?k5>1
 R7
 33
 R8
@@ -50,7 +50,7 @@ R11
 R12
 R13
 Etb_poly_core
-Z15 w1642048772
+Z15 w1673074655
 R1
 R2
 R3
@@ -65,30 +65,30 @@ R7
 33
 R8
 !i10b 1
-R9
-Z18 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Arcade_Stuff/POKEY/HDL/poly_core/tb_poly_core.vhd|
-Z19 !s107 D:/Arcade_Stuff/POKEY/HDL/poly_core/tb_poly_core.vhd|
+Z18 !s108 1673076314.000000
+Z19 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/Arcade_Stuff/POKEY/HDL/poly_core/tb_poly_core.vhd|
+Z20 !s107 D:/Arcade_Stuff/POKEY/HDL/poly_core/tb_poly_core.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-Z20 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+Z21 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
 R14
 R1
 R2
 R3
-Z21 DEx4 work 12 tb_poly_core 0 22 IlY93jN__mf33ZFLd[z=N1
+Z22 DEx4 work 12 tb_poly_core 0 22 IlY93jN__mf33ZFLd[z=N1
 l23
 L11
-Z22 V;>XWGF7RBJo7J6D4b@b?@2
-Z23 !s100 JM3I]m=oiR4CC^IU;faX<3
+Z23 VnY5a4m=@e7d^13ImY:2C=0
+Z24 !s100 hmCocVJBRI:j2z3IBXOEI0
 R7
 33
 R8
 !i10b 1
-R9
 R18
 R19
+R20
 !i113 1
 R12
 R13

@@ -35,8 +35,9 @@ architecture structural of poly_core is
     signal lfsr17bit : std_logic_vector(7 downto 0);
 
     --MSBs of the 4 and 5 bit polynomials.
-    signal lfsr5msb : std_logic;
-    signal lfsr4msb : std_logic;
+    signal lfsr5msb   : std_logic;
+    signal nfeedback5 : std_logic;
+    signal lfsr4msb   : std_logic;
     
     --Outputs of the polynoimial feedbacks.
     signal feedback4   : std_logic;
@@ -118,7 +119,7 @@ begin
 
         --Update MSB.
         if falling_edge(clk) then
-            lfsr5msb <= (not feedback5);
+            nfeedback5 <= (not feedback5);
         end if;
 
         --Update the 5-bit polynomial delay line.
