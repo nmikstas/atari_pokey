@@ -11,7 +11,6 @@ void poly_init_4_5(uint32_t* poly, int size, int xorbit, int invert)
 	int i;
 	uint32_t lfsr = 0;
 
-	//LOG_POLY(("poly %d\n", size));
 	for (i = 0; i < mask; i++)
 	{
 		// calculate next bit 
@@ -94,6 +93,3 @@ int main()
 	std::cout << "\n17-bit poly:\n";
 	poly_init_9_17(m_poly17, 17);
 }
-
-
-

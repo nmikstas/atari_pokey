@@ -1,12 +1,10 @@
-D:/Arcade_Stuff/POKEY/HDL/poly_core/tb_poly_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/Arcade_Stuff/POKEY/HDL/poly_core/tb_poly_core.vhd
+D:/Arcade_Stuff/POKEY/HDL/poly_core/poly_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/Arcade_Stuff/POKEY/HDL/poly_core/poly_core.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity tb_poly_core
--- Compiling architecture behavioral of tb_poly_core
--- Loading entity poly_core
--- Loading package ENV
+-- Compiling entity poly_core
+-- Compiling architecture structural of poly_core
 
 } {} {}}
