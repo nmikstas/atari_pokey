@@ -3,7 +3,7 @@
 # 2 compiles, 0 failed with no errors.
 vsim -gui work.tb_poly_core
 # vsim -gui work.tb_poly_core 
-# Start time: 23:17:34 on Jan 06,2023
+# Start time: 17:53:23 on Jan 07,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -13,85 +13,5 @@ vsim -gui work.tb_poly_core
 # Loading work.poly_core(structural)
 do D:/work/atari_pokey/HDL/poly_core/wave.do
 run
-# Compile of poly_core.vhd was successful.
-# Compile of tb_poly_core.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# Loading work.tb_poly_core(behavioral)
-# Loading work.poly_core(structural)
 run
-# Compile of poly_core.vhd was successful.
-# Compile of tb_poly_core.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# Loading work.tb_poly_core(behavioral)
-# Loading work.poly_core(structural)
-run
-# Compile of poly_core.vhd was successful.
-# Compile of tb_poly_core.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-# Compile of poly_core.vhd was successful.
-# Compile of tb_poly_core.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# Loading work.tb_poly_core(behavioral)
-# Loading work.poly_core(structural)
-run
-# Compile of poly_core.vhd was successful.
-# Compile of tb_poly_core.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# Loading work.tb_poly_core(behavioral)
-# Loading work.poly_core(structural)
-run
-# Compile of poly_core.vhd was successful.
-# Compile of tb_poly_core.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# Loading work.tb_poly_core(behavioral)
-# Loading work.poly_core(structural)
-run
-# Compile of poly_core.vhd was successful.
-# Compile of tb_poly_core.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# Loading work.tb_poly_core(behavioral)
-# Loading work.poly_core(structural)
-run
-# Compile of poly_core.vhd was successful.
-# Compile of tb_poly_core.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# Loading work.tb_poly_core(behavioral)
-# Loading work.poly_core(structural)
-run
-# Compile of poly_core.vhd was successful.
-# Compile of tb_poly_core.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# Loading work.tb_poly_core(behavioral)
-# Loading work.poly_core(structural)
-run
-# Compile of poly_core.vhd was successful.
-# Compile of tb_poly_core.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# Loading work.tb_poly_core(behavioral)
-# Loading work.poly_core(structural)
-run
-restart
-# Compile of poly_core.vhd was successful.
-# Compile of tb_poly_core.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# Loading work.tb_poly_core(behavioral)
-# Loading work.poly_core(structural)
-run
-run
-# Compile of poly_core.vhd was successful.
-# Compile of tb_poly_core.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# Loading work.tb_poly_core(behavioral)
-# Loading work.poly_core(structural)
-run
+# Break in Process line__40 at D:/Arcade_Stuff/POKEY/HDL/poly_core/tb_poly_core.vhd line 55

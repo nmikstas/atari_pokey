@@ -35,13 +35,14 @@ architecture structural of poly_core is
     signal lfsr17bit : std_logic_vector(7 downto 0);
 
     --MSBs of the 4 and 5 bit polynomials.
-    signal lfsr5msb   : std_logic;
-    signal nfeedback5 : std_logic;
-    signal lfsr4msb   : std_logic;
+    signal lfsr5msb : std_logic;
+    signal lfsr4msb : std_logic;
     
     --Outputs of the polynoimial feedbacks.
     signal feedback4   : std_logic;
+    signal nfeedback4  : std_logic;
     signal feedback5   : std_logic;
+    signal nfeedback5  : std_logic;
     signal feedback917 : std_logic;
 
     --9/17 polynomial switching structure.
@@ -112,14 +113,13 @@ begin
         --------------------------------5 Bit Polynomial Structure----------------------------------
  
         --Update the output bit.
-        poly5bit <= (not lfsr5bit(0));
+        poly5bit <= not lfsr5bit(0);
 
         --Update the feeback.
-        feedback5 <= lfsr5bit(0) xnor lfsr5bit(3);
+        feedback5 <= lfsr5bit(0) xnor lfsr5bit(2);
 
-        --Update MSB.
         if falling_edge(clk) then
-            nfeedback5 <= (not feedback5);
+            nfeedback5 <= not feedback5;
         end if;
 
         --Update the 5-bit polynomial delay line.
@@ -129,8 +129,10 @@ begin
             end if;
         end loop;
 
+        lfsr5msb <= nfeedback5 nor Init;
+        
         if falling_edge(clk) then
-            lfsr5bit(3) <= lfsr5msb nor Init;
+            lfsr5bit(3) <= lfsr5msb;
         end if;
 
         --------------------------------4 Bit Polynomial Structure----------------------------------
@@ -141,13 +143,21 @@ begin
         --Update the feeback.
         feedback4 <= lfsr4bit(0) xnor lfsr4bit(1);
 
-       --Update MSB (synchronous init).
-       if falling_edge(clk) then
-            lfsr4msb <= (not feedback4) nor Init;
-        end if;
+        ----CODE THAT MATCHES THE HARDWARE SCHEMATIC----
+        --if falling_edge(clk) then
+        --    lfsr4msb <= (not feedback4) nor Init;
+        --end if;
+        ------------------------------------------------
 
-       --Update the 4-bit polynomial delay line.
-       for i in 1 downto 0 loop
+        --ALTERNATE TO ABOVE CODE. MATCHES MAME OUTOUT--
+        if falling_edge(clk) then
+            nfeedback4 <= not feedback4;
+        end if;
+        lfsr4msb <= nfeedback4 nor Init;
+        ------------------------------------------------
+
+        --Update the 4-bit polynomial delay line.
+        for i in 1 downto 0 loop
             if falling_edge(clk) then
                 lfsr4bit(i) <= lfsr4bit(i + 1);
             end if;
