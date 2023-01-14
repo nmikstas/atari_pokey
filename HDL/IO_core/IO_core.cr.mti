@@ -1,13 +1,4 @@
-D:/work/atari_pokey/HDL/poly_core/poly_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/poly_core/poly_core.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity poly_core
--- Compiling architecture structural of poly_core
-
-} {} {}} D:/work/atari_pokey/HDL/IO_core/IO_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/IO_core/IO_core.vhd
+D:/work/atari_pokey/HDL/IO_core/IO_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/IO_core/IO_core.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -15,5 +6,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package NUMERIC_STD
 -- Compiling entity io_core
 -- Compiling architecture structural of io_core
+
+} {} {}} D:/work/atari_pokey/HDL/poly_core/poly_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/poly_core/poly_core.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity poly_core
+-- Compiling architecture structural of poly_core
 
 } {} {}}

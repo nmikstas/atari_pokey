@@ -1,1 +1,70 @@
-project open D:/Arcade_Stuff/POKEY/HDL/clock_gen_core/clock_gen_core
+# Compile of cell23.vhd was successful.
+# Compile of cell23.vhd failed with 2 errors.
+# Compile of cell23.vhd was successful.
+# Compile of cell23.vhd failed with 2 errors.
+# Compile of cell23.vhd failed with 2 errors.
+# Compile of cell23.vhd was successful.
+# Compile of cell23.vhd was successful.
+# Compile of cell23.vhd was successful.
+# Compile of cell23.vhd was successful.
+# Compile of tb_cell23.vhd was successful.
+# Compile of tb_cell23.vhd was successful.
+# Compile of tb_cell23.vhd failed with 2 errors.
+# Compile of tb_cell23.vhd was successful.
+# Compile of tb_cell23.vhd was successful.
+# Compile of tb_cell23.vhd was successful.
+# Compile of tb_cell23.vhd was successful.
+# Compile of tb_cell23.vhd failed with 3 errors.
+# Compile of tb_cell23.vhd was successful.
+# Compile of cell23.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.tb_cell23
+# vsim -gui work.tb_cell23 
+# Start time: 14:32:54 on Jan 14,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.tb_cell23(behavioral)
+# Loading work.cell23(structural)
+add wave -position insertpoint  \
+sim:/tb_cell23/clk \
+sim:/tb_cell23/P \
+sim:/tb_cell23/en \
+sim:/tb_cell23/Q \
+sim:/tb_cell23/nQ \
+sim:/tb_cell23/CR_BOR1 \
+sim:/tb_cell23/nCR_BOR1 \
+sim:/tb_cell23/CR_BOR2 \
+sim:/tb_cell23/nCR_BOR2 \
+sim:/tb_cell23/bor \
+sim:/tb_cell23/count
+run
+# Break in Process line__153 at D:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd line 168
+# Compile of tb_cell23.vhd was successful.
+# Compile of cell23.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_cell23(behavioral)
+# Loading work.cell23(structural)
+run
+# Break in Process line__153 at D:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd line 168
+restart
+# Compile of tb_cell23.vhd was successful.
+# Compile of cell23.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_cell23(behavioral)
+# Loading work.cell23(structural)
+run
+# Break in Process line__153 at D:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd line 168
+# Compile of tb_cell23.vhd was successful.
+# Compile of cell23.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_cell23(behavioral)
+# Loading work.cell23(structural)
+run
+# Break in Process line__153 at D:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd line 168
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/work/atari_pokey/HDL/pot_core/cell23_wave.do
