@@ -1,70 +1,204 @@
 # Compile of cell23.vhd was successful.
-# Compile of cell23.vhd failed with 2 errors.
-# Compile of cell23.vhd was successful.
-# Compile of cell23.vhd failed with 2 errors.
-# Compile of cell23.vhd failed with 2 errors.
-# Compile of cell23.vhd was successful.
-# Compile of cell23.vhd was successful.
-# Compile of cell23.vhd was successful.
-# Compile of cell23.vhd was successful.
-# Compile of tb_cell23.vhd was successful.
-# Compile of tb_cell23.vhd was successful.
-# Compile of tb_cell23.vhd failed with 2 errors.
-# Compile of tb_cell23.vhd was successful.
-# Compile of tb_cell23.vhd was successful.
-# Compile of tb_cell23.vhd was successful.
-# Compile of tb_cell23.vhd was successful.
-# Compile of tb_cell23.vhd failed with 3 errors.
-# Compile of tb_cell23.vhd was successful.
-# Compile of cell23.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.tb_cell23
-# vsim -gui work.tb_cell23 
-# Start time: 14:32:54 on Jan 14,2023
+# Compile of pot_core.vhd was successful.
+# Compile of tb_pot_core.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+vsim -gui work.tb_pot_core
+# vsim -gui work.tb_pot_core 
+# Start time: 16:50:49 on Jan 15,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading std.env(body)
-# Loading work.tb_cell23(behavioral)
+# Loading work.tb_pot_core(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.pot_core(structural)
 # Loading work.cell23(structural)
+do D:/work/atari_pokey/HDL/pot_core/pot_core_wave.do
+run
+# Break in Process line__73 at D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd line 109
+# Compile of cell23.vhd was successful.
+# Compile of pot_core.vhd was successful.
+# Compile of tb_pot_core.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_pot_core(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.pot_core(structural)
+# Loading work.cell23(structural)
+run
+# Break in Process line__73 at D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd line 114
+# Compile of cell23.vhd was successful.
+# Compile of pot_core.vhd was successful.
+# Compile of tb_pot_core.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_pot_core(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.pot_core(structural)
+# Loading work.cell23(structural)
+run
+# Break in Process line__73 at D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd line 118
+# Compile of tb_pot_core.vhd was successful.
+# Compile of cell23.vhd was successful.
+# Compile of pot_core.vhd was successful.
+# Compile of tb_pot_core.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_pot_core(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.pot_core(structural)
+# Loading work.cell23(structural)
+run
+# Compile of cell23.vhd was successful.
+# Compile of pot_core.vhd was successful.
+# Compile of tb_pot_core.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_pot_core(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.pot_core(structural)
+# Loading work.cell23(structural)
+run
+# Compile of cell23.vhd was successful.
+# Compile of pot_core.vhd was successful.
+# Compile of tb_pot_core.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_pot_core(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.pot_core(structural)
+# Loading work.cell23(structural)
+run
+# Compile of cell23.vhd was successful.
+# Compile of pot_core.vhd was successful.
+# Compile of tb_pot_core.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_pot_core(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.pot_core(structural)
+# Loading work.cell23(structural)
+run
+run
+run
 add wave -position insertpoint  \
-sim:/tb_cell23/clk \
-sim:/tb_cell23/P \
-sim:/tb_cell23/en \
-sim:/tb_cell23/Q \
-sim:/tb_cell23/nQ \
-sim:/tb_cell23/CR_BOR1 \
-sim:/tb_cell23/nCR_BOR1 \
-sim:/tb_cell23/CR_BOR2 \
-sim:/tb_cell23/nCR_BOR2 \
-sim:/tb_cell23/bor \
-sim:/tb_cell23/count
-run
-# Break in Process line__153 at D:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd line 168
-# Compile of tb_cell23.vhd was successful.
-# Compile of cell23.vhd was successful.
-# 2 compiles, 0 failed with no errors.
+sim:/tb_pot_core/pot_core_0/nPotClk
 restart
-# Loading work.tb_cell23(behavioral)
+# Compile of cell23.vhd was successful.
+# Compile of pot_core.vhd was successful.
+# Compile of tb_pot_core.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_pot_core(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.pot_core(structural)
 # Loading work.cell23(structural)
 run
-# Break in Process line__153 at D:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd line 168
+run
+# Break in Process line__73 at D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd line 122
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/work/atari_pokey/HDL/pot_core/pot_core_wave.do
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
 restart
-# Compile of tb_cell23.vhd was successful.
+run
+run
+# Break in Process line__73 at D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd line 122
 # Compile of cell23.vhd was successful.
-# 2 compiles, 0 failed with no errors.
+# Compile of pot_core.vhd was successful.
+# Compile of tb_pot_core.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 4 compiles, 0 failed with no errors.
 restart
-# Loading work.tb_cell23(behavioral)
+# Loading work.tb_pot_core(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.pot_core(structural)
 # Loading work.cell23(structural)
 run
-# Break in Process line__153 at D:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd line 168
-# Compile of tb_cell23.vhd was successful.
+run
+run
+run
+run
+run
+run
+# Break in Process line__73 at D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd line 122
 # Compile of cell23.vhd was successful.
-# 2 compiles, 0 failed with no errors.
+# Compile of pot_core.vhd was successful.
+# Compile of tb_pot_core.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 4 compiles, 0 failed with no errors.
 restart
-# Loading work.tb_cell23(behavioral)
+# Loading work.tb_pot_core(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.pot_core(structural)
 # Loading work.cell23(structural)
 run
-# Break in Process line__153 at D:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd line 168
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/work/atari_pokey/HDL/pot_core/cell23_wave.do
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+restart
+run
+# Compile of tb_pot_core.vhd was successful.
+# Compile of cell23.vhd was successful.
+# Compile of pot_core.vhd was successful.
+# Compile of tb_pot_core.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_pot_core(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.pot_core(structural)
+# Loading work.cell23(structural)
+run
+# Break in Process line__73 at D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd line 131
+run
+# Break in Process line__73 at D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd line 131
+restart
+run
+# Break in Process line__73 at D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd line 131
+# Compile of cell23.vhd was successful.
+# Compile of pot_core.vhd was successful.
+# Compile of tb_pot_core.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_pot_core(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.pot_core(structural)
+# Loading work.cell23(structural)
+run
+# Break in Process line__73 at D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd line 139
+# Compile of cell23.vhd was successful.
+# Compile of pot_core.vhd was successful.
+# Compile of tb_pot_core.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# 4 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_pot_core(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.pot_core(structural)
+# Loading work.cell23(structural)
+run
+run
+# Break in Process line__73 at D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd line 147
