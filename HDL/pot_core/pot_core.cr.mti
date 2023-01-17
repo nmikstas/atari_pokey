@@ -16,14 +16,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity clock_gen_core
 -- Compiling architecture structural of clock_gen_core
 
-} {} {}} D:/work/atari_pokey/HDL/pot_core/pot_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/pot_core/pot_core.vhd
+} {} {}} D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity pot_core
--- Compiling architecture structural of pot_core
--- Loading entity cell23
+-- Compiling entity tb_pot_core
+-- Compiling architecture behavioral of tb_pot_core
+-- Loading entity clock_gen_core
+-- Loading entity pot_core
+-- Loading package ENV
 
 } {} {}}

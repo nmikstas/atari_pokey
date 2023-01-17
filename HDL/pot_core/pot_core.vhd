@@ -44,16 +44,16 @@ architecture structural of pot_core is
     signal nPotClk : std_logic;
 
     --Lower decrement counter signals.
-    signal nor1      : std_logic := '1';
-    signal nor2      : std_logic := '0';
-    signal potPreset : std_logic := '0';
-    signal delay1    : std_logic := '0';
-    signal delay2    : std_logic := '0';
-    signal nor3      : std_logic := '1';
-    signal nor4      : std_logic := '0';
-    signal Qnor3     : std_logic := '1';
-    signal Qnor4     : std_logic := '0';
-    signal Qcount    : std_logic := '0';
+    signal nor1      : std_logic; --:= '1';
+    signal nor2      : std_logic; --:= '0';
+    signal potPreset : std_logic; --:= '0';
+    signal delay1    : std_logic; --:= '0';
+    signal delay2    : std_logic; --:= '0';  --Setting these to known values will eliminate
+    signal nor3      : std_logic; --:= '1';  --the need for a junk write when starting in
+    signal nor4      : std_logic; --:= '0';  --fast scan mode.
+    signal Qnor3     : std_logic; --:= '1';
+    signal Qnor4     : std_logic; --:= '0';
+    signal Qcount    : std_logic; --:= '0';
     signal Qdelay2   : std_logic;
     signal nQnor4    : std_logic;
     signal Qdump1    : std_logic;

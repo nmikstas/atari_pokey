@@ -78,42 +78,13 @@ begin
         wait for 10000 ns;
         wait until falling_edge(clk);
         init <= '0';
-        
+
         wait for 3000 ns;
         wait until rising_edge(clk);
         POTGO <= '1';
         wait until rising_edge(clk);
         POTGO <= '0';
-
-        --Fast scan test.
-        --wait for 15000 ns;
-        --wait until falling_edge(clk);
-        --P(3) <= '0';
-
-        --wait for 5000 ns;
-        --wait until falling_edge(clk);
-        --P(0) <= '0';
-
-        --wait for 7000 ns;
-        --wait until falling_edge(clk);
-        --P(1) <= '0';
-
-        --wait for 3000 ns;
-        --wait until falling_edge(clk);
-        --P(2) <= '0';
-
-        --wait for 2500 ns;
-        --wait until falling_edge(clk);
-        --P(6) <= '0';
-
-        --wait for 5500 ns;
-        --wait until falling_edge(clk);
-        --P(4) <= '0';
-
-        --wait for 15500 ns;
-        --wait until falling_edge(clk);
-        --P(7) <= '0';
-
+        
         --Slow scan test.
         wait for 1500000 ns;
         wait until falling_edge(clk);
@@ -143,7 +114,47 @@ begin
         wait until falling_edge(clk);
         P(1) <= '0';
 
-        wait for 1500000 ns;
+        --Fast scan test.
+        wait for 1000000 ns;
+        wait until falling_edge(clk);
+        fastScan <= '1';
+        P <= "11111111";
+
+        wait for 3000 ns;
+        wait until rising_edge(clk);
+        POTGO <= '1';
+        wait until rising_edge(clk);
+        POTGO <= '0';
+
+        wait for 15000 ns;
+        wait until falling_edge(clk);
+        P(3) <= '0';
+
+        wait for 5000 ns;
+        wait until falling_edge(clk);
+        P(0) <= '0';
+
+        wait for 7000 ns;
+        wait until falling_edge(clk);
+        P(1) <= '0';
+
+        wait for 3000 ns;
+        wait until falling_edge(clk);
+        P(2) <= '0';
+
+        wait for 2500 ns;
+        wait until falling_edge(clk);
+        P(6) <= '0';
+
+        wait for 5500 ns;
+        wait until falling_edge(clk);
+        P(4) <= '0';
+
+        wait for 15500 ns;
+        wait until falling_edge(clk);
+        P(7) <= '0';
+
+        wait for 500000 ns;
         std.env.stop; --End the simulation.
     end process;
 

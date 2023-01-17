@@ -22,9 +22,9 @@ VDd]IiHZeZ98XS>hG_>NOD3
 !s100 gHRW9a?F[J7KWaEkBF=jK0
 Z7 OV;C;10.5b;63
 33
-Z8 !s110 1673828162
+Z8 !s110 1673834783
 !i10b 1
-Z9 !s108 1673828162.000000
+Z9 !s108 1673834783.000000
 Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/pot_core/cell23.vhd|
 Z11 !s107 D:/work/atari_pokey/HDL/pot_core/cell23.vhd|
 !i113 1
@@ -63,11 +63,11 @@ V0QczTPaLWeCRG1a<k6YYL0
 !s100 dT0jV;e]6d;nbVaZLhGX@2
 R7
 33
-R8
+Z18 !s110 1673834784
 !i10b 1
-R9
-Z18 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd|
-Z19 !s107 D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd|
+Z19 !s108 1673834784.000000
+Z20 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd|
+Z21 !s107 D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd|
 !i113 1
 R12
 R13
@@ -75,29 +75,29 @@ Astructural
 R1
 R2
 R3
-Z20 DEx4 work 14 clock_gen_core 0 22 0QczTPaLWeCRG1a<k6YYL0
+Z22 DEx4 work 14 clock_gen_core 0 22 0QczTPaLWeCRG1a<k6YYL0
 l50
 L27
-Z21 Va:g1:XHcbZd75C=]lMkWI0
-Z22 !s100 _87fG^U8a4WZ5^5CUB`]V1
+Z23 Va:g1:XHcbZd75C=]lMkWI0
+Z24 !s100 _87fG^U8a4WZ5^5CUB`]V1
 R7
 33
-R8
-!i10b 1
-R9
 R18
+!i10b 1
 R19
+R20
+R21
 !i113 1
 R12
 R13
 Epot_core
-Z23 w1673825535
+Z25 w1673834121
 R1
 R2
 R3
 R4
-Z24 8D:/work/atari_pokey/HDL/pot_core/pot_core.vhd
-Z25 FD:/work/atari_pokey/HDL/pot_core/pot_core.vhd
+Z26 8D:/work/atari_pokey/HDL/pot_core/pot_core.vhd
+Z27 FD:/work/atari_pokey/HDL/pot_core/pot_core.vhd
 l0
 L12
 VT3UCYX5^K^5l75D@Sl3W31
@@ -107,8 +107,8 @@ R7
 R8
 !i10b 1
 R9
-Z26 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/pot_core/pot_core.vhd|
-Z27 !s107 D:/work/atari_pokey/HDL/pot_core/pot_core.vhd|
+Z28 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/pot_core/pot_core.vhd|
+Z29 !s107 D:/work/atari_pokey/HDL/pot_core/pot_core.vhd|
 !i113 1
 R12
 R13
@@ -117,29 +117,29 @@ R14
 R1
 R2
 R3
-Z28 DEx4 work 8 pot_core 0 22 T3UCYX5^K^5l75D@Sl3W31
+Z30 DEx4 work 8 pot_core 0 22 T3UCYX5^K^5l75D@Sl3W31
 l77
 L38
-VDEW=Lc;85zh<91maECl8c2
-!s100 P4:dldz4@Y5[3>N`5EXGf0
+V[6UbLUEJ2j57haoN9^G4_0
+!s100 ZOdhk;:G2F1EHjJ@eQ=4Q0
 R7
 33
 R8
 !i10b 1
 R9
-R26
-R27
+R28
+R29
 !i113 1
 R12
 R13
 Etb_cell23
-Z29 w1673732554
+Z31 w1673732554
 R1
 R2
 R3
 R4
-Z30 8D:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd
-Z31 FD:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd
+Z32 8D:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd
+Z33 FD:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd
 l0
 L8
 VeYkjDE@:^MmGCC^X]KSI:2
@@ -149,13 +149,13 @@ R7
 !s110 1673801401
 !i10b 1
 !s108 1673801401.000000
-Z32 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd|
-Z33 !s107 D:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd|
+Z34 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd|
+Z35 !s107 D:/work/atari_pokey/HDL/pot_core/tb_cell23.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-Z34 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+Z36 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
 R14
 R1
 R2
@@ -170,19 +170,19 @@ R7
 !s110 1673732556
 !i10b 1
 !s108 1673732556.000000
-R32
-R33
+R34
+R35
 !i113 1
 R12
 R13
 Etb_pot_core
-Z35 w1673828159
+Z37 w1673834780
 R1
 R2
 R3
 R4
-Z36 8D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd
-Z37 FD:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd
+Z38 8D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd
+Z39 FD:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd
 l0
 L8
 VF77h_YY?MYj`3jU?]e>8n1
@@ -192,30 +192,30 @@ R7
 R8
 !i10b 1
 R9
-Z38 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd|
-Z39 !s107 D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd|
+Z40 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd|
+Z41 !s107 D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-R34
-R28
-R20
+R36
+R30
+R22
 R1
 R2
 R3
 DEx4 work 11 tb_pot_core 0 22 F77h_YY?MYj`3jU?]e>8n1
 l38
 L11
-Vf`5QU_f_jmTe6DcOYFeTP1
-!s100 f?B?JbFHQ?:6Flh]XFFzT1
+VR8e6];>ji=NE<O^m92b]Q3
+!s100 0lcQhC`6J^`_GY0NEVTca0
 R7
 33
 R8
 !i10b 1
 R9
-R38
-R39
+R40
+R41
 !i113 1
 R12
 R13
