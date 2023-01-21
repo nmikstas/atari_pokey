@@ -183,7 +183,6 @@ begin
         AddrDw <= not(nwriteEn or (not AQ(0)) or      AQ(1)  or (not AQ(2)) or (not AQ(3)));
         AddrEw <= not(nwriteEn or      AQ(0)  or (not AQ(1)) or (not AQ(2)) or (not AQ(3)));
         AddrFw <= not(nwriteEn or (not AQ(0)) or (not AQ(1)) or (not AQ(2)) or (not AQ(3)));
-        
 
     end process;
 end structural;

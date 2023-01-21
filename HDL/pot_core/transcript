@@ -356,3 +356,6 @@ restart
 run
 run
 # Break in Process line__73 at D:/work/atari_pokey/HDL/pot_core/tb_pot_core.vhd line 158
+quit -sim
+# End time: 18:39:48 on Jan 17,2023, Elapsed time: 49:48:59
+# Errors: 2, Warnings: 1
