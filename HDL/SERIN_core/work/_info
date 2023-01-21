@@ -1,0 +1,51 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/work/atari_pokey/HDL/KEY_core
+Eserin_pla
+Z0 w1674312257
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/work/atari_pokey/HDL/SERIN_core
+Z5 8D:/work/atari_pokey/HDL/SERIN_core/SERIN_PLA.vhd
+Z6 FD:/work/atari_pokey/HDL/SERIN_core/SERIN_PLA.vhd
+l0
+L12
+V>i]B2n=N6S@BgL257LaE:1
+!s100 QIQMHgIkCZ5J[NzKoYA5K2
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1674312404
+!i10b 1
+Z9 !s108 1674312404.000000
+Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SERIN_core/SERIN_PLA.vhd|
+Z11 !s107 D:/work/atari_pokey/HDL/SERIN_core/SERIN_PLA.vhd|
+!i113 1
+Z12 o-work work -2008 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Astructural
+R1
+R2
+R3
+Z14 DEx4 work 9 serin_pla 0 22 >i]B2n=N6S@BgL257LaE:1
+l38
+L31
+Z15 V;>aW7<g5dWNF3V8LSUa`_3
+Z16 !s100 AzFenP:eF@RO;nhN0HzYK0
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13

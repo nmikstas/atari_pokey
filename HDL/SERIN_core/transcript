@@ -1,0 +1,65 @@
+# Compile of SEROUT_PLA.vhd was successful.
+# Compile of SEROUT_PLA.vhd was successful.
+# Compile of SEROUT_PLA.vhd was successful.
+# reading C:/intelFPGA/19.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project key_core
+# Compile of tb_keyboard_pla.vhd was successful with warnings.
+# Compile of tb_keyboard_pla.vhd failed with 3 errors.
+# Compile of tb_keyboard_pla.vhd failed with 3 errors.
+# Compile of tb_keyboard_pla.vhd failed with 2 errors.
+# Compile of tb_keyboard_pla.vhd was successful.
+# Compile of tb_keyboard_pla.vhd failed with 2 errors.
+# Compile of tb_keyboard_pla.vhd failed with 29 errors.
+# Compile of tb_keyboard_pla.vhd was successful.
+vsim -gui work.tb_keyboard_pla
+# vsim -gui work.tb_keyboard_pla 
+# Start time: 08:26:08 on Jan 21,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.tb_keyboard_pla(behavioral)
+# Loading work.keyboard_pla(structural)
+add wave -position insertpoint  \
+sim:/tb_keyboard_pla/i1 \
+sim:/tb_keyboard_pla/i2 \
+sim:/tb_keyboard_pla/i3 \
+sim:/tb_keyboard_pla/i4 \
+sim:/tb_keyboard_pla/o1 \
+sim:/tb_keyboard_pla/o2 \
+sim:/tb_keyboard_pla/o3 \
+sim:/tb_keyboard_pla/o4
+run
+# Break in Process line__43 at D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd line 91
+# Compile of tb_keyboard_pla.vhd was successful.
+restart
+# Loading work.tb_keyboard_pla(behavioral)
+run
+# Break in Process line__43 at D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd line 91
+add wave -position insertpoint  \
+sim:/tb_keyboard_pla/inBus
+restart
+run
+# Break in Process line__43 at D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd line 91
+# Compile of tb_keyboard_pla.vhd was successful.
+restart
+# Loading work.tb_keyboard_pla(behavioral)
+run
+# Break in Process line__43 at D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd line 91
+# Compile of tb_keyboard_pla.vhd was successful.
+restart
+# Loading work.tb_keyboard_pla(behavioral)
+run
+# Break in Process line__36 at D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd line 84
+# Compile of tb_keyboard_pla.vhd was successful.
+restart
+# Loading work.tb_keyboard_pla(behavioral)
+run
+# Break in Process line__36 at D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd line 84
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/work/atari_pokey/HDL/KEY_core/keyboard_pla_wave.do
+quit -sim
+# End time: 09:05:00 on Jan 21,2023, Elapsed time: 0:38:52
+# Errors: 0, Warnings: 0
+# reading C:/intelFPGA/19.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project skctls

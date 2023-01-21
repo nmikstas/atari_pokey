@@ -1,69 +1,31 @@
-# Compile of SKCTLS_reg.vhd failed with 1 errors.
-# Compile of SKCTLS_reg.vhd failed with 5 errors.
-# Compile of SKCTLS_reg.vhd failed with 4 errors.
-# Compile of SKCTLS_reg.vhd failed with 3 errors.
-# Compile of SKCTLS_reg.vhd was successful.
-# Compile of SKCTLS_reg.vhd was successful.
-# Compile of SKCTLS_reg.vhd was successful.
-# Compile of SKCTLS_reg.vhd was successful.
-# Compile of tb_SKCTLS_reg.vhd was successful with warnings.
-# 2 compiles, 0 failed with no errors.
-# Compile of SKCTLS_reg.vhd was successful.
-# Compile of tb_SKCTLS_reg.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui work.tb_skctls_reg
-# vsim -gui work.tb_skctls_reg 
-# Start time: 10:42:45 on Jan 11,2022
+vsim -gui work.tb_audctl_reg
+# vsim -gui work.tb_audctl_reg 
+# Start time: 09:13:46 on Jan 21,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.numeric_std(body)
 # Loading std.env(body)
-# Loading work.tb_skctls_reg(behavioral)
-# Loading work.skctls_reg(structural)
+# Loading work.tb_audctl_reg(behavioral)
+# Loading work.audctl_reg(structural)
 add wave -position insertpoint  \
-sim:/tb_skctls_reg/clk
-add wave -position insertpoint  \
-sim:/tb_skctls_reg/wren
-add wave -position insertpoint  \
-sim:/tb_skctls_reg/d
-add wave -position insertpoint  \
-sim:/tb_skctls_reg/Skctls
-add wave -position insertpoint  \
-sim:/tb_skctls_reg/Init
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Arcade_Stuff/POKEY/HDL/SKCTLS_reg/wave.do
-run
-# Break in Process line__36 at D:/Arcade_Stuff/POKEY/HDL/SKCTLS_reg/tb_SKCTLS_reg.vhd line 43
-# Compile of tb_SKCTLS_reg.vhd was successful.
-restart
-# Loading work.tb_skctls_reg(behavioral)
-run
-# Break in Process line__36 at D:/Arcade_Stuff/POKEY/HDL/SKCTLS_reg/tb_SKCTLS_reg.vhd line 48
-do D:/Arcade_Stuff/POKEY/HDL/SKCTLS_reg/wave.do
+sim:/tb_audctl_reg/clk \
+sim:/tb_audctl_reg/wren \
+sim:/tb_audctl_reg/d \
+sim:/tb_audctl_reg/sel15Khz \
+sim:/tb_audctl_reg/disHiFltr2 \
+sim:/tb_audctl_reg/disHiFltr1 \
+sim:/tb_audctl_reg/ch4Bits16 \
+sim:/tb_audctl_reg/ch2Bits16 \
+sim:/tb_audctl_reg/enFastClk3 \
+sim:/tb_audctl_reg/enFastClk1 \
+sim:/tb_audctl_reg/sel9bitPoly \
+sim:/tb_audctl_reg/q
 restart
 run
-# Break in Process line__36 at D:/Arcade_Stuff/POKEY/HDL/SKCTLS_reg/tb_SKCTLS_reg.vhd line 48
-# Compile of SKCTLS_reg.vhd was successful.
-# Compile of tb_SKCTLS_reg.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# Loading work.tb_skctls_reg(behavioral)
-# Loading work.skctls_reg(structural)
-run
-# Break in Process line__36 at D:/Arcade_Stuff/POKEY/HDL/SKCTLS_reg/tb_SKCTLS_reg.vhd line 61
-# Compile of SKCTLS_reg.vhd was successful.
-# Compile of tb_SKCTLS_reg.vhd was successful.
-# 2 compiles, 0 failed with no errors.
-restart
-# Loading work.tb_skctls_reg(behavioral)
-# Loading work.skctls_reg(structural)
-run
-# Break in Process line__36 at D:/Arcade_Stuff/POKEY/HDL/SKCTLS_reg/tb_SKCTLS_reg.vhd line 65
+# Break in Process line__51 at D:/Arcade_Stuff/POKEY/HDL/AUDCTL_reg/tb_AUDCTL_reg.vhd line 80
 quit -sim
-# End time: 11:05:28 on Jan 11,2022, Elapsed time: 0:22:43
+# End time: 09:39:34 on Jan 21,2023, Elapsed time: 0:25:48
 # Errors: 0, Warnings: 0
-# Compile of SKCTLS_reg.vhd was successful.
-# Compile of tb_SKCTLS_reg.vhd was successful.
-# 2 compiles, 0 failed with no errors.
 # reading C:/intelFPGA/19.1/modelsim_ase/win32aloem/../modelsim.ini
-# Loading project AUDCTL_reg
+# Loading project key_core

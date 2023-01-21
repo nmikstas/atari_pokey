@@ -1,0 +1,13 @@
+vsim -gui work.tb_keyboard_pla
+# vsim -gui work.tb_keyboard_pla 
+# Start time: 11:28:36 on Jan 21,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.tb_keyboard_pla(behavioral)
+# Loading work.keyboard_pla(structural)
+do D:/work/atari_pokey/HDL/KEY_core/keyboard_pla_wave.do
+run
+# Break in Process line__36 at D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd line 84

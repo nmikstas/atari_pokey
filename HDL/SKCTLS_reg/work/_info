@@ -13,20 +13,20 @@ Z0 w1641922668
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z4 dD:/Arcade_Stuff/POKEY/HDL/SKCTLS_reg
-Z5 8D:\Arcade_Stuff\POKEY\HDL\SKCTLS_reg\SKCTLS_reg.vhd
-Z6 FD:\Arcade_Stuff\POKEY\HDL\SKCTLS_reg\SKCTLS_reg.vhd
+Z4 dD:/work/atari_pokey/HDL/SKCTLS_reg
+Z5 8D:/work/atari_pokey/HDL/SKCTLS_reg/SKCTLS_reg.vhd
+Z6 FD:/work/atari_pokey/HDL/SKCTLS_reg/SKCTLS_reg.vhd
 l0
 L12
 V8^C`?dVdPIZg0K4fB=IGo1
 !s100 cnB_M;n6MfJFH`;V9AN=g3
 Z7 OV;C;10.5b;63
 33
-Z8 !s110 1641924373
+Z8 !s110 1674317188
 !i10b 1
-Z9 !s108 1641924373.000000
-Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:\Arcade_Stuff\POKEY\HDL\SKCTLS_reg\SKCTLS_reg.vhd|
-Z11 !s107 D:\Arcade_Stuff\POKEY\HDL\SKCTLS_reg\SKCTLS_reg.vhd|
+Z9 !s108 1674317188.000000
+Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SKCTLS_reg/SKCTLS_reg.vhd|
+Z11 !s107 D:/work/atari_pokey/HDL/SKCTLS_reg/SKCTLS_reg.vhd|
 !i113 1
 Z12 o-work work -2008 -explicit
 Z13 tExplicit 1 CvgOpt 0
@@ -37,8 +37,8 @@ R3
 Z14 DEx4 work 10 skctls_reg 0 22 8^C`?dVdPIZg0K4fB=IGo1
 l28
 L27
-V2Ud@UZgMLQ^hk14mf8GXT3
-!s100 O29F@C5FVfOzQ6Fj:ncZl1
+Z15 V2Ud@UZgMLQ^hk14mf8GXT3
+Z16 !s100 O29F@C5FVfOzQ6Fj:ncZl1
 R7
 33
 R8
@@ -50,13 +50,13 @@ R11
 R12
 R13
 Etb_skctls_reg
-Z15 w1641924320
+Z17 w1641924320
 R1
 R2
 R3
 R4
-Z16 8D:\Arcade_Stuff\POKEY\HDL\SKCTLS_reg\tb_SKCTLS_reg.vhd
-Z17 FD:\Arcade_Stuff\POKEY\HDL\SKCTLS_reg\tb_SKCTLS_reg.vhd
+Z18 8D:/work/atari_pokey/HDL/SKCTLS_reg/tb_SKCTLS_reg.vhd
+Z19 FD:/work/atari_pokey/HDL/SKCTLS_reg/tb_SKCTLS_reg.vhd
 l0
 L8
 VTfMOS^`9?Ulnz]kVMZ@W61
@@ -66,29 +66,29 @@ R7
 R8
 !i10b 1
 R9
-Z18 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:\Arcade_Stuff\POKEY\HDL\SKCTLS_reg\tb_SKCTLS_reg.vhd|
-Z19 !s107 D:\Arcade_Stuff\POKEY\HDL\SKCTLS_reg\tb_SKCTLS_reg.vhd|
+Z20 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SKCTLS_reg/tb_SKCTLS_reg.vhd|
+Z21 !s107 D:/work/atari_pokey/HDL/SKCTLS_reg/tb_SKCTLS_reg.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-Z20 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
 R14
 R1
 R2
 R3
-Z21 DEx4 work 13 tb_skctls_reg 0 22 TfMOS^`9?Ulnz]kVMZ@W61
+DEx4 work 13 tb_skctls_reg 0 22 TfMOS^`9?Ulnz]kVMZ@W61
 l21
 L11
-Z22 V2^3jMNnQS6J<2[Q@zFVdT0
-Z23 !s100 nBP@TP8og1GhnNJG?Y:^m0
+V2^3jMNnQS6J<2[Q@zFVdT0
+!s100 nBP@TP8og1GhnNJG?Y:^m0
 R7
 33
 R8
 !i10b 1
 R9
-R18
-R19
+R20
+R21
 !i113 1
 R12
 R13

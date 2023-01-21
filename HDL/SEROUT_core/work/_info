@@ -1,0 +1,51 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/work/atari_pokey/HDL/SERIN_core
+Eserout_pla
+Z0 w1674313053
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/work/atari_pokey/HDL/SEROUT_core
+Z5 8D:/work/atari_pokey/HDL/SEROUT_core/SEROUT_PLA.vhd
+Z6 FD:/work/atari_pokey/HDL/SEROUT_core/SEROUT_PLA.vhd
+l0
+L12
+VVTlmLJXbN:8f92S7kbKAX0
+!s100 h<blC^:B:K2nX;fKNQ4k^2
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1674313061
+!i10b 1
+Z9 !s108 1674313061.000000
+Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SEROUT_core/SEROUT_PLA.vhd|
+Z11 !s107 D:/work/atari_pokey/HDL/SEROUT_core/SEROUT_PLA.vhd|
+!i113 1
+Z12 o-work work -2008 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Astructural
+R1
+R2
+R3
+Z14 DEx4 work 10 serout_pla 0 22 VTlmLJXbN:8f92S7kbKAX0
+l35
+L29
+V;]M6P477d@Ob`Sj:[LAV91
+!s100 o>?3UUAEzJU7FL[eF3Ni<0
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
