@@ -17,7 +17,13 @@ architecture behavioral of tb_keyboard_pla is
     signal o3 : std_logic;
     signal o4 : std_logic;
 
+    signal thisState : std_logic_vector(1 downto 0);
+    signal nextState : std_logic_vector(1 downto 0);
+
 begin
+
+    thisState <= inBus(2) & inBus(1);
+    nextState <= o2 & o1;
 
     keyboard_pla_0 : entity work.keyboard_pla
     port map

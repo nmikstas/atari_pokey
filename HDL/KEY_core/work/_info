@@ -50,7 +50,7 @@ R11
 R12
 R13
 Etb_keyboard_pla
-Z15 w1674315166
+Z15 w1674344776
 R1
 R2
 R3
@@ -63,9 +63,9 @@ V8UO:5BOf<VzWB2ToY^zVe1
 !s100 C5H>H5Hl=:C6IU`eTK:aB2
 R7
 33
-Z18 !s110 1674315169
+Z18 !s110 1674344779
 !i10b 1
-Z19 !s108 1674315169.000000
+Z19 !s108 1674344779.000000
 Z20 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd|
 Z21 !s107 D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd|
 !i113 1
@@ -78,10 +78,10 @@ R1
 R2
 R3
 Z23 DEx4 work 15 tb_keyboard_pla 0 22 8UO:5BOf<VzWB2ToY^zVe1
-l20
+l23
 L11
-VG7?kCA741@7_KZYgc:[gm0
-!s100 `90SVEC]JK?Xecc7aZNX^0
+Vm>Wm?6;B:6Hm[:AkHkc>i2
+!s100 QD:@K2khaJST34PjD`Pl:1
 R7
 33
 R18

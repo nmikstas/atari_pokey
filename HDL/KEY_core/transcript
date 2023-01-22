@@ -11,3 +11,15 @@ vsim -gui work.tb_keyboard_pla
 do D:/work/atari_pokey/HDL/KEY_core/keyboard_pla_wave.do
 run
 # Break in Process line__36 at D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd line 84
+# Compile of tb_keyboard_pla.vhd failed with 1 errors.
+# Compile of tb_keyboard_pla.vhd was successful.
+restart
+# Loading work.tb_keyboard_pla(behavioral)
+run
+# Break in Process line__42 at D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd line 90
+add wave -position insertpoint  \
+sim:/tb_keyboard_pla/thisState \
+sim:/tb_keyboard_pla/nextState
+restart
+run
+# Break in Process line__42 at D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd line 90

@@ -7,15 +7,4 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity keyboard_pla
 -- Compiling architecture structural of keyboard_pla
 
-} {} {}} D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity tb_keyboard_pla
--- Compiling architecture behavioral of tb_keyboard_pla
--- Loading entity keyboard_pla
--- Loading package ENV
-
 } {} {}}
