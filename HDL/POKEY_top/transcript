@@ -1,10 +1,18 @@
-# Compile of pot_core.vhd failed with 1 errors.
+# Compile of SKCTLS_reg.vhd was successful.
+# Compile of AUDCTL_reg.vhd was successful.
+# Compile of cell23.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# Compile of IO_core.vhd was successful.
 # Compile of pot_core.vhd was successful.
-# reading C:/intelFPGA/19.1/modelsim_ase/win32aloem/../modelsim.ini
-# Loading project POKEY_top
+# Compile of poly_core.vhd was successful.
+# Compile of POKEY_top.vhd failed with 2 errors.
+# Compile of POKEY_top.vhd was successful.
+# Load canceled
+# Compile of tb_POKEY_top.vhd failed with 2 errors.
+# Compile of tb_POKEY_top.vhd was successful.
 vsim -gui work.tb_pokey_top
 # vsim -gui work.tb_pokey_top 
-# Start time: 19:40:41 on Jan 25,2022
+# Start time: 09:17:28 on Jan 22,2023
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -12,42 +20,701 @@ vsim -gui work.tb_pokey_top
 # Loading std.env(body)
 # Loading work.tb_pokey_top(behavioral)
 # Loading work.pokey_top(structural)
-# Loading work.data_address_core(structural)
+# Loading work.io_core(structural)
 # Loading work.skctls_reg(structural)
 # Loading work.audctl_reg(structural)
 # Loading work.clock_gen_core(structural)
-# Loading work.irq_core(structural)
 # Loading work.poly_core(structural)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
 # This port will contribute value (UUUUUU) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
 # This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
 # This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
 # This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
 # This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized inout port /tb_pokey_top/pokey_top_0/bclk has no driver.
-# This port will contribute value (U) to the signal network.
+do D:/work/atari_pokey/HDL/POKEY_top/wave.do
+# ** Error: (vish-4014) No objects found matching '/tb_pokey_top/pokey_top_0/data_address_core_0/AddrAData'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\POKEY_top\wave.do line 25
+# ** Error: (vish-4014) No objects found matching '/tb_pokey_top/pokey_top_0/data_address_core_0/DataMUXOut'.
+# Executing ONERROR command at macro D:\work\atari_pokey\HDL\POKEY_top\wave.do line 26
 run
-# Break in Process line__57 at D:/Arcade_Stuff/POKEY/HDL/POKEY_top/tb_POKEY_top.vhd line 132
-do D:/Arcade_Stuff/POKEY/HDL/POKEY_top/wave.do
 restart
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
 # This port will contribute value (UUUUUU) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
 # This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
 # This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
 # This port will contribute value (U) to the signal network.
 # ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
 # This port will contribute value (U) to the signal network.
-# ** Warning: (vsim-8683) Uninitialized inout port /tb_pokey_top/pokey_top_0/bclk has no driver.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 134
+# Error Undo Start called while in Redo capture mode
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
 # This port will contribute value (U) to the signal network.
 run
-# Break in Process line__57 at D:/Arcade_Stuff/POKEY/HDL/POKEY_top/tb_POKEY_top.vhd line 132
-quit -sim
-# End time: 20:01:27 on Jan 25,2022, Elapsed time: 0:20:46
-# Errors: 0, Warnings: 12
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 135
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 138
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 140
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 140
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 141
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 140
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 149
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 149
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 149
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 149
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 152
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 152
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 152
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 152
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 152
+# Compile of tb_POKEY_top.vhd was successful.
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 152
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 152
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 152
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 146
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 146
+add wave -position insertpoint  \
+sim:/tb_pokey_top/pokey_top_0/poly_core_0/rndNum
+add wave -position insertpoint  \
+sim:/tb_pokey_top/pokey_top_0/poly_core_0/poly917bit
+add wave -position insertpoint  \
+sim:/tb_pokey_top/pokey_top_0/poly_core_0/poly5bit
+add wave -position insertpoint  \
+sim:/tb_pokey_top/pokey_top_0/poly_core_0/poly4bit
+add wave -position insertpoint  \
+sim:/tb_pokey_top/pokey_top_0/poly_core_0/sel9bitPoly
+restart
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 146
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 149
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 149
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 151
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 151
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 151
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 151
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 171
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 172
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 172
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 172
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 172
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 172
+# Compile of tb_POKEY_top.vhd was successful.
+restart
+# Loading work.tb_pokey_top(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/irq has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/audio(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/dump has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/k(5 downto 0) has no driver.
+# This port will contribute value (UUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/bclko has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/sod has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_pokey_top/pokey_top_0/oclk has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__59 at D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd line 172

@@ -23,3 +23,6 @@ sim:/tb_keyboard_pla/nextState
 restart
 run
 # Break in Process line__42 at D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd line 90
+quit -sim
+# End time: 08:39:46 on Jan 22,2023, Elapsed time: 21:11:10
+# Errors: 0, Warnings: 0

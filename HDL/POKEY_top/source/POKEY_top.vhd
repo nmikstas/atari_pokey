@@ -38,11 +38,11 @@ entity pokey_top is
         kr : in  std_logic_vector(1 downto 0);
 
         --Serial port signals.
-        sid  : in    std_logic;
-        sod  : out   std_logic;
-        oclk : out   std_logic;
-        bclk : inout std_logic
-        
+        sid   : in  std_logic;
+        bclki : in  std_logic;
+        bclko : out std_logic;
+        sod   : out std_logic;
+        oclk  : out std_logic
     );     
 end pokey_top;
 
@@ -70,20 +70,20 @@ architecture structural of pokey_top is
     signal AddrEw : std_logic; --IRQEN
     signal AddrFw : std_logic; --SKCTLS
 
-    signal Addr0Data : std_logic_vector(7 downto 0); --POT0
-    signal Addr1Data : std_logic_vector(7 downto 0); --POT1
-    signal Addr2Data : std_logic_vector(7 downto 0); --POT2
-    signal Addr3Data : std_logic_vector(7 downto 0); --POT3
-    signal Addr4Data : std_logic_vector(7 downto 0); --POT4
-    signal Addr5Data : std_logic_vector(7 downto 0); --POT5
-    signal Addr6Data : std_logic_vector(7 downto 0); --POT6
-    signal Addr7Data : std_logic_vector(7 downto 0); --POT7
-    signal Addr8Data : std_logic_vector(7 downto 0); --ALLPOT
-    signal Addr9Data : std_logic_vector(7 downto 0); --KBCODE
-    signal AddrAData : std_logic_vector(7 downto 0); --RANDOM
-    signal AddrDData : std_logic_vector(7 downto 0); --SERIN
-    signal AddrEData : std_logic_vector(7 downto 0); --IRQST
-    signal AddrFData : std_logic_vector(7 downto 0); --SKSTAT
+    signal Data0r : std_logic_vector(7 downto 0); --POT0
+    signal Data1r : std_logic_vector(7 downto 0); --POT1
+    signal Data2r : std_logic_vector(7 downto 0); --POT2
+    signal Data3r : std_logic_vector(7 downto 0); --POT3
+    signal Data4r : std_logic_vector(7 downto 0); --POT4
+    signal Data5r : std_logic_vector(7 downto 0); --POT5
+    signal Data6r : std_logic_vector(7 downto 0); --POT6
+    signal Data7r : std_logic_vector(7 downto 0); --POT7
+    signal Data8r : std_logic_vector(7 downto 0); --ALLPOT
+    signal Data9r : std_logic_vector(7 downto 0); --KBCODE
+    signal DataAr : std_logic_vector(7 downto 0); --RANDOM
+    signal DataDr : std_logic_vector(7 downto 0); --SERIN
+    signal DataEr : std_logic_vector(7 downto 0); --IRQST
+    signal DataFr : std_logic_vector(7 downto 0); --SKSTAT
 
     signal skctls : std_logic_vector(7 downto 0); --Value stored in SKCTLS register.
     signal init   : std_logic; --Init used for the clock generator and poly core.
@@ -102,36 +102,38 @@ architecture structural of pokey_top is
     signal audClock : std_logic;
     signal keybClk  : std_logic;
 
-    --IRQ core signals.
-    signal setBreak    : std_logic;
-    signal setKey      : std_logic;
-    signal setSdiCompl : std_logic;
-    signal setSdoCompl : std_logic;
-    signal sdoFinish   : std_logic;
-    signal Timer4      : std_logic;
-    signal Timer2      : std_logic;
-    signal Timer1      : std_logic;
-    signal keyOvrun    : std_logic;
-    signal sdiOvrun    : std_logic;
-
     --Poly core signals.
     signal poly4bit    : std_logic;
     signal poly5bit    : std_logic;
     signal poly917bit  : std_logic;
 
+
+
+
+    --IRQ core signals.
+    --signal setBreak    : std_logic;
+    --signal setKey      : std_logic;
+    --signal setSdiCompl : std_logic;
+    --signal setSdoCompl : std_logic;
+    --signal sdoFinish   : std_logic;
+    --signal Timer4      : std_logic;
+    --signal Timer2      : std_logic;
+    --signal Timer1      : std_logic;
+    --signal keyOvrun    : std_logic;
+    --signal sdiOvrun    : std_logic;
+
 begin
 
     --Data and address I/O.
-    data_address_core_0 : entity work.data_address_core
+    IO_core_0 : entity work.IO_core
     port map
     ( 
-        clk => phi2,
-        RW  => rw, 
-        CS0 => cs(0), 
-        CS1 => cs(1), 
-        D   => d, 
-        A   => a, 
-        Dw  => dw,
+        clk   => phi2,
+        RW    => rw, 
+        CS    => cs,  
+        D     => d, 
+        A     => a, 
+        Dataw => dw,
 
         Addr0w => Addr0w,
         Addr1w => Addr1w,
@@ -149,20 +151,20 @@ begin
         AddrEw => AddrEw,
         AddrFw => AddrFw,
 
-        Addr0Data => Addr0Data,
-        Addr1Data => Addr1Data,
-        Addr2Data => Addr2Data,
-        Addr3Data => Addr3Data,
-        Addr4Data => Addr4Data,
-        Addr5Data => Addr5Data,
-        Addr6Data => Addr6Data,
-        Addr7Data => Addr7Data,
-        Addr8Data => Addr8Data,
-        Addr9Data => Addr9Data,
-        AddrAData => AddrAData,
-        AddrDData => AddrDData,
-        AddrEData => AddrEData,
-        AddrFData => AddrFData
+        Data0r => Data0r,
+        Data1r => Data1r,
+        Data2r => Data2r,
+        Data3r => Data3r,
+        Data4r => Data4r,
+        Data5r => Data5r,
+        Data6r => Data6r,
+        Data7r => Data7r,
+        Data8r => Data8r,
+        Data9r => Data9r,
+        DataAr => DataAr,
+        DataDr => DataDr,
+        DataEr => DataEr,
+        DataFr => DataFr
     );
 
     --SKCTLS register.
@@ -203,27 +205,6 @@ begin
         audClock => audClock,
         keybClk  => keybClk
     );
-    
-    --IRQ core.
-    irq_core_0 : entity work.IRQ_core
-    port map
-    ( 
-        clk         => phi2,
-        IRQEN       => AddrEw,
-        Dw          => dw,
-        setBreak    => setBreak,
-        setKey      => setKey,
-        setSdiCompl => setSdiCompl,
-        setSdoCompl => setSdoCompl,
-        sdoFinish   => sdoFinish,
-        Timer4      => Timer4,
-        Timer2      => Timer2,
-        Timer1      => Timer1,
-        IRQ         => irq,
-        Dr          => AddrEData,
-        keyOvrun    => keyOvrun,
-        sdiOvrun    => sdiOvrun
-    );
 
     --Random number generator core.
     poly_core_0 : entity work.poly_core
@@ -232,10 +213,35 @@ begin
         clk         => phi2,
         init        => init,
         sel9bitPoly => sel9bitPoly,
-        rndNum      => AddrAData,
+        rndNum      => DataAr,
         poly4bit    => poly4bit,
         poly5bit    => poly5bit,
         poly917bit  => poly917bit
     );
+
+
+
+
+
+    --IRQ core.
+    --irq_core_0 : entity work.IRQ_core
+    --port map
+    --( 
+    --    clk         => phi2,
+    --    IRQEN       => AddrEw,
+    --    Dw          => dw,
+    --    setBreak    => setBreak,
+    --    setKey      => setKey,
+    --    setSdiCompl => setSdiCompl,
+    --    setSdoCompl => setSdoCompl,
+    --    sdoFinish   => sdoFinish,
+    --    Timer4      => Timer4,
+    --    Timer2      => Timer2,
+    --    Timer1      => Timer1,
+    --    IRQ         => irq,
+    --    Dr          => AddrEData,
+    --    keyOvrun    => keyOvrun,
+    --    sdiOvrun    => sdiOvrun
+    --);
 
 end structural;
