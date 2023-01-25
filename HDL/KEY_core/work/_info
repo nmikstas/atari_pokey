@@ -8,25 +8,25 @@ z2
 !i10f 100
 cModel Technology
 dD:/work/atari_pokey/HDL/pot_core
-Ekeyboard_pla
-Z0 w1674311280
+Ecell3
+Z0 w1674681873
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z4 dD:/work/atari_pokey/HDL/KEY_core
-Z5 8D:/work/atari_pokey/HDL/KEY_core/keyboard_pla.vhd
-Z6 FD:/work/atari_pokey/HDL/KEY_core/keyboard_pla.vhd
+Z5 8D:/work/atari_pokey/HDL/KEY_core/cell3.vhd
+Z6 FD:/work/atari_pokey/HDL/KEY_core/cell3.vhd
 l0
 L12
-VN0NdMCFk<oAJ3Nc<d^ndj2
-!s100 hcgNbPbXj:6]=cR24OL<T1
+V7z=[:o395OKHFU7cE:AgX3
+!s100 =;>C>A_1Q@AdFDI84YLhm1
 Z7 OV;C;10.5b;63
 33
-Z8 !s110 1674311285
+Z8 !s110 1674685226
 !i10b 1
-Z9 !s108 1674311285.000000
-Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/KEY_core/keyboard_pla.vhd|
-Z11 !s107 D:/work/atari_pokey/HDL/KEY_core/keyboard_pla.vhd|
+Z9 !s108 1674685226.000000
+Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/KEY_core/cell3.vhd|
+Z11 !s107 D:/work/atari_pokey/HDL/KEY_core/cell3.vhd|
 !i113 1
 Z12 o-work work -2008 -explicit
 Z13 tExplicit 1 CvgOpt 0
@@ -34,11 +34,11 @@ Astructural
 R1
 R2
 R3
-Z14 DEx4 work 12 keyboard_pla 0 22 N0NdMCFk<oAJ3Nc<d^ndj2
-l41
-L30
-VF:A9C<i@5n2eDSF=l9A^n2
-!s100 Inj8f@J;jZM?=TcV]09D53
+Z14 DEx4 work 5 cell3 0 22 7z=[:o395OKHFU7cE:AgX3
+l43
+L32
+VRWJIR21ZEI]:253;4TY6P3
+!s100 X;CcY7P^;DGZ<J<?7V?z00
 R7
 33
 R8
@@ -49,46 +49,256 @@ R11
 !i113 1
 R12
 R13
-Etb_keyboard_pla
-Z15 w1674344776
+Ecell6
+Z15 w1674682378
 R1
 R2
 R3
 R4
-Z16 8D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd
-Z17 FD:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd
+Z16 8D:/work/atari_pokey/HDL/KEY_core/cell6.vhd
+Z17 FD:/work/atari_pokey/HDL/KEY_core/cell6.vhd
+l0
+L12
+V9]nj0a8jW^GZj_kGKzLkj2
+!s100 oH6^2B6Jj=^8JY^`SkRef1
+R7
+33
+R8
+!i10b 1
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/KEY_core/cell6.vhd|
+Z19 !s107 D:/work/atari_pokey/HDL/KEY_core/cell6.vhd|
+!i113 1
+R12
+R13
+Astructural
+R1
+R2
+R3
+Z20 DEx4 work 5 cell6 0 22 9]nj0a8jW^GZj_kGKzLkj2
+l43
+L32
+VlCUlKZIzzefY6=PPEQ66=1
+!s100 bl0E`BijaS@zRP6D^dfK00
+R7
+33
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 1
+R12
+R13
+Eclock_gen_core
+Z21 w1641830589
+R1
+R2
+R3
+R4
+Z22 8D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd
+Z23 FD:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd
+l0
+L12
+V0QczTPaLWeCRG1a<k6YYL0
+!s100 dT0jV;e]6d;nbVaZLhGX@2
+R7
+33
+Z24 !s110 1674685227
+!i10b 1
+Z25 !s108 1674685227.000000
+Z26 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd|
+Z27 !s107 D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd|
+!i113 1
+R12
+R13
+Astructural
+R1
+R2
+R3
+Z28 DEx4 work 14 clock_gen_core 0 22 0QczTPaLWeCRG1a<k6YYL0
+l50
+L27
+Z29 Va:g1:XHcbZd75C=]lMkWI0
+Z30 !s100 _87fG^U8a4WZ5^5CUB`]V1
+R7
+33
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 1
+R12
+R13
+Ekb_count_reg
+Z31 w1674684060
+R1
+R2
+R3
+R4
+Z32 8D:/work/atari_pokey/HDL/KEY_core/kb_count_reg.vhd
+Z33 FD:/work/atari_pokey/HDL/KEY_core/kb_count_reg.vhd
+l0
+L12
+Vz70GBAehPdH4mE;b5i2i_0
+!s100 YT7PQe5l>Aa6ZDjROd1l>0
+R7
+33
+R24
+!i10b 1
+R25
+Z34 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/KEY_core/kb_count_reg.vhd|
+Z35 !s107 D:/work/atari_pokey/HDL/KEY_core/kb_count_reg.vhd|
+!i113 1
+R12
+R13
+Astructural
+R20
+R14
+R1
+R2
+R3
+Z36 DEx4 work 12 kb_count_reg 0 22 z70GBAehPdH4mE;b5i2i_0
+l35
+L30
+V6GC;0ELEP=Bo598:1K5mO2
+!s100 R?]J`ERbo^`?V2[X?5zWO3
+R7
+33
+R24
+!i10b 1
+R25
+R34
+R35
+!i113 1
+R12
+R13
+Ekeyboard_pla
+Z37 w1674311280
+R1
+R2
+R3
+R4
+Z38 8D:/work/atari_pokey/HDL/KEY_core/keyboard_pla.vhd
+Z39 FD:/work/atari_pokey/HDL/KEY_core/keyboard_pla.vhd
+l0
+L12
+VN0NdMCFk<oAJ3Nc<d^ndj2
+!s100 hcgNbPbXj:6]=cR24OL<T1
+R7
+33
+Z40 !s110 1674311285
+!i10b 1
+Z41 !s108 1674311285.000000
+Z42 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/KEY_core/keyboard_pla.vhd|
+Z43 !s107 D:/work/atari_pokey/HDL/KEY_core/keyboard_pla.vhd|
+!i113 1
+R12
+R13
+Astructural
+R1
+R2
+R3
+Z44 DEx4 work 12 keyboard_pla 0 22 N0NdMCFk<oAJ3Nc<d^ndj2
+l41
+L30
+VF:A9C<i@5n2eDSF=l9A^n2
+!s100 Inj8f@J;jZM?=TcV]09D53
+R7
+33
+R40
+!i10b 1
+R41
+R42
+R43
+!i113 1
+R12
+R13
+Etb_keyboard_counter
+Z45 w1674685223
+R1
+R2
+R3
+R4
+Z46 8D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_counter.vhd
+Z47 FD:/work/atari_pokey/HDL/KEY_core/tb_keyboard_counter.vhd
+l0
+L8
+VMPJe:ecSfb8GLH2DX^dfB3
+!s100 [=aUPZ1UMNK5<1I@V7d032
+R7
+33
+R24
+!i10b 1
+R25
+Z48 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_counter.vhd|
+Z49 !s107 D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_counter.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+Z50 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+R36
+R28
+R1
+R2
+R3
+DEx4 work 19 tb_keyboard_counter 0 22 MPJe:ecSfb8GLH2DX^dfB3
+l26
+L11
+VBg1J74lFI;lZ[XEk=CQeb2
+!s100 @Tl<[QHik[ane<BDoFNli1
+R7
+33
+R24
+!i10b 1
+R25
+R48
+R49
+!i113 1
+R12
+R13
+Etb_keyboard_pla
+Z51 w1674344776
+R1
+R2
+R3
+R4
+Z52 8D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd
+Z53 FD:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd
 l0
 L8
 V8UO:5BOf<VzWB2ToY^zVe1
 !s100 C5H>H5Hl=:C6IU`eTK:aB2
 R7
 33
-Z18 !s110 1674344779
+Z54 !s110 1674344779
 !i10b 1
-Z19 !s108 1674344779.000000
-Z20 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd|
-Z21 !s107 D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd|
+Z55 !s108 1674344779.000000
+Z56 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd|
+Z57 !s107 D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_pla.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-Z22 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
-R14
+R50
+R44
 R1
 R2
 R3
-Z23 DEx4 work 15 tb_keyboard_pla 0 22 8UO:5BOf<VzWB2ToY^zVe1
+DEx4 work 15 tb_keyboard_pla 0 22 8UO:5BOf<VzWB2ToY^zVe1
 l23
 L11
 Vm>Wm?6;B:6Hm[:AkHkc>i2
 !s100 QD:@K2khaJST34PjD`Pl:1
 R7
 33
-R18
+R54
 !i10b 1
-R19
-R20
-R21
+R55
+R56
+R57
 !i113 1
 R12
 R13

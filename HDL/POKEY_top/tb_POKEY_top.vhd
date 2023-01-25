@@ -17,7 +17,7 @@ architecture behavioral of tb_pokey_top is
     signal rw    : std_logic                    := '1';
     signal d     : std_logic_vector(7 downto 0) := "ZZZZZZZZ";
     signal a     : std_logic_vector(3 downto 0) := "ZZZZ";
-    signal p     : std_logic_vector(7 downto 0) := "00000000";
+    signal p     : std_logic_vector(7 downto 0) := "11111111";
     signal kr    : std_logic_vector(1 downto 0) := "00";
     signal sid   : std_logic                    := '0';
     signal bclki : std_logic                    := '0';
@@ -59,24 +59,24 @@ begin
     begin
 
         --Set the audio clock to 15KHz.
-        wait for 5000 ns;
-        wait until falling_edge(phi2);
-        wait for 100 ns;
-        cs <= "10";
-        rw <= '0';
-        a  <= "1000";
+        --wait for 5000 ns;
+        --wait until falling_edge(phi2);
+        --wait for 100 ns;
+        --cs <= "10";
+        --rw <= '0';
+        --a  <= "1000";
 
-        wait until rising_edge(phi2);
-        wait for 100 ns;
-        a  <= "ZZZZ";
-        wait for 100 ns;
-        d  <= "00000001";
+        --wait until rising_edge(phi2);
+        --wait for 100 ns;
+        --a  <= "ZZZZ";
+        --wait for 100 ns;
+        --d  <= "00000001";
         
-        wait until falling_edge(phi2);
-        wait for 100 ns;
-        cs <= "00";
-        d  <= "ZZZZZZZZ";
-        rw <= '1';
+        --wait until falling_edge(phi2);
+        --wait for 100 ns;
+        --cs <= "00";
+        --d  <= "ZZZZZZZZ";
+        --rw <= '1';
 
         --Initialize the chip.
         wait for 5000 ns;
@@ -139,27 +139,46 @@ begin
         --rw <= '1';
         
         --Read out the random number.
-        wait for 3000 ns;
-        wait until falling_edge(phi2);
-        wait for 100 ns;
-        cs <= "10";
-        rw <= '1';
-        a  <= "1010";
+        --wait for 3000 ns;
+        --wait until falling_edge(phi2);
+        --wait for 100 ns;
+        --cs <= "10";
+        --rw <= '1';
+        --a  <= "1010";
 
         --Set the RNG to 9-bit polynomial
-        wait for 15000 ns;
+        --wait for 15000 ns;
+        --wait until falling_edge(phi2);
+        --wait for 100 ns;
+        --cs <= "10";
+        --rw <= '0';
+        --a  <= "1000";
+
+        --wait until rising_edge(phi2);
+        --wait for 100 ns;
+        --a  <= "ZZZZ";
+        --wait for 100 ns;
+        --d  <= "10000000";
+        
+        --wait until falling_edge(phi2);
+        --wait for 100 ns;
+        --cs <= "00";
+        --d  <= "ZZZZZZZZ";
+        --rw <= '1';
+
+        --Start a pot scan.
+        wait for 5000 ns;
         wait until falling_edge(phi2);
         wait for 100 ns;
         cs <= "10";
         rw <= '0';
-        a  <= "1000";
+        a  <= "1011";
 
-        --wait until rising_edge(phi2);
         wait until rising_edge(phi2);
         wait for 100 ns;
         a  <= "ZZZZ";
         wait for 100 ns;
-        d  <= "10000000";
+        d  <= "00000000";     
         
         wait until falling_edge(phi2);
         wait for 100 ns;
@@ -167,8 +186,141 @@ begin
         d  <= "ZZZZZZZZ";
         rw <= '1';
 
+        --Slow scan test.
+        wait for 1500000 ns;
+        wait until falling_edge(phi2);
+        p(5) <= '0';
 
-        wait for 150000 ns;
+        wait for 700000 ns;
+        wait until falling_edge(phi2);
+        p(4) <= '0';
+
+        wait for 2500000 ns;
+        wait until falling_edge(phi2);
+        p(0) <= '0';
+
+        wait for 2000000 ns;
+        wait until falling_edge(phi2);
+        p(7) <= '0';
+
+        --Read ALLPOT register.
+        wait for 5000 ns;
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "10";
+        rw <= '1';
+        a  <= "1000";
+        wait until rising_edge(phi2);
+        wait for 100 ns;
+        a <= "ZZZZ";   
+        wait until falling_edge(phi2);
+        wait until rising_edge(phi2);
+        cs <= "00";        
+
+        --Finish slow pot scan.
+        wait for 1500000 ns;
+        wait until falling_edge(phi2);
+        p(2) <= '0';
+
+        wait for 3000000 ns;
+        wait until falling_edge(phi2);
+        p(6) <= '0';
+
+        wait for 2700000 ns;
+        wait until falling_edge(phi2);
+        p(1) <= '0';
+
+        --Read POT registers.
+        wait for 1000000 ns;
+        wait until falling_edge(phi2);
+        cs <= "10";
+        rw <= '1';
+        a  <= "0000";
+        wait until falling_edge(phi2);
+        a  <= "0001";
+        wait until falling_edge(phi2);
+        a  <= "0010";
+        wait until falling_edge(phi2);
+        a  <= "0011";
+        wait until falling_edge(phi2);
+        a  <= "0100";
+        wait until falling_edge(phi2);
+        a  <= "0101";
+        wait until falling_edge(phi2);
+        a  <= "0110";
+        wait until falling_edge(phi2);
+        a  <= "0111";
+
+        --Fast scan test.
+        p <= "11111111";
+        wait for 1000000 ns;
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "10";
+        rw <= '0';
+        a  <= "1111";
+
+        wait until rising_edge(phi2);
+        wait for 100 ns;
+        a  <= "ZZZZ";
+        wait for 100 ns;
+        d  <= "00000111";
+        
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "00";
+        d  <= "ZZZZZZZZ";
+        rw <= '1';
+
+        --Start a pot scan.
+        wait for 5000 ns;
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "10";
+        rw <= '0';
+        a  <= "1011";
+
+        wait until rising_edge(phi2);
+        wait for 100 ns;
+        a  <= "ZZZZ";
+        wait for 100 ns;
+        d  <= "00000000";     
+        
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "00";
+        d  <= "ZZZZZZZZ";
+        rw <= '1';
+
+        wait for 15000 ns;
+        wait until falling_edge(phi2);
+        p(3) <= '0';
+
+        wait for 5000 ns;
+        wait until falling_edge(phi2);
+        p(0) <= '0';
+
+        wait for 7000 ns;
+        wait until falling_edge(phi2);
+        p(1) <= '0';
+
+        wait for 3000 ns;
+        wait until falling_edge(phi2);
+        p(2) <= '0';
+
+        wait for 2500 ns;
+        wait until falling_edge(phi2);
+        p(6) <= '0';
+
+        wait for 5500 ns;
+        wait until falling_edge(phi2);
+        p(4) <= '0';
+
+        wait for 15500 ns;
+        wait until falling_edge(phi2);
+        p(7) <= '0';
+
+        wait for 15000000 ns;
         std.env.stop; --End the simulation.
     end process;
 

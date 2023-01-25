@@ -11,6 +11,7 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading entity AUDCTL_reg
 -- Loading entity clock_gen_core
 -- Loading entity poly_core
+-- Loading entity pot_core
 
 } {} {}} D:/work/atari_pokey/HDL/POKEY_top/source/AUDCTL_reg.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/POKEY_top/source/AUDCTL_reg.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -20,6 +21,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package NUMERIC_STD
 -- Compiling entity AUDCTL_reg
 -- Compiling architecture structural of AUDCTL_reg
+
+} {} {}} D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_pokey_top
+-- Compiling architecture behavioral of tb_pokey_top
+-- Loading entity pokey_top
+-- Loading package ENV
 
 } {} {}} D:/work/atari_pokey/HDL/POKEY_top/source/pot_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/POKEY_top/source/pot_core.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016

@@ -52,6 +52,7 @@ end pokey_top;
 
 architecture structural of pokey_top is
 
+    --IO core signals.
     signal dw : std_logic_vector(7 downto 0); --Data being written into the POKEY.
 
     signal Addr0w : std_logic; --AUDF1
@@ -85,6 +86,7 @@ architecture structural of pokey_top is
     signal DataEr : std_logic_vector(7 downto 0); --IRQST
     signal DataFr : std_logic_vector(7 downto 0); --SKSTAT
 
+    --SKCTLS signals.
     signal skctls : std_logic_vector(7 downto 0); --Value stored in SKCTLS register.
     signal init   : std_logic; --Init used for the clock generator and poly core.
 
@@ -108,6 +110,7 @@ architecture structural of pokey_top is
     signal poly917bit  : std_logic;
 
 
+    
 
 
     --IRQ core signals.
@@ -134,7 +137,6 @@ begin
         D     => d, 
         A     => a, 
         Dataw => dw,
-
         Addr0w => Addr0w,
         Addr1w => Addr1w,
         Addr2w => Addr2w,
@@ -150,7 +152,6 @@ begin
         AddrDw => AddrDw,
         AddrEw => AddrEw,
         AddrFw => AddrFw,
-
         Data0r => Data0r,
         Data1r => Data1r,
         Data2r => Data2r,
@@ -218,6 +219,31 @@ begin
         poly5bit    => poly5bit,
         poly917bit  => poly917bit
     );
+
+    --Potentiometer scanning core.
+    pot_core_0 : entity work.pot_core
+    port map
+    (
+        clk      => phi2,
+        POTGO    => AddrBw,
+        fastScan => skctls(2),
+        keybClk  => keybClk,
+        p        => p,
+        dump     => dump,
+        POT0     => Data0r,
+        POT1     => Data1r,
+        POT2     => Data2r,
+        POT3     => Data3r,
+        POT4     => Data4r,
+        POT5     => Data5r,
+        POT6     => Data6r,
+        POT7     => Data7r,
+        ALLPOT   => Data8r
+    );     
+
+
+
+
 
 
 
