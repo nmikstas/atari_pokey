@@ -71,3 +71,318 @@ restart
 # Loading work.cell3(structural)
 # Loading work.cell6(structural)
 run
+quit -sim
+# End time: 08:56:35 on Jan 28,2023, Elapsed time: 65:43:46
+# Errors: 0, Warnings: 0
+# Compile of kb_break.vhd failed with 6 errors.
+# Compile of kb_break.vhd failed with 1 errors.
+# Compile of kb_break.vhd was successful.
+# Compile of kb_break.vhd was successful.
+# Compile of tb_kb_break.vhd was successful.
+vsim -gui work.tb_kb_break
+# vsim -gui work.tb_kb_break 
+# Start time: 09:19:03 on Jan 28,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.tb_kb_break(behavioral)
+# Loading work.kb_break(structural)
+add wave -position insertpoint  \
+sim:/tb_kb_break/clk \
+sim:/tb_kb_break/enBreak \
+sim:/tb_kb_break/KR2 \
+sim:/tb_kb_break/setBreak
+run
+# Break in Process line__34 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_break.vhd line 46
+# Compile of cell3.vhd was successful.
+# Compile of cell6.vhd was successful.
+# Compile of tb_keyboard_counter.vhd was successful.
+# Compile of kb_count_reg.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# Compile of kb_break.vhd was successful.
+# Compile of tb_kb_break.vhd was successful.
+# 7 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_kb_break(behavioral)
+# Loading work.kb_break(structural)
+run
+# Break in Process line__34 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_break.vhd line 49
+# Compile of tb_kb_break.vhd was successful.
+restart
+# Loading work.tb_kb_break(behavioral)
+run
+# Break in Process line__34 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_break.vhd line 53
+# Compile of tb_kb_break.vhd was successful.
+restart
+# Loading work.tb_kb_break(behavioral)
+run
+# Break in Process line__34 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_break.vhd line 53
+# Compile of tb_kb_break.vhd was successful.
+restart
+# Loading work.tb_kb_break(behavioral)
+run
+# Break in Process line__34 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_break.vhd line 62
+# Compile of tb_kb_break.vhd was successful.
+restart
+# Loading work.tb_kb_break(behavioral)
+run
+# Break in Process line__34 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_break.vhd line 74
+# Compile of tb_kb_break.vhd was successful.
+restart
+# Loading work.tb_kb_break(behavioral)
+run
+# Break in Process line__34 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_break.vhd line 72
+# Compile of tb_kb_break.vhd was successful.
+restart
+# Loading work.tb_kb_break(behavioral)
+run
+# Break in Process line__34 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_break.vhd line 75
+# Compile of tb_kb_break.vhd was successful.
+restart
+# Loading work.tb_kb_break(behavioral)
+run
+# Break in Process line__34 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_break.vhd line 75
+# Compile of tb_kb_break.vhd was successful.
+restart
+# Loading work.tb_kb_break(behavioral)
+run
+# Break in Process line__34 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_break.vhd line 74
+# Compile of tb_kb_break.vhd was successful.
+restart
+# Loading work.tb_kb_break(behavioral)
+run
+# Break in Process line__34 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_break.vhd line 77
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/work/atari_pokey/HDL/KEY_core/kb_break_wave.do
+# Compile of kb_break.vhd was successful.
+# Compile of tb_kb_break.vhd was successful.
+restart
+# Loading work.tb_kb_break(behavioral)
+# Loading work.kb_break(structural)
+run
+# Break in Process line__34 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_break.vhd line 91
+quit -sim
+# End time: 09:56:17 on Jan 28,2023, Elapsed time: 0:37:14
+# Errors: 0, Warnings: 0
+# Compile of kb_code.vhd failed with 4 errors.
+# Compile of kb_code.vhd failed with 2 errors.
+# Compile of kb_code.vhd failed with 2 errors.
+# Compile of kb_code.vhd was successful.
+# Compile of kb_code.vhd failed with 2 errors.
+# Compile of kb_code.vhd was successful.
+# Compile of tb_kb_code.vhd failed with 1 errors.
+# Compile of tb_kb_code.vhd failed with 1 errors.
+# Compile of tb_kb_code.vhd was successful.
+vsim -gui work.tb_kb_code
+# vsim -gui work.tb_kb_code 
+# Start time: 10:27:28 on Jan 28,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.tb_kb_code(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.kb_code(structural)
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/tb_kb_code/init
+add wave -position insertpoint  \
+sim:/tb_kb_code/keybClk
+add wave -position insertpoint  \
+sim:/tb_kb_code/clk
+add wave -position insertpoint  \
+sim:/tb_kb_code/KR2 \
+sim:/tb_kb_code/Q \
+sim:/tb_kb_code/nQ \
+sim:/tb_kb_code/enBreak \
+sim:/tb_kb_code/controlOut \
+sim:/tb_kb_code/shiftOut \
+sim:/tb_kb_code/K
+run
+# Break in Process line__58 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 71
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__58 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 71
+# Compile of tb_kb_code.vhd failed with 2 errors.
+# Compile of tb_kb_code.vhd failed with 8 errors.
+# Compile of tb_kb_code.vhd failed with 2 errors.
+# Compile of tb_kb_code.vhd was successful.
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 78
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 79
+add wave -position insertpoint  \
+sim:/tb_kb_code/kb_code_0/enControl
+add wave -position insertpoint  \
+sim:/tb_kb_code/kb_code_0/enShift
+restart
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 79
+# Compile of kb_code.vhd was successful.
+restart
+# Loading work.kb_code(structural)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 79
+# Compile of cell3.vhd was successful.
+# Compile of cell6.vhd was successful.
+# Compile of tb_keyboard_counter.vhd was successful.
+# Compile of kb_count_reg.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# Compile of kb_break.vhd was successful.
+# Compile of tb_kb_break.vhd was successful.
+# Compile of kb_code.vhd was successful.
+# Compile of tb_kb_code.vhd was successful.
+# 9 compiles, 0 failed with no errors.
+restart
+# Loading work.tb_kb_code(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.kb_code(structural)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 79
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 85
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 92
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 96
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 96
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 99
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 101
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 100
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 105
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 105
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 107
+restart
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 107
+restart
+# Compile of tb_kb_code.vhd was successful.
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 107
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 107
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 107
+restart
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 107
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 107
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 109
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 109
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 109
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 109
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 109
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 113
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 119
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 119
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 119
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 119
+# Compile of tb_kb_code.vhd was successful.
+restart
+# Loading work.tb_kb_code(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_code.vhd line 119

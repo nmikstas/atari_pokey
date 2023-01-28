@@ -1,4 +1,13 @@
-D:/work/atari_pokey/HDL/KEY_core/cell3.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/KEY_core/cell3.vhd
+D:/work/atari_pokey/HDL/KEY_core/kb_code.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/KEY_core/kb_code.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity kb_code
+-- Compiling architecture structural of kb_code
+
+} {} {}} D:/work/atari_pokey/HDL/KEY_core/cell3.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/KEY_core/cell3.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -6,6 +15,27 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package NUMERIC_STD
 -- Compiling entity cell3
 -- Compiling architecture structural of cell3
+
+} {} {}} D:/work/atari_pokey/HDL/KEY_core/kb_break.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/KEY_core/kb_break.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity kb_break
+-- Compiling architecture structural of kb_break
+
+} {} {}} D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_counter.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/KEY_core/tb_keyboard_counter.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_keyboard_counter
+-- Compiling architecture behavioral of tb_keyboard_counter
+-- Loading entity clock_gen_core
+-- Loading entity kb_count_reg
+-- Loading package ENV
 
 } {} {}} D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -15,6 +45,17 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package NUMERIC_STD
 -- Compiling entity clock_gen_core
 -- Compiling architecture structural of clock_gen_core
+
+} {} {}} D:/work/atari_pokey/HDL/KEY_core/tb_kb_break.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/KEY_core/tb_kb_break.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_kb_break
+-- Compiling architecture behavioral of tb_kb_break
+-- Loading entity kb_break
+-- Loading package ENV
 
 } {} {}} D:/work/atari_pokey/HDL/KEY_core/kb_count_reg.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/KEY_core/kb_count_reg.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
