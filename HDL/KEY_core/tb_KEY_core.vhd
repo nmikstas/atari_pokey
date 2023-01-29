@@ -133,12 +133,6 @@ begin
         wait until falling_edge(clk);
         KR1 <= '1';
 
-        
-        
-        
-
-
-
         wait for 10000000 ns;
         std.env.stop; --End the simulation.
     end process;

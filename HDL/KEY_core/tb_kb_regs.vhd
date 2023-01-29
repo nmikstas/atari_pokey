@@ -97,8 +97,13 @@ begin
         wait until falling_edge(clk);
         nLdKbus <= '1';
 
+        --Clear shift and control bits.
+        wait for 250000 ns;
+        shiftIn   <= '0';
+        controlIn <= '0';
+
         --Load compare register with new value.
-        wait for 500000 ns;
+        wait for 250000 ns;
         wait until keybClk = '0';
         nLdComp <= '0';
         wait until falling_edge(clk);
@@ -110,7 +115,7 @@ begin
         wait until falling_edge(clk);
         nLdKbus <= '1';
 
-        wait for 5000000 ns;
+        wait for 40000 ns;
         std.env.stop; --End the simulation.
     end process;
 
