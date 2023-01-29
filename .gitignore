@@ -1,1 +1,7 @@
+transcript
+_vmake
 *.bak
+*.wlf
+*.mti
+*.qdb
+*.qtl

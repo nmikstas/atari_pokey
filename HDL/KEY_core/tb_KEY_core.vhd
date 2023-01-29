@@ -46,7 +46,7 @@ begin
     ( 
         clk      => clk,
         keybClk  => keybClk,
-        KR       => KR1 & KR2,
+        KR       => KR2 & KR1,
         SKCTLS   => (not init) & (not init),
         setKey   => setKey,
         kShift   => kShift,
@@ -70,10 +70,75 @@ begin
         --Wait until control, break and shift key statuses become valid.
         wait until kShift <= '0';
         
+        --Strobe the break interrupt.
+        wait until K = "001111" and falling_edge(keybClk); 
+        KR2 <= '0';
+        wait until falling_edge(clk);
+        KR2 <= '1';
 
+        --Set the control key.
+        wait until K = "111111" and falling_edge(keybClk); 
+        KR2 <= '0';
+        wait until falling_edge(clk);
+        KR2 <= '1';
 
+        --Set the control key.
+        wait until K = "101111" and falling_edge(keybClk); 
+        KR2 <= '0';
+        wait until falling_edge(clk);
+        KR2 <= '1';
+
+        --Press key.
+        wait until K = "101010" and falling_edge(keybClk);
+        KR1 <= '0';
+        wait until falling_edge(clk);
+        KR1 <= '1';
+
+        --Debounce key press.
+        wait until K = "101010" and falling_edge(keybClk);
+        KR1 <= '0';
+        wait until falling_edge(clk);
+        KR1 <= '1';
+
+        --Release key.
+        wait until K = "101010" and falling_edge(keybClk);
+
+        --Debounce key release.
+        wait until K = "101010" and falling_edge(keybClk);
+
+        --Wait for next key press.
+        wait until K = "101010" and falling_edge(keybClk);
+
+        --Press key along with shift and control key.
+        wait until K = "000111" and falling_edge(keybClk);
+        KR1 <= '0';
+        wait until falling_edge(clk);
+        KR1 <= '1';
+
+        --Press shift key.
+        wait until K = "101111" and falling_edge(keybClk); 
+        KR2 <= '0';
+        wait until falling_edge(clk);
+        KR2 <= '1';
+
+        --Press control key.
+        wait until K = "111111" and falling_edge(keybClk); 
+        KR2 <= '0';
+        wait until falling_edge(clk);
+        KR2 <= '1';
+
+        --Debounce key press.
+        wait until K = "000111" and falling_edge(keybClk);
+        KR1 <= '0';
+        wait until falling_edge(clk);
+        KR1 <= '1';
 
         
+        
+        
+
+
+
         wait for 10000000 ns;
         std.env.stop; --End the simulation.
     end process;
