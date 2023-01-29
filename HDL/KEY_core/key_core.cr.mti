@@ -121,6 +121,19 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity kb_code
 -- Compiling architecture structural of kb_code
 
+} {} {}} D:/work/atari_pokey/HDL/KEY_core/KEY_core.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/KEY_core/KEY_core.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity KEY_core
+-- Compiling architecture structural of KEY_core
+-- Loading entity kb_state
+-- Loading entity kb_regs
+-- Loading entity kb_code
+-- Loading entity kb_break
+
 } {} {}} D:/work/atari_pokey/HDL/KEY_core/kb_break.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/KEY_core/kb_break.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -129,6 +142,18 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package NUMERIC_STD
 -- Compiling entity kb_break
 -- Compiling architecture structural of kb_break
+
+} {} {}} D:/work/atari_pokey/HDL/KEY_core/tb_kb_state.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/KEY_core/tb_kb_state.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_kb_state
+-- Compiling architecture behavioral of tb_kb_state
+-- Loading entity clock_gen_core
+-- Loading entity kb_state
+-- Loading package ENV
 
 } {} {}} D:/work/atari_pokey/HDL/KEY_core/kb_count_reg.vhd {1 {vcom -work work -2008 -explicit -stats=none D:/work/atari_pokey/HDL/KEY_core/kb_count_reg.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016

@@ -672,3 +672,151 @@ restart
 run
 # Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_kb_state.vhd line 98
 write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/work/atari_pokey/HDL/KEY_core/kb_state_wave.do
+quit -sim
+# End time: 21:49:32 on Jan 28,2023, Elapsed time: 2:36:29
+# Errors: 0, Warnings: 0
+# Compile of KEY_core.vhd failed with 8 errors.
+# Compile of KEY_core.vhd was successful.
+# Compile of KEY_core.vhd was successful.
+# Compile of cell3.vhd was successful.
+# Compile of cell6.vhd was successful.
+# Compile of tb_keyboard_counter.vhd was successful.
+# Compile of kb_count_reg.vhd was successful.
+# Compile of clock_gen_core.vhd was successful.
+# Compile of kb_break.vhd was successful.
+# Compile of tb_kb_break.vhd was successful.
+# Compile of kb_code.vhd was successful.
+# Compile of tb_kb_code.vhd was successful.
+# Compile of kb_regs.vhd was successful.
+# Compile of cell4.vhd was successful.
+# Compile of tb_kb_regs.vhd was successful.
+# Compile of cell2p.vhd was successful.
+# Compile of kb_state.vhd was successful.
+# Compile of keyboard_pla.vhd was successful.
+# Compile of tb_kb_state.vhd was successful.
+# Compile of KEY_core.vhd was successful.
+# 17 compiles, 0 failed with no errors.
+# Compile of tb_KEY_core.vhd failed with 2 errors.
+# Compile of tb_KEY_core.vhd was successful.
+vsim -gui work.tb_key_core
+# vsim -gui work.tb_key_core 
+# Start time: 22:34:04 on Jan 28,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading std.env(body)
+# Loading work.tb_key_core(behavioral)
+# Loading work.clock_gen_core(structural)
+# Loading work.key_core(structural)
+# Loading work.kb_state(structural)
+# Loading work.keyboard_pla(structural)
+# Loading work.cell2p(structural)
+# Loading work.kb_regs(structural)
+# Loading work.kb_count_reg(structural)
+# Loading work.cell3(structural)
+# Loading work.cell6(structural)
+# Loading work.cell4(structural)
+# Loading work.kb_code(structural)
+# Loading work.kb_break(structural)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_key_core/KEY_core_0/kShift has no driver.
+# This port will contribute value (U) to the signal network.
+add wave -position insertpoint  \
+sim:/tb_key_core/clk \
+sim:/tb_key_core/KR1 \
+sim:/tb_key_core/KR2 \
+sim:/tb_key_core/setKey \
+sim:/tb_key_core/kShift \
+sim:/tb_key_core/setBreak \
+sim:/tb_key_core/keyDown \
+sim:/tb_key_core/D \
+sim:/tb_key_core/K \
+sim:/tb_key_core/init
+add wave -position insertpoint  \
+sim:/tb_key_core/keybClk
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/work/atari_pokey/HDL/KEY_core/kb_KEY_core_wave.do
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_KEY_core.vhd line 73
+# Compile of tb_KEY_core.vhd was successful.
+restart
+# Loading work.tb_key_core(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_key_core/KEY_core_0/kShift has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_KEY_core.vhd line 73
+# Compile of tb_KEY_core.vhd was successful.
+restart
+# Loading work.tb_key_core(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_key_core/KEY_core_0/kShift has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_KEY_core.vhd line 73
+# Compile of tb_KEY_core.vhd was successful.
+restart
+# Loading work.tb_key_core(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_key_core/KEY_core_0/kShift has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_KEY_core.vhd line 73
+add wave -position insertpoint  \
+sim:/tb_key_core/KEY_core_0/oQ
+add wave -position insertpoint  \
+sim:/tb_key_core/KEY_core_0/kb_regs_0/QD
+add wave -position insertpoint  \
+sim:/tb_key_core/KEY_core_0/kb_state_0/keyQ
+add wave -position insertpoint  \
+sim:/tb_key_core/KEY_core_0/kb_state_0/keyD
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/work/atari_pokey/HDL/KEY_core/kb_KEY_core_wave.do
+restart
+# ** Warning: (vsim-8683) Uninitialized out port /tb_key_core/KEY_core_0/kShift has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_KEY_core.vhd line 73
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/work/atari_pokey/HDL/KEY_core/kb_KEY_core_wave.do
+# Compile of tb_KEY_core.vhd was successful.
+restart
+# Loading work.tb_key_core(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_key_core/KEY_core_0/kShift has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_KEY_core.vhd line 80
+# Compile of tb_KEY_core.vhd was successful.
+add wave -position insertpoint  \
+sim:/tb_key_core/KEY_core_0/kb_code_0/enShift
+restart
+# Loading work.tb_key_core(behavioral)
+# ** Warning: (vsim-8683) Uninitialized out port /tb_key_core/KEY_core_0/kShift has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_KEY_core.vhd line 80
+add wave -position insertpoint  \
+sim:/tb_key_core/KEY_core_0/kb_code_0/controlOut
+add wave -position insertpoint  \
+sim:/tb_key_core/KEY_core_0/kb_code_0/shiftOut
+restart
+# ** Warning: (vsim-8683) Uninitialized out port /tb_key_core/KEY_core_0/kShift has no driver.
+# This port will contribute value (U) to the signal network.
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_KEY_core.vhd line 80
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/work/atari_pokey/HDL/KEY_core/kb_KEY_core_wave.do
+# Compile of KEY_core.vhd was successful.
+restart
+# Loading work.key_core(structural)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_KEY_core.vhd line 80
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/work/atari_pokey/HDL/KEY_core/kb_KEY_core_wave.do
+# Compile of tb_KEY_core.vhd was successful.
+restart
+# Loading work.tb_key_core(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_KEY_core.vhd line 80
+# Compile of tb_KEY_core.vhd was successful.
+restart
+# Loading work.tb_key_core(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_KEY_core.vhd line 80
+# Compile of tb_KEY_core.vhd was successful.
+restart
+# Loading work.tb_key_core(behavioral)
+run
+# Break in Process line__60 at D:/work/atari_pokey/HDL/KEY_core/tb_KEY_core.vhd line 78
