@@ -26,7 +26,6 @@ end kb_count_reg;
 --                               --Keyboard Counter Architecture--                                --
 ----------------------------------------------------------------------------------------------------
 
---Binary decrement with borrow delay.
 architecture structural of kb_count_reg is
 
     signal T    : std_logic_vector(4 downto 0);
