@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/work/atari_pokey/HDL/test
+Eskstat
+Z0 w1675293486
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dD:/work/atari_pokey/HDL/SKSTAT_reg
+Z5 8D:/work/atari_pokey/HDL/SKSTAT_reg/SKSTAT.vhd
+Z6 FD:/work/atari_pokey/HDL/SKSTAT_reg/SKSTAT.vhd
+l0
+L5
+VV;@_B>]mHF8<eOo9VcROb0
+!s100 O:@RzNk^;iH=i7RBWb70I1
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1675293631
+!i10b 1
+Z9 !s108 1675293631.000000
+Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SKSTAT_reg/SKSTAT.vhd|
+Z11 !s107 D:/work/atari_pokey/HDL/SKSTAT_reg/SKSTAT.vhd|
+!i113 1
+Z12 o-work work -2008 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Astructural
+R1
+R2
+R3
+Z14 DEx4 work 6 skstat 0 22 V;@_B>]mHF8<eOo9VcROb0
+l38
+L22
+Z15 V<PY`:IXV>UJ`YoCdMlS4`2
+Z16 !s100 :`zS5PEXF4LgEgC66h9YK1
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Etb_test
+Z17 w1675293629
+R1
+R2
+R3
+R4
+Z18 8D:/work/atari_pokey/HDL/SKSTAT_reg/tb_SKSTAT.vhd
+Z19 FD:/work/atari_pokey/HDL/SKSTAT_reg/tb_SKSTAT.vhd
+l0
+L5
+Vl8O@J:alB5aO=IVQ>Bl6C2
+!s100 >CSKO;0?d0bZYZTde8D3`1
+R7
+33
+R8
+!i10b 1
+R9
+Z20 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SKSTAT_reg/tb_SKSTAT.vhd|
+Z21 !s107 D:/work/atari_pokey/HDL/SKSTAT_reg/tb_SKSTAT.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+R14
+R1
+R2
+R3
+DEx4 work 7 tb_test 0 22 l8O@J:alB5aO=IVQ>Bl6C2
+l23
+L8
+Vj4zFimjjQ2?C=IahVoXH^1
+!s100 E[WGGKMaaViR8?MSXA5GO0
+R7
+33
+R8
+!i10b 1
+R9
+R20
+R21
+!i113 1
+R12
+R13

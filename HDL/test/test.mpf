@@ -1,4 +1,4 @@
-; Copyright 1991-2020 Mentor Graphics Corporation
+; Copyright 1991-2009 Mentor Graphics Corporation
 ;
 ; All Rights Reserved.
 ;
@@ -9,76 +9,92 @@
 [Library]
 std = $MODEL_TECH/../std
 ieee = $MODEL_TECH/../ieee
-vital2000 = $MODEL_TECH/../vital2000
 verilog = $MODEL_TECH/../verilog
+vital2000 = $MODEL_TECH/../vital2000
 std_developerskit = $MODEL_TECH/../std_developerskit
 synopsys = $MODEL_TECH/../synopsys
 modelsim_lib = $MODEL_TECH/../modelsim_lib
 sv_std = $MODEL_TECH/../sv_std
-floatfixlib = $MODEL_TECH/../floatfixlib
 
-; Lattice Primitive Libraries
+; Altera Primitive libraries
 ;
 ; VHDL Section
 ;
-;mach = $MODEL_TECH/../lattice/vhdl/mach
-vf1 = $MODEL_TECH/../lattice/vhdl/vf1
-;lat_vhd = $MODEL_TECH/../lattice/vhdl/lat_vhd
-;lat_vitl = $MODEL_TECH/../lattice/vhdl/lat_vitl
-gdx2 = $MODEL_TECH/../lib/gdx2
-gen_aux = $MODEL_TECH/../lib/gen_aux
-generics = $MODEL_TECH/../lib/generics
-j2svlib = $MODEL_TECH/../lib/j2svlib
-lat_vhd = $MODEL_TECH/../lib/lat_vhd
-lat_vitl = $MODEL_TECH/../lib/lat_vitl
-lattice = $MODEL_TECH/../lib/lattice
-lava1 = $MODEL_TECH/../lib/lava1
-lc4k = $MODEL_TECH/../lib/lc4k
-lc5kb = $MODEL_TECH/../lib/lc5kb
-lc5kmx = $MODEL_TECH/../lib/lc5kmx
-lc5kve = $MODEL_TECH/../lib/lc5kve
-lc5kvg = $MODEL_TECH/../lib/lc5kvg
-mach = $MODEL_TECH/../lib/mach
-neoprims = $MODEL_TECH/../lib/neoprims
-orca2 = $MODEL_TECH/../lib/orca2
-orca3 = $MODEL_TECH/../lib/orca3
-orca4 = $MODEL_TECH/../lib/orca4
-powr = $MODEL_TECH/../lib/powr
-xpga = $MODEL_TECH/../lib/xpga
+altera_mf = $MODEL_TECH/../altera/vhdl/altera_mf
+altera = $MODEL_TECH/../altera/vhdl/altera
+altera_lnsim = $MODEL_TECH/../altera/vhdl/altera_lnsim
+lpm = $MODEL_TECH/../altera/vhdl/220model
+220model = $MODEL_TECH/../altera/vhdl/220model
+maxii = $MODEL_TECH/../altera/vhdl/maxii
+maxv = $MODEL_TECH/../altera/vhdl/maxv
+fiftyfivenm = $MODEL_TECH/../altera/vhdl/fiftyfivenm
+sgate = $MODEL_TECH/../altera/vhdl/sgate
+arriaii = $MODEL_TECH/../altera/vhdl/arriaii
+arriaii_hssi = $MODEL_TECH/../altera/vhdl/arriaii_hssi
+arriaii_pcie_hip = $MODEL_TECH/../altera/vhdl/arriaii_pcie_hip
+arriaiigz = $MODEL_TECH/../altera/vhdl/arriaiigz
+arriaiigz_hssi = $MODEL_TECH/../altera/vhdl/arriaiigz_hssi
+arriaiigz_pcie_hip = $MODEL_TECH/../altera/vhdl/arriaiigz_pcie_hip
+stratixiv = $MODEL_TECH/../altera/vhdl/stratixiv
+stratixiv_hssi = $MODEL_TECH/../altera/vhdl/stratixiv_hssi
+stratixiv_pcie_hip = $MODEL_TECH/../altera/vhdl/stratixiv_pcie_hip
+cycloneiv = $MODEL_TECH/../altera/vhdl/cycloneiv
+cycloneiv_hssi = $MODEL_TECH/../altera/vhdl/cycloneiv_hssi
+cycloneiv_pcie_hip = $MODEL_TECH/../altera/vhdl/cycloneiv_pcie_hip
+cycloneive = $MODEL_TECH/../altera/vhdl/cycloneive
+stratixv = $MODEL_TECH/../altera/vhdl/stratixv
+stratixv_hssi = $MODEL_TECH/../altera/vhdl/stratixv_hssi
+stratixv_pcie_hip = $MODEL_TECH/../altera/vhdl/stratixv_pcie_hip
+arriavgz = $MODEL_TECH/../altera/vhdl/arriavgz
+arriavgz_hssi = $MODEL_TECH/../altera/vhdl/arriavgz_hssi
+arriavgz_pcie_hip = $MODEL_TECH/../altera/vhdl/arriavgz_pcie_hip
+arriav = $MODEL_TECH/../altera/vhdl/arriav
+cyclonev = $MODEL_TECH/../altera/vhdl/cyclonev
+twentynm = $MODEL_TECH/../altera/vhdl/twentynm
+twentynm_hssi = $MODEL_TECH/../altera/vhdl/twentynm_hssi
+twentynm_hip = $MODEL_TECH/../altera/vhdl/twentynm_hip
+cyclone10lp = $MODEL_TECH/../altera/vhdl/cyclone10lp
 ;
 ; Verilog Section
 ;
-vf1_vlog = $MODEL_TECH/../lattice/verilog/vf1
-;mach_vlog = $MODEL_TECH/../lattice/verilog/mach
-;lsc_vlg = $MODEL_TECH/../lattice/verilog/lsc
-;lscsub_vlg = $MODEL_TECH/../lattice/verilog/lscsub
-gdx2_vlg = $MODEL_TECH/../lib/gdx2_vlg
-j2svlib_vlg = $MODEL_TECH/../lib/j2svlib_vlg
-lava1_vlg = $MODEL_TECH/../lib/lava1_vlg
-lc4k_vlg = $MODEL_TECH/../lib/lc4k_vlg
-lc5kb_vlg = $MODEL_TECH/../lib/lc5kb_vlg
-lc5kmx_vlg = $MODEL_TECH/../lib/lc5kmx_vlg
-lc5kva_vlg = $MODEL_TECH/../lib/lc5kva_vlg
-lc5kve_vlg = $MODEL_TECH/../lib/lc5kve_vlg
-lc5kvg_vlg = $MODEL_TECH/../lib/lc5kvg_vlg
-lsc_vlg = $MODEL_TECH/../lib/lsc_vlg
-lscsub_vlg = $MODEL_TECH/../lib/lscsub_vlg
-mach_vlg = $MODEL_TECH/../lib/mach_vlg
-mgen_vlog = $MODEL_TECH/../lib/mgen_vlog
-neoprims_vlg = $MODEL_TECH/../lib/neoprims_vlg
-orca2_vlg = $MODEL_TECH/../lib/orca2_vlg
-orca2a_vlg = $MODEL_TECH/../lib/orca2a_vlg
-orca3_vlg = $MODEL_TECH/../lib/orca3_vlg
-orca4_vlg = $MODEL_TECH/../lib/orca4_vlg
-orli10g_work = $MODEL_TECH/../lib/orli10g_work
-orso82g5_work = $MODEL_TECH/../lib/orso82g5_work
-orspi4_work = $MODEL_TECH/../lib/orspi4_work
-ort82g5_work = $MODEL_TECH/../lib/ort82g5_work
-ort8850_work = $MODEL_TECH/../lib/ort8850_work
-powr_vlg = $MODEL_TECH/../lib/powr_vlg
-sysbus_work = $MODEL_TECH/../lib/sysbus_work
-vlog_macro = $MODEL_TECH/../lib/vlog_macro
-xpga_vlg = $MODEL_TECH/../lib/xpga_vlg
+altera_mf_ver = $MODEL_TECH/../altera/verilog/altera_mf
+altera_ver = $MODEL_TECH/../altera/verilog/altera
+altera_lnsim_ver = $MODEL_TECH/../altera/verilog/altera_lnsim
+lpm_ver = $MODEL_TECH/../altera/verilog/220model
+220model_ver = $MODEL_TECH/../altera/verilog/220model
+maxii_ver = $MODEL_TECH/../altera/verilog/maxii
+maxv_ver = $MODEL_TECH/../altera/verilog/maxv
+fiftyfivenm_ver = $MODEL_TECH/../altera/verilog/fiftyfivenm
+sgate_ver = $MODEL_TECH/../altera/verilog/sgate
+arriaii_ver = $MODEL_TECH/../altera/verilog/arriaii
+arriaii_hssi_ver = $MODEL_TECH/../altera/verilog/arriaii_hssi
+arriaii_pcie_hip_ver = $MODEL_TECH/../altera/verilog/arriaii_pcie_hip
+arriaiigz_ver = $MODEL_TECH/../altera/verilog/arriaiigz
+arriaiigz_hssi_ver = $MODEL_TECH/../altera/verilog/arriaiigz_hssi
+arriaiigz_pcie_hip_ver = $MODEL_TECH/../altera/verilog/arriaiigz_pcie_hip
+stratixiv_ver = $MODEL_TECH/../altera/verilog/stratixiv
+stratixiv_hssi_ver = $MODEL_TECH/../altera/verilog/stratixiv_hssi
+stratixiv_pcie_hip_ver = $MODEL_TECH/../altera/verilog/stratixiv_pcie_hip
+stratixv_ver = $MODEL_TECH/../altera/verilog/stratixv
+stratixv_hssi_ver = $MODEL_TECH/../altera/verilog/stratixv_hssi
+stratixv_pcie_hip_ver = $MODEL_TECH/../altera/verilog/stratixv_pcie_hip
+arriavgz_ver = $MODEL_TECH/../altera/verilog/arriavgz
+arriavgz_hssi_ver = $MODEL_TECH/../altera/verilog/arriavgz_hssi
+arriavgz_pcie_hip_ver = $MODEL_TECH/../altera/verilog/arriavgz_pcie_hip
+arriav_ver = $MODEL_TECH/../altera/verilog/arriav
+arriav_hssi_ver = $MODEL_TECH/../altera/verilog/arriav_hssi
+arriav_pcie_hip_ver = $MODEL_TECH/../altera/verilog/arriav_pcie_hip
+cyclonev_ver = $MODEL_TECH/../altera/verilog/cyclonev
+cyclonev_hssi_ver = $MODEL_TECH/../altera/verilog/cyclonev_hssi
+cyclonev_pcie_hip_ver = $MODEL_TECH/../altera/verilog/cyclonev_pcie_hip
+cycloneiv_ver = $MODEL_TECH/../altera/verilog/cycloneiv
+cycloneiv_hssi_ver = $MODEL_TECH/../altera/verilog/cycloneiv_hssi
+cycloneiv_pcie_hip_ver = $MODEL_TECH/../altera/verilog/cycloneiv_pcie_hip
+cycloneive_ver = $MODEL_TECH/../altera/verilog/cycloneive
+twentynm_ver = $MODEL_TECH/../altera/verilog/twentynm
+twentynm_hssi_ver = $MODEL_TECH/../altera/verilog/twentynm_hssi
+twentynm_hip_ver = $MODEL_TECH/../altera/verilog/twentynm_hip
+cyclone10lp_ver = $MODEL_TECH/../altera/verilog/cyclone10lp
 
 work = work
 [vcom]
@@ -87,7 +103,7 @@ work = work
 ; Value of 0 or 1987 for VHDL-1987.
 ; Value of 1 or 1993 for VHDL-1993.
 ; Default or value of 2 or 2002 for VHDL-2002.
-; Value of 3 or 2008 for VHDL-2008
+; Default or value of 3 or 2008 for VHDL-2008.
 VHDL93 = 2002
 
 ; Show source line containing error. Default is off.
@@ -395,10 +411,10 @@ Project_Version = 6
 Project_DefaultLib = work
 Project_SortMethod = unused
 Project_Files_Count = 2
-Project_File_0 = D:/Arcade_Stuff/POKEY/HDL/IRQ_core/IRQ_core.vhd
-Project_File_P_0 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1675299062 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 1 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 0 cover_nosub 0 dont_compile 0 vhdl_use93 2008
-Project_File_1 = D:/Arcade_Stuff/POKEY/HDL/IRQ_core/tb_IRQ_core.vhd
-Project_File_P_1 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1675297359 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 1 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 1 cover_nosub 0 dont_compile 0 vhdl_use93 2008
+Project_File_0 = D:/work/atari_pokey/HDL/test/test.vhd
+Project_File_P_0 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1675214297 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 1 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 1 cover_nosub 0 dont_compile 0 vhdl_use93 2008
+Project_File_1 = D:/work/atari_pokey/HDL/test/tb_test.vhd
+Project_File_P_1 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1675216387 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 1 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 0 cover_nosub 0 dont_compile 0 vhdl_use93 2008
 Project_Sim_Count = 0
 Project_Folder_Count = 0
 Echo_Compile_Output = 0
