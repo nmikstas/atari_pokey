@@ -1,3 +1,4 @@
+
 --Test bench for the POKEY IRQ core.
 --Written by Nick Mikstas
 
@@ -63,7 +64,7 @@ begin
 
         --Activate all IRQ signals. IRQ line should not go high.
         wait for 1000 ns;
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         setBreak    <= '1';
         setKey      <= '1';
         setSdiCompl <= '1';
@@ -74,8 +75,7 @@ begin
         Timer1      <= '1';
 
         --Turn off all IRQ signals.
-        wait for 1000 ns;
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         setBreak    <= '0';
         setKey      <= '0';
         setSdiCompl <= '0';
@@ -86,28 +86,28 @@ begin
         Timer1      <= '0';       
 
         --------------------------------------Test Timer 1 IRQ--------------------------------------
-        wait for 5000 ns;
+        wait for 1000 ns;
 
         --Enable IRQ.
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "00000001";
         wait until rising_edge(clk);
         IRQEN <= '1';
         wait until rising_edge(clk);
         IRQEN <= '0';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "00000000";
 
         --Send an IRQ.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         Timer1 <= '1';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Timer1 <= '0';
 
         --Clear IRQ signal.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         Dw <= "00000000";
         wait until rising_edge(clk);
         IRQEN <= '1';
@@ -115,28 +115,28 @@ begin
         IRQEN <= '0';
         
         --------------------------------------Test Timer 2 IRQ--------------------------------------
-        wait for 5000 ns;
+        wait for 1000 ns;
 
         --Enable IRQ.
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "00000010";
         wait until rising_edge(clk);
         IRQEN <= '1';
         wait until rising_edge(clk);
         IRQEN <= '0';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "00000000";
 
         --Send an IRQ.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         Timer2 <= '1';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Timer2 <= '0';
 
         --Clear IRQ signal.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         Dw <= "00000000";
         wait until rising_edge(clk);
         IRQEN <= '1';
@@ -144,28 +144,28 @@ begin
         IRQEN <= '0';
 
         --------------------------------------Test Timer 4 IRQ--------------------------------------
-        wait for 5000 ns;
+        wait for 1000 ns;
 
         --Enable IRQ.
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "00000100";
         wait until rising_edge(clk);
         IRQEN <= '1';
         wait until rising_edge(clk);
         IRQEN <= '0';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "00000000";
 
         --Send an IRQ.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         Timer4 <= '1';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Timer4 <= '0';
 
         --Clear IRQ signal.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         Dw <= "00000000";
         wait until rising_edge(clk);
         IRQEN <= '1';
@@ -173,28 +173,28 @@ begin
         IRQEN <= '0';        
 
         -------------------------------------Test sdo Finish IRQ------------------------------------
-        wait for 5000 ns;
+        wait for 1000 ns;
 
         --Enable IRQ.
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "00001000";
         wait until rising_edge(clk);
         IRQEN <= '1';
         wait until rising_edge(clk);
         IRQEN <= '0';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "00000000";
 
         --Send an IRQ.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         sdoFinish <= '0';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         sdoFinish <= '1';
 
         --Clear IRQ signal.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         Dw <= "00000000";
         wait until rising_edge(clk);
         IRQEN <= '1';
@@ -202,28 +202,28 @@ begin
         IRQEN <= '0';
 
         ------------------------------------Test Sdo Complete IRQ-----------------------------------
-        wait for 5000 ns;
+        wait for 1000 ns;
 
         --Enable IRQ.
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "00010000";
         wait until rising_edge(clk);
         IRQEN <= '1';
         wait until rising_edge(clk);
         IRQEN <= '0';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "00000000";
 
         --Send an IRQ.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         setSdoCompl <= '1';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         setSdoCompl <= '0';
 
         --Clear IRQ signal.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         Dw <= "00000000";
         wait until rising_edge(clk);
         IRQEN <= '1';
@@ -231,28 +231,35 @@ begin
         IRQEN <= '0';  
 
         ------------------------------------Test Sdi Complete IRQ-----------------------------------
-        wait for 5000 ns;
+        wait for 1000 ns;
 
         --Enable IRQ.
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "00100000";
         wait until rising_edge(clk);
         IRQEN <= '1';
         wait until rising_edge(clk);
         IRQEN <= '0';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "00000000";
 
         --Send an IRQ.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         setSdiCompl <= '1';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
+        setSdiCompl <= '0';
+
+        --Generate sdi overun.
+        wait for 1000 ns;
+        wait until falling_edge(clk);
+        setSdiCompl <= '1';
+        wait until falling_edge(clk);
         setSdiCompl <= '0';
 
         --Clear IRQ signal.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         Dw <= "00000000";
         wait until rising_edge(clk);
         IRQEN <= '1';
@@ -260,28 +267,35 @@ begin
         IRQEN <= '0';
 
         ----------------------------------------Test Key IRQ----------------------------------------
-        wait for 5000 ns;
+        wait for 1000 ns;
 
         --Enable IRQ.
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "01000000";
         wait until rising_edge(clk);
         IRQEN <= '1';
         wait until rising_edge(clk);
         IRQEN <= '0';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "00000000";
 
         --Send an IRQ.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         setKey <= '1';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
+        setKey <= '0';
+
+        --Generate key overun.
+        wait for 1000 ns;
+        wait until falling_edge(clk);
+        setKey <= '1';
+        wait until falling_edge(clk);
         setKey <= '0';
 
         --Clear IRQ signal.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         Dw <= "00000000";
         wait until rising_edge(clk);
         IRQEN <= '1';
@@ -289,28 +303,28 @@ begin
         IRQEN <= '0';
 
         ---------------------------------------Test Break IRQ---------------------------------------
-        wait for 5000 ns;
+        wait for 1000 ns;
 
         --Enable IRQ.
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "10000000";
         wait until rising_edge(clk);
         IRQEN <= '1';
         wait until rising_edge(clk);
         IRQEN <= '0';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         Dw <= "00000000";
 
         --Send an IRQ.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         setBreak <= '1';
-        wait until rising_edge(clk);
+        wait until falling_edge(clk);
         setBreak <= '0';
 
         --Clear IRQ signal.
-        wait for 3000 ns;
-        wait until rising_edge(clk);
+        wait for 1000 ns;
+        wait until falling_edge(clk);
         Dw <= "00000000";
         wait until rising_edge(clk);
         IRQEN <= '1';
@@ -318,7 +332,7 @@ begin
         IRQEN <= '0'; 
 
 
-        wait for 100000 ns;
+        wait for 3000 ns;
         std.env.stop; --End the simulation.
     end process;
 

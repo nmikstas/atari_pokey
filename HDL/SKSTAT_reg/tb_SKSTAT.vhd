@@ -2,16 +2,16 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity tb_test is
-end tb_test;
+entity tb_SKSTAT is
+end tb_SKSTAT;
 
-architecture behavioral of tb_test is
+architecture behavioral of tb_SKSTAT is
 
     constant CLK179MHZ_PERIOD : time := 558.7247666 ns;
 
     signal clk       : std_logic := '0';
-    signal nsdiOvrun : std_logic := '0';
-    signal nkeyOvrun : std_logic := '0';
+    signal sdiOvrun  : std_logic := '0';
+    signal keyOvrun  : std_logic := '0';
     signal setFramer : std_logic := '0';
     signal kShift    : std_logic := '0';
     signal keyDown   : std_logic := '0';
@@ -28,8 +28,8 @@ begin
     port map
     ( 
         clk       => clk,
-        nsdiOvrun => nsdiOvrun,
-        nkeyOvrun => nkeyOvrun,
+        sdiOvrun  => sdiOvrun,
+        keyOvrun  => keyOvrun,
         setFramer => setFramer,
         kShift    => kShift,
         keyDown   => keyDown,
@@ -49,15 +49,15 @@ begin
 
         wait until rising_edge(clk);
         wait until rising_edge(clk);
-        nsdiOvrun <= '1';
+        sdiOvrun <= '1';
         wait until rising_edge(clk);
-        nsdiOvrun <= '0';
+        sdiOvrun <= '0';
 
         wait until rising_edge(clk);
         wait until rising_edge(clk);
-        nkeyOvrun <= '1';
+        keyOvrun <= '1';
         wait until rising_edge(clk);
-        nkeyOvrun <= '0';
+        keyOvrun <= '0';
 
         wait until rising_edge(clk);
         wait until rising_edge(clk);

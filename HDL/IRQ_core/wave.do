@@ -17,11 +17,8 @@ add wave -noupdate -label IRQ /tb_irq_core/IRQ
 add wave -noupdate -label Dr /tb_irq_core/Dr
 add wave -noupdate -label keyOvrun /tb_irq_core/keyOvrun
 add wave -noupdate -label sdiOvrun /tb_irq_core/sdiOvrun
-add wave -noupdate -divider {Internal Signals}
-add wave -noupdate -label nirq_st /tb_irq_core/irq_core_0/nirqst
-add wave -noupdate -label irqOut3 /tb_irq_core/irq_core_0/irqOut3
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {10581143 ps} 0}
+WaveRestoreCursors {{Cursor 1} {59899239 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -37,4 +34,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {282463194 ps}
+WaveRestoreZoom {0 ps} {64455991 ps}
