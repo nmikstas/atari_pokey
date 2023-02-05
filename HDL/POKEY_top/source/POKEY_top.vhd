@@ -109,23 +109,39 @@ architecture structural of pokey_top is
     signal poly5bit    : std_logic;
     signal poly917bit  : std_logic;
 
-
-    
-
+    --KEY core signals.
+    signal setKey   : std_logic;
+    signal kShift   : std_logic;
+    signal setBreak : std_logic;
+    signal keyDown  : std_logic;
 
     --IRQ core signals.
-    --signal setBreak    : std_logic;
-    --signal setKey      : std_logic;
-    --signal setSdiCompl : std_logic;
-    --signal setSdoCompl : std_logic;
-    --signal sdoFinish   : std_logic;
-    --signal Timer4      : std_logic;
-    --signal Timer2      : std_logic;
-    --signal Timer1      : std_logic;
-    --signal keyOvrun    : std_logic;
-    --signal sdiOvrun    : std_logic;
+    signal setSdiCompl : std_logic;
+    signal setSdoCompl : std_logic;
+    signal sdoFinish   : std_logic;
+    signal Timer4      : std_logic;
+    signal Timer2      : std_logic;
+    signal Timer1      : std_logic;
+    signal keyOvrun    : std_logic;
+    signal sdiOvrun    : std_logic;
+
+    --SKSTAT register signals.
+    signal setFramer : std_logic;
+    signal sdiBusy   : std_logic;
+    signal siDelay   : std_logic;
 
 begin
+
+    --Temporarily set unused inputs to a known value.
+    setSdiCompl <= '0';
+    setSdoCompl <= '0';
+    sdoFinish   <= '1';
+    Timer4      <= '0';
+    Timer2      <= '0';
+    Timer1      <= '0';
+    setFramer   <= '0';
+    sdiBusy     <= '0';
+    siDelay     <= '0';
 
     --Data and address I/O.
     IO_core_0 : entity work.IO_core
@@ -241,33 +257,57 @@ begin
         ALLPOT   => Data8r
     );     
 
-
-
-
-
-
-
-
+    --Keyboard scanning core.
+    key_core_0 : entity work.key_core
+    port map
+    (
+        clk      => phi2,
+        keybClk  => keybClk,
+        KR       => kr,
+        SKCTLS   => SKCTLS(1) & SKCTLS(0),
+        setKey   => setKey,
+        kShift   => kShift,
+        setBreak => setBreak,
+        keyDown  => keyDown,
+        D        => Data9r,
+        K        => k
+    );
 
     --IRQ core.
-    --irq_core_0 : entity work.IRQ_core
-    --port map
-    --( 
-    --    clk         => phi2,
-    --    IRQEN       => AddrEw,
-    --    Dw          => dw,
-    --    setBreak    => setBreak,
-    --    setKey      => setKey,
-    --    setSdiCompl => setSdiCompl,
-    --    setSdoCompl => setSdoCompl,
-    --    sdoFinish   => sdoFinish,
-    --    Timer4      => Timer4,
-    --    Timer2      => Timer2,
-    --    Timer1      => Timer1,
-    --    IRQ         => irq,
-    --    Dr          => AddrEData,
-    --    keyOvrun    => keyOvrun,
-    --    sdiOvrun    => sdiOvrun
-    --);
+    irq_core_0 : entity work.IRQ_core
+    port map
+    ( 
+        clk         => phi2,
+        IRQEN       => AddrEw,
+        Dw          => dw,
+        setBreak    => setBreak,
+        setKey      => setKey,
+        setSdiCompl => setSdiCompl,
+        setSdoCompl => setSdoCompl,
+        sdoFinish   => sdoFinish,
+        Timer4      => Timer4,
+        Timer2      => Timer2,
+        Timer1      => Timer1,
+        IRQ         => irq,
+        Dr          => DataEr,
+        keyOvrun    => keyOvrun,
+        sdiOvrun    => sdiOvrun
+    );
+
+    --SKSTAT register.
+    SKSTAT_0 : entity work.SKSTAT
+    port map
+    ( 
+        clk       => phi2,
+        sdiOvrun  => sdiOvrun,
+        keyOvrun  => keyOvrun,
+        setFramer => setFramer,
+        kShift    => kShift,
+        keyDown   => keyDown,
+        sdiBusy   => sdiBusy,
+        siDelay   => siDelay,
+        addrAw    => AddrAw,
+        Dout      => DataFr
+    );
 
 end structural;

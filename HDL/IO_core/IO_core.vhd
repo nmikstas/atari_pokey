@@ -84,17 +84,27 @@ architecture structural of io_core is
     signal muxOut : std_logic_vector(7 downto 0);
 
     signal AQ : std_logic_vector(3 downto 0);
+    signal Ar : std_logic_vector(3 downto 0);
 
     signal readEn   : std_logic;
     signal nwriteEn : std_logic;
+    signal writeEn2 : std_logic;
 begin
 
     process(all)
     begin
 
         --Always lock in the address.
-        if(rising_edge(clk)) then
+        if(rising_edge(clk) and nwriteEn = '0') then
             AQ <= A;
+        end if;
+
+        if(rising_edge(clk)) then
+           writeEn2 <= nwriteEn;
+        end if;
+
+        if(rising_edge(clk)) then
+            Ar <= A;
         end if;
 
         ---------------------------------------Enable Signals---------------------------------------
@@ -123,7 +133,7 @@ begin
         end if;
 
         --MUX out based on captured address.
-        case AQ is
+        case Ar is
       when "0000" =>
         muxOut <= Data0Q; 
             when "0001" =>
@@ -153,7 +163,7 @@ begin
             when "1111" =>
         muxOut <= DataFQ;
             when others =>
-        muxOut <= "00000000";
+        muxOut <= "11111111";
     end case;
 
         ------------------------------------------Data I/O------------------------------------------
@@ -168,21 +178,21 @@ begin
         
         ----------------------------------------Address Write---------------------------------------
 
-        Addr0w <= not(nwriteEn or      AQ(0)  or      AQ(1)  or      AQ(2)  or      AQ(3));
-        Addr1w <= not(nwriteEn or (not AQ(0)) or      AQ(1)  or      AQ(2)  or      AQ(3));
-        Addr2w <= not(nwriteEn or      AQ(0)  or (not AQ(1)) or      AQ(2)  or      AQ(3));
-        Addr3w <= not(nwriteEn or (not AQ(0)) or (not AQ(1)) or      AQ(2)  or      AQ(3));
-        Addr4w <= not(nwriteEn or      AQ(0)  or      AQ(1)  or (not AQ(2)) or      AQ(3));
-        Addr5w <= not(nwriteEn or (not AQ(0)) or      AQ(1)  or (not AQ(2)) or      AQ(3));
-        Addr6w <= not(nwriteEn or      AQ(0)  or (not AQ(1)) or (not AQ(2)) or      AQ(3));
-        Addr7w <= not(nwriteEn or (not AQ(0)) or (not AQ(1)) or (not AQ(2)) or      AQ(3));
-        Addr8w <= not(nwriteEn or      AQ(0)  or      AQ(1)  or      AQ(2)  or (not AQ(3)));
-        Addr9w <= not(nwriteEn or (not AQ(0)) or      AQ(1)  or      AQ(2)  or (not AQ(3)));
-        AddrAw <= not(nwriteEn or      AQ(0)  or (not AQ(1)) or      AQ(2)  or (not AQ(3)));
-        AddrBw <= not(nwriteEn or (not AQ(0)) or (not AQ(1)) or      AQ(2)  or (not AQ(3)));
-        AddrDw <= not(nwriteEn or (not AQ(0)) or      AQ(1)  or (not AQ(2)) or (not AQ(3)));
-        AddrEw <= not(nwriteEn or      AQ(0)  or (not AQ(1)) or (not AQ(2)) or (not AQ(3)));
-        AddrFw <= not(nwriteEn or (not AQ(0)) or (not AQ(1)) or (not AQ(2)) or (not AQ(3)));
+        Addr0w <= not(writeEn2 or      AQ(0)  or      AQ(1)  or      AQ(2)  or      AQ(3));
+        Addr1w <= not(writeEn2 or (not AQ(0)) or      AQ(1)  or      AQ(2)  or      AQ(3));
+        Addr2w <= not(writeEn2 or      AQ(0)  or (not AQ(1)) or      AQ(2)  or      AQ(3));
+        Addr3w <= not(writeEn2 or (not AQ(0)) or (not AQ(1)) or      AQ(2)  or      AQ(3));
+        Addr4w <= not(writeEn2 or      AQ(0)  or      AQ(1)  or (not AQ(2)) or      AQ(3));
+        Addr5w <= not(writeEn2 or (not AQ(0)) or      AQ(1)  or (not AQ(2)) or      AQ(3));
+        Addr6w <= not(writeEn2 or      AQ(0)  or (not AQ(1)) or (not AQ(2)) or      AQ(3));
+        Addr7w <= not(writeEn2 or (not AQ(0)) or (not AQ(1)) or (not AQ(2)) or      AQ(3));
+        Addr8w <= not(writeEn2 or      AQ(0)  or      AQ(1)  or      AQ(2)  or (not AQ(3)));
+        Addr9w <= not(writeEn2 or (not AQ(0)) or      AQ(1)  or      AQ(2)  or (not AQ(3)));
+        AddrAw <= not(writeEn2 or      AQ(0)  or (not AQ(1)) or      AQ(2)  or (not AQ(3)));
+        AddrBw <= not(writeEn2 or (not AQ(0)) or (not AQ(1)) or      AQ(2)  or (not AQ(3)));
+        AddrDw <= not(writeEn2 or (not AQ(0)) or      AQ(1)  or (not AQ(2)) or (not AQ(3)));
+        AddrEw <= not(writeEn2 or      AQ(0)  or (not AQ(1)) or (not AQ(2)) or (not AQ(3)));
+        AddrFw <= not(writeEn2 or (not AQ(0)) or (not AQ(1)) or (not AQ(2)) or (not AQ(3)));
 
     end process;
 end structural;
