@@ -1,27 +1,20 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate -label clk /tb_freq_cntrl_reg/clk
-add wave -noupdate -label D /tb_freq_cntrl_reg/D
-add wave -noupdate -label WR /tb_freq_cntrl_reg/WR
-add wave -noupdate -label decEn /tb_freq_cntrl_reg/decEn
-add wave -noupdate -label Ld /tb_freq_cntrl_reg/Ld
-add wave -noupdate -label nBOR /tb_freq_cntrl_reg/nBOR
-add wave -noupdate -label audClock /tb_freq_cntrl_reg/audClock
-add wave -noupdate -divider {Internal Bits}
-add wave -noupdate -label b7 /tb_freq_cntrl_reg/freq/bit_7/nbt
-add wave -noupdate -label b6 /tb_freq_cntrl_reg/freq/bit_6/nbt
-add wave -noupdate -label b5 /tb_freq_cntrl_reg/freq/bit_5/nbt
-add wave -noupdate -label b4 /tb_freq_cntrl_reg/freq/bit_4/nbt
-add wave -noupdate -label b3 /tb_freq_cntrl_reg/freq/bit_3/nbt
-add wave -noupdate -label b2 /tb_freq_cntrl_reg/freq/bit_2/nbt
-add wave -noupdate -label b1 /tb_freq_cntrl_reg/freq/bit_1/nbt
-add wave -noupdate -label b0 /tb_freq_cntrl_reg/freq/bit_0/nbt
-add wave -noupdate -divider Borrows
-add wave -noupdate -label {Borrow Chain} -expand /tb_freq_cntrl_reg/freq/CR_BOR
-add wave -noupdate -divider {Internal Logic}
-add wave -noupdate -label {Bit 0 nor1} /tb_freq_cntrl_reg/freq/bit_0/nor1
+add wave -noupdate -label clk /tb_aud_freq_control/clk
+add wave -noupdate -label init /tb_aud_freq_control/init
+add wave -noupdate -label audClock /tb_aud_freq_control/audClock
+add wave -noupdate -label Addr9w /tb_aud_freq_control/Addr9w
+add wave -noupdate -label reload12 /tb_aud_freq_control/aud_freq_control_0/reload12
+add wave -noupdate -label reload34 /tb_aud_freq_control/aud_freq_control_0/reload34
+add wave -noupdate -label nBOR /tb_aud_freq_control/aud_freq_control_0/nBOR
+add wave -noupdate -label D -radix unsigned /tb_aud_freq_control/D
+add wave -noupdate -label {Channel 4 Data Load} /tb_aud_freq_control/Addr6w
+add wave -noupdate -label {Channel 3 Data Load} /tb_aud_freq_control/Addr4w
+add wave -noupdate -label {Channel 2 Data Load} /tb_aud_freq_control/Addr2w
+add wave -noupdate -label {Channel 1 Data Load} /tb_aud_freq_control/Addr0w
+add wave -noupdate -label Timer -expand /tb_aud_freq_control/Timer
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 3} {2386310204 ps} 0} {{Cursor 3} {3857430496 ps} 0}
+WaveRestoreCursors {{Cursor 1} {9444670496 ps} 0} {{Cursor 3} {4735744624 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -37,4 +30,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {1906257378 ps} {3953757378 ps}
+WaveRestoreZoom {1534864352 ps} {17284864992 ps}
