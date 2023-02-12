@@ -10,7 +10,7 @@ architecture behavioral of tb_test is
     constant CLK179MHZ_PERIOD : time := 558.7247666 ns;
 
     signal clk         : std_logic := '0';
-    signal slowClk     : std_logic := '0';
+    signal nsdoClock   : std_logic := '1';
     signal sdonShiftEn : std_logic := '1'; --Active low.
     signal ssoLoad     : std_logic := '0'; --Active high.
     signal ssoShift    : std_logic;
@@ -27,7 +27,7 @@ begin
     port map
     ( 
         clk         => clk,        
-        slowClk     => slowClk,
+        slowClk     => nsdoClock,
         sdonShiftEn => sdonShiftEn,
         ssoLoad     => ssoLoad,
         ssoShift    => ssoShift,
@@ -35,39 +35,27 @@ begin
         ssoRec      => ssoRec
     );
 
-    process(all)
-    begin
-        if(falling_edge(clk)) then
-            counter <= counter + '1';
-        end if;
-
-        if counter > "0111" then
-            slowClk <= '0';
-        else
-            slowClk <= '1';
-        end if;
-    end process;
-
     process
     begin
         
         --Load.
-        wait until falling_edge(slowClk);
-        wait until rising_edge(slowClk);
-        wait until falling_edge(clk);
+        wait for 2000 ns;
         wait until rising_edge(clk);
         ssoLoad <= '1';
         wait until rising_edge(clk);
-        wait until rising_edge(clk);
+        --wait until rising_edge(clk);
         ssoLoad <= '0';
 
         --Shift.
-        wait until falling_edge(slowClk);
+        wait for 2000 ns;
+        wait until falling_edge(clk);
+        nsdoClock <= '0';
         sdonShiftEn <= '0';
-        wait until rising_edge(slowClk);
+        wait until falling_edge(clk);
+        nsdoClock <= '0';
         sdonShiftEn <= '1';
         
-        wait for 10000 ns;
+        wait for 5000 ns;
         std.env.stop; --End the simulation.
     end process;
 
