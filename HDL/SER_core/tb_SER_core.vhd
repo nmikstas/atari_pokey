@@ -5,10 +5,10 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity tb_SER_clock_gen is
-end tb_SER_clock_gen;
+entity tb_SER_core is
+end tb_SER_core;
 
-architecture behavioral of tb_SER_clock_gen is
+architecture behavioral of tb_SER_core is
 
     constant CLK179MHZ_PERIOD : time := 558.7247666 ns;
 
@@ -20,15 +20,15 @@ architecture behavioral of tb_SER_clock_gen is
     signal Addr4w         : std_logic := '0';
     signal Addr6w         : std_logic := '0';
     signal Addr9w         : std_logic := '0';
-    signal enFastClk1     : std_logic := '1';
+    signal enFastClk1     : std_logic := '0';
     signal enFastClk3     : std_logic := '1';
-    signal ch2Bits16      : std_logic := '1';
+    signal ch2Bits16      : std_logic := '0';
     signal ch4Bits16      : std_logic := '1';
-    signal resyncTwoTones : std_logic := '0';
     signal resyncSerClk   : std_logic := '1';
     signal Timer          : std_logic_vector(4 downto 1);
     signal nTimer         : std_logic_vector(4 downto 1);
     signal rstAudPhase    : std_logic;
+    signal resyncTwoTones : std_logic;
 
     --Clock pulse generator signals.
     signal init     : std_logic := '0';
@@ -43,6 +43,14 @@ architecture behavioral of tb_SER_clock_gen is
     signal sdiClock     : std_logic;
     signal sdoClock     : std_logic;
     signal OCLK         : std_logic;
+
+    --SEROUT signals.
+    signal AddrDw         : std_logic := '0';
+    signal SKCTLS3        : std_logic := '0';
+    signal SKCTLS7        : std_logic := '0';
+    signal setSdoComplete : std_logic;
+    signal sdoFinish      : std_logic;
+    signal SOD            : std_logic;
 
     --BCLK_in clock signal.
     signal counter : unsigned(2 downto 0) := "000";
@@ -97,6 +105,24 @@ begin
         OCLK         => OCLK
     );
 
+    serout_0 : entity work.SEROUT
+    port map
+    ( 
+        clk            => clk,
+        D              => D,
+        AddrDw         => AddrDw,
+        Init           => init,
+        sdoClock       => sdoClock,
+        SKCTLS7        => SKCTLS7,
+        SKCTLS3        => SKCTLS3,
+        Timer1         => Timer(1),
+        Timer2         => Timer(2),
+        resync2Tones   => resyncTwoTones,
+        sdoFinish      => sdoFinish,
+        setSdoComplete => setSdoComplete,
+        SOD            => SOD
+    );
+
     process(all)
     begin
         if(falling_edge(clk)) then
@@ -125,11 +151,11 @@ begin
         Addr9w <= '0';
 
         --Set resync flip-flops into a known state.
-        wait for 2000 ns;
-        wait until rising_edge(clk);
-        Addr9w <= '1';
-        wait until rising_edge(clk);
-        Addr9w <= '0';
+        --wait for 2000 ns;
+        --wait until rising_edge(clk);
+        --Addr9w <= '1';
+        --wait until rising_edge(clk);
+        --Addr9w <= '0';
 
         --Initialize clock pulse generator.
         wait until falling_edge(clk);
@@ -140,7 +166,7 @@ begin
 
         --Load counter register 1.
         wait until falling_edge(clk);
-        D <= "00001001";
+        D <= "00001100";
         wait until rising_edge(clk);
         Addr0w <= '1';
         wait until falling_edge(clk);
@@ -150,7 +176,7 @@ begin
 
         --Load counter register 2.
         wait until falling_edge(clk);
-        D <= "00000000";
+        D <= "00100000";
         wait until rising_edge(clk);
         Addr2w <= '1';
         wait until falling_edge(clk);
@@ -170,7 +196,7 @@ begin
 
         --Load counter register 4.
         wait until falling_edge(clk);
-        D <= "00000000";
+        D <= "00001000";
         wait until rising_edge(clk);
         Addr6w <= '1';
         wait until falling_edge(clk);
@@ -189,9 +215,41 @@ begin
         wait for 2000 ns;
         wait until falling_edge(clk);
         resyncSerClk <= '0';
-        SKCTLS       <= "110";
+        SKCTLS       <= "010";
+
+        --Load zeroes to transmit.
+        wait until falling_edge(clk);
+        D <= "00000000";
+        wait until rising_edge(clk);
+        AddrDw <= '1';
+        wait until falling_edge(clk);
+        D <= "00000000";
+        wait until rising_edge(clk);
+        AddrDw <= '0';        
+
+        --Wait for TX to finish.
+        wait for 4600000 ns;
+        wait until sdoFinish = '0';
+
+        --Set to 2 tone mode.
+        wait until falling_edge(clk);
+        --SKCTLS3 <= '1';
+        wait for 2000 ns;
+
+        --Load data to transmit.
+        wait until falling_edge(clk);
+        D <= "01001011";
+        wait until rising_edge(clk);
+        AddrDw <= '1';
+        wait until falling_edge(clk);
+        D <= "00000000";
+        wait until rising_edge(clk);
+        AddrDw <= '0';
+
+
+
         
-        wait for 1000000 ns;
+        wait for 100000000 ns;
         std.env.stop; --End the simulation.
     end process;
 

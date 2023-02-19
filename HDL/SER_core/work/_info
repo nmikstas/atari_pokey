@@ -22,9 +22,9 @@ VI_7>f@A>XLY_obdZHT3HT2
 !s100 _OjldblM?[@aTmV`]gGhm0
 Z7 OV;C;10.5b;63
 33
-Z8 !s110 1676674268
+Z8 !s110 1676767137
 !i10b 1
-Z9 !s108 1676674268.000000
+Z9 !s108 1676767137.000000
 Z10 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/audio_core/aud_freq_control.vhd|
 Z11 !s107 D:/work/atari_pokey/HDL/audio_core/aud_freq_control.vhd|
 !i113 1
@@ -64,9 +64,9 @@ VTF?M<?k18ZEa;h=<of<RW2
 !s100 9<TjH]JfKG@g?^H<E3nF_0
 R7
 33
-Z19 !s110 1676674266
+Z19 !s110 1676767136
 !i10b 1
-Z20 !s108 1676674266.000000
+Z20 !s108 1676767136.000000
 Z21 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/cell15.vhd|
 Z22 !s107 D:/work/atari_pokey/HDL/SER_core/cell15.vhd|
 !i113 1
@@ -105,11 +105,11 @@ Vk8XBaQzIHDj]k7ILF:h=[2
 !s100 J4FDdhjfzSKRhSUKG8<JP3
 R7
 33
-Z27 !s110 1676674267
+R19
 !i10b 1
-Z28 !s108 1676674267.000000
-Z29 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/cell16.vhd|
-Z30 !s107 D:/work/atari_pokey/HDL/SER_core/cell16.vhd|
+R20
+Z27 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/cell16.vhd|
+Z28 !s107 D:/work/atari_pokey/HDL/SER_core/cell16.vhd|
 !i113 1
 R12
 R13
@@ -117,40 +117,40 @@ Astructural
 R1
 R2
 R3
-Z31 DEx4 work 6 cell16 0 22 k8XBaQzIHDj]k7ILF:h=[2
+Z29 DEx4 work 6 cell16 0 22 k8XBaQzIHDj]k7ILF:h=[2
 l35
 L27
 VdnXA1Q^h_f_2=:?T]=W551
 !s100 `;`NHEV@BnQTCJ;P]aRMi2
 R7
 33
-R27
+R19
 !i10b 1
+R20
+R27
 R28
-R29
-R30
 !i113 1
 R12
 R13
 Ecell17
-Z32 w1676243168
+Z30 w1676243168
 R1
 R2
 R3
 R4
-Z33 8D:/work/atari_pokey/HDL/SER_core/cell17.vhd
-Z34 FD:/work/atari_pokey/HDL/SER_core/cell17.vhd
+Z31 8D:/work/atari_pokey/HDL/SER_core/cell17.vhd
+Z32 FD:/work/atari_pokey/HDL/SER_core/cell17.vhd
 l0
 L12
 VZZ6hFSMad71:QCh[g`;1^1
 !s100 bB2Dd8YjN7OV4l5OmEi0K3
 R7
 33
-R27
+R19
 !i10b 1
-R28
-Z35 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/cell17.vhd|
-Z36 !s107 D:/work/atari_pokey/HDL/SER_core/cell17.vhd|
+R20
+Z33 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/cell17.vhd|
+Z34 !s107 D:/work/atari_pokey/HDL/SER_core/cell17.vhd|
 !i113 1
 R12
 R13
@@ -158,40 +158,40 @@ Astructural
 R1
 R2
 R3
-Z37 DEx4 work 6 cell17 0 22 ZZ6hFSMad71:QCh[g`;1^1
+Z35 DEx4 work 6 cell17 0 22 ZZ6hFSMad71:QCh[g`;1^1
 l35
 L27
 VnU:2WcDd?G23]Bflg?`:d0
 !s100 @L?YOi<8i5@R6F=15UDF`1
 R7
 33
-R27
+R19
 !i10b 1
-R28
-R35
-R36
+R20
+R33
+R34
 !i113 1
 R12
 R13
 Ecell20
-Z38 w1672794212
+Z36 w1672794212
 R1
 R2
 R3
 R4
-Z39 8D:/work/atari_pokey/HDL/audio_core/cell20.vhd
-Z40 FD:/work/atari_pokey/HDL/audio_core/cell20.vhd
+Z37 8D:/work/atari_pokey/HDL/audio_core/cell20.vhd
+Z38 FD:/work/atari_pokey/HDL/audio_core/cell20.vhd
 l0
 L12
 VfePAl:`2;nQVOIz]QSoo^2
 !s100 I6Q4MWaoH62;R8KD1n]QD3
 R7
 33
-R8
+Z39 !s110 1676767138
 !i10b 1
 R9
-Z41 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/audio_core/cell20.vhd|
-Z42 !s107 D:/work/atari_pokey/HDL/audio_core/cell20.vhd|
+Z40 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/audio_core/cell20.vhd|
+Z41 !s107 D:/work/atari_pokey/HDL/audio_core/cell20.vhd|
 !i113 1
 R12
 R13
@@ -199,38 +199,38 @@ Astructural
 R1
 R2
 R3
-Z43 DEx4 work 6 cell20 0 22 fePAl:`2;nQVOIz]QSoo^2
+Z42 DEx4 work 6 cell20 0 22 fePAl:`2;nQVOIz]QSoo^2
 l43
 L32
 VdP=2HW0dFhm=?L^85WXE^1
 !s100 gCHc[HK3OhSRmbC:iX_fe3
 R7
 33
-R8
+R39
 !i10b 1
 R9
+R40
 R41
-R42
 !i113 1
 R12
 R13
 Ecell24
-Z44 w1672713133
+Z43 w1672713133
 R1
 R2
 R3
 R4
-Z45 8D:/work/atari_pokey/HDL/audio_core/cell24.vhd
-Z46 FD:/work/atari_pokey/HDL/audio_core/cell24.vhd
+Z44 8D:/work/atari_pokey/HDL/audio_core/cell24.vhd
+Z45 FD:/work/atari_pokey/HDL/audio_core/cell24.vhd
 l0
 L12
 VP6aKMde5me[_]mFZT:2X;3
 !s100 HaICYf__bb@kInFeJUZlC2
 R7
 33
-R8
+R39
 !i10b 1
-R9
+Z46 !s108 1676767138.000000
 Z47 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/audio_core/cell24.vhd|
 Z48 !s107 D:/work/atari_pokey/HDL/audio_core/cell24.vhd|
 !i113 1
@@ -247,9 +247,9 @@ V>VJi0LFh:;STeF2QSGW583
 !s100 k4J=WLk<<DEalD?jZ>SDM3
 R7
 33
-R8
+R39
 !i10b 1
-R9
+R46
 R47
 R48
 !i113 1
@@ -302,19 +302,19 @@ R1
 R2
 R3
 R4
-Z57 8D:/work/atari_pokey/HDL/SER_core/cell2p.vhd
-Z58 FD:/work/atari_pokey/HDL/SER_core/cell2p.vhd
+Z57 8D:/work/atari_pokey/HDL/KEY_core/cell2p.vhd
+Z58 FD:/work/atari_pokey/HDL/KEY_core/cell2p.vhd
 l0
 L12
 VzFGPDcYYodzbz5__kQV6S0
 !s100 hMm:C]ZD9P?z`km@GIXUf3
 R7
 33
-Z59 !s110 1676638481
+R39
 !i10b 1
-Z60 !s108 1676638481.000000
-Z61 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/cell2p.vhd|
-Z62 !s107 D:/work/atari_pokey/HDL/SER_core/cell2p.vhd|
+R46
+Z59 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/KEY_core/cell2p.vhd|
+Z60 !s107 D:/work/atari_pokey/HDL/KEY_core/cell2p.vhd|
 !i113 1
 R12
 R13
@@ -322,40 +322,40 @@ Astructural
 R1
 R2
 R3
-DEx4 work 6 cell2p 0 22 zFGPDcYYodzbz5__kQV6S0
+Z61 DEx4 work 6 cell2p 0 22 zFGPDcYYodzbz5__kQV6S0
 l38
 L30
 V^z`Zf4]Yl_3mzdlfQclXE0
 !s100 PAdSFEMYf^n`Xha2Z`ZIn0
 R7
 33
-R59
+R39
 !i10b 1
+R46
+R59
 R60
-R61
-R62
 !i113 1
 R12
 R13
 Ecell2pr
-Z63 w1676669834
+Z62 w1676669834
 R1
 R2
 R3
 R4
-Z64 8D:/work/atari_pokey/HDL/SER_core/cell2pr.vhd
-Z65 FD:/work/atari_pokey/HDL/SER_core/cell2pr.vhd
+Z63 8D:/work/atari_pokey/HDL/SER_core/cell2pr.vhd
+Z64 FD:/work/atari_pokey/HDL/SER_core/cell2pr.vhd
 l0
 L12
 V:[YY@^]<FOKBWmV7]K4?82
 !s100 _B7MPLWYRjdfS=6dQ7oMn0
 R7
 33
-R27
+R8
 !i10b 1
-R28
-Z66 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/cell2pr.vhd|
-Z67 !s107 D:/work/atari_pokey/HDL/SER_core/cell2pr.vhd|
+R9
+Z65 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/cell2pr.vhd|
+Z66 !s107 D:/work/atari_pokey/HDL/SER_core/cell2pr.vhd|
 !i113 1
 R12
 R13
@@ -363,40 +363,40 @@ Astructural
 R1
 R2
 R3
-Z68 DEx4 work 7 cell2pr 0 22 :[YY@^]<FOKBWmV7]K4?82
+Z67 DEx4 work 7 cell2pr 0 22 :[YY@^]<FOKBWmV7]K4?82
 l39
 L31
 Vf4Kz2a_P3kck<S[>2IB]c0
 !s100 V@@k@[5GS[mR[>:PnYGFD1
 R7
 33
-R27
+R8
 !i10b 1
-R28
+R9
+R65
 R66
-R67
 !i113 1
 R12
 R13
 Ecell2r
-Z69 w1676670043
+Z68 w1676670043
 R1
 R2
 R3
 R4
-Z70 8D:/work/atari_pokey/HDL/SER_core/cell2r.vhd
-Z71 FD:/work/atari_pokey/HDL/SER_core/cell2r.vhd
+Z69 8D:/work/atari_pokey/HDL/SER_core/cell2r.vhd
+Z70 FD:/work/atari_pokey/HDL/SER_core/cell2r.vhd
 l0
 L12
 VOSf26^E1MFa0k1B258Lg23
 !s100 94Hiim:a[D2lmNm52Q6<Y0
 R7
 33
-R27
+R8
 !i10b 1
-R28
-Z72 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/cell2r.vhd|
-Z73 !s107 D:/work/atari_pokey/HDL/SER_core/cell2r.vhd|
+R9
+Z71 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/cell2r.vhd|
+Z72 !s107 D:/work/atari_pokey/HDL/SER_core/cell2r.vhd|
 !i113 1
 R12
 R13
@@ -404,40 +404,40 @@ Astructural
 R1
 R2
 R3
-Z74 DEx4 work 6 cell2r 0 22 OSf26^E1MFa0k1B258Lg23
+Z73 DEx4 work 6 cell2r 0 22 OSf26^E1MFa0k1B258Lg23
 l38
 L30
 V9C99iEceIj75cCES=FanO2
 !s100 KDiATMV[kZ?lOl^?z3Kb31
 R7
 33
-R27
+R8
 !i10b 1
-R28
+R9
+R71
 R72
-R73
 !i113 1
 R12
 R13
 Eclock_gen_core
-Z75 w1641830589
+Z74 w1641830589
 R1
 R2
 R3
 R4
-Z76 8D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd
-Z77 FD:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd
+Z75 8D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd
+Z76 FD:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd
 l0
 L12
 V0QczTPaLWeCRG1a<k6YYL0
 !s100 dT0jV;e]6d;nbVaZLhGX@2
 R7
 33
-Z78 !s110 1676674872
+R39
 !i10b 1
-Z79 !s108 1676674872.000000
-Z80 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd|
-Z81 !s107 D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd|
+R46
+Z77 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd|
+Z78 !s107 D:/work/atari_pokey/HDL/clock_gen_core/clock_gen_core.vhd|
 !i113 1
 R12
 R13
@@ -445,45 +445,45 @@ Astructural
 R1
 R2
 R3
-Z82 DEx4 work 14 clock_gen_core 0 22 0QczTPaLWeCRG1a<k6YYL0
+Z79 DEx4 work 14 clock_gen_core 0 22 0QczTPaLWeCRG1a<k6YYL0
 l50
 L27
 Va:g1:XHcbZd75C=]lMkWI0
 !s100 _87fG^U8a4WZ5^5CUB`]V1
 R7
 33
-R78
+R39
 !i10b 1
-R79
-R80
-R81
+R46
+R77
+R78
 !i113 1
 R12
 R13
 Efreq_reg
-Z83 w1675819950
+Z80 w1675819950
 R1
 R2
 R3
 R4
-Z84 8D:/work/atari_pokey/HDL/audio_core/freq_reg.vhd
-Z85 FD:/work/atari_pokey/HDL/audio_core/freq_reg.vhd
+Z81 8D:/work/atari_pokey/HDL/audio_core/freq_reg.vhd
+Z82 FD:/work/atari_pokey/HDL/audio_core/freq_reg.vhd
 l0
 L12
 VBWV<^eD?;fa`91K4z268n0
 !s100 9[C=m8ioTR`jVSN<R3Z_Q2
 R7
 33
-R8
+R39
 !i10b 1
-R9
-Z86 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/audio_core/freq_reg.vhd|
-Z87 !s107 D:/work/atari_pokey/HDL/audio_core/freq_reg.vhd|
+R46
+Z83 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/audio_core/freq_reg.vhd|
+Z84 !s107 D:/work/atari_pokey/HDL/audio_core/freq_reg.vhd|
 !i113 1
 R12
 R13
 Astructural
-R43
+R42
 R49
 R55
 R1
@@ -496,76 +496,76 @@ VaMC>DiK<DeAQ1WdZzcFbT3
 !s100 V_3APCzaA]=L:Bf?;>WE80
 R7
 33
-R8
+R39
 !i10b 1
-R9
-R86
-R87
+R46
+R83
+R84
 !i113 1
 R12
 R13
 Eser_clock_gen
-Z88 w1676680822
+Z85 w1676680822
 R1
 R2
 R3
 R4
-Z89 8D:/work/atari_pokey/HDL/SER_core/SER_clock_gen.vhd
-Z90 FD:/work/atari_pokey/HDL/SER_core/SER_clock_gen.vhd
+Z86 8D:/work/atari_pokey/HDL/SER_core/SER_clock_gen.vhd
+Z87 FD:/work/atari_pokey/HDL/SER_core/SER_clock_gen.vhd
 l0
 L12
 V`@E2>TYHh;VNo6@>Q3>4Y1
 !s100 zfV6bJm]Af6a0eNQ<6L]m1
 R7
 33
-Z91 !s110 1676680826
+R8
 !i10b 1
-Z92 !s108 1676680826.000000
-Z93 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/SER_clock_gen.vhd|
-Z94 !s107 D:/work/atari_pokey/HDL/SER_core/SER_clock_gen.vhd|
+R9
+Z88 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/SER_clock_gen.vhd|
+Z89 !s107 D:/work/atari_pokey/HDL/SER_core/SER_clock_gen.vhd|
 !i113 1
 R12
 R13
 Astructural
-R74
-R68
+R73
+R67
 R1
 R2
 R3
-Z95 DEx4 work 13 ser_clock_gen 0 22 `@E2>TYHh;VNo6@>Q3>4Y1
+Z90 DEx4 work 13 ser_clock_gen 0 22 `@E2>TYHh;VNo6@>Q3>4Y1
 l67
 L34
 VW^l>`9aSXbdZn6cV=[i581
 !s100 TKhz`>RT4>Ci<cP_;N:0l3
 R7
 33
-R91
+R8
 !i10b 1
-R92
-R93
-R94
+R9
+R88
+R89
 !i113 1
 R12
 R13
 Eserin_pla
-Z96 w1674312257
+Z91 w1674312257
 R1
 R2
 R3
 R4
-Z97 8D:/work/atari_pokey/HDL/SER_core/SERIN_PLA.vhd
-Z98 FD:/work/atari_pokey/HDL/SER_core/SERIN_PLA.vhd
+Z92 8D:/work/atari_pokey/HDL/SER_core/SERIN_PLA.vhd
+Z93 FD:/work/atari_pokey/HDL/SER_core/SERIN_PLA.vhd
 l0
 L12
 V>i]B2n=N6S@BgL257LaE:1
 !s100 QIQMHgIkCZ5J[NzKoYA5K2
 R7
 33
-R27
+R8
 !i10b 1
-R28
-Z99 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/SERIN_PLA.vhd|
-Z100 !s107 D:/work/atari_pokey/HDL/SER_core/SERIN_PLA.vhd|
+R20
+Z94 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/SERIN_PLA.vhd|
+Z95 !s107 D:/work/atari_pokey/HDL/SER_core/SERIN_PLA.vhd|
 !i113 1
 R12
 R13
@@ -580,33 +580,77 @@ V;>aW7<g5dWNF3V8LSUa`_3
 !s100 AzFenP:eF@RO;nhN0HzYK0
 R7
 33
-R27
+R8
 !i10b 1
-R28
-R99
-R100
+R20
+R94
+R95
 !i113 1
 R12
 R13
-Eserout_pla
-Z101 w1674313053
+Eserout
+Z96 w1676769549
 R1
 R2
 R3
 R4
-Z102 8D:/work/atari_pokey/HDL/SER_core/SEROUT_PLA.vhd
-Z103 FD:/work/atari_pokey/HDL/SER_core/SEROUT_PLA.vhd
+Z97 8D:/work/atari_pokey/HDL/SER_core/SEROUT.vhd
+Z98 FD:/work/atari_pokey/HDL/SER_core/SEROUT.vhd
+l0
+L12
+VRPn`FNU`mLf4?`BS>SVE80
+!s100 gKA>8:6iX4iQMfh1jC0RF3
+R7
+33
+Z99 !s110 1676769563
+!i10b 1
+Z100 !s108 1676769563.000000
+Z101 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/SEROUT.vhd|
+Z102 !s107 D:/work/atari_pokey/HDL/SER_core/SEROUT.vhd|
+!i113 1
+R12
+R13
+Astructural
+R61
+Z103 DEx4 work 10 serout_pla 0 22 VTlmLJXbN:8f92S7kbKAX0
+Z104 DEx4 work 19 serout_shift_module 0 22 lB05oB9aVgXR3Na2f[WeL2
+R1
+R2
+R3
+Z105 DEx4 work 6 serout 0 22 RPn`FNU`mLf4?`BS>SVE80
+l81
+L36
+Vnn<]TP>^TcPo6DZ4CVC@M1
+!s100 7OhS4U2d5]:e7oE5W7SE71
+R7
+33
+R99
+!i10b 1
+R100
+R101
+R102
+!i113 1
+R12
+R13
+Eserout_pla
+Z106 w1674313053
+R1
+R2
+R3
+R4
+Z107 8D:/work/atari_pokey/HDL/SER_core/SEROUT_PLA.vhd
+Z108 FD:/work/atari_pokey/HDL/SER_core/SEROUT_PLA.vhd
 l0
 L12
 VVTlmLJXbN:8f92S7kbKAX0
 !s100 h<blC^:B:K2nX;fKNQ4k^2
 R7
 33
-R27
+R8
 !i10b 1
-R28
-Z104 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/SEROUT_PLA.vhd|
-Z105 !s107 D:/work/atari_pokey/HDL/SER_core/SEROUT_PLA.vhd|
+R9
+Z109 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/SEROUT_PLA.vhd|
+Z110 !s107 D:/work/atari_pokey/HDL/SER_core/SEROUT_PLA.vhd|
 !i113 1
 R12
 R13
@@ -614,135 +658,181 @@ Astructural
 R1
 R2
 R3
-Z106 DEx4 work 10 serout_pla 0 22 VTlmLJXbN:8f92S7kbKAX0
+R103
 l35
 L29
 V;]M6P477d@Ob`Sj:[LAV91
 !s100 o>?3UUAEzJU7FL[eF3Ni<0
 R7
 33
-R27
+R8
 !i10b 1
-R28
-R104
-R105
+R9
+R109
+R110
 !i113 1
 R12
 R13
 Eserout_shift_module
-Z107 w1676638581
+Z111 w1676638581
 R1
 R2
 R3
 R4
-Z108 8D:/work/atari_pokey/HDL/SER_core/SEROUT_shift_module.vhd
-Z109 FD:/work/atari_pokey/HDL/SER_core/SEROUT_shift_module.vhd
+Z112 8D:/work/atari_pokey/HDL/SER_core/SEROUT_shift_module.vhd
+Z113 FD:/work/atari_pokey/HDL/SER_core/SEROUT_shift_module.vhd
 l0
 L12
 VlB05oB9aVgXR3Na2f[WeL2
 !s100 0T8Q0[Kh[]a6?izVjM:@>3
 R7
 33
-R27
+R8
 !i10b 1
-R28
-Z110 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/SEROUT_shift_module.vhd|
-Z111 !s107 D:/work/atari_pokey/HDL/SER_core/SEROUT_shift_module.vhd|
+R9
+Z114 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/SEROUT_shift_module.vhd|
+Z115 !s107 D:/work/atari_pokey/HDL/SER_core/SEROUT_shift_module.vhd|
 !i113 1
 R12
 R13
 Astructural
-R37
+R35
 R23
-R31
+R29
 R1
 R2
 R3
-Z112 DEx4 work 19 serout_shift_module 0 22 lB05oB9aVgXR3Na2f[WeL2
+R104
 l36
 L30
 Vf=PVaZHW9CM:GNfMR]5F?3
 !s100 o:PzBOfjaFAal[bIX=16j1
 R7
 33
-R27
+R8
 !i10b 1
-R28
-R110
-R111
+R9
+R114
+R115
 !i113 1
 R12
 R13
 Etb_ser_clock_gen
-Z113 w1676681405
+Z116 w1676681405
 R1
 R2
 R3
 R4
-Z114 8D:/work/atari_pokey/HDL/SER_core/tb_SER_clock_gen.vhd
-Z115 FD:/work/atari_pokey/HDL/SER_core/tb_SER_clock_gen.vhd
+Z117 8D:/work/atari_pokey/HDL/SER_core/tb_SER_core.vhd
+Z118 FD:/work/atari_pokey/HDL/SER_core/tb_SER_core.vhd
 l0
 L8
 Vz<A5RCSMgOo>9ICV4_kW82
 !s100 TUKYMR75k8_9SfB72QPf=1
 R7
 33
-Z116 !s110 1676681414
+Z119 !s110 1676769757
 !i10b 1
-Z117 !s108 1676681414.000000
-Z118 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/tb_SER_clock_gen.vhd|
-Z119 !s107 D:/work/atari_pokey/HDL/SER_core/tb_SER_clock_gen.vhd|
+Z120 !s108 1676769757.000000
+Z121 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/tb_SER_core.vhd|
+Z122 !s107 D:/work/atari_pokey/HDL/SER_core/tb_SER_core.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-Z120 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
-R95
+Z123 DPx3 std 3 env 0 22 d?`1ck@NdeD@H3RZG7FgZ2
+R90
 R15
-R82
+R79
 R1
 R2
 R3
-Z121 DEx4 work 16 tb_ser_clock_gen 0 22 z<A5RCSMgOo>9ICV4_kW82
+DEx4 work 16 tb_ser_clock_gen 0 22 z<A5RCSMgOo>9ICV4_kW82
 l50
 L11
 VP7f@Y;nWlDa2_<oiTBS_D3
 !s100 L@zk^9dH=MSE64c8:mif`0
 R7
 33
-R116
-!i10b 1
-R117
-R118
 R119
+!i10b 1
+R120
+R121
+R122
 !i113 1
 R12
 R13
-Etb_serout_pla
-Z122 w1676077205
+Etb_ser_core
+Z124 w1676832769
 R1
 R2
 R3
 R4
-Z123 8D:/work/atari_pokey/HDL/SER_core/tb_SEROUT_PLA.vhd
-Z124 FD:/work/atari_pokey/HDL/SER_core/tb_SEROUT_PLA.vhd
+R117
+R118
+l0
+L8
+VlM;BDf[Y9k3NR_nZUTDOg1
+!s100 haiUc4;f2XGi4nb^j;bRP3
+R7
+33
+Z125 !s110 1676832773
+!i10b 1
+Z126 !s108 1676832772.000000
+R121
+R122
+!i113 1
+R12
+R13
+Abehavioral
+R123
+R105
+R90
+R15
+R79
+R1
+R2
+R3
+Z127 DEx4 work 11 tb_ser_core 0 22 lM;BDf[Y9k3NR_nZUTDOg1
+l58
+L11
+V2LQ3@6<3gJFBX=2_N?I3=1
+!s100 :XaQO3>cQE;2Q61oPFDn21
+R7
+33
+R125
+!i10b 1
+R126
+R121
+R122
+!i113 1
+R12
+R13
+Etb_serout_pla
+Z128 w1676077205
+R1
+R2
+R3
+R4
+Z129 8D:/work/atari_pokey/HDL/SER_core/tb_SEROUT_PLA.vhd
+Z130 FD:/work/atari_pokey/HDL/SER_core/tb_SEROUT_PLA.vhd
 l0
 L8
 V;?g;_UYB^a2>LlLNR=Io42
 !s100 8igDMYBANlOLPO_ndXT_c1
 R7
 33
-R27
+R8
 !i10b 1
-R28
-Z125 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/tb_SEROUT_PLA.vhd|
-Z126 !s107 D:/work/atari_pokey/HDL/SER_core/tb_SEROUT_PLA.vhd|
+R9
+Z131 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/tb_SEROUT_PLA.vhd|
+Z132 !s107 D:/work/atari_pokey/HDL/SER_core/tb_SEROUT_PLA.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-R120
-R106
+R123
+R103
 R1
 R2
 R3
@@ -753,23 +843,23 @@ V9IKSKXG53P=i4GA?`?Ez71
 !s100 4?zofRVo7eS0bU]eG4Jm03
 R7
 33
-R27
+R8
 !i10b 1
-R28
-R125
-R126
+R9
+R131
+R132
 !i113 1
 R12
 R13
 Etb_serout_shift_module
-Z127 w1676250555
+Z133 w1676250555
 R1
 R2
 R3
-Z128 DPx12 modelsim_lib 4 util 0 22 I9VUm]?fD[2nYZzgoDM?l2
+Z134 DPx12 modelsim_lib 4 util 0 22 I9VUm]?fD[2nYZzgoDM?l2
 R4
-Z129 8D:/work/atari_pokey/HDL/SER_core/tb_SEROUT_shift_module.vhd
-Z130 FD:/work/atari_pokey/HDL/SER_core/tb_SEROUT_shift_module.vhd
+Z135 8D:/work/atari_pokey/HDL/SER_core/tb_SEROUT_shift_module.vhd
+Z136 FD:/work/atari_pokey/HDL/SER_core/tb_SEROUT_shift_module.vhd
 l0
 L10
 VH3HGgCJcYNBn;lZnHk2BW1
@@ -779,18 +869,18 @@ R7
 R19
 !i10b 1
 R20
-Z131 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/tb_SEROUT_shift_module.vhd|
-Z132 !s107 D:/work/atari_pokey/HDL/SER_core/tb_SEROUT_shift_module.vhd|
+Z137 !s90 -reportprogress|300|-work|work|-2008|-explicit|-stats=none|D:/work/atari_pokey/HDL/SER_core/tb_SEROUT_shift_module.vhd|
+Z138 !s107 D:/work/atari_pokey/HDL/SER_core/tb_SEROUT_shift_module.vhd|
 !i113 1
 R12
 R13
 Abehavioral
-R120
-R112
+R123
+R104
 R1
 R2
 R3
-R128
+R134
 DEx4 work 22 tb_serout_shift_module 0 22 H3HGgCJcYNBn;lZnHk2BW1
 l28
 L13
@@ -801,8 +891,8 @@ R7
 R19
 !i10b 1
 R20
-R131
-R132
+R137
+R138
 !i113 1
 R12
 R13
