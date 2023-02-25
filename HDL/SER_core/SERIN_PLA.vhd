@@ -38,7 +38,7 @@ architecture structural of serin_pla is
 begin
     process(all)
     begin
-        m1 <= not(sdiStopBit or not(sdiQ1));
+        m1 <= not(sdiStopBit or (not sdiQ1));
         m2 <= not(sdinStartBit or sdiQ1);
         m3 <= not((not sdiStopBit) or (not sdinStartBit) or sdiQ1);
         m4 <= not(sdiStopBit or (not sdinStartBit) or sdiQ1);

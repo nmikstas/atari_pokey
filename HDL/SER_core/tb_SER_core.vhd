@@ -166,7 +166,7 @@ begin
 
         --Load counter register 1.
         wait until falling_edge(clk);
-        D <= "00001100";
+        D <= "00000111";
         wait until rising_edge(clk);
         Addr0w <= '1';
         wait until falling_edge(clk);
@@ -176,7 +176,7 @@ begin
 
         --Load counter register 2.
         wait until falling_edge(clk);
-        D <= "00100000";
+        D <= "00010000";
         wait until rising_edge(clk);
         Addr2w <= '1';
         wait until falling_edge(clk);
@@ -233,7 +233,7 @@ begin
 
         --Set to 2 tone mode.
         wait until falling_edge(clk);
-        --SKCTLS3 <= '1';
+        SKCTLS3 <= '1';
         wait for 2000 ns;
 
         --Load data to transmit.
