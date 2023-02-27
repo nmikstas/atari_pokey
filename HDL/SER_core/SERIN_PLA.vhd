@@ -48,6 +48,7 @@ begin
         sdiCompl  <= not(m4 or m3);
         sdiD1     <= not(m2 or m1);
         preSdiSet <= not m1;
-        noSdiErr  <= not(sdiStopBit or m3);
+        --noSdiErr  <= not(sdiStopBit or m3); --Incorrect!
+        noSdiErr <= (not sdiStopBit) or m2;
     end process;
 end structural;

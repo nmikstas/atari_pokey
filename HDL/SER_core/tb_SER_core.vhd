@@ -24,7 +24,7 @@ architecture behavioral of tb_SER_core is
     signal enFastClk3     : std_logic := '1';
     signal ch2Bits16      : std_logic := '0';
     signal ch4Bits16      : std_logic := '1';
-    signal resyncSerClk   : std_logic := '1';
+    signal resyncSerClk   : std_logic;
     signal Timer          : std_logic_vector(4 downto 1);
     signal nTimer         : std_logic_vector(4 downto 1);
     signal rstAudPhase    : std_logic;
@@ -52,12 +52,21 @@ architecture behavioral of tb_SER_core is
     signal sdoFinish      : std_logic;
     signal SOD            : std_logic;
 
+    --SERIN signals.
+    signal SID         : std_logic := '1';
+    signal siDelay     : std_logic;
+    signal setFramerr  : std_logic;
+    signal setSdiCompl : std_logic;
+    signal sdiBusy     : std_logic;
+    signal serialByte  : std_logic_vector(7 downto 0);    
+
     --BCLK_in clock signal.
     signal counter : unsigned(2 downto 0) := "000";
 
 begin
     clk <= NOT clk after CLK179MHZ_PERIOD / 2;
 
+    --Audio clock generator.
     clock_gen_core_0 : entity work.clock_gen_core
     port map
     (
@@ -68,6 +77,7 @@ begin
         keybClk  => keybClk
     );     
 
+    --Audio frequency control.
     aud_freq_control_0 : entity work.aud_freq_control
     port map
     ( 
@@ -90,6 +100,7 @@ begin
         rstAudPhase    => rstAudPhase
     );
 
+    --Serial clock generator and router.
     ser_clock_gen_0 : entity work.SER_clock_gen
     port map
     ( 
@@ -105,6 +116,7 @@ begin
         OCLK         => OCLK
     );
 
+    --Serial out module.
     serout_0 : entity work.SEROUT
     port map
     ( 
@@ -121,6 +133,23 @@ begin
         sdoFinish      => sdoFinish,
         setSdoComplete => setSdoComplete,
         SOD            => SOD
+    );
+
+    --Serial in module.
+    serin_0 : entity work.SERIN
+    port map
+    (
+        clk            => clk,
+        SID            => SID,
+        Init           => init,
+        SKCTLS4        => SKCTLS(4),
+        sdiClock       => sdiClock,
+        D              => serialByte,
+        siDelay        => siDelay,
+        setFramerr     => setFramerr,
+        setSdiCompl    => setSdiCompl,
+        sdiBusy        => sdiBusy,
+        resyncSerClock => resyncSerClk
     );
 
     process(all)
@@ -140,8 +169,8 @@ begin
         --Clear serial clock resync.
         wait for 2000 ns;
         wait until falling_edge(clk);
-        resyncSerClk <= '0';
-        SKCTLS(6)    <= '1';
+        --resyncSerClk <= '0';
+        --SKCTLS(6)    <= '1';
 
         --Set resync flip-flops into a known state.
         wait for 2000 ns;
@@ -186,7 +215,7 @@ begin
 
         --Load counter register 3.
         wait until falling_edge(clk);
-        D <= "00011001";
+        D <= "00000010";
         wait until rising_edge(clk);
         Addr4w <= '1';
         wait until falling_edge(clk);
@@ -196,7 +225,7 @@ begin
 
         --Load counter register 4.
         wait until falling_edge(clk);
-        D <= "00001000";
+        D <= "00000000";
         wait until rising_edge(clk);
         Addr6w <= '1';
         wait until falling_edge(clk);
@@ -211,43 +240,90 @@ begin
         wait until rising_edge(clk);
         Addr9w <= '0';
 
-        --Change clock config
+        --Change clock config for async receive.
         wait for 2000 ns;
         wait until falling_edge(clk);
-        resyncSerClk <= '0';
-        SKCTLS       <= "010";
+        SKCTLS <= "001";
+
+        --Begin async receiving data.
+        wait for 10000 ns;
+        SID <= '0';
+        wait for 10000 ns;
+        SID <= '1';
+        wait for 10000 ns;
+        SID <= '1';
+        wait for 10000 ns;
+        SID <= '0';
+        wait for 10000 ns;
+        SID <= '1';
+        wait for 10000 ns;
+        SID <= '0';
+        wait for 10000 ns;
+        SID <= '0';
+        wait for 10000 ns;
+        SID <= '0';
+        wait for 10000 ns;
+        SID <= '1';
+        wait for 10000 ns;
+        SID <= '1';
+        
+
+        wait for 10000 ns;
+        SID <= '0';
+        wait for 10000 ns;
+        SID <= '1';
+
+        --Receive another byte.
+        --wait until falling_edge(BCLK_in);
+        --wait for 5000 ns;
+        --SID <= '0';
+        --wait until falling_edge(sdiClock);
+        --wait until falling_edge(sdiClock);
+        --wait for 5000 ns;
+        --SID <= '1';
+        --wait until falling_edge(sdiClock);
+        --wait until falling_edge(sdiClock);
+        --wait until falling_edge(sdiClock);
+        --wait until falling_edge(sdiClock);
+        --wait until falling_edge(sdiClock);
+        --wait until falling_edge(sdiClock);
+        --wait for 5000 ns;
+        --SID <= '0';
+        --wait until falling_edge(BCLK_in);
+        --wait until falling_edge(sdiClock);
+        --wait for 5000 ns;
+        --SID <= '1';
+
+
 
         --Load zeroes to transmit.
-        wait until falling_edge(clk);
-        D <= "00000000";
-        wait until rising_edge(clk);
-        AddrDw <= '1';
-        wait until falling_edge(clk);
-        D <= "00000000";
-        wait until rising_edge(clk);
-        AddrDw <= '0';        
+        --wait until falling_edge(clk);
+        --D <= "00000000";
+        --wait until rising_edge(clk);
+        --AddrDw <= '1';
+        --wait until falling_edge(clk);
+        --D <= "00000000";
+        --wait until rising_edge(clk);
+        --AddrDw <= '0';        
 
         --Wait for TX to finish.
-        wait for 4600000 ns;
-        wait until sdoFinish = '0';
+        --wait for 4600000 ns;
+        --wait until sdoFinish = '0';
 
         --Set to 2 tone mode.
-        wait until falling_edge(clk);
-        SKCTLS3 <= '1';
-        wait for 2000 ns;
+        --wait until falling_edge(clk);
+        --SKCTLS3 <= '1';
+        --wait for 2000 ns;
 
         --Load data to transmit.
-        wait until falling_edge(clk);
-        D <= "01001011";
-        wait until rising_edge(clk);
-        AddrDw <= '1';
-        wait until falling_edge(clk);
-        D <= "00000000";
-        wait until rising_edge(clk);
-        AddrDw <= '0';
-
-
-
+        --wait until falling_edge(clk);
+        --D <= "01001011";
+        --wait until rising_edge(clk);
+        --AddrDw <= '1';
+        --wait until falling_edge(clk);
+        --D <= "00000000";
+        --wait until rising_edge(clk);
+        --AddrDw <= '0';
         
         wait for 100000000 ns;
         std.env.stop; --End the simulation.
