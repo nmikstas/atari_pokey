@@ -28,7 +28,6 @@ end cell20;
 --                                    --Cell 20 Architecture--                                    --
 ----------------------------------------------------------------------------------------------------
 
---Binary decrement with borrow delay.
 architecture structural of cell20 is
 
     signal nDout  : std_logic;

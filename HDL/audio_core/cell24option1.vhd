@@ -27,7 +27,6 @@ end cell24option1;
 --                                --Cell 24 Option 1 Architecture--                               --
 ----------------------------------------------------------------------------------------------------
 
---Binary decrement with borrow delay.
 architecture structural of cell24option1 is
 
     signal nDout  : std_logic;

@@ -9,13 +9,20 @@ add wave -noupdate -divider {Control Signals}
 add wave -noupdate -label resyncSerClock /tb_ser_core/resyncSerClk
 add wave -noupdate -label SKCTLS /tb_ser_core/SKCTLS
 add wave -noupdate -label init /tb_ser_core/init
+add wave -noupdate -label setFramerr /tb_ser_core/serin_0/setFramerr
 add wave -noupdate -divider {Serial In Signals}
 add wave -noupdate -label SID /tb_ser_core/SID
+add wave -noupdate -label serialByte /tb_ser_core/serialByte
+add wave -noupdate -divider {PLA Signals}
 add wave -noupdate -label sdiStopBit /tb_ser_core/serin_0/sdiStopBit
 add wave -noupdate -label sdinStartBit /tb_ser_core/serin_0/sdinStartBit
-add wave -noupdate -label serialByte /tb_ser_core/serialByte
+add wave -noupdate -label nFramerr /tb_ser_core/serin_0/nFramerr
+add wave -noupdate -label sdiBusy /tb_ser_core/sdiBusy
+add wave -noupdate -label sdiCompl /tb_ser_core/serin_0/sdiCompl
+add wave -noupdate -label preSdiSet /tb_ser_core/serin_0/preSdiSet
+add wave -noupdate -label noSdiErr /tb_ser_core/serin_0/noSdiErr
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {79564439 ps} 0}
+WaveRestoreCursors {{Cursor 1} {208868871 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 127
 configure wave -valuecolwidth 40
@@ -31,4 +38,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {6300 us}
+WaveRestoreZoom {0 ps} {787500 ns}

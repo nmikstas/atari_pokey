@@ -34,21 +34,21 @@ architecture structural of serin_pla is
     signal m2 : std_logic;
     signal m3 : std_logic;
     signal m4 : std_logic;
+    signal m5 : std_logic;
     
 begin
-    process(all)
-    begin
-        m1 <= not(sdiStopBit or (not sdiQ1));
-        m2 <= not(sdinStartBit or sdiQ1);
-        m3 <= not((not sdiStopBit) or (not sdinStartBit) or sdiQ1);
-        m4 <= not(sdiStopBit or (not sdinStartBit) or sdiQ1);
+    
+    m1 <= not(sdiStopBit or (not sdiQ1));
+    m2 <= not(sdinStartBit or sdiQ1);
+    m3 <= not((not sdiStopBit) or (not sdinStartBit) or sdiQ1);
+    m4 <= not(sdiStopBit or (not sdinStartBit) or sdiQ1);
+    m5 <= not((not sdiQ1) or (not sdiStopBit));
 
-        sdiBusy   <= not sdiQ1;
-        nFramer   <= not m4;
-        sdiCompl  <= not(m4 or m3);
-        sdiD1     <= not(m2 or m1);
-        preSdiSet <= not m1;
-        --noSdiErr  <= not(sdiStopBit or m3); --Incorrect!
-        noSdiErr <= (not sdiStopBit) or m2;
-    end process;
+    sdiBusy   <= not sdiQ1;
+    nFramer   <= not m4;
+    sdiCompl  <= not(m4 or m3);
+    sdiD1     <= not(m2 or m1);
+    preSdiSet <= not m1;
+    noSdiErr  <= not(m3 or m5);
+    
 end structural;

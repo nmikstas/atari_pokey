@@ -28,7 +28,6 @@ end cell24;
 --                                    --Cell 24 Architecture--                                    --
 ----------------------------------------------------------------------------------------------------
 
---Binary decrement with borrow delay.
 architecture structural of cell24 is
 
     signal nDout  : std_logic;

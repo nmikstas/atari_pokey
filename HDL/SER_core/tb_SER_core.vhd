@@ -247,7 +247,7 @@ begin
 
         --Begin async receiving data.
         wait for 10000 ns;
-        SID <= '0';
+        SID <= '0'; --Start bit.
         wait for 10000 ns;
         SID <= '1';
         wait for 10000 ns;
@@ -264,37 +264,56 @@ begin
         SID <= '0';
         wait for 10000 ns;
         SID <= '1';
+        wait for 10000 ns;
+        SID <= '0'; --Causes frame error. Should be a stop bit.
         wait for 10000 ns;
         SID <= '1';
         
-
+        --Receive a second byte "11111111".
         wait for 10000 ns;
         SID <= '0';
         wait for 10000 ns;
         SID <= '1';
 
-        --Receive another byte.
-        --wait until falling_edge(BCLK_in);
-        --wait for 5000 ns;
-        --SID <= '0';
-        --wait until falling_edge(sdiClock);
-        --wait until falling_edge(sdiClock);
-        --wait for 5000 ns;
-        --SID <= '1';
-        --wait until falling_edge(sdiClock);
-        --wait until falling_edge(sdiClock);
-        --wait until falling_edge(sdiClock);
-        --wait until falling_edge(sdiClock);
-        --wait until falling_edge(sdiClock);
-        --wait until falling_edge(sdiClock);
-        --wait for 5000 ns;
-        --SID <= '0';
-        --wait until falling_edge(BCLK_in);
-        --wait until falling_edge(sdiClock);
-        --wait for 5000 ns;
-        --SID <= '1';
+        --Wait for second byte to finish transmitting.
+        wait for 100000 ns;
 
+        --Change clock config for async receive.
+        wait for 2000 ns;
+        wait until falling_edge(clk);
+        SKCTLS <= "010";
 
+        --Receive a synchronous byte.
+        wait until falling_edge(sdiClock);
+        wait for 5000 ns;
+        SID <= '0';
+        wait until falling_edge(sdiClock);
+        wait for 5000 ns;
+        SID <= '1';
+        wait until falling_edge(sdiClock);
+        wait for 5000 ns;
+        SID <= '0';
+        wait until falling_edge(sdiClock);
+        wait for 5000 ns;
+        SID <= '1';
+        wait until falling_edge(sdiClock);
+        wait for 5000 ns;
+        SID <= '0';
+        wait until falling_edge(sdiClock);
+        wait for 5000 ns;
+        SID <= '1';
+        wait until falling_edge(sdiClock);
+        wait for 5000 ns;
+        SID <= '0';
+        wait until falling_edge(sdiClock);
+        wait for 5000 ns;
+        SID <= '1';
+        wait until falling_edge(sdiClock);
+        wait for 5000 ns;
+        SID <= '0';
+        wait until falling_edge(sdiClock);
+        wait for 5000 ns;
+        SID <= '1';
 
         --Load zeroes to transmit.
         --wait until falling_edge(clk);
