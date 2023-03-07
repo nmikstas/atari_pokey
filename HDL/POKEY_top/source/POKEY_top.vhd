@@ -100,11 +100,11 @@ architecture structural of pokey_top is
     signal enFastClk1  : std_logic;
     signal sel9bitPoly : std_logic;
 
-    --Clock generator signals.
+    --CLOCK core signals.
     signal audClock : std_logic;
     signal keybClk  : std_logic;
 
-    --Poly core signals.
+    --POLY core signals.
     signal poly4bit    : std_logic;
     signal poly5bit    : std_logic;
     signal poly917bit  : std_logic;
@@ -130,18 +130,21 @@ architecture structural of pokey_top is
     signal sdiBusy   : std_logic;
     signal siDelay   : std_logic;
 
+    --AUD core signals.
+    signal resync2Tones : std_logic;
+    signal resyncSerClk : std_logic;
+
 begin
 
     --Temporarily set unused inputs to a known value.
-    setSdiCompl <= '0';
-    setSdoCompl <= '0';
-    sdoFinish   <= '1';
-    Timer4      <= '0';
-    Timer2      <= '0';
-    Timer1      <= '0';
-    setFramer   <= '0';
-    sdiBusy     <= '0';
-    siDelay     <= '0';
+    setSdiCompl  <= '0';
+    setSdoCompl  <= '0';
+    sdoFinish    <= '1';
+    setFramer    <= '0';
+    sdiBusy      <= '0';
+    siDelay      <= '0';
+    resync2Tones <= '0';
+    resyncSerClk <= '0';
 
     --Data and address I/O.
     IO_core_0 : entity work.IO_core
@@ -309,5 +312,38 @@ begin
         addrAw    => AddrAw,
         Dout      => DataFr
     );
+
+    --AUD core.
+    AUD_core_0 : entity work.AUD_core
+    port map
+    (
+        D            => dw,
+        clk          => phi2,
+        audClock     => audClock,
+        poly4In      => poly4bit,
+        poly5In      => poly5bit,
+        poly17In     => poly917bit,
+        enFastClk1   => enFastClk1,
+        enFastClk3   => enFastClk3,
+        ch2Bits16    => ch2Bits16,
+        ch4Bits16    => ch4Bits16,
+        disHiFltr1   => disHiFltr1,
+        disHiFltr2   => disHiFltr2,
+        resync2Tones => resync2Tones,
+        resyncSerClk => resyncSerClk,
+        Addr0w       => Addr0w,
+        Addr1w       => Addr1w,
+        Addr2w       => Addr2w,
+        Addr3w       => Addr3w,
+        Addr4w       => Addr4w,
+        Addr5w       => Addr5w,
+        Addr6w       => Addr6w,
+        Addr7w       => Addr7w,
+        Addr9w       => Addr9w,
+        AUDOut       => audio,
+        Tmr1         => Timer1,
+        Tmr2         => Timer2,
+        Tmr4         => Timer4
+    );     
 
 end structural;

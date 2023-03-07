@@ -64,6 +64,8 @@ architecture structural of aud_freq_control is
     signal Qserial  : std_logic;
     signal reload12 : std_logic;
     signal reload34 : std_logic;
+    signal rst      : std_logic;
+    signal rstDelay : std_logic;
     
     --Channel 1 signals.
     signal Qr12_1 : std_logic;
@@ -163,8 +165,12 @@ begin
             presync <= nor1;
         end if;
 
+        rstAudPhase <= rst or rstDelay;
+
         if(rising_edge(clk)) then
-            rstAudPhase <= not presync;
+            --rstAudPhase <= not presync;
+            rst         <= not presync; --Adds in a strobe extender to fully reset audio control.
+            rstDelay    <= rst;
             resync      <= not presync;
             Q2tones     <= resyncTwoTones;
             Qserial     <= resyncSerClk;

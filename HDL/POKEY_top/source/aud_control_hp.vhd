@@ -1,4 +1,4 @@
---Audio control module without high pass filter.
+--Audio control module with high pass filter.
 --Written by Nick Mikstas
 
 ----------------------------------------------------------------------------------------------------
@@ -9,7 +9,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity aud_control is
+entity aud_control_hp is
     port 
     (
         clk         : in std_logic;
@@ -21,19 +21,21 @@ entity aud_control is
         Timer       : in std_logic;
         nTimer      : in std_logic;
         rstAudPhase : in std_logic;
+        disHiFltr   : in std_logic;
+        Timerx      : in std_logic;
 
         AUD       : out std_logic_vector(3 downto 0);
         poly4Out  : out std_logic;
         poly5Out  : out std_logic;
         poly17Out : out std_logic
     );     
-end aud_control;
+end aud_control_hp;
 
 ----------------------------------------------------------------------------------------------------
 --                                  --Audio Control Architecture--                                --
 ----------------------------------------------------------------------------------------------------
 
-architecture structural of aud_control is
+architecture structural of aud_control_hp is
 
     --control signals.
     signal data : std_logic_vector(7 downto 0);
@@ -50,18 +52,22 @@ architecture structural of aud_control is
     --MUX signal.
     signal muxOut : std_logic;
 
+    --High pass filter signal.
+    signal QI : std_logic;
+
     --Combinational logic signals.
-    signal nor1 : std_logic;
-    signal nor2 : std_logic;
-    signal nor3 : std_logic;
-    signal nor4 : std_logic;
-    signal nor5 : std_logic;
-    signal and1 : std_logic;
+    signal nor1  : std_logic;
+    signal nor2  : std_logic;
+    signal nor3  : std_logic;
+    signal nor4  : std_logic;
+    signal nor5  : std_logic;
+    signal and1  : std_logic;
+    signal xnor1 : std_logic;
 
     --Sequential logic signals.
-    signal Qnor1  : std_logic := '1';
-    signal Qnor5  : std_logic := '1';
-    signal nQnor1 : std_logic := '1';
+    signal Qnor1  : std_logic;
+    signal Qnor5  : std_logic;
+    signal nQnor1 : std_logic;
 
 begin
     
@@ -71,7 +77,7 @@ begin
     (
         V => V,
         T => T,
-        I => I,
+        I => xnor1,
         O => AUD
     );
 
@@ -85,7 +91,19 @@ begin
         nLD => nTimer,
         R   => ctrl(2),
         Q   => Qpoly5
-    );     
+    );
+
+    --High pass filter flip-flop.
+    cell2p_0: entity work.cell2p
+    port map
+    (
+        clk => clk,
+        D   => I,
+        Ld  => not Timerx,
+        nLD => Timerx,
+        P   => disHiFltr,
+        Q   => QI
+    );   
  
     --Distribute the written data to the proper control signals.
     ctrl <= data(7 downto 5);
@@ -93,12 +111,13 @@ begin
     V    <= not data(3 downto 0);
 
     --Update the combinational signals.
-    and1 <= I and ctrl(0);
-    nor1 <= Qpoly5 nor nTimer;
-    nor2 <= ctrl(0) nor muxOut;
-    nor3 <= not(and1 or nQnor1 or nor2);
-    nor4 <= Qnor1 nor Qnor5;
-    nor5 <= not(nor3 or nor4 or rstAudPhase);
+    and1  <= I and ctrl(0);
+    nor1  <= Qpoly5 nor nTimer;
+    nor2  <= ctrl(0) nor muxOut;
+    nor3  <= not(and1 or nQnor1 or nor2);
+    nor4  <= Qnor1 nor Qnor5;
+    nor5  <= not(nor3 or nor4 or rstAudPhase);
+    xnor1 <= (not I) xnor QI;
 
     process(all)
     begin
