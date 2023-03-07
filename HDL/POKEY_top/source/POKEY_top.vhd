@@ -126,9 +126,9 @@ architecture structural of pokey_top is
     signal sdiOvrun    : std_logic;
 
     --SKSTAT register signals.
-    signal setFramer : std_logic;
-    signal sdiBusy   : std_logic;
-    signal siDelay   : std_logic;
+    signal setFramerr : std_logic;
+    signal sdiBusy    : std_logic;
+    signal siDelay    : std_logic;
 
     --AUD core signals.
     signal resync2Tones : std_logic;
@@ -136,26 +136,16 @@ architecture structural of pokey_top is
 
 begin
 
-    --Temporarily set unused inputs to a known value.
-    setSdiCompl  <= '0';
-    setSdoCompl  <= '0';
-    sdoFinish    <= '1';
-    setFramer    <= '0';
-    sdiBusy      <= '0';
-    siDelay      <= '0';
-    resync2Tones <= '0';
-    resyncSerClk <= '0';
-
     --Data and address I/O.
     IO_core_0 : entity work.IO_core
     port map
     ( 
-        clk   => phi2,
-        RW    => rw, 
-        CS    => cs,  
-        D     => d, 
-        A     => a, 
-        Dataw => dw,
+        clk    => phi2,
+        RW     => rw, 
+        CS     => cs,  
+        D      => d, 
+        A      => a, 
+        Dataw  => dw,
         Addr0w => Addr0w,
         Addr1w => Addr1w,
         Addr2w => Addr2w,
@@ -304,7 +294,7 @@ begin
         clk       => phi2,
         sdiOvrun  => sdiOvrun,
         keyOvrun  => keyOvrun,
-        setFramer => setFramer,
+        setFramer => setFramerr,
         kShift    => kShift,
         keyDown   => keyDown,
         sdiBusy   => sdiBusy,
@@ -344,6 +334,34 @@ begin
         Tmr1         => Timer1,
         Tmr2         => Timer2,
         Tmr4         => Timer4
-    );     
+    );
+
+    --SER core
+    SER_core_0 : entity work.SER_core 
+    port map
+    (
+        Dw           => dw(7 downto 0),
+        SKCTLS       => skctls(7 downto 3),
+        clk          => phi2,
+        SID          => sid,
+        AddrDw       => AddrDw,
+        Init         => init,
+        Timer1       => Timer1,
+        Timer2       => Timer2,
+        Timer4       => Timer4,
+        BCLK_in      => bclki,
+        BCLK_out     => bclko,
+        OCLK         => oclk,
+        SOD          => sod,
+        siDelay      => siDelay,
+        setFramerr   => setFramerr,
+        setSdiCompl  => setSdiCompl,
+        sdiBusy      => sdiBusy,
+        resyncSerClk => resyncSerClk,
+        resync2Tones => resync2Tones,
+        sdoFinish    => sdoFinish,
+        setSdoCompl  => setSdoCompl,
+        Dr           => DataDr
+    );    
 
 end structural;
