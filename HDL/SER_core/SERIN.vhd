@@ -177,7 +177,7 @@ begin
         framerr <= nFramerr nor nsdiClk;
 
         if(falling_edge(clk)) then
-            setSdiCompl <= not sdiLoad;
+            setSdiCompl <= sdiLoad;
             setFramerr  <= framerr;
         end if;
 

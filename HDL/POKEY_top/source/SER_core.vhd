@@ -57,7 +57,7 @@ begin
         SKCTLS       => SKCTLS(6 downto 4),
         resyncSerClk => resyncSerClk,
         Timer2       => Timer2,
-        Timer4       => Timer1,
+        Timer4       => Timer4,
         BCLK_in      => BCLK_in,
         BCLK_out     => BCLK_out,
         sdiClock     => sdiClock,
