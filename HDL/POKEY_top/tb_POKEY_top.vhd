@@ -593,9 +593,47 @@ begin
         rw <= '1';
 
         --Wait for TX to finish.
-        wait for 23000000 ns;
-        
+        wait for 10000000 ns;
 
+        --Read SKSTAT register.
+        wait for 1000 ns;
+        wait until falling_edge(phi2);
+        wait for 250 ns;
+        cs <= "10";
+        rw <= '1';
+        a  <= "1111";
+        wait until rising_edge(phi2);
+        wait for 100 ns;
+        a  <= "ZZZZ";
+        wait until falling_edge(phi2);
+        wait for 175 ns;
+        cs <= "11";
+
+
+        --Wait for TX to finish.
+        wait for 8000000 ns;
+
+        --Reset SKSTAT register.
+        wait for 2000 ns;
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "10";
+        rw <= '0';
+        a  <= "1010";
+        wait until rising_edge(phi2);
+        wait for 100 ns;
+        a  <= "ZZZZ";
+        wait for 100 ns;
+        d  <= "00000000";
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "00";
+        d  <= "ZZZZZZZZ";
+        rw <= '1';
+
+        --Wait for TX to finish.
+        wait for 10000000 ns;
+        
         --Set to 2 tone mode.
         wait for 2000 ns;
         wait until falling_edge(phi2);
@@ -631,10 +669,84 @@ begin
         cs <= "00";
         d  <= "ZZZZZZZZ";
         rw <= '1';
+
+        --Wait for TX to finish.
+        wait for 25000000 ns;
         
+        --Disable all interrupts.
+        wait for 2000 ns;
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "10";
+        rw <= '0';
+        a  <= "1110";
+        wait until rising_edge(phi2);
+        wait for 100 ns;
+        a  <= "ZZZZ";
+        wait for 100 ns;
+        d  <= "00000000";
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "00";
+        d  <= "ZZZZZZZZ";
+        rw <= '1';
 
+        --Enable sdo interrupt.
+        wait for 2000 ns;
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "10";
+        rw <= '0';
+        a  <= "1110";
+        wait until rising_edge(phi2);
+        wait for 100 ns;
+        a  <= "ZZZZ";
+        wait for 100 ns;
+        d  <= "11110000";
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "00";
+        d  <= "ZZZZZZZZ";
+        rw <= '1';
 
+        --Disable 2 tone mode.
+        wait for 2000 ns;
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "10";
+        rw <= '0';
+        a  <= "1111";
+        wait until rising_edge(phi2);
+        wait for 100 ns;
+        a  <= "ZZZZ";
+        wait for 100 ns;
+        d  <= "00100011";
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "00";
+        d  <= "ZZZZZZZZ";
+        rw <= '1';
 
+        --Wait for TX to finish.
+        wait for 7000000 ns;
+
+        --Load data to transmit.
+        wait for 2000 ns;
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "10";
+        rw <= '0';
+        a  <= "1101";
+        wait until rising_edge(phi2);
+        wait for 100 ns;
+        a  <= "ZZZZ";
+        wait for 100 ns;
+        d  <= "01001011";
+        wait until falling_edge(phi2);
+        wait for 100 ns;
+        cs <= "00";
+        d  <= "ZZZZZZZZ";
+        rw <= '1';
 
 
 

@@ -220,7 +220,7 @@ Resolution = ps
 UserTimeUnit = default
 
 ; Default run length
-RunLength = 130 ms
+RunLength = 150 ms
 
 ; Maximum iterations that can be run without advancing simulation time
 IterationLimit = 5000
@@ -448,7 +448,7 @@ Project_File_P_16 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 
 Project_File_17 = D:/work/atari_pokey/HDL/POKEY_top/source/kb_code.vhd
 Project_File_P_17 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1674928186 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 1 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 18 cover_nosub 0 dont_compile 0 vhdl_use93 2008
 Project_File_18 = D:/work/atari_pokey/HDL/POKEY_top/source/aud_freq_control.vhd
-Project_File_P_18 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1678147580 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 1 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 28 cover_nosub 0 dont_compile 0 vhdl_use93 2008
+Project_File_P_18 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1678336647 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 1 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 28 cover_nosub 0 dont_compile 0 vhdl_use93 2008
 Project_File_19 = D:/work/atari_pokey/HDL/POKEY_top/source/IO_core.vhd
 Project_File_P_19 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1675548410 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 4 dont_compile 0 cover_nosub 0 vhdl_use93 2008
 Project_File_20 = D:/work/atari_pokey/HDL/POKEY_top/source/freq_cntrl.vhd
@@ -494,7 +494,7 @@ Project_File_P_39 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 
 Project_File_40 = D:/work/atari_pokey/HDL/POKEY_top/source/cell16.vhd
 Project_File_P_40 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1676243152 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 1 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 42 cover_nosub 0 dont_compile 0 vhdl_use93 2008
 Project_File_41 = D:/work/atari_pokey/HDL/POKEY_top/tb_POKEY_top.vhd
-Project_File_P_41 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1678243564 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 8 dont_compile 0 cover_nosub 0 vhdl_use93 2008
+Project_File_P_41 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1678498661 vhdl_disableopt 0 cover_excludedefault 0 vhdl_vital 0 vhdl_warn1 1 vhdl_showsource 0 vhdl_explicit 1 vhdl_warn2 1 vhdl_0InOptions {} cover_covercells 0 vhdl_warn3 1 vhdl_options {} cover_optlevel 3 voptflow 1 vhdl_warn4 1 ood 0 toggle - vhdl_warn5 1 compile_to work cover_noshort 0 compile_order 8 dont_compile 0 cover_nosub 0 vhdl_use93 2008
 Project_File_42 = D:/work/atari_pokey/HDL/POKEY_top/source/cell17.vhd
 Project_File_P_42 = vhdl_novitalcheck 0 file_type vhdl group_id 0 cover_nofec 0 vhdl_nodebug 0 vhdl_1164 1 vhdl_noload 0 vhdl_synth 0 vhdl_enable0In 0 folder {Top Level} last_compile 1676243168 vhdl_disableopt 0 vhdl_vital 0 cover_excludedefault 0 vhdl_warn1 1 vhdl_warn2 1 vhdl_explicit 1 vhdl_showsource 0 vhdl_warn3 1 cover_covercells 0 vhdl_0InOptions {} vhdl_warn4 1 voptflow 1 cover_optlevel 3 vhdl_options {} vhdl_warn5 1 toggle - ood 0 cover_noshort 0 compile_to work compile_order 40 cover_nosub 0 dont_compile 0 vhdl_use93 2008
 Project_File_43 = D:/work/atari_pokey/HDL/POKEY_top/source/kb_break.vhd
