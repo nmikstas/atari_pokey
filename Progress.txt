@@ -1,0 +1,46 @@
+Filename                     Written      Tested
+                    
+aud_control.vhd
+aud_control_hp.vhd
+AUD_core.vhd
+aud_freq_control.vhd
+AUDCTL_reg.vhd
+cell11.vhd                   Y            Y
+cell15.vhd                   Y            Y
+cell16.vhd                   Y            Y
+cell17.vhd                   Y            Y
+cell20.vhd
+cell23.vhd
+cell24.vhd
+cell24option1.vhd
+cell25.vhd                   Y            Y
+cell2p.vhd                   Y            Y
+cell2pr.vhd                  Y            Y
+cell2r.vhd                   Y            Y
+cell3.vhd
+cell4.vhd 
+cell6.vhd
+clock_gen_core.vhd           Y            Y
+freq_cntrl.vhd
+freq_reg.vhd
+IO_core.vhd
+IRQ_core.vhd
+kb_break.vhd
+kb_code.vhd
+kb_count_reg.vhd
+kb_regs.vhd
+kb_state.vhd
+KEY_core.vhd
+keyboard_pla.vhd             Y            Y
+POKEY_top.vhd
+poly_core.vhd                Y            Y
+pot_core.vhd
+SER_clock_gen.vhd
+SER_core.vhd
+SERIN.vhd
+SERIN_PLA.vhd                Y            Y
+SEROUT.vhd
+SEROUT_PLA.vhd               Y            Y
+SEROUT_shift_module.vhd
+SKCTLS_reg.vhd
+SKSTAT.vhd
