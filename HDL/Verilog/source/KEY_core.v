@@ -36,7 +36,6 @@ module KEY_core
     wire [5:0]C;
     wire [5:0]Q;
     wire [4:0]T;
-    wire [4:0]nT;
 
     //Keyboard code signals.
     wire nKR2, enControl, enShift;
@@ -44,8 +43,7 @@ module KEY_core
     //Break detect signals.
     reg  qMuxOut;
     reg  qLoop;
-    reg  qLoop2;
-    wire muxOut, nqLoop, preBreak;
+    wire muxOut, preBreak;
 
     //******************************************Sub-modules*****************************************
 
@@ -55,26 +53,26 @@ module KEY_core
     KEY_PLA kb_pla(iKR1, keyQ[0], keyQ[1], debComp, keyD[0], keyD[1], nLdComp, nLdKbus);
 
     //State registers.
-    cell2p b0(enn, clk, keyD[0], ~keybClk, keybClk, ~SKCTLS[1], keyQ[0]);
-    cell2p b1(enn, clk, keyD[1], ~keybClk, keybClk, ~SKCTLS[1], keyQ[1]);    
+    cell2p b0(enn, clk, keyD[0], ~keybClk, ~SKCTLS[1], keyQ[0]);
+    cell2p b1(enn, clk, keyD[1], ~keybClk, ~SKCTLS[1], keyQ[1]);    
 
     //------------------------Count, compare and register-----------------------
 
     //Bits Q0-Q5.
-    cell3 qb0(enp, enn, clk, ~qkeybClk, qkeybClk, ~SKCTLS[1], T[0], nT[0], Q[0], nQ[0]);
-    cell6 qb1(enp, enn, clk, T[0], nT[0], ~SKCTLS[1], T[1], nT[1], Q[1], nQ[1]);
-    cell3 qb2(enp, enn, clk, T[1], nT[1], ~SKCTLS[1], T[2], nT[2], Q[2], nQ[2]);
-    cell6 qb3(enp, enn, clk, T[2], nT[2], ~SKCTLS[1], T[3], nT[3], Q[3], nQ[3]);
-    cell3 qb4(enp, enn, clk, T[3], nT[3], ~SKCTLS[1], T[4], nT[4], Q[4], nQ[4]);
-    cell6 qb5(.enp(enp), .enn(enn), .clk(clk), .T2(T[4]), .nT2(nT[4]), .R(~SKCTLS[1]), .T1(), .nT1(), .Q(Q[5]), .nQ(nQ[5])); 
+    cell3 qb0(enp, enn, clk, ~qkeybClk, ~SKCTLS[1], T[0], Q[0], nQ[0]);
+    cell6 qb1(enp, enn, clk, T[0], ~SKCTLS[1], T[1], Q[1], nQ[1]);
+    cell3 qb2(enp, enn, clk, T[1], ~SKCTLS[1], T[2], Q[2], nQ[2]);
+    cell6 qb3(enp, enn, clk, T[2], ~SKCTLS[1], T[3], Q[3], nQ[3]);
+    cell3 qb4(enp, enn, clk, T[3], ~SKCTLS[1], T[4], Q[4], nQ[4]);
+    cell6 qb5(.enp(enp), .enn(enn), .clk(clk), .T2(T[4]), .R(~SKCTLS[1]), .T1(), .Q(Q[5]), .nQ(nQ[5])); 
 
     //Compare registers.
-    cell4 c0(enp, clk, Q[0], kbCmpLd, ~kbCmpLd, QD[0], C[0]);
-    cell4 c1(enp, clk, Q[1], kbCmpLd, ~kbCmpLd, QD[1], C[1]);
-    cell4 c2(enp, clk, Q[2], kbCmpLd, ~kbCmpLd, QD[2], C[2]);
-    cell4 c3(enp, clk, Q[3], kbCmpLd, ~kbCmpLd, QD[3], C[3]);
-    cell4 c4(enp, clk, Q[4], kbCmpLd, ~kbCmpLd, QD[4], C[4]);
-    cell4 c5(enp, clk, Q[5], kbCmpLd, ~kbCmpLd, QD[5], C[5]); 
+    cell4 c0(enp, clk, Q[0], kbCmpLd, QD[0], C[0]);
+    cell4 c1(enp, clk, Q[1], kbCmpLd, QD[1], C[1]);
+    cell4 c2(enp, clk, Q[2], kbCmpLd, QD[2], C[2]);
+    cell4 c3(enp, clk, Q[3], kbCmpLd, QD[3], C[3]);
+    cell4 c4(enp, clk, Q[4], kbCmpLd, QD[4], C[4]);
+    cell4 c5(enp, clk, Q[5], kbCmpLd, QD[5], C[5]); 
 
     //***************************************Combinational Logic*************************************
 
@@ -118,9 +116,8 @@ module KEY_core
 
     //-------------------------------Break detect-------------------------------
     //Always update mux output.
-    assign muxOut = (enBreak == 1'b1) ? KR[2] : nqLoop;
-    assign nqLoop = ~qLoop;
-    assign preBreak = ~(qLoop2 | muxOut);
+    assign muxOut = (enBreak == 1'b1) ? KR[2] : ~qLoop;
+    assign preBreak = ~(qLoop | muxOut);
 
     //---------------------------------Top level--------------------------------
     assign kShift = shift;
@@ -148,11 +145,8 @@ module KEY_core
 
             //---------------------------Break detect---------------------------
             //loop signals.
-            qLoop <= ~qMuxOut;
+            qLoop <= qMuxOut;
         
-            //preBreak logic.
-            qLoop2 <= ~qMuxOut;
-
             //Output.
             setBreak <= preBreak;
         end
@@ -169,7 +163,7 @@ module KEY_core
 
             //---------------------------Break detect---------------------------
             //loop signals.
-            qMuxOut <= muxOut;   
+            qMuxOut <= ~muxOut;   
         end
     end
 endmodule

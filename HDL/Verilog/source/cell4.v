@@ -8,21 +8,17 @@ module cell4
     input  clk,
     input  D,
     input  Ld,
-    input  nLd,
     output reg Q,
     output C
 );
 
     wire en;
     reg  nQ;
-
-    //Flip-flop enable.
-    assign en = Ld & ~nLd;
        
     //Flip-flop bit compare storage.
     always @(posedge clk) begin
         if(enp == 1'b1) begin
-            if(en == 1'b1) begin
+            if(Ld == 1'b1) begin
                 Q  <= D;
                 nQ <= ~D;
             end
@@ -31,5 +27,4 @@ module cell4
 
     //Output compare bit.
     assign C = ~(nQ ^ D);
-
 endmodule

@@ -14,23 +14,23 @@ cell23.vhd                   Y+           Y+
 cell24.vhd                   Y            Y
 cell24option1.vhd            Y            Y
 cell25.vhd                   Y            Y
-cell2p.vhd                   Y            Y
+cell2p.vhd                   Y+           Y+
 cell2pr.vhd                  Y            Y
 cell2r.vhd                   Y            Y
-cell3.vhd                    Y            Y
-cell4.vhd                    Y            Y
-cell6.vhd                    Y            Y
+cell3.vhd                    Y+           Y+
+cell4.vhd                    Y+           Y+
+cell6.vhd                    Y+           Y+
 clock_gen_core.vhd           Y            Y
 freq_cntrl.vhd
 freq_reg.vhd
 IO_core.vhd
 IRQ_core.vhd
-kb_break.vhd                 Y            Y
-kb_code.vhd                  Y            Y
-kb_count_reg.vhd             Y            Y
-kb_regs.vhd                  Y            Y
-kb_state.vhd                 Y            Y
-KEY_core.vhd                 Y            Y
+kb_break.vhd                 Y+           Y+
+kb_code.vhd                  Y+           Y+
+kb_count_reg.vhd             Y+           Y+
+kb_regs.vhd                  Y+           Y+
+kb_state.vhd                 Y+           Y+
+KEY_core.vhd                 Y+           Y+
 keyboard_pla.vhd             Y+           Y+
 POKEY_top.vhd
 poly_core.vhd                Y            Y
