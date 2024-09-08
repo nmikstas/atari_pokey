@@ -1,0 +1,36 @@
+Qty    Reference                                                    Value           Part#
+23     C1  C2  C3  C4  C5  C6  C7  C8  C9  C10                      .1uf            Digikey 1276-1002-1-ND or equivalent
+       C11 C12 C13 C14 C15 C16 C17 C18 C19 C20
+       C21 C22 C23
+
+1      C24                                                          10uf            Digikey 1276-1096-1-ND or equivalent
+1      J1                                                           Conn_01x03_Pin  Digikey 732-5316-ND or equivalent
+1      J2                                                           CMOD-A7         Digikey 4848-6004-CP or equivalent
+1      J3                                                           PMOD            Digikey 2057-PH2-12-UA-ND or equivalent
+1      J4                                                           2x20_Conn       Digikey AE10008-ND or equivalent
+
+18     Q1  Q2  Q3  Q4  Q5  Q6  Q7  Q8  Q9  Q10                      2N7002NXAK      Digikey 1727-8643-1-ND or equivalent
+       Q11 Q12 Q13 Q14 Q15 Q16 Q17 Q18
+
+1      R1                                                           75K 1%          Digikey P75.0KLCT-ND or equivalent
+1      R2                                                           24K 1%          Digikey P24.0KLCT-ND or equivalent
+1      R3                                                           7.68K 1%        Digikey P7.68KLCT-ND or equivalent
+1      R4                                                           3.3K 1%         Digikey P3.30KLCT-ND or equivalent
+1      R5                                                           1.65K 1%        Digikey P1.65KLCT-ND or equivalent
+1      R6                                                           825 1%          Digikey P825LCT-ND or equivalent
+1      R7                                                           1k              Digikey P1.00KLCT-ND or equivalent
+
+98     TP1  TP2  TP3  TP4  TP5  TP6  TP7  TP8  TP9  TP10            Test Point      Digikey 36-5001-ND or equivalent
+       TP11 TP12 TP13 TP14 TP15 TP16 TP17 TP18 TP19 TP20
+       TP21 TP22 TP23 TP24 TP25 TP26 TP27 TP28 TP29 TP30
+       TP31 TP32 TP33 TP34 TP35 TP36 TP37 TP38 TP39 TP40
+       TP41 TP42 TP43 TP44 TP45 TP46 TP47 TP48 TP49 TP50
+       TP51 TP52 TP53 TP54 TP55 TP56 TP57 TP58 TP59 TP60
+       TP61 TP62 TP63 TP64 TP65 TP66 TP67 TP68 TP69 TP70
+       TP71 TP72 TP73 TP74 TP75 TP76 TP77 TP78 TP79 TP80
+       TP81 TP82 TP83 TP84 TP85 TP86 TP87 TP88 TP89 TP90
+       TP91 TP92 TP93 TP94 TP95 TP96 TP97 TP98
+
+9      U1  U2  U3  U4  U5  U6  U8  U10  U12                         FXMAR2104UMX    Digikey FXMAR2104UMXCT-ND or equivalent
+3      U7  U9  U11                                                  74LVC3G14       Digikey 1727-7042-1-ND or equivalent
+1      U13                                                          LD1117S33TR     Digikey 497-1242-1-ND or equivalent

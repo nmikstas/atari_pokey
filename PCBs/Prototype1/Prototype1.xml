@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>D:\work\Arcade+Projects\atari_pokey\PCBs\Prototype1\Prototype1.kicad_sch</source>
-    <date>8/22/2024 2:28:05 PM</date>
+    <date>8/30/2024 11:45:48 PM</date>
     <tool>Eeschema 7.0.9</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -266,14 +266,38 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>ed8aec77-04ed-450c-a235-8d67f2673f41</tstamps>
     </comp>
-    <comp ref="J1">
-      <value>2x20_Conn</value>
-      <footprint>POKEY_Footprints:Con_2X20</footprint>
-      <libsource lib="POKEY" part="2x20_Conn" description=""/>
+    <comp ref="C23">
+      <value>.1uf</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>6e1ebb0f-f610-4464-af48-3f3eb0ca70d8</tstamps>
+      <tstamps>122248d7-6a8d-40a3-95f6-0c3bd3179570</tstamps>
+    </comp>
+    <comp ref="C24">
+      <value>10uf</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype1.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4d68e8a7-47f2-458b-b86f-5a10dabdbe92</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x03_Pin</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype1.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>609f3829-16a3-4968-90bf-b49e9c6bc4fd</tstamps>
     </comp>
     <comp ref="J2">
       <value>CMOD-A7</value>
@@ -543,7 +567,7 @@
     </comp>
     <comp ref="TP1">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -554,7 +578,7 @@
     </comp>
     <comp ref="TP2">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -565,7 +589,7 @@
     </comp>
     <comp ref="TP3">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -576,7 +600,7 @@
     </comp>
     <comp ref="TP4">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -587,7 +611,7 @@
     </comp>
     <comp ref="TP5">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -598,7 +622,7 @@
     </comp>
     <comp ref="TP6">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -609,7 +633,7 @@
     </comp>
     <comp ref="TP7">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -620,7 +644,7 @@
     </comp>
     <comp ref="TP8">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -631,7 +655,7 @@
     </comp>
     <comp ref="TP9">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -642,7 +666,7 @@
     </comp>
     <comp ref="TP10">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -653,7 +677,7 @@
     </comp>
     <comp ref="TP11">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -664,7 +688,7 @@
     </comp>
     <comp ref="TP12">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -675,7 +699,7 @@
     </comp>
     <comp ref="TP13">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -686,7 +710,7 @@
     </comp>
     <comp ref="TP14">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -697,7 +721,7 @@
     </comp>
     <comp ref="TP15">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -708,7 +732,7 @@
     </comp>
     <comp ref="TP16">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -719,7 +743,7 @@
     </comp>
     <comp ref="TP17">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -730,7 +754,7 @@
     </comp>
     <comp ref="TP18">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -741,7 +765,7 @@
     </comp>
     <comp ref="TP19">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -752,7 +776,7 @@
     </comp>
     <comp ref="TP20">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -763,7 +787,7 @@
     </comp>
     <comp ref="TP21">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -774,7 +798,7 @@
     </comp>
     <comp ref="TP22">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -785,7 +809,7 @@
     </comp>
     <comp ref="TP23">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -796,7 +820,7 @@
     </comp>
     <comp ref="TP24">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -807,7 +831,7 @@
     </comp>
     <comp ref="TP25">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -818,7 +842,7 @@
     </comp>
     <comp ref="TP26">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -829,7 +853,7 @@
     </comp>
     <comp ref="TP27">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -840,7 +864,7 @@
     </comp>
     <comp ref="TP28">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -851,7 +875,7 @@
     </comp>
     <comp ref="TP29">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -862,7 +886,7 @@
     </comp>
     <comp ref="TP30">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -873,7 +897,7 @@
     </comp>
     <comp ref="TP31">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -884,7 +908,7 @@
     </comp>
     <comp ref="TP32">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -895,7 +919,7 @@
     </comp>
     <comp ref="TP33">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -906,7 +930,7 @@
     </comp>
     <comp ref="TP34">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -917,7 +941,7 @@
     </comp>
     <comp ref="TP35">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -928,7 +952,7 @@
     </comp>
     <comp ref="TP36">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -939,7 +963,7 @@
     </comp>
     <comp ref="TP37">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -950,7 +974,7 @@
     </comp>
     <comp ref="TP38">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -961,7 +985,7 @@
     </comp>
     <comp ref="TP39">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -972,7 +996,7 @@
     </comp>
     <comp ref="TP40">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -983,7 +1007,7 @@
     </comp>
     <comp ref="TP41">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -994,7 +1018,7 @@
     </comp>
     <comp ref="TP42">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1005,7 +1029,7 @@
     </comp>
     <comp ref="TP43">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1016,7 +1040,7 @@
     </comp>
     <comp ref="TP44">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1027,7 +1051,7 @@
     </comp>
     <comp ref="TP45">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1038,7 +1062,7 @@
     </comp>
     <comp ref="TP46">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1049,7 +1073,7 @@
     </comp>
     <comp ref="TP47">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1060,7 +1084,7 @@
     </comp>
     <comp ref="TP48">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1071,7 +1095,7 @@
     </comp>
     <comp ref="TP49">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1082,7 +1106,7 @@
     </comp>
     <comp ref="TP50">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1093,7 +1117,7 @@
     </comp>
     <comp ref="TP51">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1104,7 +1128,7 @@
     </comp>
     <comp ref="TP52">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1115,7 +1139,7 @@
     </comp>
     <comp ref="TP53">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1126,7 +1150,7 @@
     </comp>
     <comp ref="TP54">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1137,7 +1161,7 @@
     </comp>
     <comp ref="TP55">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1148,7 +1172,7 @@
     </comp>
     <comp ref="TP56">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1159,7 +1183,7 @@
     </comp>
     <comp ref="TP57">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1170,7 +1194,7 @@
     </comp>
     <comp ref="TP58">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1181,7 +1205,7 @@
     </comp>
     <comp ref="TP59">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1192,7 +1216,7 @@
     </comp>
     <comp ref="TP60">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1203,7 +1227,7 @@
     </comp>
     <comp ref="TP61">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1214,7 +1238,7 @@
     </comp>
     <comp ref="TP62">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1225,7 +1249,7 @@
     </comp>
     <comp ref="TP63">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1236,7 +1260,7 @@
     </comp>
     <comp ref="TP64">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1247,7 +1271,7 @@
     </comp>
     <comp ref="TP65">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1258,7 +1282,7 @@
     </comp>
     <comp ref="TP66">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1269,7 +1293,7 @@
     </comp>
     <comp ref="TP67">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1280,7 +1304,7 @@
     </comp>
     <comp ref="TP68">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1291,7 +1315,7 @@
     </comp>
     <comp ref="TP69">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1302,7 +1326,7 @@
     </comp>
     <comp ref="TP70">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1313,7 +1337,7 @@
     </comp>
     <comp ref="TP71">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1324,7 +1348,7 @@
     </comp>
     <comp ref="TP72">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1335,7 +1359,7 @@
     </comp>
     <comp ref="TP73">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1346,7 +1370,7 @@
     </comp>
     <comp ref="TP74">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1357,7 +1381,7 @@
     </comp>
     <comp ref="TP75">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1368,7 +1392,7 @@
     </comp>
     <comp ref="TP76">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1379,7 +1403,7 @@
     </comp>
     <comp ref="TP77">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1390,7 +1414,7 @@
     </comp>
     <comp ref="TP78">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1401,7 +1425,7 @@
     </comp>
     <comp ref="TP79">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1412,7 +1436,7 @@
     </comp>
     <comp ref="TP80">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1423,7 +1447,7 @@
     </comp>
     <comp ref="TP81">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1434,7 +1458,7 @@
     </comp>
     <comp ref="TP82">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1445,7 +1469,7 @@
     </comp>
     <comp ref="TP83">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1456,7 +1480,7 @@
     </comp>
     <comp ref="TP84">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1467,7 +1491,7 @@
     </comp>
     <comp ref="TP85">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1478,7 +1502,7 @@
     </comp>
     <comp ref="TP86">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1489,7 +1513,7 @@
     </comp>
     <comp ref="TP87">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1500,7 +1524,7 @@
     </comp>
     <comp ref="TP88">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1511,7 +1535,7 @@
     </comp>
     <comp ref="TP89">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1522,7 +1546,7 @@
     </comp>
     <comp ref="TP90">
       <value>~</value>
-      <footprint>TestPoint:TestPoint_Keystone_5010-5014_Multipurpose</footprint>
+      <footprint>POKEY_Footprints:TP</footprint>
       <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="Prototype1.kicad_sch"/>
@@ -1530,6 +1554,94 @@
       <property name="ki_keywords" value="test point tp"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>82083c45-beec-4546-874f-054a89125c9f</tstamps>
+    </comp>
+    <comp ref="TP91">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype1.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f24feb67-5867-451b-98de-c8d6f22c778f</tstamps>
+    </comp>
+    <comp ref="TP92">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype1.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6065ae65-19b5-4c95-92b8-7575c475b3f9</tstamps>
+    </comp>
+    <comp ref="TP93">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype1.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>919d4e4e-4387-4c95-86e1-d129a5203716</tstamps>
+    </comp>
+    <comp ref="TP94">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype1.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>de7f8dcd-0150-4a86-9dcc-6f3894592246</tstamps>
+    </comp>
+    <comp ref="TP95">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype1.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f6e8837f-bf5f-4ab9-8680-7a2b9cdff79b</tstamps>
+    </comp>
+    <comp ref="TP96">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype1.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>52d8cc78-8056-4710-a69a-9deb018a5386</tstamps>
+    </comp>
+    <comp ref="TP97">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype1.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c3ee3614-1086-4a33-99a2-173f75cc0a0f</tstamps>
+    </comp>
+    <comp ref="TP98">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype1.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>11993b84-b762-4bec-bd1a-1422afb48166</tstamps>
     </comp>
     <comp ref="U1">
       <value>FXMAR2104UMX</value>
@@ -1639,6 +1751,18 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>34e74c9c-3f48-4c18-8653-fdb7b893c43e</tstamps>
     </comp>
+    <comp ref="U13">
+      <value>LD1117S33TR</value>
+      <footprint>POKEY_Footprints:Reg</footprint>
+      <datasheet>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="LD1117S33TR_SOT223" description="800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype1.kicad_sch"/>
+      <property name="ki_description" value="800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223"/>
+      <property name="ki_keywords" value="REGULATOR LDO 3.3V"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>53247033-5d2b-420c-9c7e-eab27f29a050</tstamps>
+    </comp>
   </components>
   <libparts>
     <libpart lib="" part="74LVC3G14_1">
@@ -1669,6 +1793,23 @@
         <pin num="C2" name="3A" type="input"/>
         <pin num="D1" name="GND" type="power_in"/>
         <pin num="D2" name="2Y" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Pin">
+      <description>Generic connector, single row, 01x03, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Connector" part="TestPoint_Small">
@@ -1887,6 +2028,24 @@
         <pin num="12" name="V" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Regulator_Linear" part="LD1117S33TR_SOT223">
+      <description>800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223</description>
+      <docs>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf</docs>
+      <footprints>
+        <fp>SOT?223*TabPin2*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LD1117S33TR_SOT223</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-223-3_TabPin2</field>
+        <field name="Datasheet">http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
   </libparts>
   <libraries>
     <library logical="Connector">
@@ -1897,6 +2056,9 @@
     </library>
     <library logical="POKEY">
       <uri>D:\work\Arcade+Projects\atari_pokey\PCBs\Prototype1/POKEY.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
     </library>
   </libraries>
   <nets>
@@ -1910,8 +2072,7 @@
       <node ref="C5" pin="1" pintype="passive"/>
       <node ref="C7" pin="1" pintype="passive"/>
       <node ref="C9" pin="1" pintype="passive"/>
-      <node ref="J3" pin="12" pinfunction="V" pintype="passive"/>
-      <node ref="J3" pin="6" pinfunction="V" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="TP89" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="TP90" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="2" pinfunction="VCCA" pintype="power_in"/>
@@ -1935,10 +2096,10 @@
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="C20" pin="1" pintype="passive"/>
       <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="C23" pin="1" pintype="passive"/>
       <node ref="C4" pin="1" pintype="passive"/>
       <node ref="C6" pin="1" pintype="passive"/>
       <node ref="C8" pin="1" pintype="passive"/>
-      <node ref="J1" pin="17" pinfunction="+5V" pintype="passive"/>
       <node ref="J2" pin="24" pinfunction="VU" pintype="passive"/>
       <node ref="J4" pin="17" pinfunction="+5V" pintype="passive"/>
       <node ref="TP87" pin="1" pinfunction="1" pintype="passive"/>
@@ -1947,6 +2108,7 @@
       <node ref="U10" pin="1" pinfunction="VCCB" pintype="power_in"/>
       <node ref="U11" pin="A2" pinfunction="VCC" pintype="power_in"/>
       <node ref="U12" pin="1" pinfunction="VCCB" pintype="power_in"/>
+      <node ref="U13" pin="3" pinfunction="VI" pintype="power_in"/>
       <node ref="U2" pin="1" pinfunction="VCCB" pintype="power_in"/>
       <node ref="U3" pin="1" pinfunction="VCCB" pintype="power_in"/>
       <node ref="U4" pin="1" pinfunction="VCCB" pintype="power_in"/>
@@ -1956,32 +2118,37 @@
       <node ref="U8" pin="1" pinfunction="VCCB" pintype="power_in"/>
       <node ref="U9" pin="A2" pinfunction="VCC" pintype="power_in"/>
     </net>
-    <net code="3" name="A0">
-      <node ref="J1" pin="36" pinfunction="A0" pintype="passive"/>
+    <net code="3" name="3V3_A">
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="J3" pin="12" pinfunction="V" pintype="passive"/>
+      <node ref="J3" pin="6" pinfunction="V" pintype="passive"/>
+    </net>
+    <net code="4" name="3V3_B">
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="J1" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U13" pin="2" pinfunction="VO" pintype="power_out"/>
+    </net>
+    <net code="5" name="A0">
       <node ref="J4" pin="36" pinfunction="A0" pintype="passive"/>
       <node ref="TP23" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U5" pin="12" pinfunction="B0" pintype="bidirectional"/>
     </net>
-    <net code="4" name="A1">
-      <node ref="J1" pin="35" pinfunction="A1" pintype="passive"/>
+    <net code="6" name="A1">
       <node ref="J4" pin="35" pinfunction="A1" pintype="passive"/>
       <node ref="TP24" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U5" pin="11" pinfunction="B1" pintype="bidirectional"/>
     </net>
-    <net code="5" name="A2">
-      <node ref="J1" pin="34" pinfunction="A2" pintype="passive"/>
+    <net code="7" name="A2">
       <node ref="J4" pin="34" pinfunction="A2" pintype="passive"/>
       <node ref="TP25" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U5" pin="10" pinfunction="B2" pintype="bidirectional"/>
     </net>
-    <net code="6" name="A3">
-      <node ref="J1" pin="33" pinfunction="A3" pintype="passive"/>
+    <net code="8" name="A3">
       <node ref="J4" pin="33" pinfunction="A3" pintype="passive"/>
       <node ref="TP26" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U5" pin="9" pinfunction="B3" pintype="bidirectional"/>
     </net>
-    <net code="7" name="AUDIO">
-      <node ref="J1" pin="37" pinfunction="AUDIO" pintype="passive"/>
+    <net code="9" name="AUDIO">
       <node ref="J4" pin="37" pinfunction="AUDIO" pintype="passive"/>
       <node ref="R1" pin="1" pintype="passive"/>
       <node ref="R2" pin="1" pintype="passive"/>
@@ -1991,68 +2158,58 @@
       <node ref="R6" pin="1" pintype="passive"/>
       <node ref="TP22" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="8" name="BCLK">
-      <node ref="J1" pin="26" pinfunction="BCLK" pintype="passive"/>
+    <net code="10" name="BCLK">
       <node ref="J4" pin="26" pinfunction="BCLK" pintype="passive"/>
       <node ref="Q15" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="TP33" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U11" pin="C2" pinfunction="3A" pintype="input"/>
     </net>
-    <net code="9" name="CS1">
-      <node ref="J1" pin="31" pinfunction="CS1" pintype="passive"/>
+    <net code="11" name="CS1">
       <node ref="J4" pin="31" pinfunction="CS1" pintype="passive"/>
       <node ref="TP28" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="11" pinfunction="B1" pintype="bidirectional"/>
     </net>
-    <net code="10" name="D0">
-      <node ref="J1" pin="38" pinfunction="D0" pintype="passive"/>
+    <net code="12" name="D0">
       <node ref="J4" pin="38" pinfunction="D0" pintype="passive"/>
       <node ref="TP21" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="12" pinfunction="B0" pintype="bidirectional"/>
     </net>
-    <net code="11" name="D1">
-      <node ref="J1" pin="39" pinfunction="D1" pintype="passive"/>
+    <net code="13" name="D1">
       <node ref="J4" pin="39" pinfunction="D1" pintype="passive"/>
       <node ref="TP20" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="11" pinfunction="B1" pintype="bidirectional"/>
     </net>
-    <net code="12" name="D2">
-      <node ref="J1" pin="40" pinfunction="D2" pintype="passive"/>
+    <net code="14" name="D2">
       <node ref="J4" pin="40" pinfunction="D2" pintype="passive"/>
       <node ref="TP19" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="10" pinfunction="B2" pintype="bidirectional"/>
     </net>
-    <net code="13" name="D3">
-      <node ref="J1" pin="2" pinfunction="D3" pintype="passive"/>
+    <net code="15" name="D3">
       <node ref="J4" pin="2" pinfunction="D3" pintype="passive"/>
       <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="9" pinfunction="B3" pintype="bidirectional"/>
     </net>
-    <net code="14" name="D4">
-      <node ref="J1" pin="3" pinfunction="D4" pintype="passive"/>
+    <net code="16" name="D4">
       <node ref="J4" pin="3" pinfunction="D4" pintype="passive"/>
       <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="12" pinfunction="B0" pintype="bidirectional"/>
     </net>
-    <net code="15" name="D5">
-      <node ref="J1" pin="4" pinfunction="D5" pintype="passive"/>
+    <net code="17" name="D5">
       <node ref="J4" pin="4" pinfunction="D5" pintype="passive"/>
       <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="11" pinfunction="B1" pintype="bidirectional"/>
     </net>
-    <net code="16" name="D6">
-      <node ref="J1" pin="5" pinfunction="D6" pintype="passive"/>
+    <net code="18" name="D6">
       <node ref="J4" pin="5" pinfunction="D6" pintype="passive"/>
       <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="10" pinfunction="B2" pintype="bidirectional"/>
     </net>
-    <net code="17" name="D7">
-      <node ref="J1" pin="6" pinfunction="D7" pintype="passive"/>
+    <net code="19" name="D7">
       <node ref="J4" pin="6" pinfunction="D7" pintype="passive"/>
       <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="9" pinfunction="B3" pintype="bidirectional"/>
     </net>
-    <net code="18" name="GND">
+    <net code="20" name="GND">
       <node ref="C1" pin="2" pintype="passive"/>
       <node ref="C10" pin="2" pintype="passive"/>
       <node ref="C11" pin="2" pintype="passive"/>
@@ -2068,6 +2225,8 @@
       <node ref="C20" pin="2" pintype="passive"/>
       <node ref="C21" pin="2" pintype="passive"/>
       <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="C24" pin="2" pintype="passive"/>
       <node ref="C3" pin="2" pintype="passive"/>
       <node ref="C4" pin="2" pintype="passive"/>
       <node ref="C5" pin="2" pintype="passive"/>
@@ -2075,7 +2234,6 @@
       <node ref="C7" pin="2" pintype="passive"/>
       <node ref="C8" pin="2" pintype="passive"/>
       <node ref="C9" pin="2" pintype="passive"/>
-      <node ref="J1" pin="1" pinfunction="GND" pintype="passive"/>
       <node ref="J2" pin="25" pinfunction="GND" pintype="passive"/>
       <node ref="J3" pin="11" pinfunction="G" pintype="passive"/>
       <node ref="J3" pin="5" pinfunction="G" pintype="passive"/>
@@ -2107,6 +2265,7 @@
       <node ref="U10" pin="7" pinfunction="GND" pintype="power_in"/>
       <node ref="U11" pin="D1" pinfunction="GND" pintype="power_in"/>
       <node ref="U12" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U13" pin="1" pinfunction="GND" pintype="power_in"/>
       <node ref="U2" pin="7" pinfunction="GND" pintype="power_in"/>
       <node ref="U3" pin="7" pinfunction="GND" pintype="power_in"/>
       <node ref="U4" pin="7" pinfunction="GND" pintype="power_in"/>
@@ -2116,75 +2275,99 @@
       <node ref="U8" pin="7" pinfunction="GND" pintype="power_in"/>
       <node ref="U9" pin="D1" pinfunction="GND" pintype="power_in"/>
     </net>
-    <net code="19" name="Net-(Q1-D)">
+    <net code="21" name="Net-(J3-JA2)">
+      <node ref="J3" pin="2" pinfunction="JA2" pintype="passive"/>
+      <node ref="TP94" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(J3-JA3)">
+      <node ref="J3" pin="3" pinfunction="JA3" pintype="passive"/>
+      <node ref="TP95" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(J3-JA4)">
+      <node ref="J3" pin="4" pinfunction="JA4" pintype="passive"/>
+      <node ref="TP96" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(J3-JA8)">
+      <node ref="J3" pin="8" pinfunction="JA8" pintype="passive"/>
+      <node ref="TP93" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="25" name="Net-(J3-JA9)">
+      <node ref="J3" pin="9" pinfunction="JA9" pintype="passive"/>
+      <node ref="TP92" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="26" name="Net-(J3-JA10)">
+      <node ref="J3" pin="10" pinfunction="JA10" pintype="passive"/>
+      <node ref="TP91" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="27" name="Net-(Q1-D)">
       <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="R1" pin="2" pintype="passive"/>
     </net>
-    <net code="20" name="Net-(Q2-D)">
+    <net code="28" name="Net-(Q2-D)">
       <node ref="Q2" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="R2" pin="2" pintype="passive"/>
     </net>
-    <net code="21" name="Net-(Q3-D)">
+    <net code="29" name="Net-(Q3-D)">
       <node ref="Q3" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="R3" pin="2" pintype="passive"/>
     </net>
-    <net code="22" name="Net-(Q4-D)">
+    <net code="30" name="Net-(Q4-D)">
       <node ref="Q4" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="R4" pin="2" pintype="passive"/>
     </net>
-    <net code="23" name="Net-(Q5-D)">
+    <net code="31" name="Net-(Q5-D)">
       <node ref="Q5" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="R5" pin="2" pintype="passive"/>
     </net>
-    <net code="24" name="Net-(Q6-D)">
+    <net code="32" name="Net-(Q6-D)">
       <node ref="Q6" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="R6" pin="2" pintype="passive"/>
     </net>
-    <net code="25" name="Net-(U7-1Y)">
+    <net code="33" name="Net-(U7-1Y)">
       <node ref="U7" pin="B2" pinfunction="1Y" pintype="output"/>
       <node ref="U8" pin="12" pinfunction="B0" pintype="bidirectional"/>
     </net>
-    <net code="26" name="Net-(U7-2Y)">
+    <net code="34" name="Net-(U7-2Y)">
       <node ref="U7" pin="D2" pinfunction="2Y" pintype="output"/>
       <node ref="U8" pin="11" pinfunction="B1" pintype="bidirectional"/>
     </net>
-    <net code="27" name="Net-(U7-3Y)">
+    <net code="35" name="Net-(U7-3Y)">
       <node ref="U7" pin="B1" pinfunction="3Y" pintype="output"/>
       <node ref="U8" pin="10" pinfunction="B2" pintype="bidirectional"/>
     </net>
-    <net code="28" name="Net-(U8-B3)">
+    <net code="36" name="Net-(U8-B3)">
       <node ref="U8" pin="9" pinfunction="B3" pintype="bidirectional"/>
       <node ref="U9" pin="B2" pinfunction="1Y" pintype="output"/>
     </net>
-    <net code="29" name="Net-(U10-B0)">
+    <net code="37" name="Net-(U10-B0)">
       <node ref="U10" pin="12" pinfunction="B0" pintype="bidirectional"/>
       <node ref="U9" pin="D2" pinfunction="2Y" pintype="output"/>
     </net>
-    <net code="30" name="Net-(U10-B1)">
+    <net code="38" name="Net-(U10-B1)">
       <node ref="U10" pin="11" pinfunction="B1" pintype="bidirectional"/>
       <node ref="U9" pin="B1" pinfunction="3Y" pintype="output"/>
     </net>
-    <net code="31" name="Net-(U10-B2)">
+    <net code="39" name="Net-(U10-B2)">
       <node ref="U10" pin="10" pinfunction="B2" pintype="bidirectional"/>
       <node ref="U11" pin="B2" pinfunction="1Y" pintype="output"/>
     </net>
-    <net code="32" name="Net-(U10-B3)">
+    <net code="40" name="Net-(U10-B3)">
       <node ref="U10" pin="9" pinfunction="B3" pintype="bidirectional"/>
       <node ref="U11" pin="D2" pinfunction="2Y" pintype="output"/>
     </net>
-    <net code="33" name="Net-(U11-3Y)">
+    <net code="41" name="Net-(U11-3Y)">
       <node ref="U11" pin="B1" pinfunction="3Y" pintype="output"/>
       <node ref="U12" pin="12" pinfunction="B0" pintype="bidirectional"/>
     </net>
-    <net code="34" name="OCLK">
-      <node ref="J1" pin="27" pinfunction="OCLK" pintype="passive"/>
+    <net code="42" name="OCLK">
       <node ref="J4" pin="27" pinfunction="OCLK" pintype="passive"/>
       <node ref="Q16" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="TP32" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="35" name="OE">
+    <net code="43" name="OE">
       <node ref="J3" pin="7" pinfunction="JA7" pintype="passive"/>
       <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="TP98" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="OE" pintype="input"/>
       <node ref="U10" pin="8" pinfunction="OE" pintype="input"/>
       <node ref="U12" pin="8" pinfunction="OE" pintype="input"/>
@@ -2195,192 +2378,180 @@
       <node ref="U6" pin="8" pinfunction="OE" pintype="input"/>
       <node ref="U8" pin="8" pinfunction="OE" pintype="input"/>
     </net>
-    <net code="36" name="P0">
-      <node ref="J1" pin="14" pinfunction="P0" pintype="passive"/>
+    <net code="44" name="P0">
       <node ref="J4" pin="14" pinfunction="P0" pintype="passive"/>
       <node ref="Q9" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="TP13" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U7" pin="A1" pinfunction="1A" pintype="input"/>
     </net>
-    <net code="37" name="P1">
-      <node ref="J1" pin="15" pinfunction="P1" pintype="passive"/>
+    <net code="45" name="P1">
       <node ref="J4" pin="15" pinfunction="P1" pintype="passive"/>
       <node ref="Q8" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="TP14" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U7" pin="C1" pinfunction="2A" pintype="input"/>
     </net>
-    <net code="38" name="P2">
-      <node ref="J1" pin="12" pinfunction="P2" pintype="passive"/>
+    <net code="46" name="P2">
       <node ref="J4" pin="12" pinfunction="P2" pintype="passive"/>
       <node ref="Q7" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="TP11" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U7" pin="C2" pinfunction="3A" pintype="input"/>
     </net>
-    <net code="39" name="P3">
-      <node ref="J1" pin="13" pinfunction="P3" pintype="passive"/>
+    <net code="47" name="P3">
       <node ref="J4" pin="13" pinfunction="P3" pintype="passive"/>
       <node ref="Q10" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="TP12" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U9" pin="A1" pinfunction="1A" pintype="input"/>
     </net>
-    <net code="40" name="P4">
-      <node ref="J1" pin="10" pinfunction="P4" pintype="passive"/>
+    <net code="48" name="P4">
       <node ref="J4" pin="10" pinfunction="P4" pintype="passive"/>
       <node ref="Q11" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="TP9" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U9" pin="C1" pinfunction="2A" pintype="input"/>
     </net>
-    <net code="41" name="P5">
-      <node ref="J1" pin="11" pinfunction="P5" pintype="passive"/>
+    <net code="49" name="P5">
       <node ref="J4" pin="11" pinfunction="P5" pintype="passive"/>
       <node ref="Q12" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="TP10" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U9" pin="C2" pinfunction="3A" pintype="input"/>
     </net>
-    <net code="42" name="P6">
-      <node ref="J1" pin="8" pinfunction="P6" pintype="passive"/>
+    <net code="50" name="P6">
       <node ref="J4" pin="8" pinfunction="P6" pintype="passive"/>
       <node ref="Q13" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U11" pin="A1" pinfunction="1A" pintype="input"/>
     </net>
-    <net code="43" name="P7">
-      <node ref="J1" pin="9" pinfunction="P7" pintype="passive"/>
+    <net code="51" name="P7">
       <node ref="J4" pin="9" pinfunction="P7" pintype="passive"/>
       <node ref="Q14" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="TP8" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U11" pin="C1" pinfunction="2A" pintype="input"/>
     </net>
-    <net code="44" name="PHI2">
-      <node ref="J1" pin="7" pinfunction="PHI2" pintype="passive"/>
+    <net code="52" name="PHI2">
       <node ref="J4" pin="7" pinfunction="PHI2" pintype="passive"/>
       <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U12" pin="11" pinfunction="B1" pintype="bidirectional"/>
     </net>
-    <net code="45" name="R{slash}W">
-      <node ref="J1" pin="32" pinfunction="R/W" pintype="passive"/>
+    <net code="53" name="R{slash}W">
       <node ref="J4" pin="32" pinfunction="R/W" pintype="passive"/>
       <node ref="TP27" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="12" pinfunction="B0" pintype="bidirectional"/>
     </net>
-    <net code="46" name="SID">
-      <node ref="J1" pin="24" pinfunction="SID" pintype="passive"/>
+    <net code="54" name="SID">
       <node ref="J4" pin="24" pinfunction="SID" pintype="passive"/>
       <node ref="TP35" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="9" pinfunction="B3" pintype="bidirectional"/>
     </net>
-    <net code="47" name="SOD">
-      <node ref="J1" pin="28" pinfunction="SOD" pintype="passive"/>
+    <net code="55" name="SOD">
       <node ref="J4" pin="28" pinfunction="SOD" pintype="passive"/>
       <node ref="Q18" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="TP31" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="48" name="_A0">
+    <net code="56" name="_A0">
       <node ref="J2" pin="39" pinfunction="PIO39" pintype="passive"/>
       <node ref="TP73" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U5" pin="3" pinfunction="A0" pintype="bidirectional"/>
     </net>
-    <net code="49" name="_A1">
+    <net code="57" name="_A1">
       <node ref="J2" pin="38" pinfunction="PIO38" pintype="passive"/>
       <node ref="TP72" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U5" pin="4" pinfunction="A1" pintype="bidirectional"/>
     </net>
-    <net code="50" name="_A2">
+    <net code="58" name="_A2">
       <node ref="J2" pin="37" pinfunction="PIO37" pintype="passive"/>
       <node ref="TP71" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U5" pin="5" pinfunction="A2" pintype="bidirectional"/>
     </net>
-    <net code="51" name="_A3">
+    <net code="59" name="_A3">
       <node ref="J2" pin="36" pinfunction="PIO36" pintype="passive"/>
       <node ref="TP70" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U5" pin="6" pinfunction="A3" pintype="bidirectional"/>
     </net>
-    <net code="52" name="_AUDIO0">
+    <net code="60" name="_AUDIO0">
       <node ref="J2" pin="45" pinfunction="PIO45" pintype="passive"/>
       <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
       <node ref="TP79" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="53" name="_AUDIO1">
+    <net code="61" name="_AUDIO1">
       <node ref="J2" pin="44" pinfunction="PIO44" pintype="passive"/>
       <node ref="Q2" pin="1" pinfunction="G" pintype="input"/>
       <node ref="TP78" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="54" name="_AUDIO2">
+    <net code="62" name="_AUDIO2">
       <node ref="J2" pin="43" pinfunction="PIO43" pintype="passive"/>
       <node ref="Q3" pin="1" pinfunction="G" pintype="input"/>
       <node ref="TP77" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="55" name="_AUDIO3">
+    <net code="63" name="_AUDIO3">
       <node ref="J2" pin="42" pinfunction="PIO42" pintype="passive"/>
       <node ref="Q4" pin="1" pinfunction="G" pintype="input"/>
       <node ref="TP76" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="56" name="_AUDIO4">
+    <net code="64" name="_AUDIO4">
       <node ref="J2" pin="41" pinfunction="PIO41" pintype="passive"/>
       <node ref="Q5" pin="1" pinfunction="G" pintype="input"/>
       <node ref="TP75" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="57" name="_AUDIO5">
+    <net code="65" name="_AUDIO5">
       <node ref="J2" pin="40" pinfunction="PIO40" pintype="passive"/>
       <node ref="Q6" pin="1" pinfunction="G" pintype="input"/>
       <node ref="TP74" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="58" name="_BCLKI">
+    <net code="66" name="_BCLKI">
       <node ref="J2" pin="29" pinfunction="PIO29" pintype="passive"/>
       <node ref="TP63" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U12" pin="3" pinfunction="A0" pintype="bidirectional"/>
     </net>
-    <net code="59" name="_BCLKO">
+    <net code="67" name="_BCLKO">
       <node ref="J2" pin="28" pinfunction="PIO28" pintype="passive"/>
       <node ref="Q15" pin="1" pinfunction="G" pintype="input"/>
       <node ref="TP62" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="60" name="_CS1">
+    <net code="68" name="_CS1">
       <node ref="J2" pin="34" pinfunction="PIO34" pintype="passive"/>
       <node ref="TP68" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="4" pinfunction="A1" pintype="bidirectional"/>
     </net>
-    <net code="61" name="_D0">
+    <net code="69" name="_D0">
       <node ref="J2" pin="46" pinfunction="PIO46" pintype="passive"/>
       <node ref="TP80" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="3" pinfunction="A0" pintype="bidirectional"/>
     </net>
-    <net code="62" name="_D1">
+    <net code="70" name="_D1">
       <node ref="J2" pin="47" pinfunction="PIO47" pintype="passive"/>
       <node ref="TP81" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="4" pinfunction="A1" pintype="bidirectional"/>
     </net>
-    <net code="63" name="_D2">
+    <net code="71" name="_D2">
       <node ref="J2" pin="48" pinfunction="PIO48" pintype="passive"/>
       <node ref="TP82" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="5" pinfunction="A2" pintype="bidirectional"/>
     </net>
-    <net code="64" name="_D3">
+    <net code="72" name="_D3">
       <node ref="J2" pin="1" pinfunction="PIO01" pintype="passive"/>
       <node ref="TP39" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="6" pinfunction="A3" pintype="bidirectional"/>
     </net>
-    <net code="65" name="_D4">
+    <net code="73" name="_D4">
       <node ref="J2" pin="2" pinfunction="PIO02" pintype="passive"/>
       <node ref="TP40" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="A0" pintype="bidirectional"/>
     </net>
-    <net code="66" name="_D5">
+    <net code="74" name="_D5">
       <node ref="J2" pin="3" pinfunction="PIO03" pintype="passive"/>
       <node ref="TP41" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="4" pinfunction="A1" pintype="bidirectional"/>
     </net>
-    <net code="67" name="_D6">
+    <net code="75" name="_D6">
       <node ref="J2" pin="4" pinfunction="PIO04" pintype="passive"/>
       <node ref="TP42" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="5" pinfunction="A2" pintype="bidirectional"/>
     </net>
-    <net code="68" name="_D7">
+    <net code="76" name="_D7">
       <node ref="J2" pin="5" pinfunction="PIO05" pintype="passive"/>
       <node ref="TP43" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U2" pin="6" pinfunction="A3" pintype="bidirectional"/>
     </net>
-    <net code="69" name="_DUMP">
+    <net code="77" name="_DUMP">
       <node ref="J3" pin="1" pinfunction="JA1" pintype="passive"/>
       <node ref="Q10" pin="1" pinfunction="G" pintype="input"/>
       <node ref="Q11" pin="1" pinfunction="G" pintype="input"/>
@@ -2390,214 +2561,187 @@
       <node ref="Q7" pin="1" pinfunction="G" pintype="input"/>
       <node ref="Q8" pin="1" pinfunction="G" pintype="input"/>
       <node ref="Q9" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="TP97" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="70" name="_OCLK">
+    <net code="78" name="_OCLK">
       <node ref="J2" pin="30" pinfunction="PIO30" pintype="passive"/>
       <node ref="Q16" pin="1" pinfunction="G" pintype="input"/>
       <node ref="TP64" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="71" name="_P0">
+    <net code="79" name="_P0">
       <node ref="J2" pin="13" pinfunction="PIO13" pintype="passive"/>
       <node ref="TP51" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U8" pin="3" pinfunction="A0" pintype="bidirectional"/>
     </net>
-    <net code="72" name="_P1">
+    <net code="80" name="_P1">
       <node ref="J2" pin="14" pinfunction="PIO14" pintype="passive"/>
       <node ref="TP52" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U8" pin="4" pinfunction="A1" pintype="bidirectional"/>
     </net>
-    <net code="73" name="_P2">
+    <net code="81" name="_P2">
       <node ref="J2" pin="11" pinfunction="PIO11" pintype="passive"/>
       <node ref="TP49" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U8" pin="5" pinfunction="A2" pintype="bidirectional"/>
     </net>
-    <net code="74" name="_P3">
+    <net code="82" name="_P3">
       <node ref="J2" pin="12" pinfunction="PIO12" pintype="passive"/>
       <node ref="TP50" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U8" pin="6" pinfunction="A3" pintype="bidirectional"/>
     </net>
-    <net code="75" name="_P4">
+    <net code="83" name="_P4">
       <node ref="J2" pin="9" pinfunction="PIO09" pintype="passive"/>
       <node ref="TP47" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U10" pin="3" pinfunction="A0" pintype="bidirectional"/>
     </net>
-    <net code="76" name="_P5">
+    <net code="84" name="_P5">
       <node ref="J2" pin="10" pinfunction="PIO10" pintype="passive"/>
       <node ref="TP48" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U10" pin="4" pinfunction="A1" pintype="bidirectional"/>
     </net>
-    <net code="77" name="_P6">
+    <net code="85" name="_P6">
       <node ref="J2" pin="7" pinfunction="PIO07" pintype="passive"/>
       <node ref="TP45" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U10" pin="5" pinfunction="A2" pintype="bidirectional"/>
     </net>
-    <net code="78" name="_P7">
+    <net code="86" name="_P7">
       <node ref="J2" pin="8" pinfunction="PIO08" pintype="passive"/>
       <node ref="TP46" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U10" pin="6" pinfunction="A3" pintype="bidirectional"/>
     </net>
-    <net code="79" name="_PHI2">
+    <net code="87" name="_PHI2">
       <node ref="J2" pin="6" pinfunction="PIO06" pintype="passive"/>
       <node ref="TP44" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U12" pin="4" pinfunction="A1" pintype="bidirectional"/>
     </net>
-    <net code="80" name="_R{slash}W">
+    <net code="88" name="_R{slash}W">
       <node ref="J2" pin="35" pinfunction="PIO35" pintype="passive"/>
       <node ref="TP69" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="3" pinfunction="A0" pintype="bidirectional"/>
     </net>
-    <net code="81" name="_SID">
+    <net code="89" name="_SID">
       <node ref="J2" pin="26" pinfunction="PIO26" pintype="passive"/>
       <node ref="TP60" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="6" pinfunction="A3" pintype="bidirectional"/>
     </net>
-    <net code="82" name="_SOD">
+    <net code="90" name="_SOD">
       <node ref="J2" pin="31" pinfunction="PIO31" pintype="passive"/>
       <node ref="Q18" pin="1" pinfunction="G" pintype="input"/>
       <node ref="TP65" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="83" name="_~{CS0}">
+    <net code="91" name="_~{CS0}">
       <node ref="J2" pin="33" pinfunction="PIO33" pintype="passive"/>
       <node ref="TP67" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="5" pinfunction="A2" pintype="bidirectional"/>
     </net>
-    <net code="84" name="_~{IRQ}">
+    <net code="92" name="_~{IRQ}">
       <node ref="J2" pin="32" pinfunction="PIO32" pintype="passive"/>
       <node ref="Q17" pin="1" pinfunction="G" pintype="input"/>
       <node ref="TP66" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="85" name="_~{K0}">
+    <net code="93" name="_~{K0}">
       <node ref="J2" pin="18" pinfunction="PIO18" pintype="passive"/>
       <node ref="TP54" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="4" pinfunction="A1" pintype="bidirectional"/>
     </net>
-    <net code="86" name="_~{K1}">
+    <net code="94" name="_~{K1}">
       <node ref="J2" pin="19" pinfunction="PIO19" pintype="passive"/>
       <node ref="TP55" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="5" pinfunction="A2" pintype="bidirectional"/>
     </net>
-    <net code="87" name="_~{K2}">
+    <net code="95" name="_~{K2}">
       <node ref="J2" pin="20" pinfunction="PIO20" pintype="passive"/>
       <node ref="TP56" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="6" pinfunction="A3" pintype="bidirectional"/>
     </net>
-    <net code="88" name="_~{K3}">
+    <net code="96" name="_~{K3}">
       <node ref="J2" pin="21" pinfunction="PIO21" pintype="passive"/>
       <node ref="TP57" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U4" pin="3" pinfunction="A0" pintype="bidirectional"/>
     </net>
-    <net code="89" name="_~{K4}">
+    <net code="97" name="_~{K4}">
       <node ref="J2" pin="22" pinfunction="PIO22" pintype="passive"/>
       <node ref="TP58" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U4" pin="4" pinfunction="A1" pintype="bidirectional"/>
     </net>
-    <net code="90" name="_~{K5}">
+    <net code="98" name="_~{K5}">
       <node ref="J2" pin="23" pinfunction="PIO23" pintype="passive"/>
       <node ref="TP59" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U4" pin="5" pinfunction="A2" pintype="bidirectional"/>
     </net>
-    <net code="91" name="_~{KR1}">
+    <net code="99" name="_~{KR1}">
       <node ref="J2" pin="27" pinfunction="PIO27" pintype="passive"/>
       <node ref="TP61" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U4" pin="6" pinfunction="A3" pintype="bidirectional"/>
     </net>
-    <net code="92" name="_~{KR2}">
+    <net code="100" name="_~{KR2}">
       <node ref="J2" pin="17" pinfunction="PIO17" pintype="passive"/>
       <node ref="TP53" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="3" pinfunction="A0" pintype="bidirectional"/>
     </net>
-    <net code="93" name="unconnected-(J2-AIN15-Pad15)">
+    <net code="101" name="unconnected-(J2-AIN15-Pad15)">
       <node ref="J2" pin="15" pinfunction="AIN15" pintype="passive+no_connect"/>
     </net>
-    <net code="94" name="unconnected-(J2-AIN16-Pad16)">
+    <net code="102" name="unconnected-(J2-AIN16-Pad16)">
       <node ref="J2" pin="16" pinfunction="AIN16" pintype="passive+no_connect"/>
     </net>
-    <net code="95" name="unconnected-(J3-JA2-Pad2)">
-      <node ref="J3" pin="2" pinfunction="JA2" pintype="passive+no_connect"/>
-    </net>
-    <net code="96" name="unconnected-(J3-JA3-Pad3)">
-      <node ref="J3" pin="3" pinfunction="JA3" pintype="passive+no_connect"/>
-    </net>
-    <net code="97" name="unconnected-(J3-JA4-Pad4)">
-      <node ref="J3" pin="4" pinfunction="JA4" pintype="passive+no_connect"/>
-    </net>
-    <net code="98" name="unconnected-(J3-JA8-Pad8)">
-      <node ref="J3" pin="8" pinfunction="JA8" pintype="passive+no_connect"/>
-    </net>
-    <net code="99" name="unconnected-(J3-JA9-Pad9)">
-      <node ref="J3" pin="9" pinfunction="JA9" pintype="passive+no_connect"/>
-    </net>
-    <net code="100" name="unconnected-(J3-JA10-Pad10)">
-      <node ref="J3" pin="10" pinfunction="JA10" pintype="passive+no_connect"/>
-    </net>
-    <net code="101" name="unconnected-(U12-A2-Pad5)">
+    <net code="103" name="unconnected-(U12-A2-Pad5)">
       <node ref="U12" pin="5" pinfunction="A2" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="102" name="unconnected-(U12-A3-Pad6)">
+    <net code="104" name="unconnected-(U12-A3-Pad6)">
       <node ref="U12" pin="6" pinfunction="A3" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="103" name="unconnected-(U12-B2-Pad10)">
+    <net code="105" name="unconnected-(U12-B2-Pad10)">
       <node ref="U12" pin="10" pinfunction="B2" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="104" name="unconnected-(U12-B3-Pad9)">
+    <net code="106" name="unconnected-(U12-B3-Pad9)">
       <node ref="U12" pin="9" pinfunction="B3" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="105" name="~{CS0}">
-      <node ref="J1" pin="30" pinfunction="~{CS0}" pintype="passive"/>
+    <net code="107" name="~{CS0}">
       <node ref="J4" pin="30" pinfunction="~{CS0}" pintype="passive"/>
       <node ref="TP29" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="10" pinfunction="B2" pintype="bidirectional"/>
     </net>
-    <net code="106" name="~{IRQ}">
-      <node ref="J1" pin="29" pinfunction="~{IRQ}" pintype="passive"/>
+    <net code="108" name="~{IRQ}">
       <node ref="J4" pin="29" pinfunction="~{IRQ}" pintype="passive"/>
       <node ref="Q17" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="TP30" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="107" name="~{K0}">
-      <node ref="J1" pin="23" pinfunction="~{K0}" pintype="passive"/>
+    <net code="109" name="~{K0}">
       <node ref="J4" pin="23" pinfunction="~{K0}" pintype="passive"/>
       <node ref="TP36" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="11" pinfunction="B1" pintype="bidirectional"/>
     </net>
-    <net code="108" name="~{K1}">
-      <node ref="J1" pin="22" pinfunction="~{K1}" pintype="passive"/>
+    <net code="110" name="~{K1}">
       <node ref="J4" pin="22" pinfunction="~{K1}" pintype="passive"/>
       <node ref="TP37" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="10" pinfunction="B2" pintype="bidirectional"/>
     </net>
-    <net code="109" name="~{K2}">
-      <node ref="J1" pin="21" pinfunction="~{K2}" pintype="passive"/>
+    <net code="111" name="~{K2}">
       <node ref="J4" pin="21" pinfunction="~{K2}" pintype="passive"/>
       <node ref="TP38" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="9" pinfunction="B3" pintype="bidirectional"/>
     </net>
-    <net code="110" name="~{K3}">
-      <node ref="J1" pin="20" pinfunction="~{K3}" pintype="passive"/>
+    <net code="112" name="~{K3}">
       <node ref="J4" pin="20" pinfunction="~{K3}" pintype="passive"/>
       <node ref="TP18" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U4" pin="12" pinfunction="B0" pintype="bidirectional"/>
     </net>
-    <net code="111" name="~{K4}">
-      <node ref="J1" pin="19" pinfunction="~{K4}" pintype="passive"/>
+    <net code="113" name="~{K4}">
       <node ref="J4" pin="19" pinfunction="~{K4}" pintype="passive"/>
       <node ref="TP17" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U4" pin="11" pinfunction="B1" pintype="bidirectional"/>
     </net>
-    <net code="112" name="~{K5}">
-      <node ref="J1" pin="18" pinfunction="~{K5}" pintype="passive"/>
+    <net code="114" name="~{K5}">
       <node ref="J4" pin="18" pinfunction="~{K5}" pintype="passive"/>
       <node ref="TP16" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U4" pin="10" pinfunction="B2" pintype="bidirectional"/>
     </net>
-    <net code="113" name="~{KR1}">
-      <node ref="J1" pin="25" pinfunction="~{KR1}" pintype="passive"/>
+    <net code="115" name="~{KR1}">
       <node ref="J4" pin="25" pinfunction="~{KR1}" pintype="passive"/>
       <node ref="TP34" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U4" pin="9" pinfunction="B3" pintype="bidirectional"/>
     </net>
-    <net code="114" name="~{KR2}">
-      <node ref="J1" pin="16" pinfunction="~{KR2}" pintype="passive"/>
+    <net code="116" name="~{KR2}">
       <node ref="J4" pin="16" pinfunction="~{KR2}" pintype="passive"/>
       <node ref="TP15" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U3" pin="12" pinfunction="B0" pintype="bidirectional"/>

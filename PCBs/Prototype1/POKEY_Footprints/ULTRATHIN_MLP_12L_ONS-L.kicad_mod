@@ -2,7 +2,7 @@
   (layer "F.Cu")
   (tags "FXMAR2104UMX ")
   (attr smd)
-  (fp_text reference "REF**" (at 0 0 unlocked) (layer "F.SilkS")
+  (fp_text reference "REF**" (at 0 0 unlocked) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp a29738d9-a5b9-49c4-bc78-d25b0d9b4cae)
   )
@@ -10,11 +10,11 @@
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp efd4cbc0-7132-465c-bcec-df9c5ddfe2e2)
   )
-  (fp_text user "*" (at -1.7399 -0.4 unlocked) (layer "F.SilkS")
+  (fp_text user "*" (at -1.7399 -0.4 unlocked) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp cc6b640b-8c88-426d-86be-71d416d73465)
   )
-  (fp_text user "*" (at -1.7399 -0.4) (layer "F.SilkS")
+  (fp_text user "*" (at -1.7399 -0.4) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp cf040238-251e-411a-ae5e-ffbfe8b0b97e)
   )
@@ -32,10 +32,10 @@
   )
   (fp_poly
     (pts
-      (xy 0.0095 -1.3589)
-      (xy 0.0095 -1.6129)
-      (xy 0.3905 -1.6129)
-      (xy 0.3905 -1.3589)
+      (xy -1.397 -0.127)
+      (xy -1.651 -0.127)
+      (xy -1.651 -0.508)
+      (xy -1.397 -0.508)
     )
 
     (stroke (width 0) (type solid)) (fill solid) (layer "F.SilkS") (tstamp b8b273a0-060e-42b7-a8b4-bbe936156ca3))

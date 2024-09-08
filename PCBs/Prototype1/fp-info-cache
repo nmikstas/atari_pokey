@@ -1,4 +1,4 @@
-22465383315030252
+22467108296410615
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -66226,6 +66226,13 @@ PMOD
 0
 12
 12
+POKEY_Footprints
+Reg
+
+
+0
+4
+3
 POKEY_Footprints
 TP
 

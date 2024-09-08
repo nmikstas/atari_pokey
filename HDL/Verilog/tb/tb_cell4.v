@@ -1,6 +1,6 @@
 `timescale 1ns / 10ps
 
-module tb_;
+module tb_cell4;
     localparam c_50 = 20 / 2;           //50MHz half cycle.
     localparam c_179 = 558.7247666 / 2; //1.79MHz half cycle.
 
@@ -16,6 +16,12 @@ module tb_;
     //----------------------------------------------------------------------------------------------
     //Put regs, wires and DUT here.
 
+    reg D   = 1'b0;
+    reg Ld  = 1'b0;
+    reg nLd = 1'b1;
+    wire Q, C;
+
+    cell4 dut(enp, clk, D, Ld, nLd, Q, C);
 
     //----------------------------------------------------------------------------------------------
 
@@ -50,7 +56,22 @@ module tb_;
     //@(negedge enn)
 
     #1000
+    @(negedge enn)
+    Ld <= 1'b1;
+    nLd <= 1'b0;
+    @(negedge enn)
+    Ld <= 1'b0;
+    nLd <= 1'b1;
 
+    #1000
+    @(negedge enn)
+    D <= 1'b1;
+    @(negedge enn)
+    Ld <= 1'b1;
+    nLd <= 1'b0;
+    @(negedge enn)
+    Ld <= 1'b0;
+    nLd <= 1'b1;
 
 
     #10000
