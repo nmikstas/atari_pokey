@@ -10,17 +10,11 @@ module cell24
     input  WR,
     input  Ld,
     input  CR,
-    input  nCR,
-    output BOR,
-    output nBOR
+    output BOR
 );
 
-    reg  nDout;
-    reg  muxOut;
-    reg  bt;
-    wire nbt;
-    wire nor1;
-    wire [2:0]muxSel;
+    reg  nDout, bt;
+    wire muxOut;
 
     //Capture incomming data bit.
     always @(negedge clk) begin
@@ -29,28 +23,14 @@ module cell24
                 nDout <= ~D;
             end
 
+            //Capture internal bata bit.
             bt <= muxOut;
         end
     end
 
     //Mux to the input of the decrement flip-flop.
-    assign muxSel = {Ld, CR, nCR};
+    assign muxOut = (Ld == 1'b1) ? nDout : (CR ^ bt);
 
-    always @(*) begin
-        case(muxSel)
-            3'b010:  muxOut = nbt;
-            3'b001:  muxOut = bt;
-            default: muxOut = nDout;
-        endcase
-    end
-
-    //Decrement flip-flop.
-    assign nbt = ~bt;
-
-    //First NOR gate.
-    assign nor1 = ~(Ld | nbt | nCR);
-
-    //Outputs.
-    assign nBOR = nor1;
-    assign BOR = ~(Ld | nor1);
+    //Output.
+    assign BOR = ~Ld & bt & CR;
 endmodule

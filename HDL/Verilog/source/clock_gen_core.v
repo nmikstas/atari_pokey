@@ -14,7 +14,7 @@ module clock_gen_core
 
     wire khz64; //64 KHz clock.
     wire hsync; //15 KHz clock.
-    reg  clkMuxOut;
+    wire clkMuxOut;
     reg  dClk;
 
     //15KHz LFSR structure.
@@ -40,7 +40,6 @@ module clock_gen_core
         if(enn == 1'b1) begin
 
         //***********************************15KHz LFSR Structure***********************************
-
         //Bit 0 of the shift register.    
         lfsr15k0 <= ~(feedback15k | nor15k);
 
@@ -58,10 +57,7 @@ module clock_gen_core
         //Output flip flop.
         d15k <= nor15k;
         
-
-
         //***********************************64KHz LFSR Structure***********************************
-
         //Bit 0 of the shift register.
         //Note: Init signal is tied to phase 2 of the clock so it is not asynchronous.
         lfsr64k[0] <= lfsr64kIn;
@@ -75,17 +71,12 @@ module clock_gen_core
         d64k <= nor64k;
         
         //***************************************Output Logic***************************************
-
         //Output clock flip-flop;
         dClk <= clkMuxOut;
-        
-
-
         end
     end
 
     //*************************************15KHz LFSR Structure*************************************
-
     //Output of bit 0.
     assign lfsr15k0Out = ~(lfsr15k0 | init);
 
@@ -96,9 +87,7 @@ module clock_gen_core
     //XNOR feedback.
     assign feedback15k = ~(lfsr15k[6] ^ lfsr15k[5]);
 
-
     //*************************************64KHz LFSR Structure*************************************
-
     //Input to the shift register.
     assign lfsr64kIn = init | feedback64k | nor64k;
 
@@ -109,21 +98,14 @@ module clock_gen_core
     assign feedback64k = lfsr64k[2] ^ lfsr64k[4];
 
     //*****************************************Output Logic*****************************************
-
     //Tie the output of the two clocks to the frequency select MUX.
     assign khz64 = d64k;
     assign hsync = d15k;
 
     //Frequency select MUX. Select audio frequency of 64KHz or 15KHz.
-    always @(*) begin 
-        case(sel15Khz)
-            1'b0:    clkMuxOut = khz64;    
-            default: clkMuxOut = hsync; 
-        endcase
-    end
-
-     //Connect the internal signals to the outputs.
-     assign keybClk  = ~hsync;
-     assign audClock = dClk;
-
+    assign clkMuxOut = (sel15Khz == 1'b0) ? khz64 : hsync;
+    
+    //Connect the internal signals to the outputs.
+    assign keybClk  = ~hsync;
+    assign audClock = dClk;
 endmodule

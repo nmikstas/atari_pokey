@@ -1,6 +1,6 @@
 `timescale 1ns / 10ps
 
-//*****************************************Cell 24 Option 1*****************************************
+//**********************************************Cell 24*********************************************
 
 module cell24option1
 (
@@ -10,15 +10,11 @@ module cell24option1
     input  WR,
     input  Ld,
     input  CR,
-    input  nCR,
     output nBOR
 );
 
-    reg  nDout;
-    reg  muxOut;
-    reg  bt;
-    wire nbt;
-    wire [2:0]muxSel;
+    reg  nDout, bt;
+    wire muxOut;
 
     //Capture incomming data bit.
     always @(negedge clk) begin
@@ -27,24 +23,14 @@ module cell24option1
                 nDout <= ~D;
             end
 
+            //Capture internal bata bit.
             bt <= muxOut;
         end
     end
 
     //Mux to the input of the decrement flip-flop.
-    assign muxSel = {Ld, CR, nCR};
-
-    always @(*) begin
-        case(muxSel)
-            3'b010:  muxOut = nbt;
-            3'b001:  muxOut = bt;
-            default: muxOut = nDout;
-        endcase
-    end
-
-    //Decrement flip-flop.
-    assign nbt = ~bt;
+    assign muxOut = (Ld == 1'b1) ? nDout : (CR ^ bt);
 
     //Output.
-    assign nBOR = Ld | nbt | nCR;
+    assign nBOR = ~(~Ld & bt & CR);
 endmodule

@@ -11,19 +11,14 @@ module cell25
     output Q 
 );
 
-    reg Qint = 1'b0;
-    reg mux1;
+    reg  Qint = 1'b0;
+    wire mux1;
 
     //Always update the output.
     assign Q = Qint;
     
     //Shift cell.
-    always @(*) begin     
-        case(Shift)
-            1'b1:    mux1 = D;
-            default: mux1 = Qint;
-        endcase
-    end
+    assign mux1 = (Shift == 1'b1) ? D : Qint;
 
     //Load new value after slow clock rises.
     always @(posedge clk) begin
@@ -31,5 +26,4 @@ module cell25
             Qint <= mux1;
         end
     end
-
 endmodule

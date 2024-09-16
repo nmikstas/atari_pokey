@@ -12,24 +12,16 @@ module cell16
     output Q 
 );
 
-    reg Qint, mux1, mux2;
+    wire mux1, mux2;
+    reg  Qint;
 
     //Always update the output.
     assign Q = Qint;
 
     //Shift cell.
-    always @(*) begin
-        case(Shift)
-            1'b1:    mux2 = D;
-            default: mux2 = Qint;
-        endcase
+    assign mux2 = (Shift == 1'b1) ? D : Qint;
+    assign mux1 = (R == 1'b1) ? 1'b0 : mux2;
     
-        case(R)
-            1'b1:    mux1 = 1'b0;
-            default: mux1 = mux2;
-        endcase   
-    end
-
     //Load new value after slow clock rises.
     always @(posedge clk) begin
         if(enp == 1'b1) begin

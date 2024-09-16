@@ -3,16 +3,15 @@ Filename                     Written      Tested
 aud_control.vhd
 aud_control_hp.vhd
 AUD_core.vhd
-aud_freq_control.vhd
 AUDCTL_reg.vhd
-cell11.vhd                   Y            Y
+cell11.vhd                   Y+           Y+
 cell15.vhd                   Y            Y
 cell16.vhd                   Y            Y
 cell17.vhd                   Y            Y
-cell20.vhd                   Y            Y
+cell20.vhd                   Y+           Y+
 cell23.vhd                   Y+           Y+
-cell24.vhd                   Y            Y
-cell24option1.vhd            Y            Y
+cell24.vhd                   Y+           Y+
+cell24option1.vhd            Y+           Y+
 cell25.vhd                   Y            Y
 cell2p.vhd                   Y+           Y+
 cell2pr.vhd                  Y            Y
@@ -20,26 +19,20 @@ cell2r.vhd                   Y            Y
 cell3.vhd                    Y+           Y+
 cell4.vhd                    Y+           Y+
 cell6.vhd                    Y+           Y+
-clock_gen_core.vhd           Y            Y
-freq_cntrl.vhd
-freq_reg.vhd
+clock_gen_core.vhd           Y+           Y+
+freq_control.vhd             Y+           Y+
 IO_core.vhd
 IRQ_core.vhd
-kb_break.vhd                 Y+           Y+
-kb_code.vhd                  Y+           Y+
-kb_count_reg.vhd             Y+           Y+
-kb_regs.vhd                  Y+           Y+
-kb_state.vhd                 Y+           Y+
 KEY_core.vhd                 Y+           Y+
 keyboard_pla.vhd             Y+           Y+
 POKEY_top.vhd
 poly_core.vhd                Y            Y
 pot_core.vhd                 Y+           Y+
-SER_clock_gen.vhd
-SER_core.vhd
-SERIN.vhd
+SER_clock_gen.vhd            Y
+SER_core.vhd                 Y
+SERIN.vhd                    Y
 SERIN_PLA.vhd                Y+           Y+
-SEROUT.vhd
+SEROUT.vhd                   Y
 SEROUT_PLA.vhd               Y+           Y+
 SEROUT_shift_module.vhd      Y            Y
 SKCTLS_reg.vhd
