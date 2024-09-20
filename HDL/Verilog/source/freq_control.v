@@ -20,7 +20,7 @@ module freq_control
     input ch4Bits16,
     input resyncTwoTones,
     input resyncSerClk,
-    output [4:0]Timer,
+    output [4:1]Timer,
     output rstAudPhase
 );
 

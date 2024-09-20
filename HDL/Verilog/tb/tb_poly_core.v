@@ -14,7 +14,7 @@ module tb_poly_core;
     wire enp, enn;
 
     reg  init = 1'b0;
-    reg  sel9bitPoly = 1'b1;
+    reg  sel9bitPoly = 1'b0;
     wire [7:0]rndNum;
     wire poly4bit, poly5bit, poly917bit;
 
@@ -54,7 +54,7 @@ module tb_poly_core;
         #200000
         @(negedge clk179)
         @(negedge enn)
-        sel9bitPoly <= 1'b1;
+        sel9bitPoly <= 1'b0;
 
         #250000
         $stop;

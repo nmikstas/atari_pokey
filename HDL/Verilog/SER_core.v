@@ -17,13 +17,13 @@ module SER_core
     input  Timer4,
     input  BCLK_in,
     output BCLK_out,
-    output OCLK,
+    output reg OCLK,
     output reg SOD,
     output siDelay,
     output reg setFramerr,
     output reg setSdiCompl,
     output sdiBusy,
-    output resyncSerClk,
+    output reg resyncSerClk,
     output reg resync2Tones,
     output sdoFinish,
     output setSdoCompl,
@@ -34,12 +34,11 @@ module SER_core
     wire T4, T2, TogldTmr4, TogldTmr2, nor2;
 
     //sdi signals.
-    reg  Qsdi, Qnmux1, presdi;
+    reg  presdi;
     wire nmux1, nsdi;
 
     //sdo signals.
-    reg  OCLKint, Qmux4, QnOCLK;
-    wire mux4, nOCLK;
+    wire mux4;
 
     //BCLK signals.
     reg  preBCLK, QBCLK;
@@ -49,7 +48,7 @@ module SER_core
     wire mux1, mux2, mux3;
 
     //internal signals.
-    wire sdiClock, sdoClock;
+    reg sdiClock, sdoClock;
         
     //Shift register signals.
     reg  shift, siDelayInt;
@@ -66,8 +65,8 @@ module SER_core
     wire nsdiClk, framerr;
 
     //Resync signals.
-    reg  delay1, delay2, QnoErr, QnClk, resyncSerClkInt;
-    wire presync, _nor1, _nor2, resyncInt;
+    reg  delay1, delay2, presync;
+    wire _nor1, _nor2, resyncInt;
 
     //Serial out shift module signals.
     reg  [7:0]oQD;
@@ -97,10 +96,10 @@ module SER_core
 
     //--------------------------Serial Clock Generator--------------------------
     //Timer 4 flip-flop.
-    cell2pr t4(enn, clk, TogldTmr4, Timer4, ~Timer4, resyncInt, nor2, T4);
+    cell2pr t4(enn, clk, TogldTmr4, Timer4, resyncInt, nor2, T4);
 
     //Timer 2 flip-flop.
-    cell2r t2(enn, clk, TogldTmr2, Timer2, ~Timer2, nor2, T2);
+    cell2r t2(enn, clk, TogldTmr2, Timer2, nor2, T2);
 
     //-------------------------------Serial Input-------------------------------
     //Start bit.
@@ -117,10 +116,10 @@ module SER_core
     cell17 ib7(enp, clk, shift, ssiSet, DQ[8], DQ[7]);
 
     //Stop bit.
-    cell25 ibstop(enp, clk, shift, ~siDelayint, DQ[8]);
+    cell25 ibstop(enp, clk, shift, ~siDelayInt, DQ[8]);
 
     //Serial data in PLA.
-    serin_pla ipla(sdiStopBit, sdinStartBit, ithisState, sdiBusy, nFramerr, sdiCompl, inextState, preSdiSet, noSdiErr);
+    SERIN_PLA ipla(sdiStopBit, sdinStartBit, ithisState, sdiBusy, nFramerr, sdiCompl, inextState, preSdiSet, noSdiErr);
 
     //State register.
     cell2p istate(enn, clk, inextState, sdiClk, Init, ithisState);
@@ -146,7 +145,7 @@ module SER_core
     SEROUT_PLA opla(othisState, sdoDloaded, ssoEmpty, sdoFinish, onextState, sdonShiftEn, preSdoLoad);
 
     //State register.
-    cell2p ostate(enn, clk, onextState, sdoClock, nsdoClock, Init, othisState);
+    cell2p ostate(enn, clk, onextState, sdoClock, Init, othisState);
 
     //**************************************Combinational Logic*************************************
 
@@ -154,17 +153,6 @@ module SER_core
     //Always assign cell 2 outputs.
     assign TogldTmr4 = ~T4;
     assign TogldTmr2 = ~T2;
-
-    //Always assign outputs.
-    assign OCLK = OCLKint;
-
-    //sdiClock output.
-    assign nsdi     = ~presdi;
-    assign sdiClock = ~(Qsdi | Qnmux1);
-
-    //sdoClock output.
-    assign nOCLK    = ~OCLKint;
-    assign sdoClock = ~(Qmux4 | QnOCLK);
 
     assign BCLK_out = ~(preBCLK | SKCTLS[4] | nor1);
     assign nor1     = ~(SKCTLS[4] | SKCTLS[5]);
@@ -188,19 +176,17 @@ module SER_core
     assign ssiSet  = ~(preSdiSet | nsdiClk);
 
     //Always assign output signals.
-    assign siDelay      = siDelayint;
-    assign resyncSerClk = resyncSerClkInt;
+    assign siDelay      = siDelayInt;
 
     //setFramerr and setsdiCompl signals.
     assign framerr = ~(nFramerr | nsdiClk);
 
     //Resync combinational logic.
-    assign presync = ~(QnoErr | QnClk);
     assign _nor1   = ~(delay1 | delay2);
         
     //Resync latch.
     assign resyncInt = ~(_nor1 | ~SKCTLS[4] | _nor2);
-    assign _nor2     = ~(resyncInt | presync);
+    assign _nor2     = ~(resyncSerClk | presync);
 
     //-------------------------------Serial Output------------------------------
     //Update the "empty" signal.
@@ -235,14 +221,12 @@ module SER_core
 
             //----------------------Serial Clock Generator----------------------
             //sdiClock output.
-            presdi <= nmux1;
-            Qsdi   <= nsdi;
-            Qnmux1 <= nmux1;
+            presdi   <= nmux1;
+            sdiClock <= ~(~presdi | nmux1);
         
             //sdoClock output.
-            OCLKint <= mux4;
-            Qmux4   <= mux4;
-            QnOCLK  <= nOCLK;
+            OCLK     <= mux4;
+            sdoClock <= ~(~OCLK | mux4);
 
             //BCLK signals.
             preBCLK <= nmux1;
@@ -288,7 +272,7 @@ module SER_core
     always@(posedge(clk)) begin
         if(enp == 1'b1) begin
             //----------------------Serial Clock Generator----------------------
-            resyncSerClkInt <= resyncInt;
+            resyncSerClk <= resyncInt;
 
             //---------------------------Serial Input--------------------------
             //Lock in the serial data.
@@ -299,8 +283,8 @@ module SER_core
             //Resync flip-flops.
             delay1 <= ~siDelayInt;
             delay2 <= ~delay1;
-            QnoErr <= noSdiErr;
-            QnClk  <= nsdiClk; 
+
+            presync <= ~(noSdiErr | nsdiClk);
 
             //---------------------------Serial Output--------------------------   
             QLoad  <= preSdoLoad;

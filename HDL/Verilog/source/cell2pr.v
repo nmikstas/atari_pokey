@@ -8,27 +8,16 @@ module cell2pr
     input  clk,
     input  D,
     input  Ld,
-    input  nLd,
     input  P,
     input  R,
     output Q
 );
 
-    reg  muxOut;
-    wire nor1;
+    wire muxOut, nor1;
     reg  nQ;
-    wire intQ;
-    wire [1:0]muxSel;
 
     //MUX output.
-    assign muxSel = {Ld, nLd};
-
-    always @(*) begin
-        case(muxSel)
-            2'b01:   muxOut = intQ;
-            default: muxOut = D;
-        endcase
-    end
+    assign muxOut = (Ld == 1'b1) ? D : Q;
 
     //NOR gate.
     assign nor1 = ~(muxOut | P);
@@ -40,8 +29,6 @@ module cell2pr
         end
     end
 
-    //Output and feedback.
-    assign intQ = ~(R | nQ);
-    assign Q    = intQ;
-
+    //Output.
+    assign Q = ~(R | nQ);
 endmodule

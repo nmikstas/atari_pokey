@@ -20,12 +20,11 @@ module poly_core
     reg [7:0]lfsr17bit;
 
     //MSBs of the 4 and 5 bit polynomials.
-    wire lfsr5msb;
-    reg  lfsr4msb;
+    wire lfsr5msb, lfsr4msb;
     
     //Outputs of the polynoimial feedbacks.
-    wire feedback4, feedback5, feedback917;
-    reg  nfeedback4, nfeedback5;
+    reg  feedback4, feedback5;
+    wire feedback917;
 
     //9/17 polynomial switching structure.
     reg  swDelay;          //1 clock delay on 9 to 17 bit switch.
@@ -63,7 +62,8 @@ module poly_core
 
             //******************************5 Bit Polynomial Structure******************************
 
-            nfeedback5 <= ~feedback5;
+            //Update the feeback.
+            feedback5 <= ~(lfsr5bit[0] ^ lfsr5bit[2]);
 
             //Update the 5-bit polynomial delay line.
             for(i = 2; i >= 0; i = i - 1) begin
@@ -74,14 +74,9 @@ module poly_core
         
             //*******************************4 Bit Polynomial Structure******************************
 
-            //---CODE THAT MATCHES THE HARDWARE SCHEMATIC---
-            lfsr4msb <= ~(~feedback4 | Init);
-            //----------------------------------------------
-
-            //--------CODE THAT MATCHES MAME OUTOUT---------
-            //nfeedback4 <= ~feedback4;
-            //----------------------------------------------
-        
+            //Update the feeback.
+            feedback4 <= ~(lfsr4bit[0] ^ lfsr4bit[1]);
+            
              //Update the 4-bit polynomial delay line.
             for(i = 1; i >= 0; i = i - 1) begin
                 lfsr4bit[i] <= lfsr4bit[i + 1];
@@ -97,7 +92,7 @@ module poly_core
     assign rndNum = ~lfsr9bit;
 
     //Assign 9/17 bit polynomial feedback.
-    assign feedback917 = ~(~lfsr9bit[5] ^ ~lfsr9bit[0]);
+    assign feedback917 = ~(lfsr9bit[5] ^ lfsr9bit[0]);
 
     //Assign 9/17 bit polynomial bit out.
     assign poly917bit = lfsr9bit[0];
@@ -118,21 +113,12 @@ module poly_core
     //Update the output bit.
     assign poly5bit = ~lfsr5bit[0];
 
-    //Update the feeback.
-    assign feedback5 = ~(lfsr5bit[0] ^ lfsr5bit[2]);
-
-    assign lfsr5msb = ~(nfeedback5 | Init);
+    assign lfsr5msb = ~(feedback5 | Init);
 
     //***********************************4 Bit Polynomial Structure**********************************
 
     //Update the output bit.
     assign poly4bit = lfsr4bit[0];
 
-    //Update the feeback.
-    assign feedback4 = ~(lfsr4bit[0] ^ lfsr4bit[1]);
-
-    //--------CODE THAT MATCHES MAME OUTOUT---------
-    //assign lfsr4msb = ~(nfeedback4 | Init);
-    //----------------------------------------------
-
+    assign lfsr4msb = ~(feedback4 | Init);
 endmodule
