@@ -77,20 +77,20 @@ module SER_core
     reg  sdoComplInt;
 
     //Shift and data register signals.
-    reg  DshiftOut, oShift;
-    wire Load, Empty;
+    reg  DshiftOut, oShift, Load;
+    wire Empty;
 
     //Serial out PLA signals. 
     reg  sdoDloaded, ssoEmpty; 
     wire othisState, onextState, sdonShiftEn, preSdoLoad;
 
     //State machine signals.
-    reg  preShift1, preShift2, QLoad, QClock; 
-    wire _nor1_, _nor2_, nsdoClock;
+    reg  preShift1, preShift2; 
+    wire nsdoClock;
 
     //Two tone signals.
-    reg  Qshift, Qs7, Qand1, QTimer2, Qns3, _Qnmux1;
-    wire nor3, and1, toneCntrl, nor4, nnor4, _mux1, _mux2, ns3, _nmux1;
+    reg  nor3, nor4, toneCntrl;
+    wire and1, nnor4, _mux1, _mux2, ns3;
 
     //******************************************Sub-modules*****************************************
 
@@ -176,7 +176,7 @@ module SER_core
     assign ssiSet  = ~(preSdiSet | nsdiClk);
 
     //Always assign output signals.
-    assign siDelay      = siDelayInt;
+    assign siDelay = siDelayInt;
 
     //setFramerr and setsdiCompl signals.
     assign framerr = ~(nFramerr | nsdiClk);
@@ -197,22 +197,14 @@ module SER_core
     assign nsdoClock   = ~sdoClock;
 
     //State machine latch.
-    assign _nor1_ = ~(_nor2_ | Init | sdoComplInt);
-    assign _nor2_ = ~(AddrDw | _nor1_);
-    assign Load   = ~(QLoad | QClock);
-
-    assign nor3      = ~(Qshift | Qs7);
-    assign and1      = Timer1 & nor3;
-    assign toneCntrl = ~(Qand1 | QTimer2);
+    assign and1 = Timer1 & nor3;
 
     //Two tone MUXs.
     assign _mux1 = (toneCntrl == 1'b1) ? nor4 : nnor4;
     assign _mux2 = (SKCTLS[3] == 1'b1) ? nnor4 : nor3;
 
-    assign ns3    = ~SKCTLS[3];
-    assign _nmux1 = ~_mux1;
-    assign nor4   = ~(Qns3 | _Qnmux1);
-    assign nnor4  = ~nor4;
+    assign ns3   = ~SKCTLS[3];
+    assign nnor4 = ~nor4;
 
     //****************************************Sequential Logic***********)**************************
 
@@ -257,7 +249,7 @@ module SER_core
             end
         
             //State machine signals.
-            sdoDloaded  <= _nor2_;
+            sdoDloaded  <= ~(AddrDw | ~(sdoDloaded | Init | sdoComplInt));
             ssoEmpty    <= ~Empty;
             preShift1   <= ~(sdonShiftEn | nsdoClock);
             preShift2   <= preShift1;
@@ -287,17 +279,13 @@ module SER_core
             presync <= ~(noSdiErr | nsdiClk);
 
             //---------------------------Serial Output--------------------------   
-            QLoad  <= preSdoLoad;
-            QClock <= nsdoClock;
+            Load <= ~(preSdoLoad | nsdoClock);
         
             //Two tone signals.
             resync2Tones <= ~(toneCntrl | ns3);
-            Qshift       <= DshiftOut;
-            Qs7          <= SKCTLS[7];
-            Qand1        <= and1;
-            QTimer2      <= Timer2;
-            Qns3         <= ns3;
-            _Qnmux1      <= _nmux1;
+            nor3         <= ~(SKCTLS[7] | DshiftOut);
+            toneCntrl    <= ~(and1 | Timer2);
+            nor4         <= ~(ns3 | ~_mux1);
         end
     end
 endmodule

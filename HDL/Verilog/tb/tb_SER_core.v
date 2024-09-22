@@ -129,7 +129,7 @@ module tb_SER_core;
 
     //Load counter register 1.
     @(negedge enn)
-    D <= 8'b00000111;
+    D <= 8'b00000001;
     @(posedge enp)
     Addr0w <= 1'b1;
     @(negedge enn)
@@ -139,7 +139,7 @@ module tb_SER_core;
 
     //Load counter register 2.
     @(negedge enn)
-    D <= 8'b00010000;
+    D <= 8'b00000111;
     @(posedge enp)
     Addr2w <= 1'b1;
     @(negedge enn)
@@ -149,7 +149,7 @@ module tb_SER_core;
 
     //Load counter register 3.
     @(negedge enn)
-    D <= 8'b00000010;
+    D <= 8'b10000000;
     @(posedge enp)
     Addr4w <= 1'b1;
     @(negedge enn)
@@ -159,7 +159,7 @@ module tb_SER_core;
 
     //Load counter register 4.
     @(negedge enn)
-    D <= 8'b00000000;
+    D <= 8'b00000001;
     @(posedge enp)
     Addr6w <= 1'b1;
     @(negedge enn)
@@ -179,6 +179,7 @@ module tb_SER_core;
     @(negedge enn)
     SKCTLS <= 5'b00010;
 
+    /*
     //Begin async receiving data.
     #10000
     SID <= 1'b0; //Start bit.
@@ -208,6 +209,7 @@ module tb_SER_core;
     SID <= 1'b0;
     #10000
     SID <= 1'b1;
+    */
 
     //Wait for second byte to finish transmitting.
     #100000
@@ -217,6 +219,7 @@ module tb_SER_core;
     @(negedge enn)
     SKCTLS <= 5'b00100;
 
+    /*
     //Receive a synchronous byte.
     @(negedge sc.sdiClock)
     #5000
@@ -248,9 +251,38 @@ module tb_SER_core;
     @(negedge sc.sdiClock)
     #5000
     SID <= 1'b1;
+    */
 
+    //Load zeroes to transmit.
+    @(negedge enn)
+    Dw <= 8'b01100001;
+    @(posedge enp)
+    AddrDw <= 1'b1;
+    @(negedge enn)
+    Dw <= 8'b00000000;
+    @(posedge enp)
+    AddrDw <= 1'b0;        
 
-    #200000
+    //Wait for TX to finish.
+    @(negedge sdoFinish)
+    #500000
+
+    //Set to 2 tone mode.
+    @(negedge enn)
+    SKCTLS[3] <= 1'b1;
+    #2000
+
+    //Load data to transmit.
+    @(negedge enn)
+    Dw <= 8'b01001011;
+    @(posedge enp)
+    AddrDw <= 1'b1;
+    @(negedge enn)
+    Dw <= 8'b00000000;
+    @(posedge enp)
+    AddrDw <= 1'b0;
+
+    #6000000
     $stop;
     //----------------------------------------------------------------------------------------------
 
