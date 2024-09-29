@@ -1,9 +1,8 @@
 Filename                     Written      Tested       Optimized
                     
-aud_control.vhd
-aud_control_hp.vhd
-AUD_core.vhd
-AUDCTL_reg.vhd
+aud_control.vhd              Y            Y            Y
+aud_control_hp.vhd           Y            Y            Y
+AUDCTL_reg.vhd               Y            Y            Y
 cell11.vhd                   Y            Y            Y
 cell15.vhd                   Y            Y            Y
 cell16.vhd                   Y            Y            Y
@@ -25,7 +24,7 @@ IO_core.vhd                  Y            Y            Y
 IRQ_core.vhd                 Y            Y            Y
 KEY_core.vhd                 Y            Y            Y
 keyboard_pla.vhd             Y            Y            Y
-POKEY_top.vhd
+POKEY_top.vhd                Y
 poly_core.vhd                Y            Y            Y
 pot_core.vhd                 Y            Y            Y
 SER_core.vhd                 Y            Y            Y
@@ -33,3 +32,21 @@ SERIN_PLA.vhd                Y            Y            Y
 SEROUT_PLA.vhd               Y            Y            Y
 SKCTLS_reg.vhd               Y            Y            Y
 SKSTAT_reg.vhd               Y            Y            Y
+
+Register count               Estimated    Actual
+io_core                      120          120
+pot_core                     94           94
+freq_control                 87           87
+ser_core                     71           70 preBCLK optimized to come from preSDI reg.
+key_core                     34           34
+poly_core                    29           29
+irq_core                     18           18
+aud1                         16           16
+aud2                         16           16
+aud3                         15           15
+aud4                         12           12
+clock_gen_core               15           15
+audctl_reg                   8            8
+skctls_reg                   8            8
+skstat_reg                   4            4
+Pokey_top                    34           34

@@ -34,8 +34,8 @@ module freq_control
     wire [4:1]mux;
     
     //Resync signals.
-    reg  presync, rst, rstDelay, resync;
-    wire nor1, nor2, reload12, reload34;
+    reg  presync, rstDelay, resync;
+    wire reload12, reload34;
     
     //Channel signals.
     wire [6:0]CR_BOR_1;
@@ -87,11 +87,7 @@ module freq_control
     assign Timer = intTimer;
 
     //-------------------------------------- Resync Circuitry --------------------------------------
-    assign nor1 = ~(nor2 | Addr9w);
-    assign nor2 = ~(presync | resync);
-
-    assign rstAudPhase = rst | rstDelay;
-
+    assign rstAudPhase = resync | rstDelay;
     assign reload12 = resyncTwoTones | resync;
     assign reload34 = resyncSerClk   | resync;
 
@@ -141,7 +137,7 @@ module freq_control
             intTimer <= norb;
        
             //---------------------------------- Resync Circuitry ----------------------------------
-            presync <= nor1;
+            presync <= Addr9w;
         
             //-------------------------------- Channel Circuitry ---------------------------------
             cntrLd[1] <= reload12 | mux[1];
@@ -157,10 +153,8 @@ module freq_control
             Qbor <= nBOR;
 
             //---------------------------------- Resync Circuitry ----------------------------------
-            //rstAudPhase <= not presync;
-            rst      <= ~presync; //Adds in a strobe extender to fully reset audio control.
-            rstDelay <= rst;
-            resync   <= ~presync;
+            rstDelay <= resync;
+            resync   <= presync;
         end
     end
 endmodule

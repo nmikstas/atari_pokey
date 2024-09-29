@@ -11,20 +11,16 @@ module cell4
     output reg Q,
     output C
 );
-
-    wire en;
-    reg  nQ;
        
     //Flip-flop bit compare storage.
     always @(posedge clk) begin
         if(enp == 1'b1) begin
             if(Ld == 1'b1) begin
                 Q  <= D;
-                nQ <= ~D;
             end
         end
     end
 
     //Output compare bit.
-    assign C = ~(nQ ^ D);
+    assign C = Q ^ D;
 endmodule

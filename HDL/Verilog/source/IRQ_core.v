@@ -26,6 +26,7 @@ module IRQ_core
     wire [7:0]nors;
     reg  [7:0]nirqst;
     reg  [7:0]Dirq;
+    reg  qnor3;
 
     assign nors[0] = ~(nirqst[0] | Timer1);
     assign nors[1] = ~(nirqst[1] | Timer2);
@@ -57,13 +58,14 @@ module IRQ_core
             nirqst[5] <= ~(nors[5] | Dirq[5]);
             nirqst[6] <= ~(nors[6] | Dirq[6]);
             nirqst[7] <= ~(nors[7] | Dirq[7]);
+            qnor3     <= nors[3];
         end
     end
 
     always @(posedge clk) begin
         if(enp == 1'b1) begin
             IRQ <= nirqst[7] | nirqst[6] | nirqst[5] | nirqst[4] | 
-                   nors[3]   | nirqst[2] | nirqst[1] | nirqst[0];
+                   qnor3     | nirqst[2] | nirqst[1] | nirqst[0];
         end
     end
 endmodule

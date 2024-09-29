@@ -8,60 +8,145 @@ z2
 !i10f 100
 cModel Technology
 Z0 dD:/work/Arcade+Projects/atari_pokey/HDL/Verilog
+vaud_control
+!s110 1727225005
+!i10b 1
+!s100 KV4n`4>6YHH1b0^d>:QT?2
+Izg;AV6>5VX>:f@bYA`>hD3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1727225001
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/aud_control.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/aud_control.v
+L0 5
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1727225005.000000
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/aud_control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/aud_control.v|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+vaud_control_hp
+!s110 1727226684
+!i10b 1
+!s100 g1h7eSRHg5[fA2Sa^fB1z2
+IXTl2WFZNS^;1fmQ;C4kX[0
+R1
+R0
+w1727226677
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/aud_control_hp.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/aud_control_hp.v
+L0 5
+R2
+r1
+!s85 0
+31
+!s108 1727226684.000000
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/aud_control_hp.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/aud_control_hp.v|
+!i113 1
+R3
+R4
+vAUDCTL_reg
+!s110 1726987312
+!i10b 1
+!s100 MR4Q=fMQ0;J34K5mK=N;j1
+IYO0;VllikX0ATDZjiL96L0
+R1
+R0
+w1726987309
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/AUDCTL_reg.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/AUDCTL_reg.v
+L0 5
+R2
+r1
+!s85 0
+31
+!s108 1726987312.000000
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/AUDCTL_reg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/AUDCTL_reg.v|
+!i113 1
+R3
+R4
+n@a@u@d@c@t@l_reg
+vcell11
+!s110 1727038745
+!i10b 1
+!s100 5:[4_zad0M998]1]Pj;OW2
+IOT=>i^QG=>^D9:Lg:HS083
+R1
+R0
+w1723399206
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cel11.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cel11.v
+L0 5
+R2
+r1
+!s85 0
+31
+!s108 1727038745.000000
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cel11.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cel11.v|
+!i113 1
+R3
+R4
 vcell15
-Z1 !s110 1726802034
+Z5 !s110 1726802034
 !i10b 1
 !s100 9J^ISiA2hf3cBO6i0V9TW1
 ICTI6KQoFeklOb<;1S?LN63
-Z2 VDg1SIo80bB@j0V0VzS_@n1
+R1
 R0
 w1725927135
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell15.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell15.v
 L0 5
-Z3 OV;L;10.5b;63
+R2
 r1
 !s85 0
 31
-Z4 !s108 1726802034.000000
+Z6 !s108 1726802034.000000
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell15.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell15.v|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+R3
+R4
 vcell16
-R1
+R5
 !i10b 1
 !s100 6Y;Q^UUKhjBDY==m_WnOZ0
 I9Lk=C`<KQ_[BS[;;nm=[E3
-R2
+R1
 R0
 w1725927238
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell16.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell16.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
-R4
+R6
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell16.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell16.v|
 !i113 1
-R5
-R6
+R3
+R4
 vcell17
 !s110 1726860006
 !i10b 1
 !s100 <X2Ab<gM4BNbK:J7Dm=5l1
 IG55@[j9DG=N0na0Rz[BB]1
-R2
+R1
 R0
 w1726859996
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell17.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell17.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
@@ -69,41 +154,62 @@ r1
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell17.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell17.v|
 !i113 1
-R5
-R6
+R3
+R4
 vcell20
-Z7 !s110 1726446794
+Z7 !s110 1727581344
 !i10b 1
 !s100 dll54z5=3VjIklF5A9]EI2
 IlP6ZOgd`?1GmOXU@bP5K33
-R2
+R1
 R0
 w1726379594
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell20.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell20.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
-Z8 !s108 1726446794.000000
+Z8 !s108 1727581344.000000
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell20.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell20.v|
 !i113 1
-R5
-R6
+R3
+R4
+vcell23
+Z9 !s110 1727585639
+!i10b 1
+!s100 =cD=d^Z^8QnBBT;O6=oK=2
+I@NlYSHA]G=]nefPS[U1:Y0
+R1
+R0
+w1725343121
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell23.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell23.v
+L0 5
+R2
+r1
+!s85 0
+31
+Z10 !s108 1727585639.000000
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell23.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell23.v|
+!i113 1
+R3
+R4
 vcell24
 R7
 !i10b 1
 !s100 R3N<b<Hj7liBSbP6;BX2O1
 I?Y6fR<aoNMc2B?Oi4OJe>0
-R2
+R1
 R0
 w1726356055
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell24.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell24.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
@@ -111,20 +217,20 @@ R8
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell24.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell24.v|
 !i113 1
-R5
-R6
+R3
+R4
 vcell24option1
 R7
 !i10b 1
 !s100 Djho@CYhSW7TaEYkVfXaB3
 IXG5XDSgDPU6lM:7jzNRDd1
-R2
+R1
 R0
 w1726356457
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell24option1.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell24option1.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
@@ -132,20 +238,20 @@ R8
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell24option1.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell24option1.v|
 !i113 1
-R5
-R6
+R3
+R4
 vcell25
 !s110 1726859882
 !i10b 1
 !s100 XkX:7_??L`2mQ@hQ7XI^H2
 I8afUNYSMmEe8YA71NCizW1
-R2
+R1
 R0
 w1726859875
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell25.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell25.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
@@ -153,41 +259,41 @@ r1
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell25.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell25.v|
 !i113 1
-R5
-R6
-vcell2p
-!s110 1726972738
-!i10b 1
-!s100 ;@2aU18H7caLnbkdKjQUI1
-IRjMzY[`Qb3GF?DcEPBH@Z0
-R2
-R0
-w1726972734
-Z9 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/IRQ_core.v
-Z10 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/IRQ_core.v
-L0 5
 R3
+R4
+vcell2p
+Z11 !s110 1727576267
+!i10b 1
+!s100 IPUJg@R8mOT==4;mc6gU;1
+IRYfh<NdgO8hec3>FaCO@M0
+R1
+R0
+w1725824548
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell2p.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell2p.v
+L0 5
+R2
 r1
 !s85 0
 31
-!s108 1726972738.000000
-Z11 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/IRQ_core.v|
-Z12 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/IRQ_core.v|
+Z12 !s108 1727576267.000000
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell2p.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell2p.v|
 !i113 1
-R5
-R6
+R3
+R4
 vcell2pr
 !s110 1726859496
 !i10b 1
 !s100 ;UgU]28VZ2D9e=oEC0IDD3
 I0@I_VVZ?NM]zafoQB6?Qk2
-R2
+R1
 R0
 w1726859490
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell2pr.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell2pr.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
@@ -195,83 +301,146 @@ r1
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell2pr.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell2pr.v|
 !i113 1
-R5
-R6
+R3
+R4
 vcell2r
-!s110 1726860446
+!s110 1727038869
 !i10b 1
-!s100 UZ]I74E``9of_YehZameH3
-IWcR:WJB77m@N`a6J9WgDV0
-R2
+!s100 fK5W5XQBmfc1d<M:Zk?<:2
+I@231zM3lYQP]aGW?Wm02g0
+R1
 R0
-w1726860439
+w1727038859
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell2r.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell2r.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
-!s108 1726860446.000000
+!s108 1727038869.000000
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell2r.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell2r.v|
 !i113 1
-R5
-R6
-vclock_gen_core
+R3
+R4
+vcell3
+R11
+!i10b 1
+!s100 OH@QYCC__NMd4XXLd?hCC2
+I::Uoden`jUIeIAWASP`0l1
 R1
+R0
+w1725826842
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell3.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell3.v
+L0 5
+R2
+r1
+!s85 0
+31
+R12
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell3.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell3.v|
+!i113 1
+R3
+R4
+vcell4
+!s110 1727576604
+!i10b 1
+!s100 jV3nQjT[z]ab:KKbM>bLQ1
+Io`n7CDX<;U]2AL;ig2lUm0
+R1
+R0
+w1727576584
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell4.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell4.v
+L0 5
+R2
+r1
+!s85 0
+31
+!s108 1727576604.000000
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell4.v|
+!i113 1
+R3
+R4
+vcell6
+R11
+!i10b 1
+!s100 5b2AKE2N?UO;X6AEQkN3H3
+IclGQA?AVAF@>F`lFF7@2=1
+R1
+R0
+w1725827035
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell6.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell6.v
+L0 5
+R2
+r1
+!s85 0
+31
+Z13 !s108 1727576266.000000
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell6.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/cell6.v|
+!i113 1
+R3
+R4
+vclock_gen_core
+!s110 1727549547
 !i10b 1
 !s100 F9KMmGe:aD6bYf_Dhd[dF2
 IjNi@HIMEa00OjJaCMb`gL0
-R2
+R1
 R0
 w1726382428
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/clock_gen_core.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/clock_gen_core.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
-R4
+!s108 1727549547.000000
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/clock_gen_core.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/clock_gen_core.v|
 !i113 1
-R5
-R6
+R3
+R4
 vfreq_control
-!s110 1726802124
+!s110 1727582090
 !i10b 1
-!s100 SdCCZ3FVi<a6T;9m^H3=U0
-IZBD^MZYCcD4LKk<M91A`B0
-R2
+!s100 VkKXn>]VALSANHjO5:1Ld1
+I=i?[Gi_M?`DJn47]Z:b`T1
+R1
 R0
-w1726802119
+w1727582085
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/freq_control.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/freq_control.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
-!s108 1726802124.000000
+!s108 1727582090.000000
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/freq_control.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/freq_control.v|
 !i113 1
-R5
-R6
+R3
+R4
 vIO_core
 !s110 1726523269
 !i10b 1
 !s100 KnI=j^oXMZDMY5GCH`0lb1
 IQC1hoMb9z`VjGD[[a3V@U2
-R2
+R1
 R0
 w1726523264
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/IO_core.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/IO_core.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
@@ -279,64 +448,130 @@ r1
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/IO_core.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/IO_core.v|
 !i113 1
-R5
-R6
+R3
+R4
 n@i@o_core
 vIRQ_core
-!s110 1726973148
+!s110 1727579373
 !i10b 1
-!s100 T@8<=bl1KGSRd`hlPAI_P3
-I`L_FM>ATJGIi>@_T[lzQN1
-R2
+!s100 mhk8CaN1AY:GeZ<GWj6N<0
+IcDe]@h_bgYYhVO_VmimAV1
+R1
 R0
-w1726973027
-R9
-R10
+w1727579210
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/IRQ_core.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/IRQ_core.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
-!s108 1726973148.000000
-R11
-R12
+!s108 1727579373.000000
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/IRQ_core.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/IRQ_core.v|
 !i113 1
-R5
-R6
+R3
+R4
 n@i@r@q_core
-vpoly_core
-!s110 1726613698
+vKEY_core
+Z14 !s110 1727576266
 !i10b 1
-!s100 1BkS7XgJaRAOPYcd7LeRW3
-IGOUU?GQ0ER`R[dIX4^ef43
-R2
+!s100 74SH^B[FHhA1nWPa@98781
+IXz12Yj07ggk44VnQ2F@Dz2
+R1
 R0
-w1726613683
+w1725828236
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/KEY_core.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/KEY_core.v
+L0 5
+R2
+r1
+!s85 0
+31
+R13
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/KEY_core.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/KEY_core.v|
+!i113 1
+R3
+R4
+n@k@e@y_core
+vKEY_PLA
+R14
+!i10b 1
+!s100 V]H:;I[>iE^2Z;3<a[9aI3
+Ilbzja6VnAOeReW3=C`3441
+R1
+R0
+w1723091541
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/KEY_PLA.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/KEY_PLA.v
+L0 5
+R2
+r1
+!s85 0
+31
+R13
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/KEY_PLA.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/KEY_PLA.v|
+!i113 1
+R3
+R4
+n@k@e@y_@p@l@a
+vpoly_core
+!s110 1727038744
+!i10b 1
+!s100 KDGd_QC0G?PkTjGAO=k5f1
+I2:Vj4a^LmBnLj2M:h?74G3
+R1
+R0
+w1727037617
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/poly_core.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/poly_core.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
-!s108 1726613698.000000
+!s108 1727038744.000000
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/poly_core.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/poly_core.v|
 !i113 1
-R5
-R6
+R3
+R4
+vPOT_core
+!s110 1727588227
+!i10b 1
+!s100 JoSTnV7X0n4HW:dW>OmFC3
+IUgGKP@881IXXY:C3SODW`1
+R1
+R0
+w1725350280
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/POT_core.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/POT_core.v
+L0 5
+R2
+r1
+!s85 0
+31
+!s108 1727588227.000000
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/POT_core.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/POT_core.v|
+!i113 1
+R3
+R4
+n@p@o@t_core
 vSER_core
 !s110 1726956132
 !i10b 1
 !s100 HZhPOdF[K]bQVAa;oA5@l1
 II`bXdgC6R>]:K=KfU_Ih92
-R2
+R1
 R0
 w1726956129
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/SER_core.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/SER_core.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
@@ -344,43 +579,43 @@ r1
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/SER_core.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/SER_core.v|
 !i113 1
-R5
-R6
+R3
+R4
 n@s@e@r_core
 vSERIN_PLA
-Z13 !s110 1726802035
+Z15 !s110 1726802035
 !i10b 1
 !s100 02RBlJ4d>:MFU6eQlemP:0
 INAE=hTW]zL>7[UAa=MIPl0
-R2
+R1
 R0
 w1723057689
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/SERIN_PLA.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/SERIN_PLA.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
-R4
+R6
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/SERIN_PLA.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/SERIN_PLA.v|
 !i113 1
-R5
-R6
+R3
+R4
 n@s@e@r@i@n_@p@l@a
 vSEROUT_PLA
-R13
+R15
 !i10b 1
 !s100 7fF9=jjS=o>=D0KNIGko90
 IXFWa>6;oajV[?:N=ianFW0
-R2
+R1
 R0
 w1723088374
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/SEROUT_PLA.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/SEROUT_PLA.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
@@ -388,21 +623,21 @@ r1
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/SEROUT_PLA.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/SEROUT_PLA.v|
 !i113 1
-R5
-R6
+R3
+R4
 n@s@e@r@o@u@t_@p@l@a
 vSKCTLS_reg
 !s110 1726625134
 !i10b 1
 !s100 XfU@cUPT@b]G8R@g7Q13Y2
 IKZWS9m@C3dz9jJ_h72^:g0
-R2
+R1
 R0
 w1726625131
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/SKCTLS_reg.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/SKCTLS_reg.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
@@ -410,85 +645,128 @@ r1
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/SKCTLS_reg.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/SKCTLS_reg.v|
 !i113 1
-R5
-R6
+R3
+R4
 n@s@k@c@t@l@s_reg
 vSKSTAT_reg
-!s110 1726623262
+!s110 1727549120
 !i10b 1
-!s100 DCcZJmTk5id4F>F`kEWE[2
-IP3YS_9ehaMX2JoJNELnF21
-R2
+!s100 e@7RcOmzEF>Qa@B=D]SdM3
+I`hIF]ge;3^MRDHHOzCKi:2
+R1
 R0
-w1726623215
-8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/SKSTAT_reg.v
-FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/SKSTAT_reg.v
+w1727549115
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/SKSTAT_reg.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/SKSTAT_reg.v
 L0 5
-R3
+R2
 r1
 !s85 0
 31
-!s108 1726623262.000000
-!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/SKSTAT_reg.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/SKSTAT_reg.v|
+!s108 1727549120.000000
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/SKSTAT_reg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/SKSTAT_reg.v|
 !i113 1
-R5
-R6
+R3
+R4
 n@s@k@s@t@a@t_reg
 vtb_
-!s110 1726957950
+!s110 1726983992
 !i10b 1
 !s100 Ie?EEVhWWa9?WTJR@ailP0
-IFK6lKNM2YAS<K8G7:K=Gn2
-R2
+IK^:b>`jVK<h2P9[nKA3V;3
+R1
 R0
 w1725230094
-Z14 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_IRQ_core.v
-Z15 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_IRQ_core.v
+Z16 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_AUDCTL_reg.v
+Z17 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_AUDCTL_reg.v
 L0 3
-R3
+R2
 r1
 !s85 0
 31
-!s108 1726957950.000000
-!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_IRQ_core.v|
-Z16 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_IRQ_core.v|
+!s108 1726983992.000000
+Z18 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_AUDCTL_reg.v|
+Z19 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_AUDCTL_reg.v|
 !i113 1
-R5
-R6
+R3
+R4
+vtb_aud_control
+!s110 1727226411
+!i10b 1
+!s100 J:JHgcY0V`CYGaQ^J=n@D3
+Idkn`X:B;j3jj_3>4bH<D]3
+R1
+R0
+w1727226406
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_aud_control.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_aud_control.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1727226411.000000
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_aud_control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_aud_control.v|
+!i113 1
+R3
+R4
+vtb_AUDCTL_reg
+!s110 1726989619
+!i10b 1
+!s100 hb8Maj;3fzojbSGI<<C5=3
+IKbF;lZH:kndSYVcNG=`9T1
+R1
+R0
+w1726989612
+R16
+R17
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1726989619.000000
+R18
+R19
+!i113 1
+R3
+R4
+ntb_@a@u@d@c@t@l_reg
 vtb_freq_control
-!s110 1726449477
+R7
 !i10b 1
 !s100 XKE;^O4RCaWRFCR;DeiWC0
-I<WAV`V_Gf[S0j84mOdYJD0
-R2
+IZN<CEHBJn2;>SCCL?zT>Y0
+R1
 R0
 w1726449474
-8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_freq_control.v
-FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_freq_control.v
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_freq_control.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_freq_control.v
 L0 3
-R3
+R2
 r1
 !s85 0
 31
-!s108 1726449477.000000
-!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_freq_control.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_freq_control.v|
+R8
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_freq_control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_freq_control.v|
 !i113 1
-R5
-R6
+R3
+R4
 vtb_IO_core
 !s110 1726603042
 !i10b 1
 !s100 =`[N5Zc_PgRU<C0YbV<Ag2
 IQWEa@CFT6dH;LXJMTGA;e0
-R2
+R1
 R0
 w1726603038
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_IO_core.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_IO_core.v
 L0 3
-R3
+R2
 r1
 !s85 0
 31
@@ -496,43 +774,65 @@ r1
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_IO_core.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_IO_core.v|
 !i113 1
-R5
-R6
+R3
+R4
 ntb_@i@o_core
 vtb_IRQ_core
 !s110 1726975364
 !i10b 1
 !s100 GcWO8?:eQ==8MYF]F9Al_2
 IRCgJdK8BL<VP_2@AY_g4o0
-R2
+R1
 R0
 w1726975360
-R14
-R15
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_IRQ_core.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_IRQ_core.v
 L0 3
-R3
+R2
 r1
 !s85 0
 31
 !s108 1726975364.000000
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_IRQ_core.v|
-R16
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_IRQ_core.v|
 !i113 1
-R5
-R6
+R3
+R4
 ntb_@i@r@q_core
+vtb_KEY_core
+R11
+!i10b 1
+!s100 mPN=OEDGC1gDLW:o;2c;o2
+Iig`MNi6cSX;K[Pe]Q:T=01
+R1
+R0
+w1725781098
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_KEY_core.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_KEY_core.v
+L0 3
+R2
+r1
+!s85 0
+31
+R12
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_KEY_core.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_KEY_core.v|
+!i113 1
+R3
+R4
+ntb_@k@e@y_core
 vtb_poly_core
 !s110 1726612293
 !i10b 1
 !s100 SMokWQU=0Xb;[h[RJ`_9=1
 IiRF390a46>iUI=COkbWDa0
-R2
+R1
 R0
 w1726612118
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_poly_core.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_poly_core.v
 L0 3
-R3
+R2
 r1
 !s85 0
 31
@@ -540,20 +840,42 @@ r1
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_poly_core.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_poly_core.v|
 !i113 1
-R5
-R6
+R3
+R4
+vtb_POT_core
+R9
+!i10b 1
+!s100 W5dFQ=5z0Y1[@PTh=:B>m2
+If`3[2JF:4=LH[Xd>h2n0C0
+R1
+R0
+w1725294172
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_POT_core.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_POT_core.v
+L0 3
+R2
+r1
+!s85 0
+31
+R10
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_POT_core.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_POT_core.v|
+!i113 1
+R3
+R4
+ntb_@p@o@t_core
 vtb_SER_core
 !s110 1726949331
 !i10b 1
 !s100 ko@7:amY7SKbUPj`7VLah2
 ING[_@i?fbGXDHh805Z:R60
-R2
+R1
 R0
 w1726949327
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_SER_core.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_SER_core.v
 L0 3
-R3
+R2
 r1
 !s85 0
 31
@@ -561,21 +883,21 @@ r1
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_SER_core.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_SER_core.v|
 !i113 1
-R5
-R6
+R3
+R4
 ntb_@s@e@r_core
 vtb_SKCTLS_reg
 !s110 1726627533
 !i10b 1
 !s100 c^mY1kZ]G6VRS0mLLOii@0
 I>3^ogAOmabFj`lO1lgz:e3
-R2
+R1
 R0
 w1726627529
 8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_SKCTLS_reg.v
 FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_SKCTLS_reg.v
 L0 3
-R3
+R2
 r1
 !s85 0
 31
@@ -583,28 +905,28 @@ r1
 !s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_SKCTLS_reg.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_SKCTLS_reg.v|
 !i113 1
-R5
-R6
+R3
+R4
 ntb_@s@k@c@t@l@s_reg
 vtb_SKSTAT_reg
-!s110 1726623841
+!s110 1727543721
 !i10b 1
-!s100 LbkAM;C311N@_1dJgQ=UV1
-I2j_U4oYZfXEjFn8z5:d^D2
-R2
+!s100 `_DBDBD9V5CffPg5oS5CU3
+I3dL5fZI>al<Y8RiHa2Y?20
+R1
 R0
-w1726623837
-8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_SKSTAT_reg.v
-FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_SKSTAT_reg.v
+w1727543717
+8D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_SKSTAT_reg.v
+FD:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_SKSTAT_reg.v
 L0 3
-R3
+R2
 r1
 !s85 0
 31
-!s108 1726623841.000000
-!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_SKSTAT_reg.v|
-!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb_SKSTAT_reg.v|
+!s108 1727543721.000000
+!s107 D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_SKSTAT_reg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/tb/tb_SKSTAT_reg.v|
 !i113 1
-R5
-R6
+R3
+R4
 ntb_@s@k@s@t@a@t_reg

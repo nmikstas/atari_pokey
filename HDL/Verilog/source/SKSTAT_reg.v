@@ -18,13 +18,11 @@ module SKSTAT_reg
 );
 
     reg  qnor3, qnor4, qnor5;
-    reg  qnor1 = 1'b1; //Need these to allow write strobe to clear outputs.
-    reg  nor2  = 1'b1;
-    wire nor1, nor3, nor4, nor5, reset, frameOut, keyOut, sdiOut;
+    reg  qreset;
+    wire nor3, nor4, nor5, reset, frameOut, keyOut, sdiOut;
     
     //Reset circuit.
-    assign nor1  = ~(reset | addrAw);
-    assign reset = ~(nor1 | nor2);
+    assign reset = qreset | addrAw;
 
     //Output circuits.
     assign nor3 = ~(sdiOvrun  | sdiOut);
@@ -46,8 +44,7 @@ module SKSTAT_reg
 
     always @(negedge clk) begin
         if(enn == 1'b1) begin
-            qnor1 <= nor1;
-            nor2 <= ~qnor1;
+            qreset <= addrAw;
             qnor3 <= nor3;
             qnor4 <= nor4;
             qnor5 <= nor5;

@@ -12,7 +12,7 @@ module cell2r
     output Q
 );
 
-    wire muxOut, nor1;
+    wire muxOut;
     reg  nQ;
     
     //MUX output.

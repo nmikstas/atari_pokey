@@ -63,7 +63,7 @@ module poly_core
             //******************************5 Bit Polynomial Structure******************************
 
             //Update the feeback.
-            feedback5 <= ~(lfsr5bit[0] ^ lfsr5bit[2]);
+            feedback5 <= lfsr5bit[0] ^ lfsr5bit[2];
 
             //Update the 5-bit polynomial delay line.
             for(i = 2; i >= 0; i = i - 1) begin
@@ -75,7 +75,7 @@ module poly_core
             //*******************************4 Bit Polynomial Structure******************************
 
             //Update the feeback.
-            feedback4 <= ~(lfsr4bit[0] ^ lfsr4bit[1]);
+            feedback4 <= lfsr4bit[0] ^ lfsr4bit[1];
             
              //Update the 4-bit polynomial delay line.
             for(i = 1; i >= 0; i = i - 1) begin
