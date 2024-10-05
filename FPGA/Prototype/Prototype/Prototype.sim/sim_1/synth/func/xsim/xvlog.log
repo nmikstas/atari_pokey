@@ -1,4 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.sim/sim_1/synth/func/xsim/POKEY_Top_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.sim/sim_1/synth/func/xsim/tb_POKEY_Top_func_synth.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module AUDCTL_reg
 INFO: [VRFC 10-311] analyzing module IO_core
 INFO: [VRFC 10-311] analyzing module IRQ_core
@@ -102,3 +102,5 @@ INFO: [VRFC 10-311] analyzing module clock_gen_core
 INFO: [VRFC 10-311] analyzing module freq_control
 INFO: [VRFC 10-311] analyzing module poly_core
 INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/sim_1/new/tb_POKEY_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_POKEY_Top

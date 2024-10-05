@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_POKEY_Top_func_synth/xsimk.exe -simmode gui -wdb tb_POKEY_Top_func_synth.wdb -simrunnum 0 -socket 51162
+Design successfully loaded
+Design Loading Memory Usage: 9800 KB (Peak: 9800 KB)
+Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 12544 KB (Peak: 12544 KB)
+Simulation CPU Usage: 780 ms

@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Sat Sep 28 22:02:17 2024
+| Date             : Fri Oct  4 01:10:01 2024
 | Host             : LAPTOP-DTPKTC7I running 64-bit major release  (build 9200)
 | Command          : report_power -file POKEY_Top_power_routed.rpt -pb POKEY_Top_power_summary_routed.pb -rpx POKEY_Top_power_routed.rpx
 | Design           : POKEY_Top
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.001 |        9 |       --- |             --- |
-| Slice Logic    |    <0.001 |     1057 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      333 |     20800 |            1.60 |
+| Slice Logic    |    <0.001 |     1051 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      330 |     20800 |            1.59 |
 |   Register     |    <0.001 |      580 |     41600 |            1.39 |
 |   F7/F8 Muxes  |    <0.001 |       21 |     32600 |            0.06 |
-|   Others       |     0.000 |       99 |       --- |             --- |
-| Signals        |    <0.001 |      723 |       --- |             --- |
+|   Others       |     0.000 |       98 |       --- |             --- |
+| Signals        |    <0.001 |      722 |       --- |             --- |
 | MMCM           |     0.105 |        1 |         5 |           20.00 |
 | I/O            |    <0.001 |       47 |       106 |           44.34 |
 | Static Power   |     0.072 |          |           |                 |
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.012 |       0.002 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.011 |       0.002 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.071 |       0.058 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -129,8 +129,8 @@ Table of Contents
 | Clock                | Domain                        | Constraint (ns) |
 +----------------------+-------------------------------+-----------------+
 | clk179_pin           | clk179                        |           558.7 |
-| clk_out_clk_wiz_0    | clk_0/inst/clk_out_clk_wiz_0  |            16.7 |
-| clk_out_clk_wiz_0_1  | clk_0/inst/clk_out_clk_wiz_0  |            16.7 |
+| clk_out1_clk_wiz_0   | clk_0/inst/clk_out1_clk_wiz_0 |            16.7 |
+| clk_out1_clk_wiz_0_1 | clk_0/inst/clk_out1_clk_wiz_0 |            16.7 |
 | clk_pin              | sysclk                        |            83.3 |
 | clkfbout_clk_wiz_0   | clk_0/inst/clkfbout_clk_wiz_0 |            83.3 |
 | clkfbout_clk_wiz_0_1 | clk_0/inst/clkfbout_clk_wiz_0 |            83.3 |

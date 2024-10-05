@@ -5,6 +5,7 @@ module POKEY_Top
     //Main clocks.
     input sysclk,
     input clk179,
+    //input clk,
 
     //Read/write and enable signals.
     input [1:0]cs,
@@ -19,6 +20,7 @@ module POKEY_Top
 
     //Digital audio out.
     output reg [5:0]audio,
+    //output [5:0]audio,
 
     //Potentiometer signals.
     input [7:0]p,
@@ -39,14 +41,17 @@ module POKEY_Top
     output reg OE = 1'b1
 );
     //clock and enable signals.
-    wire clk, enn, enp;
+    wire enn, enp;
+    //wire clk;
     reg [2:0] pren = 3'b000;
     reg [2:0] prep = 3'b000;
     
     //IO signals.
     reg  [3:0]Aint;
+    //wire [3:0]Aint;
     wire [7:0]Datar;
     reg  [7:0]Dataw;
+    //wire [7:0]Dataw;
     wire readEn;
     wire Addr0w, Addr1w, Addr2w, Addr3w, Addr4w, Addr5w, Addr6w, Addr7w,
          Addr8w, Addr9w, AddrAw, AddrBw, AddrDw, AddrEw, AddrFw;
@@ -87,7 +92,7 @@ module POKEY_Top
     //////////////////////////////////////Top Level Circuits///////////////////////////////////////
 
     //Turn the 12MHz clock into a 60MHz clock.
-    clk_wiz_0 clk_0(.clk_out(clk), .clk_in1(sysclk));
+    clk_wiz_0 clk_0(.clk_out1(clk), .clk_in1(sysclk));
 
     //Enable pulse generation.
     always@(negedge clk) begin
@@ -104,18 +109,21 @@ module POKEY_Top
     
     assign enn = ~pren[1] &  pren[2];
     assign enp =  prep[1] & ~prep[2];
-    
+    //assign enn = 1'b1;
+    //assign enp = 1'b1;
     //retime the address bits.
     always @(posedge clk179) begin
         Aint <= a;
     end
+    //assign Aint = a;
     
     //Retime input data bits and assign outout data bits.
     assign d = (readEn == 1'b1) ? Datar : 8'bzzzzzzzz;
 
-    always @(posedge clk179) begin
+    always @(negedge clk179) begin
         Dataw <= d;
     end
+    //assign Dataw = d;
     
     //Add all the audio signals together.
     always @(posedge clk) begin
@@ -123,6 +131,7 @@ module POKEY_Top
         AUD34 <= {1'b0, AUD3}  + {1'b0, AUD4};    
         audio <= {1'b0, AUD34} + {1'b0, AUD12};
     end
+    //assign audio = {1'b0, 1'b0, AUD1};
     
     ///////////////////////////////////POKEY Registers and Cores///////////////////////////////////
     

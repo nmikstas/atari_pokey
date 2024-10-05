@@ -123,8 +123,10 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 3
+  set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
+  set_property board_part digilentinc.com:cmod_a7-35t:part0:1.2 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
@@ -137,7 +139,7 @@ OPTRACE "set parameters" START { }
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.runs/synth_1/POKEY_Top.dcp
-  read_ip -quiet D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+  read_ip -quiet d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci
 OPTRACE "read constraints: implementation" START { }
   read_xdc D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc
 OPTRACE "read constraints: implementation" END { }

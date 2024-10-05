@@ -24,7 +24,7 @@ IO_core.vhd                  Y            Y            Y
 IRQ_core.vhd                 Y            Y            Y
 KEY_core.vhd                 Y            Y            Y
 keyboard_pla.vhd             Y            Y            Y
-POKEY_top.vhd                Y
+POKEY_top.vhd                Y            Y            Y
 poly_core.vhd                Y            Y            Y
 pot_core.vhd                 Y            Y            Y
 SER_core.vhd                 Y            Y            Y
@@ -50,3 +50,104 @@ audctl_reg                   8            8
 skctls_reg                   8            8
 skstat_reg                   4            4
 Pokey_top                    34           34
+
+Functionality checks         Completed
+****IO Core
+    CS Functionality         Y
+    Read Data                Y
+    Write Data               Y
+****Polynomial Core
+    17-bit sequence          Y
+    9-bit sequence           Y
+    5-bit sequence           Y
+    4-bit sequence           Y
+    Read random number       Y
+****SKCTLS Register
+    Load Register            Y
+    Init signal              Y
+****Clock generator Core
+    15KHz clock              Y
+    64KHz clock              Y
+    Output select            Y
+    keyboard clock           Y
+****IRQ Core
+    Disable all interrupts   Y
+    Enable all interrupts    Y
+    Interrupt timer1         Y
+    Interrupt timer2         Y
+    Interrupt timer4         Y
+    Interrupt SDOfinish
+    Interrupt SDOComplete
+    Interrupt SDIComplete
+    Interrupt setKey         Y
+    Interrupt setBreak       Y
+    key overrun              Y
+    SDI overrun
+    Read interrupt statuses  Y
+****Keyboard Core
+    Shift                    Y
+    KeyDown                  Y
+    SetBreak                 Y
+    Detect key wo debounce   Y
+    Detect key w debounce    Y
+    Read keycode             Y
+    Read shift key           Y
+    Read control key         Y
+    Detect break             Y
+****SKSTAT Register
+    Reset latches            Y
+    Read frame error
+    Read keyOverrun          Y
+    Read SDIOverrun
+    Read SIDelay
+    Read kShift              Y
+    Read KeyDown             Y
+    Read SDIBusy
+****Potentiometer Core
+    Read POT0 status         Y
+    Read POT1 status         Y
+    Read POT2 status         Y
+    Read POT3 status         Y
+    Read POT4 status         Y
+    Read POT5 status         Y
+    Read POT6 status         Y
+    Read POT7 status         Y
+    Read ALLPOT Status       Y
+    Normal scan              Y
+    Fast scan                Y
+    Dump signal              Y
+****AUDCTL Register
+    Set register             Y
+    set 9bit poly            Y
+    Set enFastClk1           Y
+    Set enFastClk2           Y
+    Set ch216bits            Y
+    Set ch416bits            Y
+    Set dishipas1
+    set dishipas2
+    set 15KHz                Y
+****Frequency Control Core
+    Set Timer 1              Y
+    Set Timer 2              Y
+    Set Timer 3              Y
+    Set Timer 4              Y
+    Set timer 2 16 bits      Y
+    Set timer 4 16 bits      Y
+    Set fast clock 1         Y
+    Set fast clock 3         Y
+    reset timers             Y
+****Serial Clock Generator
+    SKCTLS654 = 000
+    SKCTLS654 = 001
+    SKCTLS654 = 010
+    SKCTLS654 = 100
+    SKCTLS654 = 110
+    SKCTLS654 = 111
+****Serial In
+    Receive bytes
+    Read in bytes
+****Serial Out
+    Send bytes
+    Send 2 tone bytes
+****Audio Core
+

@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Sep 28 21:58:46 2024
-# Process ID: 6324
+# Start of session at: Fri Oct  4 01:05:11 2024
+# Process ID: 22572
 # Current directory: D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.runs/synth_1
 # Command line: vivado.exe -log POKEY_Top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source POKEY_Top.tcl
 # Log file: D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.runs/synth_1/POKEY_Top.vds
@@ -17,13 +17,13 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 4848
+INFO: [Synth 8-7075] Helper process launched with PID 24468
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1017.906 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1018.746 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'POKEY_Top' [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/sources_1/new/POKEY_Top.v:3]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:70]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:68]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -83,8 +83,8 @@ INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2020.2/s
 INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
 INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (4#1) [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (5#1) [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (4#1) [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (5#1) [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v:70]
 INFO: [Synth 8-6157] synthesizing module 'IO_core' [D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/IO_core.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'IO_core' (6#1) [D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/IO_core.v:5]
 INFO: [Synth 8-6157] synthesizing module 'SKCTLS_reg' [D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/SKCTLS_reg.v:5]
@@ -149,64 +149,64 @@ INFO: [Synth 8-6155] done synthesizing module 'SEROUT_PLA' (35#1) [D:/work/Arcad
 INFO: [Synth 8-6155] done synthesizing module 'SER_core' (36#1) [D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/SER_core.v:5]
 INFO: [Synth 8-6155] done synthesizing module 'POKEY_Top' (37#1) [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/sources_1/new/POKEY_Top.v:3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1017.906 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1018.746 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1017.906 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1018.746 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1017.906 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1018.746 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1017.906 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1018.746 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_0/inst'
-Finished Parsing XDC File [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'clk_0/inst'
-Parsing XDC File [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_0/inst'
-Finished Parsing XDC File [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'clk_0/inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/POKEY_Top_propImpl.xdc].
+Parsing XDC File [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'clk_0/inst'
+Finished Parsing XDC File [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc] for cell 'clk_0/inst'
+Parsing XDC File [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'clk_0/inst'
+Finished Parsing XDC File [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'clk_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/POKEY_Top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/POKEY_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
 Parsing XDC File [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc]
-INFO: [Timing 38-2] Deriving generated clocks [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:88]
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Aint_reg[0]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:88]
+INFO: [Timing 38-2] Deriving generated clocks [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:93]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Aint_reg[0]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:93]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Aint_reg[1]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:89]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Aint_reg[1]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:94]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Aint_reg[2]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:90]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Aint_reg[2]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:95]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Aint_reg[3]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:91]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Aint_reg[3]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:96]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[0]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:92]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[0]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:97]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[1]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:93]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[1]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:98]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[2]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:94]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[2]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:99]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[3]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:95]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[3]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:100]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[4]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:96]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[4]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:101]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[5]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:97]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[5]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:102]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[6]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:98]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[6]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:103]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[7]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:99]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'Dataw_reg[7]/C' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:104]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clk179' matched to 'port' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:100]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clk179' matched to 'port' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:105]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'prep_reg[0]/D' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:100]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'prep_reg[0]/D' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:105]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clk179' matched to 'port' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:101]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'clk179' matched to 'port' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:106]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
-INFO: [Vivado 12-2286] Implicit search of objects for pattern 'pren_reg[0]/D' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:101]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern 'pren_reg[0]/D' matched to 'pin' objects. [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc:106]
 Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
 Finished Parsing XDC File [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/constrs_1/new/contraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/POKEY_Top_propImpl.xdc].
@@ -217,20 +217,20 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/POKEY_Top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1069.391 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1071.574 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1069.391 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1071.574 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1069.391 ; gain = 51.484
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1071.574 ; gain = 52.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1069.391 ; gain = 51.484
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1071.574 ; gain = 52.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -238,10 +238,10 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property KEEP_HIERARCHY = SOFT for clk_0/inst. (constraint file  D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.runs/synth_1/dont_touch.xdc, line 10).
 Applied set_property KEEP_HIERARCHY = SOFT for clk_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1069.391 ; gain = 51.484
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1071.574 ; gain = 52.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1069.391 ; gain = 51.484
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1071.574 ; gain = 52.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -277,25 +277,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1069.391 ; gain = 51.484
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1071.574 ; gain = 52.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1069.391 ; gain = 51.484
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 1071.574 ; gain = 52.828
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1077.883 ; gain = 59.977
+Finished Timing Optimization : Time (s): cpu = 00:01:11 ; elapsed = 00:01:15 . Memory (MB): peak = 1078.273 ; gain = 59.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1092.863 ; gain = 74.957
+Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 1094.945 ; gain = 76.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -313,37 +313,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1092.863 ; gain = 74.957
+Finished IO Insertion : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 1094.945 ; gain = 76.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1092.863 ; gain = 74.957
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:23 ; elapsed = 00:01:27 . Memory (MB): peak = 1094.945 ; gain = 76.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1092.863 ; gain = 74.957
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1094.945 ; gain = 76.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1092.863 ; gain = 74.957
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1094.945 ; gain = 76.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1092.863 ; gain = 74.957
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1094.945 ; gain = 76.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1092.863 ; gain = 74.957
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1094.945 ; gain = 76.199
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -360,12 +360,12 @@ Report Cell Usage:
 |      |Cell       |Count |
 +------+-----------+------+
 |1     |BUFG       |     3|
-|2     |LUT1       |    56|
-|3     |LUT2       |    33|
-|4     |LUT3       |    54|
-|5     |LUT4       |    70|
+|2     |LUT1       |    48|
+|3     |LUT2       |    41|
+|4     |LUT3       |    59|
+|5     |LUT4       |    62|
 |6     |LUT5       |    58|
-|7     |LUT6       |    87|
+|7     |LUT6       |    85|
 |8     |MMCME2_ADV |     1|
 |9     |MUXF7      |    14|
 |10    |MUXF8      |     7|
@@ -376,18 +376,18 @@ Report Cell Usage:
 |15    |OBUF       |    18|
 +------+-----------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1092.863 ; gain = 74.957
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 1094.945 ; gain = 76.199
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 1092.863 ; gain = 23.473
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1092.863 ; gain = 74.957
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:01:21 . Memory (MB): peak = 1094.945 ; gain = 23.371
+Synthesis Optimization Complete : Time (s): cpu = 00:01:24 ; elapsed = 00:01:28 . Memory (MB): peak = 1094.945 ; gain = 76.199
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1097.672 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1099.773 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 30 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1098.703 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1099.824 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 8 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 8 instances
@@ -395,7 +395,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 111 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 1098.703 ; gain = 80.797
+synth_design: Time (s): cpu = 00:01:40 ; elapsed = 00:01:49 . Memory (MB): peak = 1099.824 ; gain = 81.078
 INFO: [Common 17-1381] The checkpoint 'D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.runs/synth_1/POKEY_Top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file POKEY_Top_utilization_synth.rpt -pb POKEY_Top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Sep 28 21:59:25 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Oct  4 01:07:12 2024...

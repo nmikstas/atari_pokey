@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Sat Sep 28 22:01:56 2024
+| Date         : Fri Oct  4 01:08:50 2024
 | Host         : LAPTOP-DTPKTC7I running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file POKEY_Top_control_sets_placed.rpt
 | Design       : POKEY_Top
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |    32 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    36 |
+| Unused register locations in slices containing registers |    28 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -41,11 +41,11 @@ Table of Contents
 +--------------------+-------+
 | Total control sets |    32 |
 | >= 0 to < 4        |     0 |
-| >= 4 to < 6        |     2 |
+| >= 4 to < 6        |     3 |
 | >= 6 to < 8        |     1 |
 | >= 8 to < 10       |    25 |
 | >= 10 to < 12      |     0 |
-| >= 12 to < 14      |     1 |
+| >= 12 to < 14      |     0 |
 | >= 14 to < 16      |     0 |
 | >= 16              |     3 |
 +--------------------+-------+
@@ -58,53 +58,53 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              43 |           14 |
+| No           | No                    | No                     |              39 |           13 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |             520 |          130 |
+| Yes          | No                    | No                     |             532 |          146 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              17 |            5 |
+| Yes          | Yes                   | No                     |               9 |            2 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+---------------------+---------------------------------+-----------------------------+------------------+----------------+--------------+
-|     Clock Signal    |          Enable Signal          |       Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
-+---------------------+---------------------------------+-----------------------------+------------------+----------------+--------------+
-|  clk_0/inst/clk_out | _io_core/AQ                     |                             |                1 |              4 |         4.00 |
-| ~clk_0/inst/clk_out |                                 |                             |                2 |              5 |         2.50 |
-|  clk_0/inst/clk_out | _key_core/b0/prep_reg[1]        |                             |                2 |              6 |         3.00 |
-|  clk_0/inst/clk_out | _key_core/c5/E[0]               |                             |                2 |              8 |         4.00 |
-|  clk_0/inst/clk_out | _ser_core/ob7/Qint              |                             |                3 |              8 |         2.67 |
-|  clk_0/inst/clk_out | _ser_core/istate/E[0]           |                             |                1 |              8 |         8.00 |
-| ~clk_0/inst/clk_out | _io_core/AQ_reg[1]_0            |                             |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out | _io_core/nDout                  |                             |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out | _io_core/nDout_0                |                             |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out | _io_core/AQ_reg[3]_1[0]         |                             |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out | _io_core/nDout_2                |                             |                1 |              8 |         8.00 |
-| ~clk_0/inst/clk_out | _io_core/nDout_1                |                             |                1 |              8 |         8.00 |
-| ~clk_0/inst/clk_out | _io_core/AQ_reg[3]_2[0]         |                             |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out | _io_core/AQ_reg[1]_1[0]         |                             |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out | _io_core/AQ_reg[3]_3[0]         |                             |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out | _io_core/AQ_reg[1]_2[0]         |                             |                1 |              8 |         8.00 |
-| ~clk_0/inst/clk_out | _io_core/AQ_reg[3]_0[0]         |                             |                3 |              8 |         2.67 |
-| ~clk_0/inst/clk_out | _io_core/E[0]                   |                             |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out | _pot_core/POT6[7]_i_1_n_0       |                             |                1 |              8 |         8.00 |
-| ~clk_0/inst/clk_out | _pot_core/POT5[7]_i_1_n_0       |                             |                1 |              8 |         8.00 |
-| ~clk_0/inst/clk_out | _pot_core/POT1[7]_i_1_n_0       |                             |                1 |              8 |         8.00 |
-| ~clk_0/inst/clk_out | _pot_core/POT0[7]_i_1_n_0       |                             |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out | _pot_core/POT3[7]_i_1_n_0       |                             |                1 |              8 |         8.00 |
-| ~clk_0/inst/clk_out | _pot_core/POT7[7]_i_1_n_0       |                             |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out | _pot_core/POT4[7]_i_1_n_0       |                             |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out | _pot_core/POT2[7]_i_1_n_0       |                             |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out | _freq_control/t1_b0/pren_reg[2] | _pot_core/ALLPOT[7]_i_1_n_0 |                3 |              8 |         2.67 |
-|  clk_0/inst/clk_out | _ser_core/ibstart/prep_reg[1]   | _ser_core/istate/Q0_out     |                2 |              9 |         4.50 |
-|  clk179_IBUF_BUFG   |                                 |                             |                4 |             12 |         3.00 |
-|  clk_0/inst/clk_out |                                 |                             |                8 |             26 |         3.25 |
-|  clk_0/inst/clk_out | _io_core/enp                    |                             |               40 |            153 |         3.83 |
-| ~clk_0/inst/clk_out | _freq_control/t1_b0/pren_reg[2] |                             |               47 |            173 |         3.68 |
-+---------------------+---------------------------------+-----------------------------+------------------+----------------+--------------+
++----------------------+---------------------------------+------------------------------+------------------+----------------+--------------+
+|     Clock Signal     |          Enable Signal          |       Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------+---------------------------------+------------------------------+------------------+----------------+--------------+
+|  clk_0/inst/clk_out1 | _io_core/AQ                     |                              |                1 |              4 |         4.00 |
+|  clk179_IBUF_BUFG    |                                 |                              |                1 |              4 |         4.00 |
+| ~clk_0/inst/clk_out1 |                                 |                              |                2 |              5 |         2.50 |
+|  clk_0/inst/clk_out1 | _key_core/b0/prep_reg[1]        |                              |                2 |              6 |         3.00 |
+|  clk_0/inst/clk_out1 | _key_core/b1/E[0]               |                              |                2 |              8 |         4.00 |
+|  clk_0/inst/clk_out1 | _ser_core/ob7/Qint              |                              |                3 |              8 |         2.67 |
+|  clk_0/inst/clk_out1 | _ser_core/istate/E[0]           |                              |                1 |              8 |         8.00 |
+| ~clk_0/inst/clk_out1 | _pot_core/POT4[7]_i_1_n_0       |                              |                5 |              8 |         1.60 |
+| ~clk_0/inst/clk_out1 | _pot_core/POT6[7]_i_1_n_0       |                              |                3 |              8 |         2.67 |
+| ~clk_0/inst/clk_out1 | _pot_core/POT1[7]_i_1_n_0       |                              |                3 |              8 |         2.67 |
+| ~clk_0/inst/clk_out1 | _pot_core/POT0[7]_i_1_n_0       |                              |                1 |              8 |         8.00 |
+| ~clk_0/inst/clk_out1 | _pot_core/POT2[7]_i_1_n_0       |                              |                1 |              8 |         8.00 |
+| ~clk_0/inst/clk_out1 | _pot_core/POT5[7]_i_1_n_0       |                              |                1 |              8 |         8.00 |
+| ~clk_0/inst/clk_out1 | _pot_core/POT7[7]_i_1_n_0       |                              |                1 |              8 |         8.00 |
+| ~clk_0/inst/clk_out1 | _pot_core/POT3[7]_i_1_n_0       |                              |                1 |              8 |         8.00 |
+| ~clk_0/inst/clk_out1 | _io_core/AQ_reg[2]_0            |                              |                3 |              8 |         2.67 |
+| ~clk_0/inst/clk_out1 | _io_core/AQ_reg[2]_1            |                              |                2 |              8 |         4.00 |
+| ~clk_0/inst/clk_out1 | _io_core/AQ_reg[3]_4            |                              |                3 |              8 |         2.67 |
+| ~clk_0/inst/clk_out1 | _io_core/nDout_0                |                              |                2 |              8 |         4.00 |
+| ~clk_0/inst/clk_out1 | _io_core/nDout                  |                              |                2 |              8 |         4.00 |
+| ~clk_0/inst/clk_out1 | _io_core/AQ_reg[3]_1[0]         |                              |                1 |              8 |         8.00 |
+| ~clk_0/inst/clk_out1 | _io_core/AQ_reg[1]_0[0]         |                              |                2 |              8 |         4.00 |
+| ~clk_0/inst/clk_out1 | _io_core/AQ_reg[3]_2[0]         |                              |                2 |              8 |         4.00 |
+| ~clk_0/inst/clk_out1 | _io_core/AQ_reg[0]_0[0]         |                              |                2 |              8 |         4.00 |
+| ~clk_0/inst/clk_out1 | _io_core/writeEn2_reg_1[0]      |                              |                3 |              8 |         2.67 |
+| ~clk_0/inst/clk_out1 | _io_core/writeEn2_reg_0[0]      |                              |                2 |              8 |         4.00 |
+| ~clk_0/inst/clk_out1 | _io_core/E[0]                   |                              |                1 |              8 |         8.00 |
+| ~clk179_IBUF_BUFG    |                                 |                              |                3 |              8 |         2.67 |
+|  clk_0/inst/clk_out1 | _ser_core/ibstart/prep_reg[1]   | _ser_core/istate/prep_reg[1] |                2 |              9 |         4.50 |
+|  clk_0/inst/clk_out1 |                                 |                              |                7 |             22 |         3.14 |
+|  clk_0/inst/clk_out1 | _io_core/enp                    |                              |               49 |            157 |         3.20 |
+| ~clk_0/inst/clk_out1 | _freq_control/t4_b0/pren_reg[2] |                              |               47 |            181 |         3.85 |
++----------------------+---------------------------------+------------------------------+------------------+----------------+--------------+
 
 

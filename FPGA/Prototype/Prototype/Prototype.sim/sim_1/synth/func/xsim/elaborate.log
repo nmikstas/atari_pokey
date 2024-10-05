@@ -1,6 +1,6 @@
 Vivado Simulator 2020.2
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7cb389490f9c4457a1dfb332d44b6877 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot POKEY_Top_func_synth xil_defaultlib.POKEY_Top xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 7cb389490f9c4457a1dfb332d44b6877 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot tb_POKEY_Top_func_synth xil_defaultlib.tb_POKEY_Top xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -9,9 +9,9 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.FDRE(IS_C_INVERTED=1'b1)
 Compiling module unisims_ver.OBUF
 Compiling module unisims_ver.LUT6
-Compiling module unisims_ver.FDRE(IS_C_INVERTED=1'b1)
 Compiling module unisims_ver.x_lut3_mux8
 Compiling module unisims_ver.LUT3
 Compiling module unisims_ver.LUT4
@@ -129,5 +129,6 @@ Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
 Compiling module xil_defaultlib.clk_wiz_0
 Compiling module unisims_ver.IOBUF
 Compiling module xil_defaultlib.POKEY_Top
+Compiling module xil_defaultlib.tb_POKEY_Top
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot POKEY_Top_func_synth
+Built simulation snapshot tb_POKEY_Top_func_synth

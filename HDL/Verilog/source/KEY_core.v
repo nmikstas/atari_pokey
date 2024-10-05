@@ -53,8 +53,11 @@ module KEY_core
     KEY_PLA kb_pla(iKR1, keyQ[0], keyQ[1], debComp, keyD[0], keyD[1], nLdComp, nLdKbus);
 
     //State registers.
-    cell2p b0(enn, clk, keyD[0], ~keybClk, ~SKCTLS[1], keyQ[0]);
-    cell2p b1(enn, clk, keyD[1], ~keybClk, ~SKCTLS[1], keyQ[1]);    
+    //**********Required for disabled debounce to work properly**********
+    cell2p b0(enn, clk, keyD[0], ~keybClk | (~SKCTLS[0] & match & ~nLdKbus), ~SKCTLS[1], keyQ[0]);
+    cell2p b1(enn, clk, keyD[1], ~keybClk | (~SKCTLS[0] & match & ~nLdKbus), ~SKCTLS[1], keyQ[1]);    
+    //cell2p b0(enn, clk, keyD[0], ~keybClk, ~SKCTLS[1], keyQ[0]);
+    //cell2p b1(enn, clk, keyD[1], ~keybClk, ~SKCTLS[1], keyQ[1]);    
 
     //------------------------Count, compare and register-----------------------
 
@@ -90,7 +93,9 @@ module KEY_core
     assign kbCmpLd = ~(nLdComp | keybClk);
 
     //Read data register load signal.
-    assign intLd = ~(nLdKbus | keybClk);
+    //**********Required for disabled debounce to work properly**********
+    assign intLd = ~(nLdKbus | keybClk) | (~SKCTLS[0] & match & ~nLdKbus);
+    //assign intLd = ~(nLdKbus | keybClk);
     assign kbCodeLd = intLd;
 
     //--------------------Output and shift and control detect-------------------

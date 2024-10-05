@@ -71,6 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -83,6 +84,7 @@ set_property parent.project_path D:/work/Arcade+Projects/atari_pokey/FPGA/Protot
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property board_part digilentinc.com:cmod_a7-35t:part0:1.2 [current_project]
 set_property ip_output_repo d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
@@ -121,10 +123,10 @@ read_verilog -library xil_defaultlib {
   D:/work/Arcade+Projects/atari_pokey/HDL/Verilog/source/poly_core.v
   D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/sources_1/new/POKEY_Top.v
 }
-read_ip -quiet D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all d:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
