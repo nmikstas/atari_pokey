@@ -1,0 +1,78 @@
+Selecting top level module POKEY_Top
+@N: CG364 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v":752:7:752:18|Synthesizing module SB_PLL40_PAD in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v":1:7:1:20|Synthesizing module Prototype2_pll in library work.
+
+@W: CG781 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v":14:45:14:45|Input EXTFEEDBACK on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v":15:46:15:46|Input DYNAMICDELAY on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v":18:49:18:49|Input LATCHINPUTVALUE on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v":20:37:20:37|Input SDI on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v":22:38:22:38|Input SCLK on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\IO_core.v":5:7:5:13|Synthesizing module IO_core in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SKCTLS_reg.v":5:7:5:16|Synthesizing module SKCTLS_reg in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\AUDCTL_reg.v":5:7:5:16|Synthesizing module AUDCTL_reg in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SKSTAT_reg.v":5:7:5:16|Synthesizing module SKSTAT_reg in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\IRQ_core.v":5:7:5:14|Synthesizing module IRQ_core in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\clock_gen_core.v":5:7:5:20|Synthesizing module clock_gen_core in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\poly_core.v":5:7:5:15|Synthesizing module poly_core in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell23.v":5:7:5:12|Synthesizing module cell23 in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\POT_core.v":5:7:5:14|Synthesizing module POT_core in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\KEY_PLA.v":5:7:5:13|Synthesizing module KEY_PLA in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell2p.v":5:7:5:12|Synthesizing module cell2p in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell3.v":5:7:5:11|Synthesizing module cell3 in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell6.v":5:7:5:11|Synthesizing module cell6 in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell4.v":5:7:5:11|Synthesizing module cell4 in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\KEY_core.v":5:7:5:14|Synthesizing module KEY_core in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell24option1.v":5:7:5:19|Synthesizing module cell24option1 in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell24.v":5:7:5:12|Synthesizing module cell24 in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell20.v":5:7:5:12|Synthesizing module cell20 in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\freq_control.v":5:7:5:18|Synthesizing module freq_control in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cel11.v":5:7:5:12|Synthesizing module cell11 in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell2r.v":5:7:5:12|Synthesizing module cell2r in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\aud_control_hp.v":5:7:5:20|Synthesizing module aud_control_hp in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\aud_control.v":5:7:5:17|Synthesizing module aud_control in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell2pr.v":5:7:5:13|Synthesizing module cell2pr in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell17.v":5:7:5:12|Synthesizing module cell17 in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell25.v":5:7:5:12|Synthesizing module cell25 in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SERIN_PLA.v":5:7:5:15|Synthesizing module SERIN_PLA in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell16.v":5:7:5:12|Synthesizing module cell16 in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell15.v":5:7:5:12|Synthesizing module cell15 in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SEROUT_PLA.v":5:7:5:16|Synthesizing module SEROUT_PLA in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SER_core.v":5:7:5:14|Synthesizing module SER_core in library work.
+
+@N: CG364 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\POKEY_Top.v":3:7:3:15|Synthesizing module POKEY_Top in library work.
+
+@W: CG1273 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\POKEY_Top.v":97:51:97:56|An input port (port sysclk) is the target of an assignment - please check if this is intentional
+@N: CL135 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SER_core.v":211:4:211:9|Found sequential shift sdiClk with address depth of 3 words and data bit width of 1.
+@N: CL135 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SER_core.v":211:4:211:9|Found sequential shift oShift with address depth of 3 words and data bit width of 1.
+@N: CL201 :"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\clock_gen_core.v":38:4:38:9|Trying to extract state machine for register lfsr64k.

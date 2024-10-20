@@ -1,2 +1,3 @@
 Vivado Simulator 2020.2
 Time resolution is 1 ps
+$stop called at time : 164283260 ps : File "D:/work/Arcade+Projects/atari_pokey/FPGA/Prototype/Prototype/Prototype.srcs/sim_1/new/tb_POKEY_Top.v" Line 373

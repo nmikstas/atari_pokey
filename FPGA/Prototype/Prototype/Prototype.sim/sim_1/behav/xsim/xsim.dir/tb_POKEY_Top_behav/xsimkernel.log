@@ -1,7 +1,7 @@
-Running: xsim.dir/tb_POKEY_Top_behav/xsimk.exe -simmode gui -wdb tb_POKEY_Top_behav.wdb -simrunnum 0 -socket 59949
+Running: xsim.dir/tb_POKEY_Top_behav/xsimk.exe -simmode gui -wdb tb_POKEY_Top_behav.wdb -simrunnum 0 -socket 65277
 Design successfully loaded
-Design Loading Memory Usage: 6760 KB (Peak: 6760 KB)
-Design Loading CPU Usage: 0 ms
+Design Loading Memory Usage: 6772 KB (Peak: 6772 KB)
+Design Loading CPU Usage: 62 ms
 Simulation completed
-Simulation Memory Usage: 16736 KB (Peak: 16736 KB)
-Simulation CPU Usage: 26375 ms
+Simulation Memory Usage: 9304 KB (Peak: 9304 KB)
+Simulation CPU Usage: 655 ms

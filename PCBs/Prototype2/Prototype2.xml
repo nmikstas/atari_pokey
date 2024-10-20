@@ -1,0 +1,1961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>D:\work\Arcade+Projects\atari_pokey\PCBs\Prototype2\Prototype2.kicad_sch</source>
+    <date>10/17/2024 11:27:16 AM</date>
+    <tool>Eeschema 7.0.9</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Prototype2.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>.1uf</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0be8eaf2-d282-4e93-b523-65ee710bcd1b</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>.1uf</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a9f7cc74-5338-4786-991f-f852ac5dbbda</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>.1uf</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c8eff8e-0726-4f05-bcdc-d2d105478fdd</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>.1uf</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08d96f4b-3d53-46f9-88b9-514f8c4bbb4e</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>.1uf</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b00746b-4f58-4d4b-a9b6-a0deb8a6f91d</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>.1uf</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8779d9f5-22fc-4c20-8cce-e28de9219e7f</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>.1uf</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>274cbc0c-628f-480d-ab86-4ea638eb07e6</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>.1uf</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b0810cd2-3482-4113-9ae5-d9c1b37b8f66</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>.1uf</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6d4e83a4-ddf7-4259-b570-74319e1c4164</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>10uf</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>381c92ae-1f30-4a85-b84c-e57a5e469ba2</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>.1uf</value>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7addcb8e-52c5-44d4-98ef-e1ec072656e0</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>~</value>
+      <footprint>POKEY_Footprints:Proto-72Pin</footprint>
+      <libsource lib="POKEY" part="Proto_Con" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1f0d4f5e-465c-411c-9d18-24fe05cf6344</tstamps>
+    </comp>
+    <comp ref="J5">
+      <value>2x20_Conn</value>
+      <footprint>POKEY_Footprints:Con_2X20</footprint>
+      <libsource lib="POKEY" part="2x20_Conn" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>46589350-a262-47a9-828d-e79608473f06</tstamps>
+    </comp>
+    <comp ref="J6">
+      <value>Conn_01x03_Pin</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical</footprint>
+      <libsource lib="Connector" part="Conn_01x03_Pin" description="Generic connector, single row, 01x03, script generated"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x03, script generated"/>
+      <property name="ki_keywords" value="connector"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6c0b7380-cfc2-49e4-96fa-51afcd42b1dd</tstamps>
+    </comp>
+    <comp ref="Q1">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a8fec3b9-2b78-42c7-8aeb-34b837273fb8</tstamps>
+    </comp>
+    <comp ref="Q2">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8ff8b889-bcf3-4637-babf-106aed20ddab</tstamps>
+    </comp>
+    <comp ref="Q3">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>713e829f-9d55-4007-90d0-2fa16640ef78</tstamps>
+    </comp>
+    <comp ref="Q4">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>90ef7264-037f-4952-a6a3-b6608e70d085</tstamps>
+    </comp>
+    <comp ref="Q5">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fc52b7d2-71ee-4f9d-9344-ef0c5519ccc1</tstamps>
+    </comp>
+    <comp ref="Q6">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3eb14bb6-58ec-43fc-afc6-f2e33db67b76</tstamps>
+    </comp>
+    <comp ref="Q7">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>93e2d4cd-4f42-4399-a85a-228ec50e9b73</tstamps>
+    </comp>
+    <comp ref="Q8">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ca9ffcc9-d758-4906-9f75-70f75c4a22c8</tstamps>
+    </comp>
+    <comp ref="Q9">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0d1671df-7627-453e-8172-092b39ae019a</tstamps>
+    </comp>
+    <comp ref="Q10">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>71585cc8-8ff2-4b39-8f5b-cdaafbbb27c1</tstamps>
+    </comp>
+    <comp ref="Q11">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>43517e25-6a82-47b6-b9e7-fa7211bf330d</tstamps>
+    </comp>
+    <comp ref="Q12">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>920f1971-8be8-4f36-afbc-c70ff9144281</tstamps>
+    </comp>
+    <comp ref="Q13">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>de36000e-fd76-4c6f-8422-1c27796bb14a</tstamps>
+    </comp>
+    <comp ref="Q14">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eea6b6bd-edfa-47f1-bdee-ab49d6aa7f7e</tstamps>
+    </comp>
+    <comp ref="Q15">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>58766720-5eaa-4a69-9503-5da887ee524b</tstamps>
+    </comp>
+    <comp ref="Q16">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>38a46994-a41c-4e5d-b1c9-bd679db03c9e</tstamps>
+    </comp>
+    <comp ref="Q17">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a4ee595a-02f8-4a81-ab40-ca8d93b108e1</tstamps>
+    </comp>
+    <comp ref="Q18">
+      <value>SSM3K72KCT</value>
+      <footprint>POKEY_Footprints:CST3_TOS</footprint>
+      <libsource lib="POKEY" part="MOSFET1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>37dd639d-d896-4b8b-beb7-2c430e2f4bd1</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>825 1%</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c6d17a57-7173-4f41-a9fd-4510dc03ac02</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>1.65K 1%</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>40e3bd41-32dc-4f98-ad41-a75e00b5d1d2</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>3.3K 1%</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4dc7fbac-35e4-4e33-8824-8a62dea3a955</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>7.68K 1%</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c26cb5d-caa2-42b7-885d-e616993d0a96</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>24K 1%</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d6aae1e8-1ec4-45e8-ae16-9672fe2d8c5d</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>75K 1%</value>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5061d1d7-bad7-40f5-8b14-b5de5ad612bb</tstamps>
+    </comp>
+    <comp ref="TP1">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b85a72be-b7a3-4042-a633-1fc5053b8e40</tstamps>
+    </comp>
+    <comp ref="TP2">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2892bb75-0546-4bef-b4e3-2d13f3aff3c9</tstamps>
+    </comp>
+    <comp ref="TP3">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f47da697-8301-4bd7-aedb-1f6df84d463a</tstamps>
+    </comp>
+    <comp ref="TP4">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30ab50d5-90f8-4ac0-aff5-2e8c3af2688d</tstamps>
+    </comp>
+    <comp ref="TP5">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0e9a4b63-7c90-4f5e-8c3a-86bac7bae7b0</tstamps>
+    </comp>
+    <comp ref="TP6">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f6bdc111-bdda-41ac-add8-c7316dff675d</tstamps>
+    </comp>
+    <comp ref="TP7">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d22e551d-9bdc-4dbd-8e97-a6857dba5d80</tstamps>
+    </comp>
+    <comp ref="TP8">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>25f90f1c-3828-4587-a742-aee9e21c7371</tstamps>
+    </comp>
+    <comp ref="TP9">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eb00d10e-5b6d-4f76-9ebc-f907fe4ec64c</tstamps>
+    </comp>
+    <comp ref="TP10">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>edb4a287-fd13-49d7-8ec1-3a0f014c054c</tstamps>
+    </comp>
+    <comp ref="TP11">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>80f5a8d3-41ce-4053-aada-c3c46f26831f</tstamps>
+    </comp>
+    <comp ref="TP12">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3f164505-da48-43ea-860f-427fb9f02db8</tstamps>
+    </comp>
+    <comp ref="TP13">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>61ca184f-86ec-4aac-9bb8-2bedafae4f5f</tstamps>
+    </comp>
+    <comp ref="TP14">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>64e41a48-cff4-44b9-9e47-81cb654f2b4f</tstamps>
+    </comp>
+    <comp ref="TP15">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>737678e1-5cd1-4062-86b9-2ff770135331</tstamps>
+    </comp>
+    <comp ref="TP16">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>644714f1-9a0b-4798-a9b0-55ea938e3a21</tstamps>
+    </comp>
+    <comp ref="TP17">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a753deec-3ff5-422d-88fc-72b2f33118c7</tstamps>
+    </comp>
+    <comp ref="TP18">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>70d8d646-ed6f-4094-a7ce-65d06ed79cb3</tstamps>
+    </comp>
+    <comp ref="TP19">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1a92945d-eb71-4a07-88a6-4fdcd4cc716c</tstamps>
+    </comp>
+    <comp ref="TP20">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a904f17b-7527-4f08-b1e4-672dde0c5839</tstamps>
+    </comp>
+    <comp ref="TP21">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b23c9117-027f-42db-8367-6601c6a73e83</tstamps>
+    </comp>
+    <comp ref="TP22">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>44a259ff-7888-474f-ac1c-4cede077c31e</tstamps>
+    </comp>
+    <comp ref="TP23">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4d97d42b-6705-4974-8eb8-84a8b23425fc</tstamps>
+    </comp>
+    <comp ref="TP24">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>da7daa45-0a24-45f2-bb03-9d9e9ae0f029</tstamps>
+    </comp>
+    <comp ref="TP25">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d16a89e7-33d0-42be-bf61-25a4a00c2d09</tstamps>
+    </comp>
+    <comp ref="TP26">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>41ad1120-3863-4f8b-8b0b-fe9b65b37af6</tstamps>
+    </comp>
+    <comp ref="TP27">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>342ae640-ed10-4112-8f33-81d7b3e66cb6</tstamps>
+    </comp>
+    <comp ref="TP28">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8c6b80e4-f726-449b-a5cf-61cb9f3f5b96</tstamps>
+    </comp>
+    <comp ref="TP29">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a505605f-e86e-4b84-bcee-8698a4029204</tstamps>
+    </comp>
+    <comp ref="TP30">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>622e0b3f-9916-4350-b29b-ff476c65dec2</tstamps>
+    </comp>
+    <comp ref="TP31">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f2661db4-913f-4552-af7d-a018466bf83a</tstamps>
+    </comp>
+    <comp ref="TP32">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cecb5b76-21ad-458a-b716-9565a5b44e8b</tstamps>
+    </comp>
+    <comp ref="TP33">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1348ce73-5ff8-4d9d-a62f-b47e33a308b3</tstamps>
+    </comp>
+    <comp ref="TP34">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7caf0e84-068b-4706-8245-f5384116d5b4</tstamps>
+    </comp>
+    <comp ref="TP35">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5417ab02-2c0c-409e-9961-79e20c21b569</tstamps>
+    </comp>
+    <comp ref="TP36">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>948bc7c2-5b74-4256-a6f5-614545019132</tstamps>
+    </comp>
+    <comp ref="TP37">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>42848527-5500-4289-a889-d7ef435de2cf</tstamps>
+    </comp>
+    <comp ref="TP38">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f2b2106d-cff6-4970-a6b5-61809a2a60c3</tstamps>
+    </comp>
+    <comp ref="TP54">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0207fbb9-cf38-4afb-a5a4-6d4750dec9d4</tstamps>
+    </comp>
+    <comp ref="TP55">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e37b2fc3-d2e1-460d-bf90-30d432de4894</tstamps>
+    </comp>
+    <comp ref="TP56">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f04fc9bf-f3fa-4660-a2ef-3973673eff69</tstamps>
+    </comp>
+    <comp ref="TP57">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3775d369-e9a3-4355-b237-1ed217afd770</tstamps>
+    </comp>
+    <comp ref="TP58">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>76d208b0-5937-4976-a920-bc332e49d533</tstamps>
+    </comp>
+    <comp ref="TP59">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e8bd2969-f401-40f4-a3e6-47bad8a957e1</tstamps>
+    </comp>
+    <comp ref="TP60">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aa221a5b-af60-4b67-8ba4-d098c85c0c51</tstamps>
+    </comp>
+    <comp ref="TP61">
+      <value>~</value>
+      <footprint>POKEY_Footprints:TP</footprint>
+      <libsource lib="Connector" part="TestPoint_Small" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f43e2ec7-e116-4fc3-9d93-2f50e54f4849</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>74LVC1G97</value>
+      <datasheet>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</datasheet>
+      <libsource lib="74xGxx" part="74LVC1G97" description="Configurable Multi-Function Single Gate, Low-Voltage CMOS"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Configurable Multi-Function Single Gate, Low-Voltage CMOS"/>
+      <property name="ki_keywords" value="Configurable Single Gate LVC CMOS"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b2da7bed-41fb-44da-9686-5cd53b5b846e</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>74LVC245</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74LS245</datasheet>
+      <libsource lib="74xx" part="74LS245" description="Octal BUS Transceivers, 3-State outputs"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Octal BUS Transceivers, 3-State outputs"/>
+      <property name="ki_keywords" value="TTL BUS 3State"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aafcdd25-8064-478b-860c-348ba99d493c</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>74LVC3G14</value>
+      <footprint>POKEY_Footprints:YZP8</footprint>
+      <libsource lib="" part="74LVC3G14_2" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8bf30255-cef0-4263-822c-a88f181b15fd</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>74LVC3G14</value>
+      <footprint>POKEY_Footprints:YZP8</footprint>
+      <libsource lib="POKEY" part="74LVC3G14" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8d424b08-0342-43ce-ac30-96ae2160431c</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>74LVC3G14</value>
+      <footprint>POKEY_Footprints:YZP8</footprint>
+      <libsource lib="" part="74LVC3G14_1" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>43ef9923-5af6-4277-a215-5440534cc518</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>74LVC125</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74LVC125</datasheet>
+      <libsource lib="74xx" part="74LVC125" description="Quad buffer 3-State outputs"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Quad buffer 3-State outputs"/>
+      <property name="ki_keywords" value="TTL buffer 3State"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c69f1713-caff-4e41-b34d-e345cff5fd0d 954b0c98-b033-4034-8d60-b6ad543fa8ec a8e3b545-16d9-425c-bdf4-a232dae202e2 86f96f81-35f1-4c37-a92b-ca3db1b2b898 7bed3544-3a2a-4b73-bf72-a013e32f5826</tstamps>
+    </comp>
+    <comp ref="U7">
+      <value>74LVC125</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74LVC125</datasheet>
+      <libsource lib="74xx" part="74LVC125" description="Quad buffer 3-State outputs"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Quad buffer 3-State outputs"/>
+      <property name="ki_keywords" value="TTL buffer 3State"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>795bede9-1359-4122-ba84-5624d1597656 ba0638bb-b88c-4583-98cf-949f077e2a0a 351d87b5-a1f5-45d7-a3e2-231945688bae 16b88287-9c2a-4b17-9ca8-7051b29bc611 04c7aee4-0a53-4eae-82ca-32f61fe03696</tstamps>
+    </comp>
+    <comp ref="U8">
+      <value>74LVC125</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74LVC125</datasheet>
+      <libsource lib="74xx" part="74LVC125" description="Quad buffer 3-State outputs"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Quad buffer 3-State outputs"/>
+      <property name="ki_keywords" value="TTL buffer 3State"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>90ef8eec-ad41-4b8b-a572-cfb6ede8035a 404a7fb7-1732-483d-9988-afb29212404b 1763c3ba-8a9b-4085-802c-35a63d2bbef3 bbc6de86-9c06-47b7-bb4c-171e7a899923 0491e2eb-12eb-4f77-91d6-ab13a44d58a7</tstamps>
+    </comp>
+    <comp ref="U9">
+      <value>LD1117S33TR</value>
+      <footprint>POKEY_Footprints:Reg</footprint>
+      <datasheet>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="LD1117S33TR_SOT223" description="800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223"/>
+      <property name="ki_keywords" value="REGULATOR LDO 3.3V"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>88ddb66b-ba30-4403-8661-0676ae0a734e</tstamps>
+    </comp>
+    <comp ref="U10">
+      <value>74LVC125</value>
+      <datasheet>http://www.ti.com/lit/gpn/sn74LVC125</datasheet>
+      <libsource lib="74xx" part="74LVC125" description="Quad buffer 3-State outputs"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="Prototype2.kicad_sch"/>
+      <property name="ki_description" value="Quad buffer 3-State outputs"/>
+      <property name="ki_keywords" value="TTL buffer 3State"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8be28463-5132-4f48-93c1-b1239d68b8c5 fc926722-ce0c-4088-bd2e-5c1f9ea70855 5ba5d6bf-c231-46e3-b83a-a0f9012f78a2 9e86bc2f-226c-4c7b-b829-89d6598aa180 34e432e4-42ee-4974-9688-7b25e91d34da</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="" part="74LVC3G14_1">
+      <fields>
+        <field name="Reference">U</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="1A" type="input"/>
+        <pin num="A2" name="VCC" type="power_in"/>
+        <pin num="B1" name="3Y" type="output"/>
+        <pin num="B2" name="1Y" type="output"/>
+        <pin num="C1" name="2A" type="input"/>
+        <pin num="C2" name="3A" type="input"/>
+        <pin num="D1" name="GND" type="power_in"/>
+        <pin num="D2" name="2Y" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="" part="74LVC3G14_2">
+      <fields>
+        <field name="Reference">U</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="1A" type="input"/>
+        <pin num="A2" name="VCC" type="power_in"/>
+        <pin num="B1" name="3Y" type="output"/>
+        <pin num="B2" name="1Y" type="output"/>
+        <pin num="C1" name="2A" type="input"/>
+        <pin num="C2" name="3A" type="input"/>
+        <pin num="D1" name="GND" type="power_in"/>
+        <pin num="D2" name="2Y" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xGxx" part="74LVC1G97">
+      <description>Configurable Multi-Function Single Gate, Low-Voltage CMOS</description>
+      <docs>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</docs>
+      <footprints>
+        <fp>SOT*</fp>
+        <fp>SC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LVC1G97</field>
+        <field name="Datasheet">http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN1" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="IN0" type="input"/>
+        <pin num="4" name="Y" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+        <pin num="6" name="IN2" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xx" part="74LS245">
+      <description>Octal BUS Transceivers, 3-State outputs</description>
+      <docs>http://www.ti.com/lit/gpn/sn74LS245</docs>
+      <footprints>
+        <fp>DIP?20*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LS245</field>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/sn74LS245</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A-&gt;B" type="input"/>
+        <pin num="2" name="A0" type="tri_state"/>
+        <pin num="3" name="A1" type="tri_state"/>
+        <pin num="4" name="A2" type="tri_state"/>
+        <pin num="5" name="A3" type="tri_state"/>
+        <pin num="6" name="A4" type="tri_state"/>
+        <pin num="7" name="A5" type="tri_state"/>
+        <pin num="8" name="A6" type="tri_state"/>
+        <pin num="9" name="A7" type="tri_state"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="B7" type="tri_state"/>
+        <pin num="12" name="B6" type="tri_state"/>
+        <pin num="13" name="B5" type="tri_state"/>
+        <pin num="14" name="B4" type="tri_state"/>
+        <pin num="15" name="B3" type="tri_state"/>
+        <pin num="16" name="B2" type="tri_state"/>
+        <pin num="17" name="B1" type="tri_state"/>
+        <pin num="18" name="B0" type="tri_state"/>
+        <pin num="19" name="CE" type="input"/>
+        <pin num="20" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="74xx" part="74LVC125">
+      <description>Quad buffer 3-State outputs</description>
+      <docs>http://www.ti.com/lit/gpn/sn74LVC125</docs>
+      <footprints>
+        <fp>DIP*W7.62mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74LVC125</field>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/sn74LVC125</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="" type="input"/>
+        <pin num="3" name="" type="tri_state"/>
+        <pin num="4" name="" type="input"/>
+        <pin num="5" name="" type="input"/>
+        <pin num="6" name="" type="tri_state"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="" type="tri_state"/>
+        <pin num="9" name="" type="input"/>
+        <pin num="10" name="" type="input"/>
+        <pin num="11" name="" type="tri_state"/>
+        <pin num="12" name="" type="input"/>
+        <pin num="13" name="" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x03_Pin">
+      <description>Generic connector, single row, 01x03, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x03_Pin</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint_Small">
+      <description>test point</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint_Small</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="POKEY" part="2x20_Conn">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">2x20_Conn</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="passive"/>
+        <pin num="2" name="D3" type="passive"/>
+        <pin num="3" name="D4" type="passive"/>
+        <pin num="4" name="D5" type="passive"/>
+        <pin num="5" name="D6" type="passive"/>
+        <pin num="6" name="D7" type="passive"/>
+        <pin num="7" name="PHI2" type="passive"/>
+        <pin num="8" name="P6" type="passive"/>
+        <pin num="9" name="P7" type="passive"/>
+        <pin num="10" name="P4" type="passive"/>
+        <pin num="11" name="P5" type="passive"/>
+        <pin num="12" name="P2" type="passive"/>
+        <pin num="13" name="P3" type="passive"/>
+        <pin num="14" name="P0" type="passive"/>
+        <pin num="15" name="P1" type="passive"/>
+        <pin num="16" name="~{KR2}" type="passive"/>
+        <pin num="17" name="+5V" type="passive"/>
+        <pin num="18" name="~{K5}" type="passive"/>
+        <pin num="19" name="~{K4}" type="passive"/>
+        <pin num="20" name="~{K3}" type="passive"/>
+        <pin num="21" name="~{K2}" type="passive"/>
+        <pin num="22" name="~{K1}" type="passive"/>
+        <pin num="23" name="~{K0}" type="passive"/>
+        <pin num="24" name="SID" type="passive"/>
+        <pin num="25" name="~{KR1}" type="passive"/>
+        <pin num="26" name="BCLK" type="passive"/>
+        <pin num="27" name="OCLK" type="passive"/>
+        <pin num="28" name="SOD" type="passive"/>
+        <pin num="29" name="~{IRQ}" type="passive"/>
+        <pin num="30" name="~{CS0}" type="passive"/>
+        <pin num="31" name="CS1" type="passive"/>
+        <pin num="32" name="R/W" type="passive"/>
+        <pin num="33" name="A3" type="passive"/>
+        <pin num="34" name="A2" type="passive"/>
+        <pin num="35" name="A1" type="passive"/>
+        <pin num="36" name="A0" type="passive"/>
+        <pin num="37" name="AUDIO" type="passive"/>
+        <pin num="38" name="D0" type="passive"/>
+        <pin num="39" name="D1" type="passive"/>
+        <pin num="40" name="D2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="POKEY" part="74LVC3G14">
+      <fields>
+        <field name="Reference">U</field>
+      </fields>
+      <pins>
+        <pin num="A1" name="1A" type="input"/>
+        <pin num="A2" name="VCC" type="power_in"/>
+        <pin num="B1" name="3Y" type="output"/>
+        <pin num="B2" name="1Y" type="output"/>
+        <pin num="C1" name="2A" type="input"/>
+        <pin num="C2" name="3A" type="input"/>
+        <pin num="D1" name="GND" type="power_in"/>
+        <pin num="D2" name="2Y" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="POKEY" part="MOSFET1">
+      <fields>
+        <field name="Reference">Q</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="POKEY" part="Proto_Con">
+      <fields>
+        <field name="Reference">J</field>
+      </fields>
+      <pins>
+        <pin num="1" name="5V1" type="passive"/>
+        <pin num="2" name="G1" type="passive"/>
+        <pin num="3" name="3V1" type="passive"/>
+        <pin num="4" name="G2" type="passive"/>
+        <pin num="5" name="A48" type="passive"/>
+        <pin num="6" name="A49" type="passive"/>
+        <pin num="7" name="A3" type="passive"/>
+        <pin num="8" name="A2" type="passive"/>
+        <pin num="9" name="A45" type="passive"/>
+        <pin num="10" name="A46" type="passive"/>
+        <pin num="11" name="A6" type="passive"/>
+        <pin num="12" name="A5" type="passive"/>
+        <pin num="13" name="A42" type="passive"/>
+        <pin num="14" name="A43" type="passive"/>
+        <pin num="15" name="A9" type="passive"/>
+        <pin num="16" name="A8" type="passive"/>
+        <pin num="17" name="A39" type="passive"/>
+        <pin num="18" name="A40" type="passive"/>
+        <pin num="19" name="A12" type="passive"/>
+        <pin num="20" name="A11" type="passive"/>
+        <pin num="21" name="A36" type="passive"/>
+        <pin num="22" name="A37" type="passive"/>
+        <pin num="23" name="A15" type="passive"/>
+        <pin num="24" name="A14" type="passive"/>
+        <pin num="25" name="A33" type="passive"/>
+        <pin num="26" name="A34" type="passive"/>
+        <pin num="27" name="A18" type="passive"/>
+        <pin num="28" name="A17" type="passive"/>
+        <pin num="29" name="A30" type="passive"/>
+        <pin num="30" name="A31" type="passive"/>
+        <pin num="31" name="A21" type="passive"/>
+        <pin num="32" name="A20" type="passive"/>
+        <pin num="33" name="A27" type="passive"/>
+        <pin num="34" name="A28" type="passive"/>
+        <pin num="35" name="A24" type="passive"/>
+        <pin num="36" name="A23" type="passive"/>
+        <pin num="37" name="5V2" type="passive"/>
+        <pin num="38" name="G3" type="passive"/>
+        <pin num="39" name="3V2" type="passive"/>
+        <pin num="40" name="G4" type="passive"/>
+        <pin num="41" name="B48" type="passive"/>
+        <pin num="42" name="B49" type="passive"/>
+        <pin num="43" name="B3" type="passive"/>
+        <pin num="44" name="B2" type="passive"/>
+        <pin num="45" name="B45" type="passive"/>
+        <pin num="46" name="B46" type="passive"/>
+        <pin num="47" name="B6" type="passive"/>
+        <pin num="48" name="B5" type="passive"/>
+        <pin num="49" name="B42" type="passive"/>
+        <pin num="50" name="B43" type="passive"/>
+        <pin num="51" name="B9" type="passive"/>
+        <pin num="52" name="B8" type="passive"/>
+        <pin num="53" name="B39" type="passive"/>
+        <pin num="54" name="B40" type="passive"/>
+        <pin num="55" name="B12" type="passive"/>
+        <pin num="56" name="B11" type="passive"/>
+        <pin num="57" name="B36" type="passive"/>
+        <pin num="58" name="B37" type="passive"/>
+        <pin num="59" name="B15" type="passive"/>
+        <pin num="60" name="B14" type="passive"/>
+        <pin num="61" name="B33" type="passive"/>
+        <pin num="62" name="B34" type="passive"/>
+        <pin num="63" name="B18" type="passive"/>
+        <pin num="64" name="B17" type="passive"/>
+        <pin num="65" name="B30" type="passive"/>
+        <pin num="66" name="B31" type="passive"/>
+        <pin num="67" name="B21" type="passive"/>
+        <pin num="68" name="B20" type="passive"/>
+        <pin num="69" name="B27" type="passive"/>
+        <pin num="70" name="B28" type="passive"/>
+        <pin num="71" name="B24" type="passive"/>
+        <pin num="72" name="B23" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="LD1117S33TR_SOT223">
+      <description>800mA Fixed Low Drop Positive Voltage Regulator, Fixed Output 3.3V, SOT-223</description>
+      <docs>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf</docs>
+      <footprints>
+        <fp>SOT?223*TabPin2*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LD1117S33TR_SOT223</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-223-3_TabPin2</field>
+        <field name="Datasheet">http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="74xGxx">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/74xGxx.kicad_sym</uri>
+    </library>
+    <library logical="74xx">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/74xx.kicad_sym</uri>
+    </library>
+    <library logical="Connector">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="POKEY">
+      <uri>D:/work/Arcade+Projects/atari_pokey/PCBs/Prototype1/POKEY.kicad_sym</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Regulator_Linear.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3.3V">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
+      <node ref="TP56" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP59" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="IN1" pintype="input"/>
+      <node ref="U1" pin="5" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U10" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U2" pin="20" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U3" pin="A2" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U4" pin="A2" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U5" pin="A2" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U6" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U7" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U8" pin="14" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="2" name="+5V">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="J1" pin="1" pinfunction="5V1" pintype="passive"/>
+      <node ref="J1" pin="37" pinfunction="5V2" pintype="passive"/>
+      <node ref="J5" pin="17" pinfunction="+5V" pintype="passive"/>
+      <node ref="TP55" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP58" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U9" pin="3" pinfunction="VI" pintype="power_in"/>
+    </net>
+    <net code="3" name="3V3_A">
+      <node ref="J1" pin="3" pinfunction="3V1" pintype="passive"/>
+      <node ref="J1" pin="39" pinfunction="3V2" pintype="passive"/>
+      <node ref="J6" pin="1" pinfunction="Pin_1" pintype="passive"/>
+    </net>
+    <net code="4" name="3V3_B">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="J6" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="U9" pin="2" pinfunction="VO" pintype="power_out"/>
+    </net>
+    <net code="5" name="A0">
+      <node ref="J5" pin="36" pinfunction="A0" pintype="passive"/>
+      <node ref="TP34" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U10" pin="2" pintype="input"/>
+    </net>
+    <net code="6" name="A1">
+      <node ref="J5" pin="35" pinfunction="A1" pintype="passive"/>
+      <node ref="TP33" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U10" pin="5" pintype="input"/>
+    </net>
+    <net code="7" name="A2">
+      <node ref="J5" pin="34" pinfunction="A2" pintype="passive"/>
+      <node ref="TP32" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U10" pin="9" pintype="input"/>
+    </net>
+    <net code="8" name="A3">
+      <node ref="J5" pin="33" pinfunction="A3" pintype="passive"/>
+      <node ref="TP31" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U10" pin="12" pintype="input"/>
+    </net>
+    <net code="9" name="AUDIO">
+      <node ref="J5" pin="37" pinfunction="AUDIO" pintype="passive"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="TP35" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="10" name="BCLK">
+      <node ref="J5" pin="26" pinfunction="BCLK" pintype="passive"/>
+      <node ref="Q15" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP24" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="C2" pinfunction="3A" pintype="input"/>
+    </net>
+    <net code="11" name="CS1">
+      <node ref="J5" pin="31" pinfunction="CS1" pintype="passive"/>
+      <node ref="TP29" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="IN0" pintype="input"/>
+    </net>
+    <net code="12" name="D0">
+      <node ref="J5" pin="38" pinfunction="D0" pintype="passive"/>
+      <node ref="TP36" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="18" pinfunction="B0" pintype="tri_state"/>
+    </net>
+    <net code="13" name="D1">
+      <node ref="J5" pin="39" pinfunction="D1" pintype="passive"/>
+      <node ref="TP37" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="17" pinfunction="B1" pintype="tri_state"/>
+    </net>
+    <net code="14" name="D2">
+      <node ref="J5" pin="40" pinfunction="D2" pintype="passive"/>
+      <node ref="TP38" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="16" pinfunction="B2" pintype="tri_state"/>
+    </net>
+    <net code="15" name="D3">
+      <node ref="J5" pin="2" pinfunction="D3" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="15" pinfunction="B3" pintype="tri_state"/>
+    </net>
+    <net code="16" name="D4">
+      <node ref="J5" pin="3" pinfunction="D4" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="14" pinfunction="B4" pintype="tri_state"/>
+    </net>
+    <net code="17" name="D5">
+      <node ref="J5" pin="4" pinfunction="D5" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="13" pinfunction="B5" pintype="tri_state"/>
+    </net>
+    <net code="18" name="D6">
+      <node ref="J5" pin="5" pinfunction="D6" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="12" pinfunction="B6" pintype="tri_state"/>
+    </net>
+    <net code="19" name="D7">
+      <node ref="J5" pin="6" pinfunction="D7" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="11" pinfunction="B7" pintype="tri_state"/>
+    </net>
+    <net code="20" name="GND">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="J1" pin="2" pinfunction="G1" pintype="passive"/>
+      <node ref="J1" pin="38" pinfunction="G3" pintype="passive"/>
+      <node ref="J1" pin="4" pinfunction="G2" pintype="passive"/>
+      <node ref="J1" pin="40" pinfunction="G4" pintype="passive"/>
+      <node ref="J5" pin="1" pinfunction="GND" pintype="passive"/>
+      <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q10" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q11" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q12" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q13" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q14" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q15" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q16" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q17" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q18" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q2" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q3" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q4" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q5" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q6" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q7" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q8" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="Q9" pin="2" pinfunction="S" pintype="passive"/>
+      <node ref="TP54" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP57" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP60" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="TP61" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U10" pin="1" pintype="input"/>
+      <node ref="U10" pin="10" pintype="input"/>
+      <node ref="U10" pin="13" pintype="input"/>
+      <node ref="U10" pin="4" pintype="input"/>
+      <node ref="U10" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="10" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="D1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="D1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="D1" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="1" pintype="input"/>
+      <node ref="U6" pin="10" pintype="input"/>
+      <node ref="U6" pin="13" pintype="input"/>
+      <node ref="U6" pin="4" pintype="input"/>
+      <node ref="U6" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U7" pin="1" pintype="input"/>
+      <node ref="U7" pin="10" pintype="input"/>
+      <node ref="U7" pin="13" pintype="input"/>
+      <node ref="U7" pin="4" pintype="input"/>
+      <node ref="U7" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U8" pin="1" pintype="input"/>
+      <node ref="U8" pin="10" pintype="input"/>
+      <node ref="U8" pin="13" pintype="input"/>
+      <node ref="U8" pin="4" pintype="input"/>
+      <node ref="U8" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U9" pin="1" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="21" name="Net-(Q1-D)">
+      <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+    </net>
+    <net code="22" name="Net-(Q2-D)">
+      <node ref="Q2" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+    </net>
+    <net code="23" name="Net-(Q3-D)">
+      <node ref="Q3" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R3" pin="2" pintype="passive"/>
+    </net>
+    <net code="24" name="Net-(Q4-D)">
+      <node ref="Q4" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R4" pin="2" pintype="passive"/>
+    </net>
+    <net code="25" name="Net-(Q5-D)">
+      <node ref="Q5" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="26" name="Net-(Q6-D)">
+      <node ref="Q6" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R6" pin="2" pintype="passive"/>
+    </net>
+    <net code="27" name="OCLK">
+      <node ref="J5" pin="27" pinfunction="OCLK" pintype="passive"/>
+      <node ref="Q16" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP25" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="28" name="P0">
+      <node ref="J5" pin="14" pinfunction="P0" pintype="passive"/>
+      <node ref="Q7" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP13" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="A1" pinfunction="1A" pintype="input"/>
+    </net>
+    <net code="29" name="P1">
+      <node ref="J5" pin="15" pinfunction="P1" pintype="passive"/>
+      <node ref="Q8" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP14" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="C1" pinfunction="2A" pintype="input"/>
+    </net>
+    <net code="30" name="P2">
+      <node ref="J5" pin="12" pinfunction="P2" pintype="passive"/>
+      <node ref="Q9" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP11" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="C2" pinfunction="3A" pintype="input"/>
+    </net>
+    <net code="31" name="P3">
+      <node ref="J5" pin="13" pinfunction="P3" pintype="passive"/>
+      <node ref="Q10" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP12" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="A1" pinfunction="1A" pintype="input"/>
+    </net>
+    <net code="32" name="P4">
+      <node ref="J5" pin="10" pinfunction="P4" pintype="passive"/>
+      <node ref="Q11" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="C1" pinfunction="2A" pintype="input"/>
+    </net>
+    <net code="33" name="P5">
+      <node ref="J5" pin="11" pinfunction="P5" pintype="passive"/>
+      <node ref="Q12" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP10" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="C2" pinfunction="3A" pintype="input"/>
+    </net>
+    <net code="34" name="P6">
+      <node ref="J5" pin="8" pinfunction="P6" pintype="passive"/>
+      <node ref="Q13" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="A1" pinfunction="1A" pintype="input"/>
+    </net>
+    <net code="35" name="P7">
+      <node ref="J5" pin="9" pinfunction="P7" pintype="passive"/>
+      <node ref="Q14" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP8" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="C1" pinfunction="2A" pintype="input"/>
+    </net>
+    <net code="36" name="PHI2">
+      <node ref="J5" pin="7" pinfunction="PHI2" pintype="passive"/>
+      <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U8" pin="2" pintype="input"/>
+    </net>
+    <net code="37" name="R{slash}W">
+      <node ref="J5" pin="32" pinfunction="R/W" pintype="passive"/>
+      <node ref="TP30" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="A-&gt;B" pintype="input"/>
+      <node ref="U8" pin="5" pintype="input"/>
+    </net>
+    <net code="38" name="SID">
+      <node ref="J5" pin="24" pinfunction="SID" pintype="passive"/>
+      <node ref="TP22" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U8" pin="9" pintype="input"/>
+    </net>
+    <net code="39" name="SOD">
+      <node ref="J5" pin="28" pinfunction="SOD" pintype="passive"/>
+      <node ref="Q18" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP26" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="40" name="_A0">
+      <node ref="J1" pin="23" pinfunction="A15" pintype="passive"/>
+      <node ref="U10" pin="3" pintype="tri_state"/>
+    </net>
+    <net code="41" name="_A1">
+      <node ref="J1" pin="28" pinfunction="A17" pintype="passive"/>
+      <node ref="U10" pin="6" pintype="tri_state"/>
+    </net>
+    <net code="42" name="_A2">
+      <node ref="J1" pin="27" pinfunction="A18" pintype="passive"/>
+      <node ref="U10" pin="8" pintype="tri_state"/>
+    </net>
+    <net code="43" name="_A3">
+      <node ref="J1" pin="32" pinfunction="A20" pintype="passive"/>
+      <node ref="U10" pin="11" pintype="tri_state"/>
+    </net>
+    <net code="44" name="_AUDIO0">
+      <node ref="J1" pin="12" pinfunction="A5" pintype="passive"/>
+      <node ref="Q6" pin="1" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="45" name="_AUDIO1">
+      <node ref="J1" pin="15" pinfunction="A9" pintype="passive"/>
+      <node ref="Q5" pin="1" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="46" name="_AUDIO2">
+      <node ref="J1" pin="16" pinfunction="A8" pintype="passive"/>
+      <node ref="Q4" pin="1" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="47" name="_AUDIO3">
+      <node ref="J1" pin="19" pinfunction="A12" pintype="passive"/>
+      <node ref="Q3" pin="1" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="48" name="_AUDIO4">
+      <node ref="J1" pin="20" pinfunction="A11" pintype="passive"/>
+      <node ref="Q2" pin="1" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="49" name="_AUDIO5">
+      <node ref="J1" pin="24" pinfunction="A14" pintype="passive"/>
+      <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="50" name="_BCLKI">
+      <node ref="J1" pin="47" pinfunction="B6" pintype="passive"/>
+      <node ref="U4" pin="B1" pinfunction="3Y" pintype="output"/>
+    </net>
+    <net code="51" name="_BCLKO">
+      <node ref="J1" pin="52" pinfunction="B8" pintype="passive"/>
+      <node ref="Q15" pin="1" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="52" name="_D0">
+      <node ref="J1" pin="11" pinfunction="A6" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="A0" pintype="tri_state"/>
+    </net>
+    <net code="53" name="_D1">
+      <node ref="J1" pin="8" pinfunction="A2" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="A1" pintype="tri_state"/>
+    </net>
+    <net code="54" name="_D2">
+      <node ref="J1" pin="7" pinfunction="A3" pintype="passive"/>
+      <node ref="U2" pin="4" pinfunction="A2" pintype="tri_state"/>
+    </net>
+    <net code="55" name="_D3">
+      <node ref="J1" pin="5" pinfunction="A48" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="A3" pintype="tri_state"/>
+    </net>
+    <net code="56" name="_D4">
+      <node ref="J1" pin="6" pinfunction="A49" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="A4" pintype="tri_state"/>
+    </net>
+    <net code="57" name="_D5">
+      <node ref="J1" pin="9" pinfunction="A45" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="A5" pintype="tri_state"/>
+    </net>
+    <net code="58" name="_D6">
+      <node ref="J1" pin="10" pinfunction="A46" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="A6" pintype="tri_state"/>
+    </net>
+    <net code="59" name="_D7">
+      <node ref="J1" pin="13" pinfunction="A42" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="A7" pintype="tri_state"/>
+    </net>
+    <net code="60" name="_DUMP">
+      <node ref="J1" pin="30" pinfunction="A31" pintype="passive"/>
+      <node ref="Q10" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="Q11" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="Q12" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="Q13" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="Q14" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="Q7" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="Q8" pin="1" pinfunction="G" pintype="input"/>
+      <node ref="Q9" pin="1" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="61" name="_OCLK">
+      <node ref="J1" pin="48" pinfunction="B5" pintype="passive"/>
+      <node ref="Q16" pin="1" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="62" name="_P0">
+      <node ref="J1" pin="26" pinfunction="A34" pintype="passive"/>
+      <node ref="U5" pin="B2" pinfunction="1Y" pintype="output"/>
+    </net>
+    <net code="63" name="_P1">
+      <node ref="J1" pin="29" pinfunction="A30" pintype="passive"/>
+      <node ref="U5" pin="D2" pinfunction="2Y" pintype="output"/>
+    </net>
+    <net code="64" name="_P2">
+      <node ref="J1" pin="22" pinfunction="A37" pintype="passive"/>
+      <node ref="U5" pin="B1" pinfunction="3Y" pintype="output"/>
+    </net>
+    <net code="65" name="_P3">
+      <node ref="J1" pin="25" pinfunction="A33" pintype="passive"/>
+      <node ref="U3" pin="B2" pinfunction="1Y" pintype="output"/>
+    </net>
+    <net code="66" name="_P4">
+      <node ref="J1" pin="18" pinfunction="A40" pintype="passive"/>
+      <node ref="U3" pin="D2" pinfunction="2Y" pintype="output"/>
+    </net>
+    <net code="67" name="_P5">
+      <node ref="J1" pin="21" pinfunction="A36" pintype="passive"/>
+      <node ref="U3" pin="B1" pinfunction="3Y" pintype="output"/>
+    </net>
+    <net code="68" name="_P6">
+      <node ref="J1" pin="14" pinfunction="A43" pintype="passive"/>
+      <node ref="U4" pin="B2" pinfunction="1Y" pintype="output"/>
+    </net>
+    <net code="69" name="_P7">
+      <node ref="J1" pin="17" pinfunction="A39" pintype="passive"/>
+      <node ref="U4" pin="D2" pinfunction="2Y" pintype="output"/>
+    </net>
+    <net code="70" name="_PHI2">
+      <node ref="J1" pin="44" pinfunction="B2" pintype="passive"/>
+      <node ref="U8" pin="3" pintype="tri_state"/>
+    </net>
+    <net code="71" name="_R{slash}W">
+      <node ref="J1" pin="31" pinfunction="A21" pintype="passive"/>
+      <node ref="U8" pin="6" pintype="tri_state"/>
+    </net>
+    <net code="72" name="_SID">
+      <node ref="J1" pin="46" pinfunction="B46" pintype="passive"/>
+      <node ref="U8" pin="8" pintype="tri_state"/>
+    </net>
+    <net code="73" name="_SOD">
+      <node ref="J1" pin="43" pinfunction="B3" pintype="passive"/>
+      <node ref="Q18" pin="1" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="74" name="_~{IRQ}">
+      <node ref="J1" pin="35" pinfunction="A24" pintype="passive"/>
+      <node ref="Q17" pin="1" pinfunction="G" pintype="input"/>
+    </net>
+    <net code="75" name="_~{K0}">
+      <node ref="J1" pin="49" pinfunction="B42" pintype="passive"/>
+      <node ref="U7" pin="5" pintype="input"/>
+    </net>
+    <net code="76" name="_~{K1}">
+      <node ref="J1" pin="50" pinfunction="B43" pintype="passive"/>
+      <node ref="U7" pin="9" pintype="input"/>
+    </net>
+    <net code="77" name="_~{K2}">
+      <node ref="J1" pin="51" pinfunction="B9" pintype="passive"/>
+      <node ref="U7" pin="12" pintype="input"/>
+    </net>
+    <net code="78" name="_~{K3}">
+      <node ref="J1" pin="42" pinfunction="B49" pintype="passive"/>
+      <node ref="U6" pin="12" pintype="input"/>
+    </net>
+    <net code="79" name="_~{K4}">
+      <node ref="J1" pin="41" pinfunction="B48" pintype="passive"/>
+      <node ref="U6" pin="9" pintype="input"/>
+    </net>
+    <net code="80" name="_~{K5}">
+      <node ref="J1" pin="34" pinfunction="A28" pintype="passive"/>
+      <node ref="U6" pin="5" pintype="input"/>
+    </net>
+    <net code="81" name="_~{KR1}">
+      <node ref="J1" pin="45" pinfunction="B45" pintype="passive"/>
+      <node ref="U7" pin="3" pintype="tri_state"/>
+    </net>
+    <net code="82" name="_~{KR2}">
+      <node ref="J1" pin="33" pinfunction="A27" pintype="passive"/>
+      <node ref="U6" pin="3" pintype="tri_state"/>
+    </net>
+    <net code="83" name="unconnected-(J1-B11-Pad56)">
+      <node ref="J1" pin="56" pinfunction="B11" pintype="passive+no_connect"/>
+    </net>
+    <net code="84" name="unconnected-(J1-B12-Pad55)">
+      <node ref="J1" pin="55" pinfunction="B12" pintype="passive+no_connect"/>
+    </net>
+    <net code="85" name="unconnected-(J1-B14-Pad60)">
+      <node ref="J1" pin="60" pinfunction="B14" pintype="passive+no_connect"/>
+    </net>
+    <net code="86" name="unconnected-(J1-B15-Pad59)">
+      <node ref="J1" pin="59" pinfunction="B15" pintype="passive+no_connect"/>
+    </net>
+    <net code="87" name="unconnected-(J1-B17-Pad64)">
+      <node ref="J1" pin="64" pinfunction="B17" pintype="passive+no_connect"/>
+    </net>
+    <net code="88" name="unconnected-(J1-B18-Pad63)">
+      <node ref="J1" pin="63" pinfunction="B18" pintype="passive+no_connect"/>
+    </net>
+    <net code="89" name="unconnected-(J1-B20-Pad68)">
+      <node ref="J1" pin="68" pinfunction="B20" pintype="passive+no_connect"/>
+    </net>
+    <net code="90" name="unconnected-(J1-B21-Pad67)">
+      <node ref="J1" pin="67" pinfunction="B21" pintype="passive+no_connect"/>
+    </net>
+    <net code="91" name="unconnected-(J1-B23-Pad72)">
+      <node ref="J1" pin="72" pinfunction="B23" pintype="passive+no_connect"/>
+    </net>
+    <net code="92" name="unconnected-(J1-B24-Pad71)">
+      <node ref="J1" pin="71" pinfunction="B24" pintype="passive+no_connect"/>
+    </net>
+    <net code="93" name="unconnected-(J1-B27-Pad69)">
+      <node ref="J1" pin="69" pinfunction="B27" pintype="passive+no_connect"/>
+    </net>
+    <net code="94" name="unconnected-(J1-B28-Pad70)">
+      <node ref="J1" pin="70" pinfunction="B28" pintype="passive+no_connect"/>
+    </net>
+    <net code="95" name="unconnected-(J1-B30-Pad65)">
+      <node ref="J1" pin="65" pinfunction="B30" pintype="passive+no_connect"/>
+    </net>
+    <net code="96" name="unconnected-(J1-B31-Pad66)">
+      <node ref="J1" pin="66" pinfunction="B31" pintype="passive+no_connect"/>
+    </net>
+    <net code="97" name="unconnected-(J1-B33-Pad61)">
+      <node ref="J1" pin="61" pinfunction="B33" pintype="passive+no_connect"/>
+    </net>
+    <net code="98" name="unconnected-(J1-B34-Pad62)">
+      <node ref="J1" pin="62" pinfunction="B34" pintype="passive+no_connect"/>
+    </net>
+    <net code="99" name="unconnected-(J1-B36-Pad57)">
+      <node ref="J1" pin="57" pinfunction="B36" pintype="passive+no_connect"/>
+    </net>
+    <net code="100" name="unconnected-(J1-B37-Pad58)">
+      <node ref="J1" pin="58" pinfunction="B37" pintype="passive+no_connect"/>
+    </net>
+    <net code="101" name="unconnected-(J1-B39-Pad53)">
+      <node ref="J1" pin="53" pinfunction="B39" pintype="passive+no_connect"/>
+    </net>
+    <net code="102" name="unconnected-(J1-B40-Pad54)">
+      <node ref="J1" pin="54" pinfunction="B40" pintype="passive+no_connect"/>
+    </net>
+    <net code="103" name="unconnected-(U8-Pad11)">
+      <node ref="U8" pin="11" pintype="tri_state+no_connect"/>
+    </net>
+    <net code="104" name="unconnected-(U8-Pad12)">
+      <node ref="U8" pin="12" pintype="input+no_connect"/>
+    </net>
+    <net code="105" name="~{CS0}">
+      <node ref="J5" pin="30" pinfunction="~{CS0}" pintype="passive"/>
+      <node ref="TP28" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="IN2" pintype="input"/>
+    </net>
+    <net code="106" name="~{IRQ}">
+      <node ref="J5" pin="29" pinfunction="~{IRQ}" pintype="passive"/>
+      <node ref="Q17" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="TP27" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="107" name="~{K0}">
+      <node ref="J5" pin="23" pinfunction="~{K0}" pintype="passive"/>
+      <node ref="TP21" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="6" pintype="tri_state"/>
+    </net>
+    <net code="108" name="~{K1}">
+      <node ref="J5" pin="22" pinfunction="~{K1}" pintype="passive"/>
+      <node ref="TP20" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="8" pintype="tri_state"/>
+    </net>
+    <net code="109" name="~{K2}">
+      <node ref="J5" pin="21" pinfunction="~{K2}" pintype="passive"/>
+      <node ref="TP19" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="11" pintype="tri_state"/>
+    </net>
+    <net code="110" name="~{K3}">
+      <node ref="J5" pin="20" pinfunction="~{K3}" pintype="passive"/>
+      <node ref="TP18" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="11" pintype="tri_state"/>
+    </net>
+    <net code="111" name="~{K4}">
+      <node ref="J5" pin="19" pinfunction="~{K4}" pintype="passive"/>
+      <node ref="TP17" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="8" pintype="tri_state"/>
+    </net>
+    <net code="112" name="~{K5}">
+      <node ref="J5" pin="18" pinfunction="~{K5}" pintype="passive"/>
+      <node ref="TP16" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="6" pintype="tri_state"/>
+    </net>
+    <net code="113" name="~{KR1}">
+      <node ref="J5" pin="25" pinfunction="~{KR1}" pintype="passive"/>
+      <node ref="TP23" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="2" pintype="input"/>
+    </net>
+    <net code="114" name="~{KR2}">
+      <node ref="J5" pin="16" pinfunction="~{KR2}" pintype="passive"/>
+      <node ref="TP15" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="2" pintype="input"/>
+    </net>
+    <net code="115" name="~{_EN}">
+      <node ref="J1" pin="36" pinfunction="A23" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="Y" pintype="output"/>
+      <node ref="U2" pin="19" pinfunction="CE" pintype="input"/>
+    </net>
+  </nets>
+</export>

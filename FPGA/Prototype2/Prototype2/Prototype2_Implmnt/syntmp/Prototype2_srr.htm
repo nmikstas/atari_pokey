@@ -1,0 +1,611 @@
+<html><body><samp><pre>
+<!@TC:1728773272>
+#Build: Synplify Pro L-2016.09L+ice40, Build 077R, Dec  2 2016
+#install: C:\lscc\iCEcube2.2020.12\synpbase
+#OS: Windows 8 6.2
+#Hostname: LAPTOP-DTPKTC7I
+
+# Sat Oct 12 16:47:52 2024
+
+#Implementation: Prototype2_Implmnt
+
+<a name=compilerReport1></a>Synopsys HDL Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016</a>
+@N: : <!@TM:1728773273> | Running in 64-bit mode 
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+<a name=compilerReport2></a>Synopsys Verilog Compiler, version comp2016q3p1, Build 141R, built Dec  5 2016</a>
+@N: : <!@TM:1728773273> | Running in 64-bit mode 
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v" (library work)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\iCEcube2.2020.12\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\AUDCTL_reg.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\IO_core.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\IRQ_core.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\KEY_PLA.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\KEY_core.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\POT_core.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SERIN_PLA.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SEROUT_PLA.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SER_core.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SKCTLS_reg.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SKSTAT_reg.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\aud_control.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\aud_control_hp.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cel11.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell15.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell16.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell17.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell20.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell23.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell24.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell24option1.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell25.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell2p.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell2pr.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell2r.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell3.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell4.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell6.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\clock_gen_core.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\freq_control.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\poly_core.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v" (library work)
+@I::"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\POKEY_Top.v" (library work)
+Verilog syntax check successful!
+File D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\POKEY_Top.v changed - recompiling
+Selecting top level module POKEY_Top
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v:752:7:752:19:@N:CG364:@XP_MSG">sb_ice40.v(752)</a><!@TM:1728773273> | Synthesizing module SB_PLL40_PAD in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v:1:7:1:21:@N:CG364:@XP_MSG">Prototype2_pll.v(1)</a><!@TM:1728773273> | Synthesizing module Prototype2_pll in library work.
+
+<font color=#A52A2A>@W:<a href="@W:CG781:@XP_HELP">CG781</a> : <a href="D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v:14:45:14:46:@W:CG781:@XP_MSG">Prototype2_pll.v(14)</a><!@TM:1728773273> | Input EXTFEEDBACK on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. </font>
+<font color=#A52A2A>@W:<a href="@W:CG781:@XP_HELP">CG781</a> : <a href="D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v:15:46:15:47:@W:CG781:@XP_MSG">Prototype2_pll.v(15)</a><!@TM:1728773273> | Input DYNAMICDELAY on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. </font>
+<font color=#A52A2A>@W:<a href="@W:CG781:@XP_HELP">CG781</a> : <a href="D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v:18:49:18:50:@W:CG781:@XP_MSG">Prototype2_pll.v(18)</a><!@TM:1728773273> | Input LATCHINPUTVALUE on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. </font>
+<font color=#A52A2A>@W:<a href="@W:CG781:@XP_HELP">CG781</a> : <a href="D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v:20:37:20:38:@W:CG781:@XP_MSG">Prototype2_pll.v(20)</a><!@TM:1728773273> | Input SDI on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. </font>
+<font color=#A52A2A>@W:<a href="@W:CG781:@XP_HELP">CG781</a> : <a href="D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v:22:38:22:39:@W:CG781:@XP_MSG">Prototype2_pll.v(22)</a><!@TM:1728773273> | Input SCLK on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. </font>
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\IO_core.v:5:7:5:14:@N:CG364:@XP_MSG">IO_core.v(5)</a><!@TM:1728773273> | Synthesizing module IO_core in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SKCTLS_reg.v:5:7:5:17:@N:CG364:@XP_MSG">SKCTLS_reg.v(5)</a><!@TM:1728773273> | Synthesizing module SKCTLS_reg in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\AUDCTL_reg.v:5:7:5:17:@N:CG364:@XP_MSG">AUDCTL_reg.v(5)</a><!@TM:1728773273> | Synthesizing module AUDCTL_reg in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SKSTAT_reg.v:5:7:5:17:@N:CG364:@XP_MSG">SKSTAT_reg.v(5)</a><!@TM:1728773273> | Synthesizing module SKSTAT_reg in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\IRQ_core.v:5:7:5:15:@N:CG364:@XP_MSG">IRQ_core.v(5)</a><!@TM:1728773273> | Synthesizing module IRQ_core in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\clock_gen_core.v:5:7:5:21:@N:CG364:@XP_MSG">clock_gen_core.v(5)</a><!@TM:1728773273> | Synthesizing module clock_gen_core in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\poly_core.v:5:7:5:16:@N:CG364:@XP_MSG">poly_core.v(5)</a><!@TM:1728773273> | Synthesizing module poly_core in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell23.v:5:7:5:13:@N:CG364:@XP_MSG">cell23.v(5)</a><!@TM:1728773273> | Synthesizing module cell23 in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\POT_core.v:5:7:5:15:@N:CG364:@XP_MSG">POT_core.v(5)</a><!@TM:1728773273> | Synthesizing module POT_core in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\KEY_PLA.v:5:7:5:14:@N:CG364:@XP_MSG">KEY_PLA.v(5)</a><!@TM:1728773273> | Synthesizing module KEY_PLA in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell2p.v:5:7:5:13:@N:CG364:@XP_MSG">cell2p.v(5)</a><!@TM:1728773273> | Synthesizing module cell2p in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell3.v:5:7:5:12:@N:CG364:@XP_MSG">cell3.v(5)</a><!@TM:1728773273> | Synthesizing module cell3 in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell6.v:5:7:5:12:@N:CG364:@XP_MSG">cell6.v(5)</a><!@TM:1728773273> | Synthesizing module cell6 in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell4.v:5:7:5:12:@N:CG364:@XP_MSG">cell4.v(5)</a><!@TM:1728773273> | Synthesizing module cell4 in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\KEY_core.v:5:7:5:15:@N:CG364:@XP_MSG">KEY_core.v(5)</a><!@TM:1728773273> | Synthesizing module KEY_core in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell24option1.v:5:7:5:20:@N:CG364:@XP_MSG">cell24option1.v(5)</a><!@TM:1728773273> | Synthesizing module cell24option1 in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell24.v:5:7:5:13:@N:CG364:@XP_MSG">cell24.v(5)</a><!@TM:1728773273> | Synthesizing module cell24 in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell20.v:5:7:5:13:@N:CG364:@XP_MSG">cell20.v(5)</a><!@TM:1728773273> | Synthesizing module cell20 in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\freq_control.v:5:7:5:19:@N:CG364:@XP_MSG">freq_control.v(5)</a><!@TM:1728773273> | Synthesizing module freq_control in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cel11.v:5:7:5:13:@N:CG364:@XP_MSG">cel11.v(5)</a><!@TM:1728773273> | Synthesizing module cell11 in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell2r.v:5:7:5:13:@N:CG364:@XP_MSG">cell2r.v(5)</a><!@TM:1728773273> | Synthesizing module cell2r in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\aud_control_hp.v:5:7:5:21:@N:CG364:@XP_MSG">aud_control_hp.v(5)</a><!@TM:1728773273> | Synthesizing module aud_control_hp in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\aud_control.v:5:7:5:18:@N:CG364:@XP_MSG">aud_control.v(5)</a><!@TM:1728773273> | Synthesizing module aud_control in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell2pr.v:5:7:5:14:@N:CG364:@XP_MSG">cell2pr.v(5)</a><!@TM:1728773273> | Synthesizing module cell2pr in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell17.v:5:7:5:13:@N:CG364:@XP_MSG">cell17.v(5)</a><!@TM:1728773273> | Synthesizing module cell17 in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell25.v:5:7:5:13:@N:CG364:@XP_MSG">cell25.v(5)</a><!@TM:1728773273> | Synthesizing module cell25 in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SERIN_PLA.v:5:7:5:16:@N:CG364:@XP_MSG">SERIN_PLA.v(5)</a><!@TM:1728773273> | Synthesizing module SERIN_PLA in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell16.v:5:7:5:13:@N:CG364:@XP_MSG">cell16.v(5)</a><!@TM:1728773273> | Synthesizing module cell16 in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\cell15.v:5:7:5:13:@N:CG364:@XP_MSG">cell15.v(5)</a><!@TM:1728773273> | Synthesizing module cell15 in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SEROUT_PLA.v:5:7:5:17:@N:CG364:@XP_MSG">SEROUT_PLA.v(5)</a><!@TM:1728773273> | Synthesizing module SEROUT_PLA in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SER_core.v:5:7:5:15:@N:CG364:@XP_MSG">SER_core.v(5)</a><!@TM:1728773273> | Synthesizing module SER_core in library work.
+
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\POKEY_Top.v:3:7:3:16:@N:CG364:@XP_MSG">POKEY_Top.v(3)</a><!@TM:1728773273> | Synthesizing module POKEY_Top in library work.
+
+<font color=#A52A2A>@W:<a href="@W:CG1273:@XP_HELP">CG1273</a> : <a href="D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\POKEY_Top.v:97:51:97:57:@W:CG1273:@XP_MSG">POKEY_Top.v(97)</a><!@TM:1728773273> | An input port (port sysclk) is the target of an assignment - please check if this is intentional</font>
+@N:<a href="@N:CL135:@XP_HELP">CL135</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SER_core.v:211:4:211:10:@N:CL135:@XP_MSG">SER_core.v(211)</a><!@TM:1728773273> | Found sequential shift sdiClk with address depth of 3 words and data bit width of 1.
+@N:<a href="@N:CL135:@XP_HELP">CL135</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\SER_core.v:211:4:211:10:@N:CL135:@XP_MSG">SER_core.v(211)</a><!@TM:1728773273> | Found sequential shift oShift with address depth of 3 words and data bit width of 1.
+@N:<a href="@N:CL201:@XP_HELP">CL201</a> : <a href="D:\work\Arcade+Projects\atari_pokey\HDL\Verilog\source\clock_gen_core.v:38:4:38:10:@N:CL201:@XP_MSG">clock_gen_core.v(38)</a><!@TM:1728773273> | Trying to extract state machine for register lfsr64k.
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 75MB peak: 76MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Oct 12 16:47:53 2024
+
+###########################################################]
+<a name=compilerReport3></a>Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016</a>
+@N: : <!@TM:1728773273> | Running in 64-bit mode 
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\POKEY_Top.v:3:7:3:16:@N:NF107:@XP_MSG">POKEY_Top.v(3)</a><!@TM:1728773273> | Selected library: work cell: POKEY_Top view verilog as top level
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\POKEY_Top.v:3:7:3:16:@N:NF107:@XP_MSG">POKEY_Top.v(3)</a><!@TM:1728773273> | Selected library: work cell: POKEY_Top view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Oct 12 16:47:53 2024
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Oct 12 16:47:53 2024
+
+###########################################################]
+<a name=compilerReport4></a>Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016</a>
+@N: : <!@TM:1728773274> | Running in 64-bit mode 
+File D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\synwork\Prototype2_comp.srs changed - recompiling
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\POKEY_Top.v:3:7:3:16:@N:NF107:@XP_MSG">POKEY_Top.v(3)</a><!@TM:1728773274> | Selected library: work cell: POKEY_Top view verilog as top level
+@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\POKEY_Top.v:3:7:3:16:@N:NF107:@XP_MSG">POKEY_Top.v(3)</a><!@TM:1728773274> | Selected library: work cell: POKEY_Top view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Oct 12 16:47:54 2024
+
+###########################################################]
+Pre-mapping Report
+
+# Sat Oct 12 16:47:54 2024
+
+<a name=mapperReport5></a>Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39</a>
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
+
+@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1728773274> | No constraint file specified. 
+Linked File: <a href="D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\Prototype2_scck.rpt:@XP_FILE">Prototype2_scck.rpt</a>
+Printing clock  summary report in "D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\Prototype2_scck.rpt" file 
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1728773274> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1728773274> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 105MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 105MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 103MB peak: 105MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
+
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\ser_core.v:211:4:211:10:@W:BN132:@XP_MSG">ser_core.v(211)</a><!@TM:1728773274> | Removing sequential instance _ser_core.preBCLK because it is equivalent to instance _ser_core.presdi. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\cell6.v:30:4:30:10:@N:BN362:@XP_MSG">cell6.v(30)</a><!@TM:1728773274> | Removing sequential instance T1 (in view: work.cell6_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\aud_control.v:65:4:65:10:@N:BN362:@XP_MSG">aud_control.v(65)</a><!@TM:1728773274> | Removing sequential instance poly4Out (in view: work.aud_control_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\aud_control.v:65:4:65:10:@N:BN362:@XP_MSG">aud_control.v(65)</a><!@TM:1728773274> | Removing sequential instance poly5Out (in view: work.aud_control_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\aud_control.v:65:4:65:10:@N:BN362:@XP_MSG">aud_control.v(65)</a><!@TM:1728773274> | Removing sequential instance poly17Out (in view: work.aud_control_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=32  set on top level netlist POKEY_Top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 136MB)
+
+
+
+<a name=mapperReport6></a>Clock Summary</a>
+*****************
+
+Start                                         Requested     Requested     Clock                               Clock                     Clock
+Clock                                         Frequency     Period        Type                                Group                     Load 
+---------------------------------------------------------------------------------------------------------------------------------------------
+POKEY_Top|clk179                              1.0 MHz       1000.000      inferred                            Autoconstr_clkgroup_0     18   
+POKEY_Top|sysclk                              4.1 MHz       244.838       inferred                            Autoconstr_clkgroup_1     0    
+Prototype2_pll|PLLOUTGLOBAL_derived_clock     2.5 MHz       408.047       derived (from POKEY_Top|sysclk)     Autoconstr_clkgroup_1     566  
+=============================================================================================================================================
+
+<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="d:\work\arcade+projects\atari_pokey\fpga\prototype2\prototype2\pokey_top.v:125:4:125:10:@W:MT529:@XP_MSG">pokey_top.v(125)</a><!@TM:1728773274> | Found inferred clock POKEY_Top|clk179 which controls 18 sequential elements including Dataw[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
+
+Finished Pre Mapping Phase.
+@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1728773274> | Writing default property annotation file D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\Prototype2.sap. 
+
+Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 136MB)
+
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 137MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 51MB peak: 137MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Sat Oct 12 16:47:54 2024
+
+###########################################################]
+Map & Optimize Report
+
+# Sat Oct 12 16:47:54 2024
+
+<a name=mapperReport7></a>Synopsys Lattice Technology Mapper, Version maplat, Build 1612R, Built Dec  5 2016 10:31:39</a>
+Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version L-2016.09L+ice40
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 100MB)
+
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1728773277> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1728773277> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 101MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 103MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 133MB peak: 135MB)
+
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N:<a href="@N:MT206:@XP_HELP">MT206</a> : <!@TM:1728773277> | Auto Constrain mode is enabled 
+<font color=#A52A2A>@W:<a href="@W:FX1039:@XP_HELP">FX1039</a> : <a href="d:\work\arcade+projects\atari_pokey\fpga\prototype2\prototype2\pokey_top.v:106:4:106:10:@W:FX1039:@XP_MSG">pokey_top.v(106)</a><!@TM:1728773277> | User-specified initial value defined for instance prep[2:0] is being ignored. </font>
+<font color=#A52A2A>@W:<a href="@W:FX1039:@XP_HELP">FX1039</a> : <a href="d:\work\arcade+projects\atari_pokey\fpga\prototype2\prototype2\pokey_top.v:100:4:100:10:@W:FX1039:@XP_MSG">pokey_top.v(100)</a><!@TM:1728773277> | User-specified initial value defined for instance pren[2:0] is being ignored. </font>
+<font color=#A52A2A>@W:<a href="@W:FX1039:@XP_HELP">FX1039</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\pot_core.v:80:4:80:10:@W:FX1039:@XP_MSG">pot_core.v(80)</a><!@TM:1728773277> | User-specified initial value defined for instance _pot_core.nor4 is being ignored. </font>
+<font color=#A52A2A>@W:<a href="@W:FX1039:@XP_HELP">FX1039</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\pot_core.v:96:4:96:10:@W:FX1039:@XP_MSG">pot_core.v(96)</a><!@TM:1728773277> | User-specified initial value defined for instance _pot_core.nor1 is being ignored. </font>
+<font color=#A52A2A>@W:<a href="@W:FX1039:@XP_HELP">FX1039</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\pot_core.v:96:4:96:10:@W:FX1039:@XP_MSG">pot_core.v(96)</a><!@TM:1728773277> | User-specified initial value defined for instance _pot_core.delay2 is being ignored. </font>
+<font color=#A52A2A>@W:<a href="@W:FX1039:@XP_HELP">FX1039</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\pot_core.v:96:4:96:10:@W:FX1039:@XP_MSG">pot_core.v(96)</a><!@TM:1728773277> | User-specified initial value defined for instance _pot_core.delay1 is being ignored. </font>
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 134MB peak: 135MB)
+
+
+Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 135MB peak: 135MB)
+
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\io_core.v:106:4:106:10:@W:BN132:@XP_MSG">io_core.v(106)</a><!@TM:1728773277> | Removing instance _io_core.DataFQ[4] because it is equivalent to instance _ser_core.delay1. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+
+Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 139MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 137MB peak: 140MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 144MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 144MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 144MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 144MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 139MB peak: 144MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 138MB peak: 144MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:00s		    -4.55ns		 511 /       587
+   2		0h:00m:00s		    -4.55ns		 511 /       587
+   3		0h:00m:00s		    -3.15ns		 511 /       587
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\cell6.v:23:4:23:10:@N:FX271:@XP_MSG">cell6.v(23)</a><!@TM:1728773277> | Replicating instance _key_core.qb3.intQ (in view: work.POKEY_Top(verilog)) with 8 loads 1 time to improve timing.
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\cell6.v:23:4:23:10:@N:FX271:@XP_MSG">cell6.v(23)</a><!@TM:1728773277> | Replicating instance _key_core.qb5.intQ (in view: work.POKEY_Top(verilog)) with 9 loads 1 time to improve timing.
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\io_core.v:106:4:106:10:@N:FX271:@XP_MSG">io_core.v(106)</a><!@TM:1728773277> | Replicating instance _io_core.AQ[3] (in view: work.POKEY_Top(verilog)) with 9 loads 1 time to improve timing.
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\io_core.v:106:4:106:10:@N:FX271:@XP_MSG">io_core.v(106)</a><!@TM:1728773277> | Replicating instance _io_core.AQ[1] (in view: work.POKEY_Top(verilog)) with 11 loads 1 time to improve timing.
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\aud_control.v:65:4:65:10:@N:FX271:@XP_MSG">aud_control.v(65)</a><!@TM:1728773277> | Replicating instance _aud3.I (in view: work.POKEY_Top(verilog)) with 8 loads 1 time to improve timing.
+Timing driven replication report
+Added 5 Registers via timing driven replication
+Added 5 LUTs via timing driven replication
+
+   4		0h:00m:01s		    -1.75ns		 546 /       592
+   5		0h:00m:01s		    -1.75ns		 549 /       592
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\cell6.v:23:4:23:10:@N:FX271:@XP_MSG">cell6.v(23)</a><!@TM:1728773277> | Replicating instance _key_core.qb1.intQ (in view: work.POKEY_Top(verilog)) with 8 loads 1 time to improve timing.
+Timing driven replication report
+Added 1 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
+
+
+   6		0h:00m:01s		    -1.75ns		 554 /       593
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\io_core.v:106:4:106:10:@A:BN291:@XP_MSG">io_core.v(106)</a><!@TM:1728773277> | Boundary register _io_core.AQ_fast[1] (in view: work.POKEY_Top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\io_core.v:106:4:106:10:@A:BN291:@XP_MSG">io_core.v(106)</a><!@TM:1728773277> | Boundary register _io_core.AQ_fast[3] (in view: work.POKEY_Top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\io_core.v:106:4:106:10:@A:BN291:@XP_MSG">io_core.v(106)</a><!@TM:1728773277> | Boundary register _io_core.AQ[3] (in view: work.POKEY_Top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\io_core.v:106:4:106:10:@A:BN291:@XP_MSG">io_core.v(106)</a><!@TM:1728773277> | Boundary register _io_core.AQ[2] (in view: work.POKEY_Top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\io_core.v:106:4:106:10:@A:BN291:@XP_MSG">io_core.v(106)</a><!@TM:1728773277> | Boundary register _io_core.AQ[1] (in view: work.POKEY_Top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@A:<a href="@A:BN291:@XP_HELP">BN291</a> : <a href="d:\work\arcade+projects\atari_pokey\hdl\verilog\source\io_core.v:106:4:106:10:@A:BN291:@XP_MSG">io_core.v(106)</a><!@TM:1728773277> | Boundary register _io_core.AQ[0] (in view: work.POKEY_Top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N:<a href="@N:FX1017:@XP_HELP">FX1017</a> : <a href="d:\work\arcade+projects\atari_pokey\fpga\prototype2\prototype2\pokey_top.v:7:10:7:16:@N:FX1017:@XP_MSG">pokey_top.v(7)</a><!@TM:1728773277> | SB_GB inserted on the net clk179_c.
+@N:<a href="@N:FX1017:@XP_HELP">FX1017</a> : <!@TM:1728773277> | SB_GB inserted on the net enn. 
+@N:<a href="@N:FX1017:@XP_HELP">FX1017</a> : <!@TM:1728773277> | SB_GB inserted on the net enp. 
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 144MB)
+
+<font color=#A52A2A>@W:<a href="@W:MT453:@XP_HELP">MT453</a> : <!@TM:1728773277> | clock period is too long for clock POKEY_Top|sysclk, changing period from 10000000.0 to 20000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 5000000.0 ns to 10000.0 ns. </font> 
+<font color=#A52A2A>@W:<a href="@W:MT453:@XP_HELP">MT453</a> : <!@TM:1728773277> | clock period is too long for clock Prototype2_pll|PLLOUTGLOBAL_derived_clock, changing period from 10000000.0 to 20000.0 ns, rise from 0.0 ns to 0.0 ns, and fall from 5000000.0 ns to 10000.0 ns. </font> 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 144MB)
+
+
+
+@S |Clock Optimization Summary
+
+
+<a name=clockReport8></a>#### START OF CLOCK OPTIMIZATION REPORT #####[</a>
+
+2 non-gated/non-generated clock tree(s) driving 593 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+======================================= Non-Gated/Non-Generated Clocks ========================================
+Clock Tree ID     Driving Element                             Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------------------------------
+<a href="@|S:Prototype2_pll_inst.Prototype2_pll_inst@|E:pren[0]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001  @XP_NAMES_BY_PROP">ClockId0001 </a>       Prototype2_pll_inst.Prototype2_pll_inst     SB_PLL40_PAD           581        pren[0]        
+<a href="@|S:clk179_ibuf@|E:Dataw[0]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002  @XP_NAMES_BY_PROP">ClockId0002 </a>       clk179_ibuf                                 SB_IO                  12         Dataw[0]       
+===============================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 115MB peak: 144MB)
+
+Writing Analyst data base D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\synwork\Prototype2_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 142MB peak: 144MB)
+
+Writing EDIF Netlist and constraint files
+@N:<a href="@N:BW103:@XP_HELP">BW103</a> : <!@TM:1728773277> | The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns. 
+@N:<a href="@N:BW107:@XP_HELP">BW107</a> : <!@TM:1728773277> | Synopsys Constraint File capacitance units using default value of 1pF  
+@N:<a href="@N:FX1056:@XP_HELP">FX1056</a> : <!@TM:1728773277> | Writing EDF file: D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\Prototype2.edf 
+L-2016.09L+ice40
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 143MB peak: 145MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 142MB peak: 145MB)
+
+<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1728773277> | Found inferred clock POKEY_Top|sysclk with period 8508.17ns. Please declare a user-defined clock on object "p:sysclk"</font> 
+<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1728773277> | Found inferred clock POKEY_Top|clk179 with period 1000.00ns. Please declare a user-defined clock on object "p:clk179"</font> 
+@N:<a href="@N:MT615:@XP_HELP">MT615</a> : <!@TM:1728773277> | Found clock Prototype2_pll|PLLOUTGLOBAL_derived_clock with period 8508.17ns  
+
+
+<a name=timingReport9></a>##### START OF TIMING REPORT #####[</a>
+# Timing Report written on Sat Oct 12 16:47:56 2024
+#
+
+
+Top view:               POKEY_Top
+Requested Frequency:    0.1 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1728773277> | This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report. 
+
+@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1728773277> | Clock constraints include only register-to-register paths associated with each individual clock. 
+
+
+
+<a name=performanceSummary10></a>Performance Summary</a>
+*******************
+
+
+Worst slack in design: 4244.474
+
+                                              Requested     Estimated     Requested     Estimated                  Clock                               Clock                
+Starting Clock                                Frequency     Frequency     Period        Period        Slack        Type                                Group                
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+POKEY_Top|clk179                              1.0 MHz       NA            1000.000      NA            NA           inferred                            Autoconstr_clkgroup_0
+POKEY_Top|sysclk                              0.1 MHz       NA            8508.169      NA            DCM/PLL      inferred                            Autoconstr_clkgroup_1
+Prototype2_pll|PLLOUTGLOBAL_derived_clock     0.1 MHz       52.0 MHz      8508.169      19.221        4244.474     derived (from POKEY_Top|sysclk)     Autoconstr_clkgroup_1
+============================================================================================================================================================================
+@N:<a href="@N:MT582:@XP_HELP">MT582</a> : <!@TM:1728773277> | Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack 
+
+
+
+
+
+<a name=clockRelationships11></a>Clock Relationships</a>
+*******************
+
+Clocks                                                                                |    rise  to  rise      |    fall  to  fall      |    rise  to  fall      |    fall  to  rise    
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                                   Ending                                     |  constraint  slack     |  constraint  slack     |  constraint  slack     |  constraint  slack   
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+POKEY_Top|clk179                           Prototype2_pll|PLLOUTGLOBAL_derived_clock  |  Diff grp    -         |  Diff grp    -         |  No paths    -         |  No paths    -       
+Prototype2_pll|PLLOUTGLOBAL_derived_clock  Prototype2_pll|PLLOUTGLOBAL_derived_clock  |  8508.169    8498.509  |  8508.169    8498.608  |  4254.084    4244.488  |  4254.084    4244.474
+========================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+<a name=interfaceInfo12></a>Interface Information </a>
+*********************
+
+No IO constraint found
+
+
+
+====================================
+<a name=clockReport13></a>Detailed Report for Clock: Prototype2_pll|PLLOUTGLOBAL_derived_clock</a>
+====================================
+
+
+
+<a name=startingSlack14></a>Starting Points with Worst Slack</a>
+********************************
+
+                            Starting                                                                         Arrival             
+Instance                    Reference                                     Type         Pin     Net           Time        Slack   
+                            Clock                                                                                                
+---------------------------------------------------------------------------------------------------------------------------------
+_aud3.I_fast                Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFNE     Q       I_fast        0.540       4244.474
+_key_core.c1.Q_e_0          Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       QD[1]         0.540       4244.488
+_aud4.I                     Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFNE     Q       I             0.540       4244.523
+_aud3.data[1]               Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFNE     Q       data[1]       0.540       4244.523
+_key_core.c5.Q_e_0          Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       QD[5]         0.540       4244.537
+_key_core.c2.Q_e_0          Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       QD[2]         0.540       4244.537
+_aud3.data[4]               Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFNE     Q       data[4]       0.540       4244.544
+_key_core.c0.Q_e_0          Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       QD[0]         0.540       4244.558
+_key_core.qb1.intQ_fast     Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      Q       intQ_fast     0.540       4244.558
+_aud4.data[4]               Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFNE     Q       data_0[4]     0.540       4244.572
+=================================================================================================================================
+
+
+<a name=endingSlack15></a>Ending Points with Worst Slack</a>
+******************************
+
+                      Starting                                                                          Required             
+Instance              Reference                                     Type         Pin     Net            Time         Slack   
+                      Clock                                                                                                  
+-----------------------------------------------------------------------------------------------------------------------------
+AUD34[4]              Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFF       D       AUD34_1[4]     4253.979     4244.474
+_key_core.b1.intQ     Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFNE     D       or1_0_i        4253.979     4244.488
+_key_core.setKey      Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFNE     D       N_10_i         4253.979     4244.593
+AUD34[3]              Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFF       D       AUD34_1[3]     4253.979     4244.607
+AUD12[2]              Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFF       D       AUD12_1[2]     4253.979     4246.245
+AUD12[3]              Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFF       D       AUD12_1[3]     4253.979     4246.245
+AUD12[4]              Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFF       D       AUD12_1[4]     4253.979     4246.245
+_key_core.b0.intQ     Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFNE     D       or1_0_i        4253.979     4246.245
+_key_core.qMuxOut     Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFE      D       muxOut_i_0     4253.979     4246.245
+_skstat_reg.qnor5     Prototype2_pll|PLLOUTGLOBAL_derived_clock     SB_DFFNE     D       nor5           4253.979     4246.245
+=============================================================================================================================
+
+
+
+<a name=worstPaths16></a>Worst Path Information</a>
+<a href="D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\Prototype2.srr:srsfD:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\Prototype2.srs:fp:39377:40637:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      4254.084
+    - Setup time:                            0.105
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         4253.979
+
+    - Propagation time:                      9.505
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     4244.474
+
+    Number of logic level(s):                4
+    Starting point:                          _aud3.I_fast / Q
+    Ending point:                            AUD34[4] / D
+    The start point is clocked by            Prototype2_pll|PLLOUTGLOBAL_derived_clock [falling] on pin C
+    The end   point is clocked by            Prototype2_pll|PLLOUTGLOBAL_derived_clock [rising] on pin C
+
+Instance / Net                   Pin      Pin               Arrival     No. of    
+Name                Type         Name     Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------
+_aud3.I_fast        SB_DFFNE     Q        Out     0.540     0.540       -         
+I_fast              Net          -        -       1.599     -           9         
+_aud3.c11.un6_O     SB_LUT4      I0       In      -         2.139       -         
+_aud3.c11.un6_O     SB_LUT4      O        Out     0.449     2.588       -         
+AUD3[1]             Net          -        -       1.371     -           3         
+AUD34_RNO_1[4]      SB_LUT4      I0       In      -         3.959       -         
+AUD34_RNO_1[4]      SB_LUT4      O        Out     0.449     4.408       -         
+AUD34_1_ac0_1_0     Net          -        -       1.371     -           1         
+AUD34_RNO_0[4]      SB_LUT4      I0       In      -         5.779       -         
+AUD34_RNO_0[4]      SB_LUT4      O        Out     0.449     6.227       -         
+AUD34_1_c3          Net          -        -       1.371     -           1         
+AUD34_RNO[4]        SB_LUT4      I1       In      -         7.598       -         
+AUD34_RNO[4]        SB_LUT4      O        Out     0.400     7.998       -         
+AUD34_1[4]          Net          -        -       1.507     -           1         
+AUD34[4]            SB_DFF       D        In      -         9.505       -         
+==================================================================================
+Total path delay (propagation time + setup) of 9.610 is 2.391(24.9%) logic and 7.219(75.1%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 145MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 143MB peak: 145MB)
+
+---------------------------------------
+<a name=resourceUsage17></a>Resource Usage Report for POKEY_Top </a>
+
+Mapping to part: ice40hx8kcb132
+Cell usage:
+GND             106 uses
+SB_CARRY        5 uses
+SB_DFF          24 uses
+SB_DFFE         211 uses
+SB_DFFN         13 uses
+SB_DFFNE        345 uses
+SB_GB           3 uses
+VCC             106 uses
+SB_LUT4         540 uses
+
+I/O ports: 47
+I/O primitives: 47
+SB_IO          46 uses
+SB_PLL40_PAD   1 use
+
+I/O Register bits:                  0
+Register bits not including I/Os:   593 (7%)
+Total load per clock:
+   POKEY_Top|clk179: 1
+   POKEY_Top|sysclk: 1
+   Prototype2_pll|PLLOUTGLOBAL_derived_clock: 581
+
+@S |Mapping Summary:
+Total  LUTs: 540 (7%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 540 = 540 
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 31MB peak: 145MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Sat Oct 12 16:47:57 2024
+
+###########################################################]
+
+</pre></samp></body></html>

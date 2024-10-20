@@ -1,7 +1,7 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../Prototype.gen/sources_1/ip/clk_wiz_0" \
-"../../../../Prototype.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
-"../../../../Prototype.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+verilog xil_defaultlib  --include "../../../../Prototype.gen/sources_1/ip/clk_wiz_0_1" \
+"../../../../Prototype.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0_clk_wiz.v" \
+"../../../../Prototype.gen/sources_1/ip/clk_wiz_0_1/clk_wiz_0.v" \
 "../../../../../../../HDL/Verilog/source/AUDCTL_reg.v" \
 "../../../../../../../HDL/Verilog/source/IO_core.v" \
 "../../../../../../../HDL/Verilog/source/IRQ_core.v" \

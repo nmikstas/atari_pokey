@@ -1,0 +1,7 @@
+C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe  -link  -multisrs  D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\synwork\Prototype2_comp.srs  -osyn  D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\synwork\Prototype2_mult.srs  -log  D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\synlog\Prototype2_multi_srs_gen.srr 
+rc:0 success:1 runtime:0
+file:D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\synwork\Prototype2_comp.srs|io:i|time:1728773273|size:55953|exec:0
+file:D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\synwork\Prototype2_mult.srs|io:o|time:1728773274|size:9179|exec:0
+file:D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\synlog\Prototype2_multi_srs_gen.srr|io:o|time:1728773274|size:873|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin\syn_nfilter.exe|io:i|time:1728675188|size:3128320|exec:1
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1728675190|size:3947520|exec:1

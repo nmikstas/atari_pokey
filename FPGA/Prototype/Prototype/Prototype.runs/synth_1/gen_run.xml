@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1728025505">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1729223324">
   <File Type="PA-TCL" Name="POKEY_Top.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="POKEY_Top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="POKEY_Top_reports.tcl"/>
@@ -267,9 +267,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

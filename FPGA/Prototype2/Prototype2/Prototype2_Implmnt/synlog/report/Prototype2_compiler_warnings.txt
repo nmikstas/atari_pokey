@@ -1,0 +1,7 @@
+@W: CG781 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v":14:45:14:45|Input EXTFEEDBACK on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v":15:46:15:46|Input DYNAMICDELAY on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v":18:49:18:49|Input LATCHINPUTVALUE on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v":20:37:20:37|Input SDI on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_pll.v":22:38:22:38|Input SCLK on instance Prototype2_pll_inst is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG1273 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\POKEY_Top.v":97:51:97:56|An input port (port sysclk) is the target of an assignment - please check if this is intentional
+

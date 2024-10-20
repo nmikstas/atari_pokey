@@ -1,0 +1,30 @@
+
+
+Quantity           Component                                                   Value               Part#
+10                 C1 C2 C3 C4 C5 C6 C7 C8 C9 C10                              .1uf                Digikey 1292-1161-1-ND or equivalent
+1                  C11                                                         10uf                Digikey 1276-1096-1-ND or equivalent
+1                  J1                                                          4X18_Conn           N/A
+1                  J2                                                          2x20_Conn           N/A
+1                  J3                                                          1x03_Pin            N/A
+
+18                 Q1  Q2  Q3  Q4  Q5  Q6  Q7  Q8  Q9  Q10                     SSM3K72KCT          Digikey SSM3K72KCTL3FCT-ND or equivalent
+                   Q11 Q12 Q13 Q14 Q15 Q16 Q17 Q18
+
+1                  R1                                                          825 1%              Digikey YAG3242CT-ND or equivalent
+1                  R2                                                          1.65K 1%            Digikey YAG2486CT-ND or equivalent
+1                  R3                                                          3.3K 1%             Digikey YAG2285CT-ND or equivalent
+1                  R4                                                          7.68K 1%            Digikey YAG2806CT-ND or equivalent
+1                  R5                                                          24K 1%              Digikey YAG2336CT-ND or equivalent
+1                  R6                                                          75K 1%              Digikey YAG2795CT-ND or equivalent
+
+46                 TP1  TP2  TP3  TP4  TP5  TP6  TP7  TP8  TP9  TP10           Test point          N/A
+                   TP11 TP12 TP13 TP14 TP15 TP16 TP17 TP18 TP19 TP20
+                   TP21 TP22 TP23 TP24 TP25 TP26 TP27 TP28 TP29 TP30
+                   TP31 TP32 TP33 TP34 TP35 TP36 TP37 TP38 TP39 TP40
+                   TP41 TP42 TP43 TP44 TP45 TP46
+
+1                  U1                                                          74LVC1G97           296-29874-1-ND or equivalent
+1                  U2                                                          74LVC245            1727-3495-1-ND or equivalent
+3                  U3 U4 U5                                                    74LVC3G14           1727-7042-1-ND or equivalent
+4                  U6 U7 U8 U9                                                 74LVC125            1727-3481-1-ND or equivalent
+1                  U10                                                         LD1117S33TR         497-1242-1-ND  or equivalent

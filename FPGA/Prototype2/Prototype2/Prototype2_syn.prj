@@ -1,0 +1,88 @@
+#-- Synopsys, Inc.
+#-- Project file D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_syn.prj
+#project files
+
+add_file -verilog -lib work "../../../HDL/Verilog/source/AUDCTL_reg.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/IO_core.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/IRQ_core.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/KEY_PLA.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/KEY_core.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/POT_core.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/SERIN_PLA.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/SEROUT_PLA.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/SER_core.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/SKCTLS_reg.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/SKSTAT_reg.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/aud_control.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/aud_control_hp.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cel11.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cell15.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cell16.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cell17.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cell20.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cell23.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cell24.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cell24option1.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cell25.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cell2p.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cell2pr.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cell2r.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cell3.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cell4.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/cell6.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/clock_gen_core.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/freq_control.v" 
+add_file -verilog -lib work "../../../HDL/Verilog/source/poly_core.v" 
+add_file -verilog -lib work "Prototype2_pll.v" 
+add_file -verilog -lib work "POKEY_Top.v" 
+#implementation: "Prototype2_Implmnt"
+impl -add Prototype2_Implmnt -type fpga
+
+#implementation attributes
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+
+#device options
+set_option -technology SBTiCE40
+set_option -part iCE40HX8K
+set_option -package CB132
+set_option -speed_grade 
+set_option -part_companion ""
+
+#compilation/mapping options
+
+# mapper_options
+set_option -frequency auto
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Silicon Blue iCE40
+set_option -maxfan 10000
+set_option -disable_io_insertion 0
+set_option -pipe 1
+set_option -retiming 0
+set_option -update_models_cp 0
+set_option -fixgatedclocks 2
+set_option -fixgeneratedclocks 0
+
+# NFilter
+set_option -popfeed 0
+set_option -constprop 0
+set_option -createhierarchy 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_format "edif"
+project -result_file ./Prototype2_Implmnt/Prototype2.edf
+project -log_file "./Prototype2_Implmnt/Prototype2.srr"
+impl -active Prototype2_Implmnt
+project -run synthesis -clean

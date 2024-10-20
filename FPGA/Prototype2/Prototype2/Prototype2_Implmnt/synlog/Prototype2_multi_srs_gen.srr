@@ -1,0 +1,14 @@
+Synopsys Netlist Linker, version comp2016q3p1, Build 141R, built Dec  5 2016
+@N|Running in 64-bit mode
+File D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\synwork\Prototype2_comp.srs changed - recompiling
+@N: NF107 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\POKEY_Top.v":3:7:3:15|Selected library: work cell: POKEY_Top view verilog as top level
+@N: NF107 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\POKEY_Top.v":3:7:3:15|Selected library: work cell: POKEY_Top view verilog as top level
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Oct 12 16:47:54 2024
+
+###########################################################]

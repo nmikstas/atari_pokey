@@ -21,7 +21,6 @@ module clock_gen_core
     reg  lfsr15k0;
     wire lfsr15k0Out;
     reg  [6:1]lfsr15k;
-    wire lfsr15kIn;
     wire nor15k;
     wire feedback15k;
     reg  d15k;

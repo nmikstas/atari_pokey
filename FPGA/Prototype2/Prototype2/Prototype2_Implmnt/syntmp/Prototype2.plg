@@ -1,0 +1,22 @@
+@P:  Worst Slack : 4244.474
+@P:  POKEY_Top|clk179 - Estimated Frequency : NA
+@P:  POKEY_Top|clk179 - Requested Frequency : 1.0 MHz
+@P:  POKEY_Top|clk179 - Estimated Period : NA
+@P:  POKEY_Top|clk179 - Requested Period : 1000.000
+@P:  POKEY_Top|clk179 - Slack : NA
+@P:  POKEY_Top|sysclk - Estimated Frequency : NA
+@P:  POKEY_Top|sysclk - Requested Frequency : 0.1 MHz
+@P:  POKEY_Top|sysclk - Estimated Period : NA
+@P:  POKEY_Top|sysclk - Requested Period : 8508.169
+@P:  POKEY_Top|sysclk - Slack : NA
+@P:  Prototype2_pll|PLLOUTGLOBAL_derived_clock - Estimated Frequency : 52.0 MHz
+@P:  Prototype2_pll|PLLOUTGLOBAL_derived_clock - Requested Frequency : 0.1 MHz
+@P:  Prototype2_pll|PLLOUTGLOBAL_derived_clock - Estimated Period : 19.221
+@P:  Prototype2_pll|PLLOUTGLOBAL_derived_clock - Requested Period : 8508.169
+@P:  Prototype2_pll|PLLOUTGLOBAL_derived_clock - Slack : 4244.474
+@P: POKEY_Top Part : ice40hx8kcb132
+@P: POKEY_Top I/O primitives : 47
+@P: POKEY_Top I/O Register bits : 0
+@P: POKEY_Top Register bits (Non I/O) : 593 (7%)
+@P: POKEY_Top Total Luts : 540 (7%)
+@P:  CPU Time : 0h:00m:02s

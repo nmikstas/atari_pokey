@@ -3490,6 +3490,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 77acbe37-ac55-4e5b-bc1e-637d513280bf)
   )
+  (text "The OE pin for the data bus level shifters \nmust be low when POKEY not in use!"
+    (at 23.495 196.215 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 800f32af-838d-4a62-8632-6594797b4688)
+  )
   (text "Misc. Inputs" (at 125.095 144.78 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 97d173fc-4122-410f-89cb-6f798421b777)

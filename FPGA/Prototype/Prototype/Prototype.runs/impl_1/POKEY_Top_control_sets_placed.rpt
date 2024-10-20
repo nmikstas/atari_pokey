@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Fri Oct  4 01:08:50 2024
+| Date         : Thu Oct 17 21:50:46 2024
 | Host         : LAPTOP-DTPKTC7I running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file POKEY_Top_control_sets_placed.rpt
 | Design       : POKEY_Top
@@ -80,26 +80,26 @@ Table of Contents
 |  clk_0/inst/clk_out1 | _key_core/b1/E[0]               |                              |                2 |              8 |         4.00 |
 |  clk_0/inst/clk_out1 | _ser_core/ob7/Qint              |                              |                3 |              8 |         2.67 |
 |  clk_0/inst/clk_out1 | _ser_core/istate/E[0]           |                              |                1 |              8 |         8.00 |
-| ~clk_0/inst/clk_out1 | _pot_core/POT4[7]_i_1_n_0       |                              |                5 |              8 |         1.60 |
-| ~clk_0/inst/clk_out1 | _pot_core/POT6[7]_i_1_n_0       |                              |                3 |              8 |         2.67 |
-| ~clk_0/inst/clk_out1 | _pot_core/POT1[7]_i_1_n_0       |                              |                3 |              8 |         2.67 |
+| ~clk_0/inst/clk_out1 | _io_core/E[0]                   |                              |                1 |              8 |         8.00 |
+| ~clk_0/inst/clk_out1 | _io_core/writeEn2_reg_0[0]      |                              |                2 |              8 |         4.00 |
+| ~clk_0/inst/clk_out1 | _io_core/writeEn2_reg_1[0]      |                              |                3 |              8 |         2.67 |
 | ~clk_0/inst/clk_out1 | _pot_core/POT0[7]_i_1_n_0       |                              |                1 |              8 |         8.00 |
-| ~clk_0/inst/clk_out1 | _pot_core/POT2[7]_i_1_n_0       |                              |                1 |              8 |         8.00 |
-| ~clk_0/inst/clk_out1 | _pot_core/POT5[7]_i_1_n_0       |                              |                1 |              8 |         8.00 |
-| ~clk_0/inst/clk_out1 | _pot_core/POT7[7]_i_1_n_0       |                              |                1 |              8 |         8.00 |
 | ~clk_0/inst/clk_out1 | _pot_core/POT3[7]_i_1_n_0       |                              |                1 |              8 |         8.00 |
+| ~clk_0/inst/clk_out1 | _pot_core/POT6[7]_i_1_n_0       |                              |                3 |              8 |         2.67 |
+| ~clk_0/inst/clk_out1 | _pot_core/POT5[7]_i_1_n_0       |                              |                1 |              8 |         8.00 |
+| ~clk_0/inst/clk_out1 | _pot_core/POT2[7]_i_1_n_0       |                              |                1 |              8 |         8.00 |
+| ~clk_0/inst/clk_out1 | _pot_core/POT4[7]_i_1_n_0       |                              |                5 |              8 |         1.60 |
+| ~clk_0/inst/clk_out1 | _pot_core/POT7[7]_i_1_n_0       |                              |                1 |              8 |         8.00 |
+| ~clk_0/inst/clk_out1 | _pot_core/POT1[7]_i_1_n_0       |                              |                3 |              8 |         2.67 |
 | ~clk_0/inst/clk_out1 | _io_core/AQ_reg[2]_0            |                              |                3 |              8 |         2.67 |
-| ~clk_0/inst/clk_out1 | _io_core/AQ_reg[2]_1            |                              |                2 |              8 |         4.00 |
 | ~clk_0/inst/clk_out1 | _io_core/AQ_reg[3]_4            |                              |                3 |              8 |         2.67 |
+| ~clk_0/inst/clk_out1 | _io_core/AQ_reg[2]_1            |                              |                2 |              8 |         4.00 |
 | ~clk_0/inst/clk_out1 | _io_core/nDout_0                |                              |                2 |              8 |         4.00 |
 | ~clk_0/inst/clk_out1 | _io_core/nDout                  |                              |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out1 | _io_core/AQ_reg[3]_1[0]         |                              |                1 |              8 |         8.00 |
-| ~clk_0/inst/clk_out1 | _io_core/AQ_reg[1]_0[0]         |                              |                2 |              8 |         4.00 |
 | ~clk_0/inst/clk_out1 | _io_core/AQ_reg[3]_2[0]         |                              |                2 |              8 |         4.00 |
+| ~clk_0/inst/clk_out1 | _io_core/AQ_reg[3]_1[0]         |                              |                1 |              8 |         8.00 |
 | ~clk_0/inst/clk_out1 | _io_core/AQ_reg[0]_0[0]         |                              |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out1 | _io_core/writeEn2_reg_1[0]      |                              |                3 |              8 |         2.67 |
-| ~clk_0/inst/clk_out1 | _io_core/writeEn2_reg_0[0]      |                              |                2 |              8 |         4.00 |
-| ~clk_0/inst/clk_out1 | _io_core/E[0]                   |                              |                1 |              8 |         8.00 |
+| ~clk_0/inst/clk_out1 | _io_core/AQ_reg[1]_0[0]         |                              |                2 |              8 |         4.00 |
 | ~clk179_IBUF_BUFG    |                                 |                              |                3 |              8 |         2.67 |
 |  clk_0/inst/clk_out1 | _ser_core/ibstart/prep_reg[1]   | _ser_core/istate/prep_reg[1] |                2 |              9 |         4.50 |
 |  clk_0/inst/clk_out1 |                                 |                              |                7 |             22 |         3.14 |

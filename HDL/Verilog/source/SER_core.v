@@ -35,7 +35,7 @@ module SER_core
 
     //sdi signals.
     reg  presdi;
-    wire nmux1, nsdi;
+    wire nmux1;
 
     //sdo signals.
     wire mux4;
