@@ -1,7 +1,0 @@
-@N: MF248 |Running in 64-bit mode.
-@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
-@N: BN362 :"d:\work\arcade+projects\atari_pokey\hdl\verilog\source\cell6.v":30:4:30:9|Removing sequential instance T1 (in view: work.cell6_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\work\arcade+projects\atari_pokey\hdl\verilog\source\aud_control.v":65:4:65:9|Removing sequential instance poly4Out (in view: work.aud_control_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\work\arcade+projects\atari_pokey\hdl\verilog\source\aud_control.v":65:4:65:9|Removing sequential instance poly5Out (in view: work.aud_control_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"d:\work\arcade+projects\atari_pokey\hdl\verilog\source\aud_control.v":65:4:65:9|Removing sequential instance poly17Out (in view: work.aud_control_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN225 |Writing default property annotation file D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype2\Prototype2\Prototype2_Implmnt\Prototype2.sap.

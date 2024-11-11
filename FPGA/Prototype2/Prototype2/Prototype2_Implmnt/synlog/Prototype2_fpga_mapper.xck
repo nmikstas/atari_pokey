@@ -1,2 +1,0 @@
-CKID0001:@|S:Prototype2_pll_inst.Prototype2_pll_inst@|E:pren[0]@|F:@syn_sample_clock_path==CKID0001@|M:ClockId0001 
-CKID0002:@|S:clk179_ibuf@|E:Dataw[0]@|F:@syn_sample_clock_path==CKID0002@|M:ClockId0002 

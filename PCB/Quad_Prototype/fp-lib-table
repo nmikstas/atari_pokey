@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "POKEY_Footprints")(type "KiCad")(uri "D:/work/Arcade+Projects/atari_pokey/PCBs/Prototype1/POKEY_Footprints")(options "")(descr ""))
+)

@@ -1,2 +1,0 @@
-@E: CG389 :"D:\work\Arcade+Projects\atari_pokey\FPGA\Prototype\Prototype\Prototype.srcs\sources_1\new\POKEY_Top.v":95:14:95:18|Reference to undefined module clk_wiz_0
-

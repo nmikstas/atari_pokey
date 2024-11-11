@@ -6,3 +6,5 @@ _vmake
 *.qdb
 *.qtl
 *.qpg
+
+*backups/

@@ -1,7 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  --include "../../../../../Prototype.gen/sources_1/ip/clk_wiz_0" \
-"tb_POKEY_Top_func_synth.v" \
-"../../../../../Prototype.srcs/sim_1/new/tb_POKEY_Top.v" \
-
-# Do not sort compile order
-nosort
