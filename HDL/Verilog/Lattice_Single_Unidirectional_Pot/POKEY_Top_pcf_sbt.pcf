@@ -1,0 +1,69 @@
+# ##############################################################################
+
+# iCEcube PCF
+
+# Version:            2020.12.27943
+
+# File Generated:     Dec 5 2024 22:41:23
+
+# Family & Device:    iCE40HX8K
+
+# Package:            CB132
+
+# ##############################################################################
+
+###IOSet List 53
+set_io d[7] K4
+set_io irq C7
+set_io k[1] H12
+set_io leds[3] K14
+set_io bclko C11
+set_io p[2] A7
+set_io d[1] K3
+set_io en F4
+set_io audio[5] D1
+set_io k[4] H11
+set_io leds[4] L12
+set_io p[4] D5
+set_io d[3] J1
+set_io dev_clk P7
+set_io k[2] J12
+set_io leds[6] M12
+set_io p[6] C4
+set_io a[1] H4
+set_io audio[2] G3
+set_io d[5] J3
+set_io k[3] G11
+set_io kr[1] D14
+set_io leds[1] K11
+set_io p[1] A12
+set_io sod D6
+set_io a[2] F3
+set_io audio[1] H3
+set_io bclki B14
+set_io d[4] M1
+set_io k[0] C14
+set_io kr[2] D12
+set_io leds[0] J11
+set_io oclk D7
+set_io p[0] C12
+set_io rw C1
+set_io sid A2
+set_io a[3] B1
+set_io audio[0] G1
+set_io p[3] C6
+set_io d[6] L1
+set_io leds[2] K12
+set_io dump A11
+set_io leds[5] L14
+set_io p[5] A10
+set_io d[0] P1
+set_io audio[4] E1
+set_io clk A6
+set_io k[5] D11
+set_io leds[7] N14
+set_io p[7] A1
+set_io a[0] G4
+set_io audio[3] H1
+set_io d[2] N1
+

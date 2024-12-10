@@ -257,6 +257,11 @@ module SER_core
         
             //Serial out pin.
             SOD <= ~_mux2;
+            
+            //Lock in the serial data.
+            if(sdiLoad == 1'b1) begin
+                Dr <= ssi;
+            end
         end
     end
 
@@ -267,9 +272,9 @@ module SER_core
 
             //---------------------------Serial Input--------------------------
             //Lock in the serial data.
-            if(sdiLoad == 1'b1) begin
-                Dr <= ssi;
-            end
+            //if(sdiLoad == 1'b1) begin
+            //    Dr <= ssi;
+            //end
 
             //Resync flip-flops.
             delay1 <= ~siDelayInt;

@@ -3,12 +3,21 @@
 module POKEY_Top
 (
     //Main clocks.
+    /*
+    //**********For use with a high frequency system clock**********
     input sysclk,
     input clk179,
-    //input clk,
+    //**************************************************************
+    */
+    
+    //*****************For use with Atari PCB clock*****************
+    input clk,
+    //**************************************************************
+
+    input dev_clk,
 
     //Read/write and enable signals.
-    input [1:0]cs,
+    input en,
     input rw,
 
     //IRQ.
@@ -20,7 +29,6 @@ module POKEY_Top
 
     //Digital audio out.
     output reg [5:0]audio,
-    //output [5:0]audio,
 
     //Potentiometer signals.
     input [7:0]p,
@@ -36,27 +44,38 @@ module POKEY_Top
     output bclko,
     output sod,
     output oclk,
-    
-    //Level shifters enable.
-    output reg OE = 1'b1
+
+    //Heartbeat LEDs.
+    output [7:0]leds
 );
+
     //clock and enable signals.
     wire enn, enp;
-    //wire clk;
-    reg [2:0] pren = 3'b000;
-    reg [2:0] prep = 3'b000;
     
-    //IO signals.
+    /*
+    //**********For use with a high frequency system clock**********
+    wire clk;
+    reg  [2:0] pren = 3'b000;
+    reg  [2:0] prep = 3'b000;
     reg  [3:0]Aint;
-    //wire [3:0]Aint;
-    wire [7:0]Datar;
     reg  [7:0]Dataw;
-    //wire [7:0]Dataw;
+    //**************************************************************
+    */
+    
+    //*****************For use with Atari PCB clock*****************
+    wire [7:0]Dataw;
+    wire [3:0]Aint;
+    //**************************************************************
+    
+    wire [7:0]Datar;
     wire readEn;
     wire Addr0w, Addr1w, Addr2w, Addr3w, Addr4w, Addr5w, Addr6w, Addr7w,
          Addr8w, Addr9w, AddrAw, AddrBw, AddrDw, AddrEw, AddrFw;
     wire [7:0]Data0r, Data1r, Data2r, Data3r, Data4r, Data5r, Data6r,
          Data7r, Data8r, Data9r, DataAr, DataDr, DataEr, DataFr;
+
+    //IO signals.
+    wire [1:0]cs;
     
     //Audio signals.
     wire [3:0]AUD1, AUD2, AUD3, AUD4;
@@ -89,12 +108,18 @@ module POKEY_Top
     //IRQ signals.
     wire setBreak, setKey, setSdiCompl, setSdoCompl, sdoFinish;
     
+    //Serial signals.
+    reg sidInt;
+
+    //Hearbeat counter.
+    reg [33:0]ledCounter = 34'b0000000000000000000000000000000000;
+    
     //////////////////////////////////////Top Level Circuits///////////////////////////////////////
 
+    /*
+    //**********For use with a high frequency system clock**********
     //Turn the 12MHz clock into a 60MHz clock.
-    //clk_wiz_0 clk_0(.clk_out1(clk), .clk_in1(sysclk));
-    //Turn the 100MHz clock into a 60MHz clock.
-    Prototype2_pll Prototype2_pll_inst(.PACKAGEPIN(sysclk), .PLLOUTCORE(), .PLLOUTGLOBAL(clk), .RESET(1'b1));
+    clk_wiz_0 clk_0(.clk_out1(clk), .clk_in1(sysclk));
 
     //Enable pulse generation.
     always@(negedge clk) begin
@@ -111,21 +136,36 @@ module POKEY_Top
     
     assign enn = ~pren[1] &  pren[2];
     assign enp =  prep[1] & ~prep[2];
-    //assign enn = 1'b1;
-    //assign enp = 1'b1;
+    
     //retime the address bits.
     always @(posedge clk179) begin
         Aint <= a;
     end
-    //assign Aint = a;
     
-    //Retime input data bits and assign outout data bits.
-    assign d = (readEn == 1'b1) ? Datar : 8'bzzzzzzzz;
-
+    //Retime input data bits.
     always @(negedge clk179) begin
         Dataw <= d;
     end
-    //assign Dataw = d;
+    //**************************************************************
+    */
+    
+    //*****************For use with Atari PCB clock*****************
+    assign enn   = 1'b1;
+    assign enp   = 1'b1;
+    assign Aint  = a;
+    assign Dataw = d;
+    //**************************************************************
+    
+    //Assign enable.
+    assign cs = (en == 1'b1) ? 2'b01 : 2'b10;
+
+    //Assign outout data bits.
+    assign d = (readEn == 1'b1) ? Datar : 8'bzzzzzzzz;
+    
+    //Metastability serial register.
+    always @(negedge clk) begin
+        sidInt <= sid;
+    end
     
     //Add all the audio signals together.
     always @(posedge clk) begin
@@ -133,7 +173,13 @@ module POKEY_Top
         AUD34 <= {1'b0, AUD3}  + {1'b0, AUD4};    
         audio <= {1'b0, AUD34} + {1'b0, AUD12};
     end
-    //assign audio = {1'b0, 1'b0, AUD1};
+
+    //Update the heartbeat.
+    always @(posedge dev_clk) begin
+        ledCounter = ledCounter + 1'b1;
+    end
+
+    assign leds = ledCounter[33:26];
     
     ///////////////////////////////////POKEY Registers and Cores///////////////////////////////////
     
@@ -196,7 +242,7 @@ module POKEY_Top
                       .poly17Out());
 
     //Serial core.
-    SER_core _ser_core(enn, enp, clk, Dataw, SKCTLS[7:3], sid, AddrDw, init, Timer[1],
+    SER_core _ser_core(enn, enp, clk, Dataw, SKCTLS[7:3], sidInt, AddrDw, init, Timer[1],
                        Timer[2], Timer[4], bclki, bclko, oclk, sod, siDelay, setFramer,
                        setSdiCompl, sdiBusy, resyncSerClk, resyncTwoTones, sdoFinish,
                        setSdoCompl, DataDr);

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_POKEY_Top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_POKEY_Top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2910544117fs"></ZoomStartTime>
+      <ZoomEndTime time="15759285632fs"></ZoomEndTime>
+      <Cursor1Time time="13617828712fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="146"></NameColumnWidth>
+      <ValueColumnWidth column_width="130"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="30" />
+   <wave_markers>
+      <marker time="63135812" label="" />
+   </wave_markers>
+   <wvobject type="divider" fp_name="divider131">
+      <obj_property name="label">Clocks</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/enn" type="logic">
+      <obj_property name="ElementShortName">enn</obj_property>
+      <obj_property name="ObjectShortName">enn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/enp" type="logic">
+      <obj_property name="ElementShortName">enp</obj_property>
+      <obj_property name="ObjectShortName">enp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/clk179" type="logic">
+      <obj_property name="ElementShortName">clk179</obj_property>
+      <obj_property name="ObjectShortName">clk179</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider132">
+      <obj_property name="label">Chip Control</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/cs" type="array">
+      <obj_property name="ElementShortName">cs[1:0]</obj_property>
+      <obj_property name="ObjectShortName">cs[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/rw" type="logic">
+      <obj_property name="ElementShortName">rw</obj_property>
+      <obj_property name="ObjectShortName">rw</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/a" type="array">
+      <obj_property name="ElementShortName">a[3:0]</obj_property>
+      <obj_property name="ObjectShortName">a[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/d" type="array">
+      <obj_property name="ElementShortName">d[7:0]</obj_property>
+      <obj_property name="ObjectShortName">d[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider134">
+      <obj_property name="label">Key Core Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/_clock_gen_core/init" type="logic">
+      <obj_property name="ElementShortName">init</obj_property>
+      <obj_property name="ObjectShortName">init</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/_key_core/keybClk" type="logic">
+      <obj_property name="ElementShortName">keybClk</obj_property>
+      <obj_property name="ObjectShortName">keybClk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/kr" type="array">
+      <obj_property name="ElementShortName">kr[2:1]</obj_property>
+      <obj_property name="ObjectShortName">kr[2:1]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/_key_core/keyQ" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">keyQ[1:0]</obj_property>
+      <obj_property name="ObjectShortName">keyQ[1:0]</obj_property>
+      <obj_property name="label">ThisState</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/k" type="array">
+      <obj_property name="ElementShortName">k[5:0]</obj_property>
+      <obj_property name="ObjectShortName">k[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/_key_core/setKey" type="logic">
+      <obj_property name="ElementShortName">setKey</obj_property>
+      <obj_property name="ObjectShortName">setKey</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/_key_core/setBreak" type="logic">
+      <obj_property name="ElementShortName">setBreak</obj_property>
+      <obj_property name="ObjectShortName">setBreak</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/_key_core/shift" type="logic">
+      <obj_property name="ElementShortName">shift</obj_property>
+      <obj_property name="ObjectShortName">shift</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/_key_core/control" type="logic">
+      <obj_property name="ElementShortName">control</obj_property>
+      <obj_property name="ObjectShortName">control</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/keycode" type="array">
+      <obj_property name="ElementShortName">keycode[5:0]</obj_property>
+      <obj_property name="ObjectShortName">keycode[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/_key_core/keyDown" type="logic">
+      <obj_property name="ElementShortName">keyDown</obj_property>
+      <obj_property name="ObjectShortName">keyDown</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider129">
+      <obj_property name="label">IRQ and SKSTAT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/irq" type="logic">
+      <obj_property name="ElementShortName">irq</obj_property>
+      <obj_property name="ObjectShortName">irq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/_irq_core/Dr[7]" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[7]</obj_property>
+      <obj_property name="ObjectShortName">[7]</obj_property>
+      <obj_property name="label">IRQ_Break</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/_irq_core/Dr[6]" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[6]</obj_property>
+      <obj_property name="ObjectShortName">[6]</obj_property>
+      <obj_property name="label">IRQ_Key</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/_irq_core/keyOvrun" type="logic">
+      <obj_property name="ElementShortName">keyOvrun</obj_property>
+      <obj_property name="ObjectShortName">keyOvrun</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/_skstat_reg/Dout[6]" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[6]</obj_property>
+      <obj_property name="ObjectShortName">[6]</obj_property>
+      <obj_property name="label">SK_KeyOverrun</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/_skstat_reg/Dout[3]" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[3]</obj_property>
+      <obj_property name="ObjectShortName">[3]</obj_property>
+      <obj_property name="label">SK_Shift</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_POKEY_Top/_pokey_top/_skstat_reg/Dout[2]" type="logic">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">[2]</obj_property>
+      <obj_property name="ObjectShortName">[2]</obj_property>
+      <obj_property name="label">SK_keyDown</obj_property>
+   </wvobject>
+</wave_config>

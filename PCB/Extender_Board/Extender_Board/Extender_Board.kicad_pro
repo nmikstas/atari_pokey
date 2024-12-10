@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.016,
-          "height": 1.397,
-          "width": 1.397
+          "drill": 0.762,
+          "height": 1.524,
+          "width": 1.524
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -48,13 +48,7 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -171,18 +165,8 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0,
-        0.508,
-        1.016,
-        1.524
-      ],
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        }
-      ],
+      "track_widths": [],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false
     },
     "layer_presets": [],
@@ -408,7 +392,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Through_Hole_Single.kicad_pro",
+    "filename": "Extender_Board.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -485,7 +469,7 @@
   },
   "sheets": [
     [
-      "60d09a7e-3ad8-4bc5-9fd7-4afad1d073ae",
+      "86c87b03-97bb-4a91-988d-8f3e7e317dfa",
       ""
     ]
   ],
